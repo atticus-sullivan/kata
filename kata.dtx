@@ -514,28 +514,28 @@
 	move/.meaning to context,
 %    \end{macrocode}
 % style(s) for the node containing the description for the technique of the stance
-% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNoFlipped| so when
+% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNodeFlipped| so when
 % the user requests to flip the node (e.g. to avoid collision with other text)
 % the placement can be adjusted
 %    \begin{macrocode}
 	stanceNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
 	stanceNodeCommon/.meaning to context,
-	stanceNo/.style={/kata/stanceNodeCommon,below,},
-	stanceNo/.meaning to context,
-	stanceNoFlipped/.style={/kata/stanceNodeCommon,above,},
-	stanceNoFlipped/.meaning to context,
+	stanceNode/.style={/kata/stanceNodeCommon,below,},
+	stanceNode/.meaning to context,
+	stanceNodeFlipped/.style={/kata/stanceNodeCommon,above,},
+	stanceNodeFlipped/.meaning to context,
 %    \end{macrocode}
 % style(s) for the node containing the description for a technique
-% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNoFlipped| so when
+% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNodeFlipped| so when
 % the user requests to flip the node (e.g. to avoid collision with other text)
 % the placement can be adjusted
 %    \begin{macrocode}
 	wazaNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
 	wazaNodeCommon/.meaning to context,
-wazaNo/.style={/kata/wazaNodeCommon,above,},
-	wazaNo/.meaning to context,
-	wazaNoFlipped/.style={/kata/wazaNodeCommon,below,},
-	wazaNoFlipped/.meaning to context,
+	wazaNode/.style={/kata/wazaNodeCommon,above,},
+	wazaNode/.meaning to context,
+	wazaNodeFlipped/.style={/kata/wazaNodeCommon,below,},
+	wazaNodeFlipped/.meaning to context,
 %    \end{macrocode}
 % style for the border enclosing the pictogram
 % takes the color as argument
@@ -738,7 +738,7 @@ wazaNo/.style={/kata/wazaNodeCommon,above,},
 	\IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
 	\draw[/kata/stance={\x}{\y}]
 		(head) -- ++(\kata@dir:2)
-		node[\ifkata@flip/kata/stanceNoFlipped\else/kata/stanceNo\fi]
+		node[\ifkata@flip/kata/stanceNodeFlipped\else/kata/stanceNode\fi]
 		{\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
 	;
 }
@@ -759,7 +759,7 @@ wazaNo/.style={/kata/wazaNodeCommon,above,},
 	\pgfmathsetmacro{\kata@dir}{#3+90}%
 	\draw[/kata/waza]
 		(head) -- ++(\kata@dir:2)
-		node[\ifkata@flip/kata/wazaNoFlipped\else/kata/wazaNo\fi]
+		node[\ifkata@flip/kata/wazaNodeFlipped\else/kata/wazaNode\fi]
 		{\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
 	;
 }
