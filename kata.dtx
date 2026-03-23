@@ -1,0 +1,555 @@
+% \iffalse meta-comment
+%
+% Copyright (C) 2026 by Lukas Heindl <oss.heindl+latex@protonmail.com>
+% ---------------------------------------------------------------------------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+%
+% The Current Maintainer of this work is Lukas Heindl.
+%
+% This work consists of the files kata.dtx and kata.ins
+% and the derived filebase kata.sty.
+%
+% \fi
+%
+% \iffalse
+%<*driver>
+\ProvidesFile{kata.dtx}
+%</driver>
+%<*package>
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesPackage{kata}[2026/03/23 0.1.0 Describe a kata with lots of pictograms drawn with tikz]
+%</package>
+%
+%<*driver>
+\documentclass{ltxdoc}
+
+\usepackage[disable,extract=no]{memoize}
+
+\usepackage[2026/03/23]{kata}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{listingsutf8,documentation}
+
+\RecordChanges
+\begin{document}
+  \DocInput{\jobname.dtx}
+  \PrintChanges
+\end{document}
+%</driver>
+% \fi
+%
+% \CheckSum{239}
+%
+% \CharacterTable
+%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%   Digits        \0\1\2\3\4\5\6\7\8\9
+%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%   Dollar        \$     Percent       \%     Ampersand     \&
+%   Acute accent  \'     Left paren    \(     Right paren   \)
+%   Asterisk      \*     Plus          \+     Comma         \,
+%   Minus         \-     Point         \.     Solidus       \/
+%   Colon         \:     Semicolon     \;     Less than     \<
+%   Equals        \=     Greater than  \>     Question mark \?
+%   Commercial at \@     Left bracket  \[     Backslash     \\
+%   Right bracket \]     Circumflex    \^     Underscore    \_
+%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%   Right brace   \}     Tilde         \~}
+%
+%
+% \changes{0.1.0}{2026/03/23}{Converted to DTX file}
+%
+% \providecommand*{\url}{\texttt}
+% \GetFileInfo{kata.dtx}
+% \title{\textsf{kata} -- Describe katas with pictograms}
+% \author{Lukas Heindl \\ \url{oss.heindl+latex@protonmail.com} \\Github: \url{https://github.com/atticus-sullivan/kata/}}
+% \date{\fileversion~from \filedate}
+%
+% \maketitle
+%
+% \begin{abstract}
+% TODO
+% \end{abstract}
+%
+% \section{Introduction}
+%
+% TODO
+%
+% \section{Usage}
+% Load this package as |\usepackage{kata}|
+%
+% \begin{docCommand}[]{timberborndrawingReset}{}
+% \end{docCommand}
+%
+%
+% \newpage
+% \section{Implementation}
+%
+%<*package>
+%
+% \begin{macrocode}
+\RequirePackage{memoize}
+\RequirePackage{pgfkeys}
+\RequirePackage{tikz}
+\usetikzlibrary{calc,positioning,fit,arrows.meta}
+\usetikzlibrary{decorations.markings,backgrounds}
+% \end{macrocode}
+%
+% \subsection{Internals}
+% A counter for each pictogram to enable referencing.
+% \begin{macrocode}
+\newcounter{kata@step}[section]
+% \end{macrocode}
+%
+%
+% \subsubsection{Keys for Argparsing}
+%
+% define pgfkeys for arguments to defined commands (argparsing)
+% \begin{macrocode}
+\newif\ifkata@flip
+\newif\ifkata@first
+\pgfkeys{
+	/kata/cmd/.cd,
+	flip/.is if=kata@flip,
+	flip/.default=true,
+	first/.is if=kata@first,
+	first/.default=true,
+	phantom/.style={
+		/kata/borderCust/.style={draw=none},
+		/kata/head/.style={draw=none},
+		/kata/stepCntCust/.style={draw=none,transparent}
+	},
+	phantom/.meaning to context,
+}
+% \end{macrocode}
+%
+%
+% \subsubsection{Internal pgf/TikZ Styles}
+%
+% set pgf keys used when drawing the pictograms \verb|/kata| namespace
+%
+% style for the node placed at the center representing the head
+% \begin{macrocode}
+\pgfkeys{
+	/kata/.cd,
+	head/.style={circle,draw=#1,inner xsep=0.333em},
+	head/.meaning to context,
+}
+% \end{macrocode}
+% style for the arrow/path showing the technique for the feet
+% takes two arguments to nudge the position so the path is not drawn directly on top of other paths (the \emph{hand})
+% \begin{macrocode}
+\pgfkeys{
+	feet/.style 2 args={KataColorFeet,-{Stealth[scale=1.2]},transform canvas={xshift=#1,yshift=#2}},
+	feet/.meaning to context,
+}
+% \end{macrocode}
+% style for the arrow/path showing the technique for the hand
+% \begin{macrocode}
+\pgfkeys{
+	hand/.style={KataCOlorHand,-{Stealth[scale=1.2]}},
+	hand/.meaning to context,
+}
+% \end{macrocode}
+% style for the arrow/path indicating the next movement/direction
+% \begin{macrocode}
+\pgfkeys{
+	move/.style={red,->},
+	move/.meaning to context,
+}
+% \end{macrocode}
+% style(s) for the node containing the description for the technique of the feet
+% split up in \verb|NodeCommon|, \verb|feetNo| and \verb|feetNoFlipped| so when
+% the user requests to flip the node (e.g. to avoid collision with other text)
+% the placement can be adjusted
+% \begin{macrocode}
+\pgfkeys{
+	feetNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
+	feetNodeCommon/.meaning to context,
+	feetNo/.style={/kata/feetNodeCommon,below,},
+	feetNo/.meaning to context,
+	feetNoFlipped/.style={/kata/feetNodeCommon,above,},
+	feetNoFlipped/.meaning to context,
+}
+% \end{macrocode}
+% style(s) for the node containing the description for the technique of the hand
+% split up in \verb|NodeCommon|, \verb|feetNo| and \verb|feetNoFlipped| so when
+% the user requests to flip the node (e.g. to avoid collision with other text)
+% the placement can be adjusted
+% \begin{macrocode}
+\pgfkeys{
+	handNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
+	handNodeCommon/.meaning to context,
+	handNo/.style={/kata/handNodeCommon,above,},
+	handNo/.meaning to context,
+	handNoFlipped/.style={/kata/handNodeCommon,below,},
+	handNoFlipped/.meaning to context,
+}
+% \end{macrocode}
+% style for the border enclosing the pictogram
+% takes the color as argument
+% \begin{macrocode}
+\pgfkeys{
+	border/.style={rectangle,draw=#1,fit=(output), inner sep=0pt,outer sep=0pt,inner xsep=0.2em},
+	border/.meaning to context,
+}
+% \end{macrocode}
+% style for the node showing the number of the current step
+% \begin{macrocode}
+\pgfkeys{
+	stepCnt/.style={outer sep=0pt,at={(t1.north west)},below right,rectangle,draw,font=\sffamily\small},
+	stepCnt/.meaning to context,
+}
+% \end{macrocode}
+%
+%
+% \subsubsection{Internal Elements of the Pictograms}
+%
+% ensure the box is always at least the same size (internal command + always placed)
+% \begin{macrocode}
+\NewDocumentCommand{\kata@nothing}{}{
+	\draw[draw=none] (head) -- ++(0:2.15) -- ++(180:4.3) -- ++(90:2.15) -- ++(-90:4.3);
+}
+% \end{macrocode}
+% draw the circle symbolizing the head (internal command + always placed)
+% \begin{macrocode}
+\NewDocumentCommand{\kata@head}{}{
+	\node[/kata/head] (head) {};
+}
+% \end{macrocode}
+%
+%
+% \subsubsection{Helpers}
+%
+% enforces something is run within the step environment (helper)
+% \begin{macrocode}
+\newif\ifkata@instep
+\NewDocumentCommand{\kata@requirestep}{m}{%
+	\ifkata@instep\else
+		\PackageError{kata}{#1 used outside step environment}{}
+	\fi
+}
+% \end{macrocode}
+% enforces something is run within the kata environment (helper)
+% \begin{macrocode}
+\newif\ifkata@inkata
+\NewDocumentCommand{\kata@requirekata}{m}{%
+	\ifkata@inkata\else
+		\PackageError{kata}{#1 used outside kata environment}{}
+	\fi
+}
+% \end{macrocode}
+%
+% \subsubsection{Draw the Marginline}
+% \begin{macrocode}
+\NewDocumentCommand{\kata@beltMargin}{mm}{%
+	\marginline{%
+		\centering\footnotesize%
+		\Ifstr{#1}{}{}{%
+			$\downarrow$ #1%
+		}%
+% \end{macrocode}
+% only linebreak if both are non-empty
+% \begin{macrocode}
+		\Ifstr{#1}{}{}{\Ifstr{#2}{}{}{\\}}%
+		\Ifstr{#2}{}{}{%
+			\ColorBelt*[scale=0.1]{#2}%
+		}%
+	}%
+}
+% \end{macrocode}
+%
+%
+% \subsubsection{Environments} % TODO docs missing
+% this environment always should wrap the steps
+% arguments:
+% 1 optional: later for pgfkeys maybe
+% 2: kata name
+% 3: for which belt / marginline
+% 4 optional: belt color (for drawing), if empty -> not drawn, if not present use 3
+% \begin{macrocode}
+\NewDocumentEnvironment{kata}{O{}mmo}{%
+	\section{#2}
+	\Ifstr{#3}{}{
+% \end{macrocode}
+% show if 3 is empty but 4 was set
+% \begin{macrocode}
+		\IfNoValueF{#4}{\kata@beltMargin{}{#4}}%
+	}{%
+% \end{macrocode}
+% use 3 as fallback if 4 was not set
+% \begin{macrocode}
+		\kata@beltMargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
+	}%
+	\setlength{\lineskip}{6pt}\noindent%
+	\setcounter{kata@step}{0}%
+	\kata@inkatatrue%
+	\ignorespaces%
+	\widowpenalty=0%
+}{%
+	\pgfmathtruncatemacro{\kata@missing}{mod(6 - mod(\c@kata@step,6),6)}%
+	\setcounter{kata@step}{0}%
+	\ifnum\kata@missing>0%
+		\foreach \i in {1,...,\kata@missing} {%
+			\begin{step}[phantom]\end{step} %
+		}%
+	\fi%
+	\kata@inkatafalse%
+% \end{macrocode}
+% avoid left-aligning the last line. Instead it should be justified in
+% order to obtain a proper grid
+% \begin{macrocode}
+	\parfillskip=0pt%
+	\par%
+}
+% \end{macrocode}
+% the environment to draw everything else in
+% Usage:
+% 1 (optional): whether this is the first step of the kata
+% \begin{macrocode}
+\NewDocumentEnvironment{step}{O{}+b}{%
+	\kata@requirekata{\string\step}%
+	\pgfkeys{/kata/cmd/.cd, first=false, #1}%
+	\ifkata@first\par\nointerlineskip\vfil\else\fi%
+	\begin{kata@step}%
+		#2
+	\end{kata@step}%
+	\refstepcounter{kata@step}%
+}{}
+\NewDocumentEnvironment{kata@step}{}{%
+	\kata@requirekata{\string\step}%
+	\begin{tikzpicture}[font=\scriptsize]%
+		\begin{scope}[local bounding box=output]%
+			\kata@head\kata@nothing%
+			\kata@insteptrue%
+}{
+		\kata@instepfalse%
+		\end{scope}%
+		\begin{scope}[on background layer]%
+			\node[/kata/border,/kata/customize/border] (t1) {};%
+			\node[/kata/stepCnt,/kata/customize/stepCnt] (cnt) {\kataStepCnt{kata@step}};%
+		\end{scope}%
+	\end{tikzpicture}%
+}
+% \end{macrocode}
+%
+%
+% \subsection{Specify the Content}
+%
+% draw the arrow/path showing the technique for the feet
+% Usage:
+% 1 (optional): side to use (L/R)
+% 2: name/text
+% 3: direction
+% \begin{macrocode}
+\NewDocumentCommand{\feet}{O{}mmO{}}{%
+	\pgfkeys{/kata/cmd/.cd, flip=false, #4}%
+	\kata@requirestep{\string\feet}%
+	\pgfmathsetmacro{\kata@dir}{#3+90}%
+	\pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
+	\pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
+	\IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
+	\draw[/kata/feet={\x}{\y}] (head) -- ++(\kata@dir:2)   node[\ifkata@flip/kata/feetNoFlipped\else/kata/feetNo\fi] {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2};
+}
+% \end{macrocode}
+%
+% draw the arrow/path showing the technique for the hand
+% Usage:
+% 1 (optional): side to use (L/R)
+% 2: name/text
+% 3: direction
+% \begin{macrocode}
+\NewDocumentCommand{\waza}{O{}mmO{}}{%
+	\kata@requirestep{\string\waza}%
+	\pgfkeys{/kata/cmd/.cd, flip=false, #4}%
+	\IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
+	\pgfmathsetmacro{\kata@dir}{#3+90}%
+	\draw[/kata/hand] (head) -- ++(\kata@dir:2) node[\ifkata@flip/kata/handNoFlipped\else/kata/handNo\fi] {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2};
+}
+% \end{macrocode}
+%
+% draw a short arrow/path indicating the next turn/direction
+% Usage:
+% 1 (optional): flip
+% 2: source (Center,angle)
+% 3: dst (angle)
+% \begin{macrocode}
+\NewDocumentCommand{\dir}{O{}mm}{
+	\kata@requirestep{\string\dir}
+	\pgfkeys{/kata/cmd/.cd, flip=false, #1,}
+	\pgfmathsetmacro{\kata@out}{#3+90}
+	\Ifstr{#2}{center}{
+		\draw[/kata/move] (head.center) -- ++(\kata@out:.33em);
+	}{
+		\pgfmathsetmacro{\kata@in}{#2+90}
+		\pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
+		\ifkata@flip
+			\if -\kata@outDeltaI
+				\pgfmathsetmacro{\kata@outDeltaII}{360+\kata@outDeltaI}
+			\else
+				\pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI-360}
+			\fi
+		\else
+			\pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
+		\fi
+		\draw[/kata/move] (head.center) ++ (\kata@in:.33em) arc[start angle=\kata@in,delta angle=\kata@outDeltaII,radius=.33em];
+	}
+}
+% \end{macrocode}
+%
+%
+% \subsection{For user customization}
+% \subsubsection{Colors}
+%
+% define xcolors used for coloring elements in the pictograms
+% \begin{macrocode}
+\RequirePackage{xcolor}
+\colorlet{KataColorFeet}{blue}
+\colorlet{KataColorHand}{green}
+\colorlet{KataColorNext}{red}
+% \end{macrocode}
+%
+%
+% \subsubsection{Styles}
+% Define some styles for the user to customize the output
+%
+% \paragraph{Level 1 -- Beginner}
+% A command for setting \verb|/kata/styles| keys similar like \verb|\tikzset|
+% \begin{macrocode}
+\NewDocumentCommand{\katastyle}{m}{%
+	\pgfkeys{/kata/styles/.cd,#1}%
+	\ignorespaces%
+}
+\pgfkeys{
+% \end{macrocode}
+% Styles for the pictogram-border ($\to$ \verb|/kata/customize/border|)
+% \begin{macrocode}
+	/kata/styles/border/.cd,
+% \end{macrocode}
+% draw arrows to the right on the border, takes the color as argument
+% \begin{macrocode}
+	right/.style={
+		/kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowRL=-90},
+	},
+	right/.meaning to context,
+% \end{macrocode}
+% draw arrows to the left on the border, takes the color as argument
+% \begin{macrocode}
+	left/.style={
+		/kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowRL=+90},
+	},
+	left/.meaning to context,
+% \end{macrocode}
+% draw arrows to the top on the border, takes the color as argument
+% \begin{macrocode}
+	up/.style={
+		/kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowUD=0},
+	},
+	up/.meaning to context,
+% \end{macrocode}
+% draw arrows to the bottom on the border, takes the color as argument
+% \begin{macrocode}
+	down/.style={
+		/kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowUD=180},
+	},
+	down/.meaning to context,
+% \end{macrocode}
+% resets the border modifications
+% \begin{macrocode}
+	reset/.style={/kata/customize/border/.style={}},
+	reset/.meaning to context,
+}
+% \end{macrocode}
+%
+%
+% \paragraph{Level 2 -- Advanced}
+% \subparagraph{For the border}
+% auxilary keys to be used in the \verb|customize/border| style
+%
+% \begin{macrocode}
+\pgfkeys{
+	/kata/border/.cd,
+	arrowRL/.style={
+		postaction={decorate},decoration={
+			markings,
+			mark=at position 0.125 with {\pgftransformrotate{#1 - 270}\arrow[line width=2pt]{stealth}},
+			mark=at position 0.625 with {\pgftransformrotate{#1 - 270}\arrowreversed[line width=2pt]{stealth}},
+		},
+	},
+	arrowRL/.meaning to context,
+	arrowUD/.style={
+		postaction={decorate},decoration={
+			markings,
+			mark=at position 0.375 with {\pgftransformrotate{#1}\arrow[line width=2pt]{stealth}},
+			mark=at position 0.875 with {\pgftransformrotate{#1}\arrowreversed[line width=2pt]{stealth}},
+		},
+	},
+	arrowUD/.meaning to context,
+}
+% \end{macrocode}
+%
+%
+% \paragraph{Level 3 -- Expert}
+%
+% define pgfkeys designed for cosmetic adjustments of the pictograms \verb|/kata| namespace
+% \begin{macrocode}
+\pgfkeys{
+	/kata/customize/.cd,
+% \end{macrocode}
+% executed after \verb|/kata/stepCnt|
+% \begin{macrocode}
+	stepCnt/.style={},
+	stepCnt/.meaning to context,
+% \end{macrocode}
+% executed after \verb|/kata/border|
+% \begin{macrocode}
+	border/.style={},
+	border/.meaning to context,
+}
+% \end{macrocode}
+%
+%
+% \subsubsection{Misc}
+%
+% Formats the counter for the step indicator
+% \begin{macrocode}
+\NewDocumentCommand{\kataStepCnt}{m}{\arabic{#1}}
+% \end{macrocode}
+%
+%
+% \subsection{Memoization}
+% 
+% \begin{macrocode}
+\mmzset{auto={kata@step}{
+	memoize,
+	csname meaning to context={kata@step},
+	csname meaning to context={environment kata@step end aux\space},
+	csname meaning to context={nothing code},
+	csname meaning to context={head code},
+	csname meaning to context={feet code},
+	csname meaning to context={waza code},
+	csname meaning to context={dir code},
+% \end{macrocode}
+% xcolor stored in another command -> not working as of now
+% \begin{macrocode}
+	meaning to context={KataColorFeet},
+	meaning to context={KataColorHand},
+	meaning to context={KataColorNext},
+}}
+% \end{macrocode}
+
+%
+% \iffalse
+%</package>
+% \fi
+%
+% \Finale
+\endinput
