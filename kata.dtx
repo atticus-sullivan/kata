@@ -50,7 +50,7 @@
 %</driver>
 % \fi
 %
-% \CheckSum{238}
+% \CheckSum{239}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -90,8 +90,8 @@
 % \begin{abstract}
 % The \texttt{kata} package provides a compact and structured way to typeset
 % martial arts katas\footnote{\url{https://en.wikipedia.org/wiki/Kata}} (forms)
-% in LaTeX. It models a kata as a sequence of steps, each combining foot
-% technique, hand technique, and transition direction, and supports
+% in LaTeX. It models a kata as a sequence of steps, each combining the stance
+% hand/foot technique, and transition direction, and supports
 % customizing the resulting pictograms for clear visual representation.
 %
 % Requires: KOMA-documentclass
@@ -105,8 +105,8 @@
 % describe katas in LaTeX. Each step of a kata is expressed as a step
 % consisting of
 % \begin{enumerate}
-% 	\item a foot technique with direction
-% 	\item a hand technique with direction
+% 	\item the stance with direction
+% 	\item a technique with direction
 % 	\item the direction of movement or rotation into the next step
 % \end{enumerate}
 % The package also offers customizing the resulting pictograms, allowing visual
@@ -120,7 +120,7 @@
 %
 % \begin{tcolorbox}[title={Note: Concept of \emph{direction}},fonttitle=\sffamily,colframe=orange]
 %   One quite important concept is the concept of the \emph{direction}.
-%   Some commands such as \refCom{waza}, \refCom{dir}, and \refCom{feet} refer to a direction in the range of -360 to 360 degrees.
+%   Some commands such as \refCom{waza}, \refCom{dir}, and \refCom{stance} refer to a direction in the range of -360 to 360 degrees.
 %   Also some pgfkeys take a direction as an argument.
 %
 %   This package consistently defines the direction as follows:
@@ -161,7 +161,7 @@
 %
 % The body will be the content of a \verb|tikzpicture| so normal \LaTeX code won't work as expected.
 %
-% Usually you'll use \refCom{waza}, \refCom{feet} and \refCom{dir} to populate the step with contents.
+% Usually you'll use \refCom{waza}, \refCom{stance} and \refCom{dir} to populate the step with contents.
 % Note that all of these commands may be present (multiple times) but they don't need to be present all.
 %
 % If you're drawing manually with tikz, note the node \verb|head| exists and is at the center.
@@ -169,7 +169,7 @@
 % \end{docEnvironment}
 %
 % \begin{docCommand}[]{waza}{\oarg{side}\marg{content}\marg{dir}\oarg{pgfkeys}}
-% Use this command to draw the technique+direction for the hands.
+% Use this command to draw a technique with its direction.
 % \begin{description}
 % 	\item[\meta{side}] may specify the side (R/L or right/left) which executes the technique
 % 	\item[\meta{content}] the text describing the action
@@ -178,8 +178,8 @@
 % \end{description}
 % \end{docCommand}
 %
-% \begin{docCommand}[]{feet}{\oarg{side}\marg{content}\marg{dir}\oarg{pgfkeys}}
-% Use this command to draw the technique+direction for the feet.
+% \begin{docCommand}[]{stance}{\oarg{side}\marg{content}\marg{dir}\oarg{pgfkeys}}
+% Use this command to draw the technique+direction for the stance.
 % \begin{description}
 % 	\item[\meta{side}] may specify the side (R/L or right/left) which executes the technique
 % 	\item[\meta{content}] the text describing the action
@@ -229,16 +229,16 @@
 	\parindent=0pt
 
 	\begin{step}
-		\feet{stance A}{0}
+		\stance{stance A}{0}
 		\waza{technique A}{-90}
 		\dir{center}{90}
 	\end{step}
 	\begin{step}
-		\feet{stance A}{0}
+		\stance{stance A}{0}
 		\dir{90}{-90}
 	\end{step}
 	\begin{step}
-		\feet[flip]{stance A}{0}
+		\stance[flip]{stance A}{0}
 		\dir[flip]{90}{-90}
 	\end{step}
 \end{kata}
@@ -248,16 +248,16 @@
 	\parindent=0pt
 
 	\begin{step}
-		\feet{stance A}{0}
+		\stance{stance A}{0}
 		\waza{technique A}{-90}
 		\dir{center}{90}
 	\end{step}
 	\begin{step}
-		\feet{stance A}{0}
+		\stance{stance A}{0}
 		\dir{90}{-90}
 	\end{step}
 	\begin{step}
-		\feet[flip]{stance A}{0}
+		\stance[flip]{stance A}{0}
 		\dir[flip]{90}{-90}
 	\end{step}
 \end{kata}
@@ -304,8 +304,8 @@
 %
 % The following (x)-color definitions are used when drawing the pictograms:
 % \begin{itemize}
-% 	\item[\docColor{KataColorHand}] used for the arrow/path showing the hand technique+direction
-% 	\item[\docColor{KataColorFeet}] used for the arrow/path showing the feet technique+direction
+% 	\item[\docColor{KataColorWaza}] used for the arrow/path showing a technique with its direction
+% 	\item[\docColor{KataColorFeet}] used for the arrow/path showing the stance with its direction
 % 	\item[\docColor{KataColorDir}] used for the indicator showing the direction of the next move/turn
 % \end{itemize}
 % You can set these for example via \verb|\colorlet|.
@@ -350,23 +350,23 @@
 	Some explanation -- normal \LaTeX code
 	\parindent=0pt
 
-	\colorlet{KataColorHand}{green!50!black}
+	\colorlet{KataColorWaza}{green!50!black}
 	\begin{step}
-		\feet{stance A}{0}
+		\stance{stance A}{0}
 		\waza{technique A}{-90}
 		\dir{center}{90}
 	\end{step}
 	\colorlet{KataColorDir}{brown}
 	\katastyle{border/up=pink}
 	\begin{step}
-		\feet{stance B}{180}
+		\stance{stance B}{180}
 		\waza{technique B}{90}
 		\dir{90}{180}
 	\end{step}
 	\katastyle{border/reset}
 	\renewcommand\kataStepCnt[1]{\roman{#1}}
 	\begin{step}
-		\feet{stance B}{180}
+		\stance{stance B}{180}
 		\waza[flip]{technique B}{90}
 		\dir[flip]{90}{180}
 	\end{step}
@@ -375,7 +375,7 @@
 		/kata/customize/border/.style={/kata/border/arrowUD=45},
 	}
 	\begin{step}
-		\feet{stance C}{180}
+		\stance{stance C}{180}
 		\waza{technique D}{0}
 	\end{step}
 \end{kata}
@@ -384,23 +384,23 @@
 	Some explanation -- normal \LaTeX code
 	\parindent=0pt
 
-	\colorlet{KataColorHand}{green!50!black}
+	\colorlet{KataColorWaza}{green!50!black}
 	\begin{step}
-		\feet{stance A}{0}
+		\stance{stance A}{0}
 		\waza{technique A}{-90}
 		\dir{center}{90}
 	\end{step}
 	\colorlet{KataColorDir}{brown}
 	\katastyle{border/up=pink}
 	\begin{step}
-		\feet{stance B}{180}
+		\stance{stance B}{180}
 		\waza{technique B}{90}
 		\dir{90}{180}
 	\end{step}
 	\katastyle{border/reset}
 	\renewcommand\kataStepCnt[1]{\roman{#1}}
 	\begin{step}
-		\feet{stance B}{180}
+		\stance{stance B}{180}
 		\waza[flip]{technique B}{90}
 		\dir[flip]{90}{180}
 	\end{step}
@@ -410,7 +410,7 @@
 		/kata/customize/border/.style={/kata/border/arrowUD=45},
 	}
 	\begin{step}
-		\feet{stance C}{180}
+		\stance{stance C}{180}
 		\waza{technique D}{0}
 	\end{step}
 \end{kata}
@@ -455,7 +455,7 @@
 \newif\ifkata@first
 \pgfkeys{
 %    \end{macrocode}
-% Arguments for content commands like \verb|feet|
+% Arguments for content commands like \verb|stance|
 %    \begin{macrocode}
 	/kata/cmd/content/.cd,
 	flip/.is if=kata@flip,
@@ -493,49 +493,49 @@
 	head/.style={circle,draw=#1,inner xsep=0.333em},
 	head/.meaning to context,
 %    \end{macrocode}
-% style for the arrow/path showing the technique for the feet
-% takes two arguments to nudge the position so the path is not drawn directly on top of other paths (the \emph{hand})
+% style for the arrow/path showing the stance
+% takes two arguments to nudge the position so the path is not drawn directly on top of other paths (the \emph{waza})
 %    \begin{macrocode}
-	feet/.style 2 args={
+	stance/.style 2 args={
 		KataColorFeet,
 		-{Stealth[scale=1.2]},
 		transform canvas={xshift=#1,yshift=#2}
 	},
-	feet/.meaning to context,
+	stance/.meaning to context,
 %    \end{macrocode}
-% style for the arrow/path showing the technique for the hand
+% style for the arrow/path showing a technique
 %    \begin{macrocode}
-	hand/.style={KataColorHand,-{Stealth[scale=1.2]}},
-	hand/.meaning to context,
+	waza/.style={KataColorWaza,-{Stealth[scale=1.2]}},
+	waza/.meaning to context,
 %    \end{macrocode}
 % style for the arrow/path indicating the next movement/direction
 %    \begin{macrocode}
 	move/.style={KataColorDir,->},
 	move/.meaning to context,
 %    \end{macrocode}
-% style(s) for the node containing the description for the technique of the feet
-% split up in \verb|NodeCommon|, \verb|feetNo| and \verb|feetNoFlipped| so when
+% style(s) for the node containing the description for the technique of the stance
+% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNoFlipped| so when
 % the user requests to flip the node (e.g. to avoid collision with other text)
 % the placement can be adjusted
 %    \begin{macrocode}
-	feetNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
-	feetNodeCommon/.meaning to context,
-	feetNo/.style={/kata/feetNodeCommon,below,},
-	feetNo/.meaning to context,
-	feetNoFlipped/.style={/kata/feetNodeCommon,above,},
-	feetNoFlipped/.meaning to context,
+	stanceNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
+	stanceNodeCommon/.meaning to context,
+	stanceNo/.style={/kata/stanceNodeCommon,below,},
+	stanceNo/.meaning to context,
+	stanceNoFlipped/.style={/kata/stanceNodeCommon,above,},
+	stanceNoFlipped/.meaning to context,
 %    \end{macrocode}
-% style(s) for the node containing the description for the technique of the hand
-% split up in \verb|NodeCommon|, \verb|feetNo| and \verb|feetNoFlipped| so when
+% style(s) for the node containing the description for a technique
+% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNoFlipped| so when
 % the user requests to flip the node (e.g. to avoid collision with other text)
 % the placement can be adjusted
 %    \begin{macrocode}
-	handNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
-	handNodeCommon/.meaning to context,
-handNo/.style={/kata/handNodeCommon,above,},
-	handNo/.meaning to context,
-	handNoFlipped/.style={/kata/handNodeCommon,below,},
-	handNoFlipped/.meaning to context,
+	wazaNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
+	wazaNodeCommon/.meaning to context,
+wazaNo/.style={/kata/wazaNodeCommon,above,},
+	wazaNo/.meaning to context,
+	wazaNoFlipped/.style={/kata/wazaNodeCommon,below,},
+	wazaNoFlipped/.meaning to context,
 %    \end{macrocode}
 % style for the border enclosing the pictogram
 % takes the color as argument
@@ -721,7 +721,7 @@ handNo/.style={/kata/handNodeCommon,above,},
 %
 % \subsection{Specify the Content}
 %
-% draw the arrow/path showing the technique for the feet
+% draw the arrow/path showing the stance
 % Usage:
 % \begin{enumerate}
 % 	\item (optional) side to use (L/R)
@@ -729,22 +729,22 @@ handNo/.style={/kata/handNodeCommon,above,},
 % 	\item direction
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\feet}{O{}mmO{}}{%
+\NewDocumentCommand{\stance}{O{}mmO{}}{%
 	\pgfkeys{/kata/cmd/content/.cd, flip=false, #4}%
-	\kata@requirestep{\string\feet}%
+	\kata@requirestep{\string\stance}%
 	\pgfmathsetmacro{\kata@dir}{#3+90}%
 	\pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
 	\pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
 	\IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
-	\draw[/kata/feet={\x}{\y}]
+	\draw[/kata/stance={\x}{\y}]
 		(head) -- ++(\kata@dir:2)
-		node[\ifkata@flip/kata/feetNoFlipped\else/kata/feetNo\fi]
+		node[\ifkata@flip/kata/stanceNoFlipped\else/kata/stanceNo\fi]
 		{\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
 	;
 }
 %    \end{macrocode}
 %
-% draw the arrow/path showing the technique for the hand.
+% draw the arrow/path showing a technique.
 % Arguments:
 % \begin{enumerate}
 % 	\item (optional) side to use (L/R)
@@ -757,9 +757,9 @@ handNo/.style={/kata/handNodeCommon,above,},
 	\pgfkeys{/kata/cmd/content/.cd, flip=false, #4}%
 	\IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
 	\pgfmathsetmacro{\kata@dir}{#3+90}%
-	\draw[/kata/hand]
+	\draw[/kata/waza]
 		(head) -- ++(\kata@dir:2)
-		node[\ifkata@flip/kata/handNoFlipped\else/kata/handNo\fi]
+		node[\ifkata@flip/kata/wazaNoFlipped\else/kata/wazaNo\fi]
 		{\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
 	;
 }
@@ -807,7 +807,7 @@ handNo/.style={/kata/handNodeCommon,above,},
 %    \begin{macrocode}
 \RequirePackage{xcolor}
 \colorlet{KataColorFeet}{blue}
-\colorlet{KataColorHand}{green}
+\colorlet{KataColorWaza}{green}
 \colorlet{KataColorDir}{red}
 %    \end{macrocode}
 %
@@ -928,14 +928,14 @@ handNo/.style={/kata/handNodeCommon,above,},
 	csname meaning to context={environment kata@step end aux\space},
 	csname meaning to context={nothing code},
 	csname meaning to context={head code},
-	csname meaning to context={feet code},
+	csname meaning to context={stance code},
 	csname meaning to context={waza code},
 	csname meaning to context={dir code},
 %    \end{macrocode}
 % xcolor stored in another command -> not working as of now
 %    \begin{macrocode}
 	meaning to context={KataColorFeet},
-	meaning to context={KataColorHand},
+	meaning to context={KataColorWaza},
 	meaning to context={KataColorDir},
 }}
 %    \end{macrocode}
