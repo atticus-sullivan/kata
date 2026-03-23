@@ -648,7 +648,15 @@ handNo/.style={/kata/handNodeCommon,above,},
 	\setcounter{kata@step}{0}%
 	\kata@inkatatrue%
 	\ignorespaces%
+%    \end{macrocode}
+% there is no harm in a single word/pictogram in the last line to turn off the corresponding penalty
+%    \begin{macrocode}
 	\widowpenalty=0%
+%    \end{macrocode}
+% allow large larger spaces between the pictograms if this avoids drawing a
+% picture outside of the textarea
+%    \begin{macrocode}
+	\sloppy
 }{%
 %    \end{macrocode}
 % add hidden steps to the last line.
