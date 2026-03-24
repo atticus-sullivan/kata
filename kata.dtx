@@ -470,6 +470,15 @@
 }
 %    \end{macrocode}
 %
+% Define marginline in case it isn't already defined (so the package works without KOMA-classes as well).
+%    \begin{macrocode}
+\AddToHook {begindocument} [.] {%
+  \providecommand\marginline[1]{%
+    \marginpar[{\raggedleft #1}]{\raggedright #1}%
+  }%
+}
+%    \end{macrocode}
+%
 % \subsection{Internals}
 % A counter for each pictogram to enable referencing.
 %    \begin{macrocode}
