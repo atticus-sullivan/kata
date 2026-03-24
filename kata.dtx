@@ -252,6 +252,7 @@
 % Define own string compare for equality so the package works without KOMA as well.
 %    \begin{macrocode}
 \ExpandArgs {nnc} \UseName {cs_set_eq:NN} {\kata@Ifstr} {str_if_eq:eeTF}
+\ExpandArgs {nnc} \UseName {cs_set_eq:NN} {\kata@protecteddef} {cs_new_protected:Npn}
 %    \end{macrocode}
 %
 % \subsection{General pgfkeys setup}
@@ -371,7 +372,7 @@
 % enforces something is run within the step environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@instep
-\NewDocumentCommand{\kata@requirestep}{m}{%
+\kata@protecteddef \kata@requirestep#1{%
   \ifkata@instep\else
     \PackageError{kata}{#1 used outside step environment}{}
   \fi
@@ -382,7 +383,7 @@
 % enforces something is run within the kata environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@inkata
-\NewDocumentCommand{\kata@requirekata}{m}{%
+\kata@protecteddef \kata@requirekata#1{%
   \ifkata@inkata\else
     \PackageError{kata}{#1 used outside kata environment}{}
   \fi
@@ -487,7 +488,7 @@
 %
 % \begin{macro}{\kata@beltMargin}
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@beltMargin}{mm}{%
+\kata@protecteddef \kata@beltMargin#1#2{%
   \marginline{%
     \centering\footnotesize%
     \kata@Ifstr{#1}{}{}{%
@@ -734,7 +735,7 @@
 % \begin{macro}{\kata@head}
 % draw the circle symbolizing the head (internal command + always placed)
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@head}{}{
+\kata@protecteddef \kata@head{
   \node[/kata/style/head] (head) {};
 }
 %    \end{macrocode}
