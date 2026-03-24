@@ -575,22 +575,27 @@
 %
 % \subsubsection{Internal Elements of the Pictograms}
 %
+% \begin{macro}{\kata@nothing}
 % ensure the box is always at least the same size (internal command + always placed)
 %    \begin{macrocode}
 \NewDocumentCommand{\kata@nothing}{}{
   \draw[draw=none] (head) -- ++(0:2.15) -- ++(180:4.3) -- ++(90:2.15) -- ++(-90:4.3);
 }
 %    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\kata@head}
 % draw the circle symbolizing the head (internal command + always placed)
 %    \begin{macrocode}
 \NewDocumentCommand{\kata@head}{}{
   \node[/kata/head] (head) {};
 }
 %    \end{macrocode}
+% \end{macro}
 %
 %
 % \subsubsection{Helpers}
 %
+% \begin{macro}{\kata@requirestep}
 % enforces something is run within the step environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@instep
@@ -600,6 +605,8 @@
   \fi
 }
 %    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\kata@requirekata}
 % enforces something is run within the kata environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@inkata
@@ -609,8 +616,10 @@
   \fi
 }
 %    \end{macrocode}
+% \end{macro}
 %
 % \subsubsection{Draw the Marginline}
+% \begin{macro}{\kata@beltMargin}
 %    \begin{macrocode}
 \NewDocumentCommand{\kata@beltMargin}{mm}{%
   \marginline{%
@@ -628,9 +637,11 @@
   }%
 }
 %    \end{macrocode}
+% \end{macro}
 %
 %
 % \subsubsection{Environments}
+% \begin{environment}{kata}
 % this environment is basically a container for a sequence of steps.
 % Arguments:
 % \begin{enumerate}
@@ -688,7 +699,9 @@
   \par%
 }
 %    \end{macrocode}
+% \end{environment}
 %
+% \begin{environment}{step}
 % this environment always should wrap \verb|kata@step|.
 % It handles the aspects of positioning the pictogram.
 % Arguments:
@@ -704,7 +717,9 @@
   \refstepcounter{kata@step}%
 }{}
 %    \end{macrocode}
+% \end{environment}
 %
+% \begin{environment}{kata@step}
 % the environment to draw everything else in
 %    \begin{macrocode}
 \NewDocumentEnvironment{kata@step}{}{%
@@ -727,10 +742,12 @@
   \end{tikzpicture}%
 }
 %    \end{macrocode}
+% \end{environment}
 %
 %
 % \subsection{Specify the Content}
 %
+% \begin{macro}{\stance}
 % draw the arrow/path showing the stance
 % Usage:
 % \begin{enumerate}
@@ -753,7 +770,9 @@
   ;
 }
 %    \end{macrocode}
+% \end{macro}
 %
+% \begin{macro}{\waza}
 % draw the arrow/path showing a technique.
 % Arguments:
 % \begin{enumerate}
@@ -774,7 +793,9 @@
   ;
 }
 %    \end{macrocode}
+% \end{macro}
 %
+% \begin{macro}{\dir}
 % draw a short arrow/path indicating the next turn/direction.
 % Arguments:
 % \begin{enumerate}
@@ -808,6 +829,7 @@
   }
 }
 %    \end{macrocode}
+% \end{macro}
 %
 %
 % \subsection{For user customization}
@@ -826,12 +848,16 @@
 % Define some styles for the user to customize the output
 %
 % \paragraph{Level 1 -- Beginner}
+% \begin{macro}{\katastyle}
 % A command for setting \verb|/kata/styles| keys similar like \verb|\tikzset|
 %    \begin{macrocode}
 \NewDocumentCommand{\katastyle}{m}{%
   \pgfkeys{/kata/styles/.cd,#1}%
   \ignorespaces%
 }
+%    \end{macrocode}
+% \end{macro}
+%    \begin{macrocode}
 \pgfkeys{
 %    \end{macrocode}
 % Styles for the pictogram-border ($\to$ \verb|/kata/customize/border|)
@@ -924,10 +950,12 @@
 %
 % \subsubsection{Misc}
 %
+% \begin{macro}{\kataStepCnt}
 % Formats the counter for the step indicator
 %    \begin{macrocode}
 \NewDocumentCommand{\kataStepCnt}{m}{\arabic{#1}}
 %    \end{macrocode}
+% \end{macro}
 %
 %
 % \subsection{Memoization}
