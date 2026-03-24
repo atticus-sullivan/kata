@@ -488,13 +488,14 @@
 % Arguments for content commands like \verb|stance|
 %    \begin{macrocode}
   /kata/cmd/content/.cd,
+  /kata/cmd/content/.search also={/tikz},
   flip/.is if=kata@flip,
   flip/.default=true,
 %    \end{macrocode}
 % Arguments for step env
 %    \begin{macrocode}
   /kata/cmd/step/.cd,
-  /kata/cmd/step/.search also={/kata/styles/step},
+  /kata/cmd/step/.search also={/kata/styles,/tikz},
   first/.is if=kata@first,
   first/.default=true,
   phantom/.style={
@@ -507,6 +508,7 @@
 % Arguments for kata env
 %    \begin{macrocode}
   /kata/cmd/kata/.cd,
+  /kata/cmd/kata/.search also={/tikz},
   width/.initial=6,
   width/.value required,
 }
