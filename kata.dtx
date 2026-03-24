@@ -521,8 +521,8 @@
 %    \end{macrocode}
 % style for the arrow/path indicating the next movement/direction
 %    \begin{macrocode}
-  move/.style={KataColorDir,-{Straight Barb}},
-  move/.meaning to context,
+  dir/.style={KataColorDir,-{Straight Barb}},
+  dir/.meaning to context,
 %    \end{macrocode}
 % style(s) for the node containing the description for the technique of the stance
 % split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNodeFlipped| so when
@@ -810,7 +810,7 @@
   \pgfkeys{/kata/cmd/content/.cd, flip=false, #1,}
   \pgfmathsetmacro{\kata@out}{#3+90}
   \Ifstr{#2}{center}{
-    \draw[/kata/move] (head.center) -- ++(\kata@out:.33em);
+    \draw[/kata/dir] (head.center) -- ++(\kata@out:.33em);
   }{
     \pgfmathsetmacro{\kata@in}{#2+90}
     \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
@@ -823,7 +823,7 @@
     \else
       \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
     \fi
-    \draw[/kata/move]
+    \draw[/kata/dir]
       (head.center) ++ (\kata@in:.33em)
       arc[start angle=\kata@in,delta angle=\kata@outDeltaII,radius=.33em]
     ;
