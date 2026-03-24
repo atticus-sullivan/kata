@@ -41,11 +41,21 @@
 
 \usepackage{tcolorbox}
 \tcbuselibrary{listingsutf8,documentation}
+\makeindex
+\tcbset{
+  doc head={colback=yellow!10!white,interior style=fill},
+  doc head key={colback=magenta!5!white,interior style=fill},
+  index colorize,
+  index annotate,
+  index format=doc,
+}
 
 \RecordChanges
+
 \begin{document}
   \DocInput{\jobname.dtx}
   \PrintChanges
+  \printindex
 \end{document}
 %</driver>
 % \fi
