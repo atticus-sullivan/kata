@@ -233,7 +233,6 @@
 % \fi
 %    \begin{macrocode}
 \RequirePackage{memoize}
-\RequirePackage{pgfkeys}
 \RequirePackage{pgfopts}
 \RequirePackage{coloredbelts}
 \RequirePackage{tikz}
@@ -522,7 +521,7 @@
 %    \begin{macrocode}
   phantom style/.style = {/kata/style/step phantom/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = {/kata/style/border preset = {#1}},
+  border preset/.forward to = /kata/style/border preset,
 %    \end{macrocode}
 % defer keys to the respective locations
 %    \begin{macrocode}
@@ -686,7 +685,7 @@
 %    \end{macrocode}
 %
 %
-% \begin{macro}{\dir}
+% \begin{macro}{\kataDir}
 % draw a short arrow/path indicating the next turn/direction.
 % Arguments:
 % \begin{enumerate}
