@@ -727,7 +727,7 @@
 % \begin{macro}{\kata@nothing}
 % ensure the box is always at least the same size (internal command + always placed)
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@nothing}{}{
+\kata@protecteddef \kata@nothing{
   \draw[draw=none] (head) -- ++(0:2.15) -- ++(180:4.3) -- ++(90:2.15) -- ++(-90:4.3);
 }
 %    \end{macrocode}
