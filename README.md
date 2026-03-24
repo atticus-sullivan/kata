@@ -5,7 +5,7 @@ Author: Lukas Heindl (`oss.heindl+latex@protonmail.com`).
 <!-- CTAN page: [kata](https://ctan.org/pkg/kata) -->
 
 ## License
-The LaTeX package `kata` is distributed under the LPPL 1.3 license.
+The LaTeX package `kata` is distributed under the LPPL 1.3c license.
 
 ## Description
 
