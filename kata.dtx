@@ -337,6 +337,20 @@
 % You can redefine this style to adjust the appearance (in theory also the placement -- everything what tikz allows).
 % \end{docKataCustKey}
 %
+% \begin{docKataCustKey}{head}{}{style}
+% Applies to the node showing the center which symbolizes the head.
+%
+% Style which is applied after what is required for the default placement.
+% You can redefine this style to adjust the appearance (in theory also the placement -- everything what tikz allows).
+% \end{docKataCustKey}
+%
+% \begin{docKataCustKey}{dir}{}{style}
+% Applies to the indicator for the direction of the next move/turn.
+%
+% Style which is applied after what is required for the default placement.
+% You can redefine this style to adjust the appearance (in theory also the placement -- everything what tikz allows).
+% \end{docKataCustKey}
+%
 % \paragraph{Helpers: Border}
 % For the \refKey{/kata/customize/border} there are some helper styles which can be used (nor (re)defined) to aid in the customization.
 %
@@ -588,7 +602,7 @@
 % draw the circle symbolizing the head (internal command + always placed)
 %    \begin{macrocode}
 \NewDocumentCommand{\kata@head}{}{
-  \node[/kata/head] (head) {};
+  \node[/kata/head,/kata/customize/head] (head) {};
 }
 %    \end{macrocode}
 % \end{macro}
@@ -810,7 +824,7 @@
   \pgfkeys{/kata/cmd/content/.cd, flip=false, #1,}
   \pgfmathsetmacro{\kata@out}{#3+90}
   \Ifstr{#2}{center}{
-    \draw[/kata/dir] (head.center) -- ++(\kata@out:.33em);
+    \draw[/kata/dir,/kata/customize/dir] (head.center) -- ++(\kata@out:.33em);
   }{
     \pgfmathsetmacro{\kata@in}{#2+90}
     \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
@@ -823,7 +837,7 @@
     \else
       \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
     \fi
-    \draw[/kata/dir]
+    \draw[/kata/dir,/kata/customize/dir]
       (head.center) ++ (\kata@in:.33em)
       arc[start angle=\kata@in,delta angle=\kata@outDeltaII,radius=.33em]
     ;
@@ -911,6 +925,16 @@
 %    \begin{macrocode}
   stepCnt/.style={},
   stepCnt/.meaning to context,
+%    \end{macrocode}
+% executed after \verb|/kata/head|
+%    \begin{macrocode}
+  head/.style={},
+  head/.meaning to context,
+%    \end{macrocode}
+% executed after \verb|/kata/dir|
+%    \begin{macrocode}
+  dir/.style={},
+  dir/.meaning to context,
 %    \end{macrocode}
 % executed after \verb|/kata/border|
 %    \begin{macrocode}
