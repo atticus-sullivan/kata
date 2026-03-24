@@ -61,7 +61,7 @@
 %</driver>
 % \fi
 %
-% \CheckSum{240}
+% \CheckSum{267}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -313,6 +313,10 @@
 %   resets the changes done by the keys in the \verb|/kata/styles/border| space.
 % \end{docKataStyKey}
 %
+% \begin{docKataStyKey}{step/kiai}{=\meta{direction}}{style}
+%   add an indicator for \emph{Kiai} in the specified direction.
+% \end{docKataStyKey}
+%
 % The following (x)-color definitions are used when drawing the pictograms:
 % \begin{itemize}
 %   \item[\docColor{KataColorWaza}] used for the arrow/path showing a technique with its direction
@@ -453,7 +457,7 @@
 \RequirePackage{coloredbelts}
 \RequirePackage{tikz}
 \usetikzlibrary{calc,positioning,fit,arrows.meta}
-\usetikzlibrary{decorations.markings,backgrounds}
+\usetikzlibrary{decorations.markings,decorations.pathmorphing,backgrounds}
 
 \RequirePackage{scrbase}
 \AtBeginDocument{%
@@ -489,6 +493,7 @@
 % Arguments for step env
 %    \begin{macrocode}
   /kata/cmd/step/.cd,
+  /kata/cmd/step/.search also={/kata/styles/step},
   first/.is if=kata@first,
   first/.default=true,
   phantom/.style={
@@ -911,6 +916,26 @@
 %    \begin{macrocode}
   reset/.style={/kata/customize/border/.style={}},
   reset/.meaning to context,
+%    \end{macrocode}
+% styles to add/adapt the content of a step
+%    \begin{macrocode}
+  /kata/styles/step/.cd,
+%    \end{macrocode}
+% draw an indicator for \emph{Kiai}
+%    \begin{macrocode}
+  kiai/.style={
+    /kata/customize/head/.style={
+      append after command={
+        \pgfextra{
+          \def\base{#1+90} \def\off{30} \def\ext{40} \def\rOff{4pt} \def\len{0.75}
+          \draw[shorten <=10pt,CtpRed]
+          ($(head)+(\base-\off:\rOff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=-2.5pt}] coordinate[pos=1] (tmpA) ++(\base-\ext:\len)
+          ($(head)+(\base+\off:\rOff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=+2.5pt}] coordinate[pos=1] (tmpB) ++(\base+\ext:\len);
+          \path (tmpA) -- (tmpB) node[midway,sloped,font={\sffamily\scriptsize},CtpRed,draw,decorate,decoration={zigzag,amplitude=1.5pt}] {Kiai};
+        }
+      }
+    }
+  },
 }
 %    \end{macrocode}
 %
