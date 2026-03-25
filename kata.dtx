@@ -40,7 +40,7 @@
 \usepackage[disable,extract=no]{memoize}
 \usepackage{csquotes}
 
-\usepackage{kata}[2026/03/23]
+\usepackage[definealiases]{kata}[2026/03/23]
 \usepackage[T1]{fontenc}
 
 \usepackage{tcolorbox}
@@ -307,7 +307,7 @@
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
-  define aliases/.code = {%
+  definealiases/.code = {%
     \AddToHook {begindocument} [kata/aliases] {%
       \kataAliases%
     }%
@@ -337,7 +337,7 @@
 \kata@aliasesdefinedfalse
 \NewDocumentCommand{\kataAliases}{}{
   \ifkata@aliasesdefined\else%
-    \newcommand{\kata@warningDefined}[1]{\PackageWarning{kata}{Macro #1 is already defined, did not define the alias}}%
+    \newcommand{\kata@warningDefined}[1]{\PackageWarning{kata}{Macro ##1 is already defined, did not define the alias}}%
     \@ifundefined{stance}{\let\stance\kataStance}{\kata@warningDefined{\string\stance}}%
     \@ifundefined{waza}{\let\waza\kataWaza}{\kata@warningDefined{\string\waza}}%
     \@ifundefined{dir}{\let\dir\kataDir}{\kata@warningDefined{\string\dir}}%
