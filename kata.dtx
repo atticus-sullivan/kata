@@ -156,19 +156,18 @@
 % Note this code is \enquote{run} after the box showing the code. Because of the use of \verb|\marginline| it was not possible to wrap this in \verb|dispExample*|. Also this way the \verb|\section| command will leak and insert a new section to this documentation.
 %<*doc>
 \begin{dispListing*}{listing options={language=[LaTeX]TeX}}
-\begin{kata}[width=3]{Example}{blue}
+\begin{kata}[width=3,color={waza=orange}]{Example}{blue}
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
-  \pgfkeys{/kata/color/waza=green!50!black}
   \begin{step}
     \stance{stance A}{0}
     \waza{technique A}{-90}
     \dir{center}{90}
   \end{step}
-  \pgfkeys{/kata/color/dir=brown}
+  \kataSetup{color={dir=brown}}
   {
-    \pgfkeys{/kata/step/border preset={arrow up,accent=green}}
+    \kataSetup{border preset={arrow up,accent=green}}
     \begin{step}[]
       \stance{stance B}{180}
       \waza{technique B}{90}
@@ -181,10 +180,9 @@
       \dir[flip]{90}{180}
     \end{step}
   }
-  \\
   \pgfkeys{
-    /kata/customize/stepCnt/.style={xshift=1em},
-    /kata/customize/border/.style={/kata/border/arrowUD=45},
+    /kata/style/step counter/.append style={xshift=1em},
+    /kata/style/border/.append style={/kata/preset/helpers/arrowUD=45},
   }
   \begin{step}
     \stance{stance C}{180}
@@ -192,19 +190,18 @@
   \end{step}
 \end{kata}
 \end{dispListing*}
-\begin{kata}[width=3]{Example}{blue}
+\begin{kata}[width=3,color={waza=orange}]{Example}{blue}
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
-  \pgfkeys{/kata/color/waza=green!50!black}
   \begin{step}
     \stance{stance A}{0}
     \waza{technique A}{-90}
     \dir{center}{90}
   \end{step}
-  \pgfkeys{/kata/color/dir=brown}
+  \kataSetup{color={dir=brown}}
   {
-    \pgfkeys{/kata/step/border preset={arrow up,accent=green}}
+    \kataSetup{border preset={arrow up,accent=green}}
     \begin{step}[]
       \stance{stance B}{180}
       \waza{technique B}{90}
@@ -217,10 +214,9 @@
       \dir[flip]{90}{180}
     \end{step}
   }
-  \\
   \pgfkeys{
-    /kata/customize/stepCnt/.style={xshift=1em},
-    /kata/customize/border/.style={/kata/border/arrowUD=45},
+    /kata/style/step counter/.append style={xshift=1em},
+    /kata/style/border/.append style={/kata/preset/helpers/arrowUD=45},
   }
   \begin{step}
     \stance{stance C}{180}
@@ -418,6 +414,7 @@
   stance/.style = {/kata/stance,#1},
   waza/.style = {/kata/waza,#1},
   dir/.style = {/kata/dir,#1},
+  color/.style = {/kata/color,#1},
 %    \end{macrocode}
 % allow directly appending to styles
 %    \begin{macrocode}
@@ -532,6 +529,7 @@
   stance/.style = {/kata/stance,#1},
   waza/.style = {/kata/waza,#1},
   dir/.style = {/kata/dir,#1},
+  color/.style = {/kata/color,#1},
 }
 %    \end{macrocode}
 %
@@ -930,7 +928,7 @@
       /kata/preset/helpers/arrowUD=0,
     },
   },
-  arror down/.style={
+  arrorw down/.style={
     /kata/style/border/.append style={
       /kata/preset/helpers/arrowUD=180,
     },
