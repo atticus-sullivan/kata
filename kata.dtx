@@ -28,15 +28,14 @@
 %<*driver>
 \ProvidesFile{kata.dtx}
 %</driver>
-%<package>\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+%<package>\NeedsTeXFormat{LaTeX2e}[2022/06/01]
 %<package>\ProvidesPackage{kata}
 %<*package>
    [2026/03/23 0.1.0 Describe a kata with lots of pictograms drawn with tikz]
 %</package>
 %
 %<*driver>
-\documentclass{scrartcl}
-\usepackage{doc}
+\documentclass{ltxdoc}
 
 \usepackage[disable,extract=no]{memoize}
 \usepackage{csquotes}
@@ -90,8 +89,6 @@
 % in LaTeX. It models a kata as a sequence of steps, each combining the stance
 % hand/foot technique, and transition direction, and supports
 % customizing the resulting pictograms for clear visual representation.
-%
-% Requires: KOMA-documentclass
 % \end{abstract}
 %
 % \section{Introduction}
@@ -239,15 +236,6 @@
 \RequirePackage{tikz}
 \usetikzlibrary{calc,positioning,fit,arrows.meta}
 \usetikzlibrary{decorations.markings,decorations.pathmorphing,backgrounds}
-
-\RequirePackage{scrbase}
-\AtBeginDocument{%
-  \@ifundefined{KOMAClassName}{%
-    \PackageError{mypackage}
-      {This package requires a KOMA-Script class}
-      {Use scrartcl, scrreprt, or scrbook.}%
-  }{}
-}
 %    \end{macrocode}
 %
 % Define marginline in case it isn't already defined (so the package works without KOMA-classes as well).
@@ -257,6 +245,11 @@
     \marginpar[{\raggedleft #1}]{\raggedright #1}%
   }%
 }
+%    \end{macrocode}
+%
+% Define own string compare for equality so the package works without KOMA as well.
+%    \begin{macrocode}
+\ExpandArgs {nnc} \UseName {cs_set_eq:NN} {\kata@Ifstr} {str_if_eq:eeTF}
 %    \end{macrocode}
 %
 % \subsection{General pgfkeys setup}
@@ -436,7 +429,7 @@
 \NewDocumentEnvironment{kata}{O{}mmo}{%
   \pgfkeys{/kata/kata,#1}
   \section{#2}
-  \Ifstr{#3}{}{
+  \kata@Ifstr{#3}{}{
 %    \end{macrocode}
 % show if arg 3 is empty but arg 4 was set
 %    \begin{macrocode}
@@ -488,14 +481,14 @@
 \NewDocumentCommand{\kata@beltMargin}{mm}{%
   \marginline{%
     \centering\footnotesize%
-    \Ifstr{#1}{}{}{%
+    \kata@Ifstr{#1}{}{}{%
       $\downarrow$ #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
-    \Ifstr{#1}{}{}{\Ifstr{#2}{}{}{\\}}%
-    \Ifstr{#2}{}{}{%
+    \kata@Ifstr{#1}{}{}{\kata@Ifstr{#2}{}{}{\\}}%
+    \kata@Ifstr{#2}{}{}{%
       \ColorBelt*[scale=0.1]{#2}%
     }%
   }%
@@ -695,7 +688,7 @@
   \kata@requirestep{\string\kataDir}
   \pgfkeys{/kata/dir,#1}
   \pgfmathsetmacro{\kata@out}{#3+90}
-  \Ifstr{#2}{center}{
+  \kata@Ifstr{#2}{center}{
     \draw[/kata/style/dir] (head.center) -- ++(\kata@out:.33em);
   }{
     \pgfmathsetmacro{\kata@in}{#2+90}
