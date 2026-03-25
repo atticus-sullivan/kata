@@ -252,7 +252,7 @@
 %
 % Define marginline in case it isn't already defined (so the package works without KOMA-classes as well).
 %    \begin{macrocode}
-\AddToHook {begindocument} [.] {%
+\AddToHook {begindocument} [kata/provideMarginline] {%
   \providecommand\marginline[1]{%
     \marginpar[{\raggedleft #1}]{\raggedright #1}%
   }%
@@ -314,6 +314,11 @@
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
+  define aliases/.code = {%
+    \AddToHook {begindocument} [kata/aliases] {%
+      \kataAliases%
+    }%
+  },
 }
 %    \end{macrocode}
 %
@@ -329,6 +334,30 @@
   \pgfkeys{/kata/setup,#1}%
   \ignorespaces%
 }%
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Optionally define command aliases}
+% \begin{macro}{\kataAliases}
+%    \begin{macrocode}
+\newif\ifkata@aliasesdefined
+\kata@aliasesdefinedfalse
+\NewDocumentCommand{\kataAliases}{}{
+  \ifkata@aliasesdefined\else%
+    \newcommand{\kata@warningDefined}[1]{\PackageWarning{kata}{Macro #1 is already defined, did not define the alias}}%
+    \@ifundefined{stance}{\let\stance\kataStance}{\kata@warningDefined{\string\stance}}%
+    \@ifundefined{waza}{\let\waza\kataWaza}{\kata@warningDefined{\string\waza}}%
+    \@ifundefined{dir}{\let\dir\kataDir}{\kata@warningDefined{\string\dir}}%
+    \@ifundefined{kiai}{\let\kiai\kataKiai}{\kata@warningDefined{\string\kiai}}%
+    % environment begin/end macros
+    \@ifundefined{step}{%
+      \let\step\kataStep%
+      \let\endstep\endkataStep%
+    }{%
+      \PackageWarning{kata}{Environment/Macro \string\step is already defined, did not define the alias}%
+    }%
+  \fi%
+}
 %    \end{macrocode}
 % \end{macro}
 %
@@ -507,8 +536,8 @@
 % Arguments:
 % 1 (optional): whether this is the first step of the kata
 %    \begin{macrocode}
-\NewDocumentEnvironment{step}{O{}+b}{%
-  \kata@requirekata{\string\step}%
+\NewDocumentEnvironment{kataStep}{O{}+b}{%
+  \kata@requirekata{\string\kataStep}%
   \pgfkeys{/kata/step,#1}%
   \ifkata@step@first\par\nointerlineskip\vfil\else\fi%
   \begin{kata@step}%
@@ -554,8 +583,8 @@
 %   \item direction
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\kiai}{O{}m}{
-  \kata@requirestep{\string\kiai}
+\NewDocumentCommand{\kataKiai}{O{}m}{
+  \kata@requirestep{\string\kataKiai}
   \def\base{#2+90} \def\off{30} \def\ext{40} \def\rOff{4pt} \def\len{0.75}
   \draw[shorten <=10pt,CtpRed]
   ($(head)+(\base-\off:\rOff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=-2.5pt}] coordinate[pos=1] (tmpA) ++(\base-\ext:\len) 
@@ -588,9 +617,9 @@
 %   \item direction
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\stance}{O{}mmO{}}{%
+\NewDocumentCommand{\kataStance}{O{}mmO{}}{%
   \pgfkeys{/kata/stance,#4}%
-  \kata@requirestep{\string\stance}%
+  \kata@requirestep{\string\kataStance}%
   \pgfmathsetmacro{\kata@dir}{#3+90}%
   \pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
   \pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
@@ -627,8 +656,8 @@
 %   \item direction
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\waza}{O{}mmO{}}{%
-  \kata@requirestep{\string\waza}%
+\NewDocumentCommand{\kataWaza}{O{}mmO{}}{%
+  \kata@requirestep{\string\kataWaza}%
   \pgfkeys{/kata/waza,#4}%
   \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
   \pgfmathsetmacro{\kata@dir}{#3+90}%
@@ -662,8 +691,8 @@
 %   \item dst (angle)
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\dir}{O{}mm}{
-  \kata@requirestep{\string\dir}
+\NewDocumentCommand{\kataDir}{O{}mm}{
+  \kata@requirestep{\string\kataDir}
   \pgfkeys{/kata/dir,#1}
   \pgfmathsetmacro{\kata@out}{#3+90}
   \Ifstr{#2}{center}{
