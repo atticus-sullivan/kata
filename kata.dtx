@@ -510,8 +510,6 @@
 %    \end{macrocode}
 % allow directly appending to styles
 %    \begin{macrocode}
-  style/.style = {/kata/style/step/.append style = {#1}},
-  first step style/.style = {/kata/style/step first/.append style = {#1}},
   phantom style/.style = {/kata/style/step phantom/.append style = {#1}},
 %    \end{macrocode}
 % defer keys to the respective locations
@@ -859,12 +857,6 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/style,
-  %
-  step/.style = {
-  },
-  %
-  step first/.style = {
-  },
   %
   step phantom/.style = {
     /kata/style/border/.style={draw=none},
