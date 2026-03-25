@@ -1,6 +1,8 @@
+% \iffalse
 % vim: set expandtab:
 % vim: set shiftwidth=2:
 % vim: set tabstop=2:
+% \fi
 % \iffalse meta-comment
 %
 % Copyright (C) 2026 by Lukas Heindl <oss.heindl+latex@protonmail.com>
@@ -161,20 +163,18 @@
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
-  \colorlet{KataColorWaza}{green!50!black}
+  \pgfkeys{/kata/color/waza=green!50!black}
   \begin{step}
     \stance{stance A}{0}
     \waza{technique A}{-90}
     \dir{center}{90}
   \end{step}
-  \colorlet{KataColorDir}{brown}
-  \katastyle{border/up=pink}
+  \pgfkeys{/kata/color/dir=brown}
   \begin{step}
     \stance{stance B}{180}
     \waza{technique B}{90}
     \dir{90}{180}
   \end{step}
-  \katastyle{border/reset}
   \renewcommand\kataStepCnt[1]{\roman{#1}}
   \begin{step}
     \stance{stance B}{180}
@@ -195,20 +195,18 @@
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
-  \colorlet{KataColorWaza}{green!50!black}
+  \pgfkeys{/kata/color/waza=green!50!black}
   \begin{step}
     \stance{stance A}{0}
     \waza{technique A}{-90}
     \dir{center}{90}
   \end{step}
-  \colorlet{KataColorDir}{brown}
-  \katastyle{border/up=pink}
+  \pgfkeys{/kata/color/dir=brown}
   \begin{step}
     \stance{stance B}{180}
     \waza{technique B}{90}
     \dir{90}{180}
   \end{step}
-  \katastyle{border/reset}
   \renewcommand\kataStepCnt[1]{\roman{#1}}
   \begin{step}
     \stance{stance B}{180}
@@ -236,6 +234,7 @@
 %    \begin{macrocode}
 \RequirePackage{memoize}
 \RequirePackage{pgfkeys}
+\RequirePackage{pgfopts}
 \RequirePackage{coloredbelts}
 \RequirePackage{tikz}
 \usetikzlibrary{calc,positioning,fit,arrows.meta}
@@ -260,153 +259,84 @@
 }
 %    \end{macrocode}
 %
-% \subsection{Internals}
+% \subsection{General pgfkeys setup}
+%    \begin{macrocode}
+\pgfkeys{
+%    \end{macrocode}
+% for package wide settings
+%    \begin{macrocode}
+  /kata/setup/.is family,
+%    \end{macrocode}
+% for settings regarding for the kata env
+%    \begin{macrocode}
+  /kata/kata/.is family,
+%    \end{macrocode}
+% for settings regarding for the step env
+%    \begin{macrocode}
+  /kata/step/.is family,
+%    \end{macrocode}
+% for settings regarding for the stance command
+%    \begin{macrocode}
+  /kata/stance/.is family,
+%    \end{macrocode}
+% for settings regarding for the waza command
+%    \begin{macrocode}
+  /kata/waza/.is family,
+%    \end{macrocode}
+% for settings regarding for the dir command
+%    \begin{macrocode}
+  /kata/dir/.is family,
+%    \end{macrocode}
+% for settings regarding coloring
+%    \begin{macrocode}
+  /kata/color/.is family,
+%    \end{macrocode}
+% internal style definitions
+%    \begin{macrocode}
+  /kata/style/.is family,
+}
+%    \end{macrocode}
+%
+%
+% \subsection{Package wide options}
+% Defer keys in setup to the respective locations
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/setup,
+  width/.style = {/kata/kata,width={#1}},
+  color/.style = {/kata/color,#1},
+  style/.style = {/kata/style,#1},
+  kata/.style = {/kata/kata,#1},
+  step/.style = {/kata/step,#1},
+  stance/.style = {/kata/stance,#1},
+  waza/.style = {/kata/waza,#1},
+  dir/.style = {/kata/dir,#1},
+  head style/.style = {/kata/style/head/.append style = {#1}},
+  border style/.style = {/kata/style/border/.append style = {#1}},
+  step counter style/.style = {/kata/style/step counter/.append style = {#1}},
+}
+%    \end{macrocode}
+%
+% Setup package option parsing
+%    \begin{macrocode}
+\ProcessPgfPackageOptions{/kata/setup}
+%    \end{macrocode}
+%
+% A setup command for setting package options later
+% \begin{macro}{\kataSetup}
+%    \begin{macrocode}
+\NewDocumentCommand{\kataSetup}{m}{%
+  \pgfkeys{/kata/setup,#1}%
+  \ignorespaces%
+}%
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{Core internals}
 % A counter for each pictogram to enable referencing.
 %    \begin{macrocode}
 \newcounter{kata@step}[section]
 %    \end{macrocode}
-%
-%
-% \subsubsection{Keys for Argparsing}
-%
-% define pgfkeys for arguments to defined commands (argparsing)
-%    \begin{macrocode}
-\newif\ifkata@flip
-\newif\ifkata@first
-\pgfkeys{
-%    \end{macrocode}
-% Arguments for content commands like \verb|stance|
-%    \begin{macrocode}
-  /kata/cmd/content/.cd,
-  /kata/cmd/content/.search also={/tikz},
-  flip/.is if=kata@flip,
-  flip/.default=true,
-%    \end{macrocode}
-% Arguments for step env
-%    \begin{macrocode}
-  /kata/cmd/step/.cd,
-  /kata/cmd/step/.search also={/kata/styles,/tikz},
-  first/.is if=kata@first,
-  first/.default=true,
-  phantom/.style={
-    /kata/customize/border/.style={draw=none},
-    /kata/head/.style={draw=none},
-    /kata/customize/stepCnt/.style={draw=none,transparent},
-  },
-  phantom/.meaning to context,
-%    \end{macrocode}
-% Arguments for kata env
-%    \begin{macrocode}
-  /kata/cmd/kata/.cd,
-  /kata/cmd/kata/.search also={/tikz},
-  width/.initial=6,
-  width/.value required,
-}
-%    \end{macrocode}
-%
-%
-% \subsubsection{Internal pgf/TikZ Styles}
-%
-% set pgf keys used when drawing the pictograms \verb|/kata| namespace
-%
-% style for the node placed at the center representing the head
-%    \begin{macrocode}
-\pgfkeys{
-  /kata/.cd,
-  head/.style={circle,draw=#1,inner xsep=0.333em},
-  head/.meaning to context,
-%    \end{macrocode}
-% style for the arrow/path showing the stance
-% takes two arguments to nudge the position so the path is not drawn directly on top of other paths (the \emph{waza})
-%    \begin{macrocode}
-  stance/.style 2 args={
-    KataColorFeet,
-    -{Stealth[scale=1.2]},
-    transform canvas={xshift=#1,yshift=#2}
-  },
-  stance/.meaning to context,
-%    \end{macrocode}
-% style for the arrow/path showing a technique
-%    \begin{macrocode}
-  waza/.style={KataColorWaza,-{Stealth[scale=1.2]}},
-  waza/.meaning to context,
-%    \end{macrocode}
-% style for the arrow/path indicating the next movement/direction
-%    \begin{macrocode}
-  dir/.style={KataColorDir,-{Straight Barb}},
-  dir/.meaning to context,
-%    \end{macrocode}
-% style(s) for the node containing the description for the technique of the stance
-% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNodeFlipped| so when
-% the user requests to flip the node (e.g. to avoid collision with other text)
-% the placement can be adjusted
-%    \begin{macrocode}
-  stanceNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
-  stanceNodeCommon/.meaning to context,
-  stanceNode/.style={/kata/stanceNodeCommon,below,},
-  stanceNode/.meaning to context,
-  stanceNodeFlipped/.style={/kata/stanceNodeCommon,above,},
-  stanceNodeFlipped/.meaning to context,
-%    \end{macrocode}
-% style(s) for the node containing the description for a technique
-% split up in \verb|NodeCommon|, \verb|stanceNo| and \verb|stanceNodeFlipped| so when
-% the user requests to flip the node (e.g. to avoid collision with other text)
-% the placement can be adjusted
-%    \begin{macrocode}
-  wazaNodeCommon/.style={text width=1.8cm,midway,sloped,font=\sffamily\scriptsize},
-  wazaNodeCommon/.meaning to context,
-  wazaNode/.style={/kata/wazaNodeCommon,above,},
-  wazaNode/.meaning to context,
-  wazaNodeFlipped/.style={/kata/wazaNodeCommon,below,},
-  wazaNodeFlipped/.meaning to context,
-%    \end{macrocode}
-% style for the border enclosing the pictogram
-% takes the color as argument
-%    \begin{macrocode}
-  border/.style={
-    rectangle,
-    draw=#1,
-    fit=(output),
-    inner sep=0pt,outer sep=0pt,inner xsep=0.2em
-  },
-  border/.meaning to context,
-%    \end{macrocode}
-% style for the node showing the number of the current step
-%    \begin{macrocode}
-  stepCnt/.style={
-    outer sep=0pt,
-    at={(t1.north west)},
-    below right,
-    rectangle,
-    draw,
-    font=\sffamily\small
-  },
-  stepCnt/.meaning to context,
-}
-%    \end{macrocode}
-%
-%
-% \subsubsection{Internal Elements of the Pictograms}
-%
-% \begin{macro}{\kata@nothing}
-% ensure the box is always at least the same size (internal command + always placed)
-%    \begin{macrocode}
-\NewDocumentCommand{\kata@nothing}{}{
-  \draw[draw=none] (head) -- ++(0:2.15) -- ++(180:4.3) -- ++(90:2.15) -- ++(-90:4.3);
-}
-%    \end{macrocode}
-% \end{macro}
-% \begin{macro}{\kata@head}
-% draw the circle symbolizing the head (internal command + always placed)
-%    \begin{macrocode}
-\NewDocumentCommand{\kata@head}{}{
-  \node[/kata/head,/kata/customize/head] (head) {};
-}
-%    \end{macrocode}
-% \end{macro}
-%
-%
-% \subsubsection{Helpers}
 %
 % \begin{macro}{\kata@requirestep}
 % enforces something is run within the step environment (helper)
@@ -431,41 +361,51 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \subsubsection{Draw the Marginline}
-% \begin{macro}{\kata@beltMargin}
+% TODO: is this needed? Or should the keys just set a style instead of setting a conditional?
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@beltMargin}{mm}{%
-  \marginline{%
-    \centering\footnotesize%
-    \Ifstr{#1}{}{}{%
-      $\downarrow$ #1%
-    }%
+\newif\ifkata@stance@flip
+\newif\ifkata@waza@flip
+\newif\ifkata@dir@flip
+\newif\ifkata@step@first
+\newif\ifkata@step@phantom
 %    \end{macrocode}
-% only linebreak if both are non-empty
+%
+% \subsection{The kata environment}
 %    \begin{macrocode}
-    \Ifstr{#1}{}{}{\Ifstr{#2}{}{}{\\}}%
-    \Ifstr{#2}{}{}{%
-      \ColorBelt*[scale=0.1]{#2}%
-    }%
-  }%
+\pgfkeys{
+  /kata/kata,
+  width/.store in = \kata@width,
+  width/.initial = 6,
+  width/.value required,
+%    \end{macrocode}
+% defer keys to the respective locations
+%    \begin{macrocode}
+  step/.style = {/kata/step,#1},
+  stance/.style = {/kata/stance,#1},
+  waza/.style = {/kata/waza,#1},
+  dir/.style = {/kata/dir,#1},
+%    \end{macrocode}
+% allow directly appending to styles
+%    \begin{macrocode}
+  head style/.style = {/kata/style/head/.append style = {#1}},
+  border style/.style = {/kata/style/border/.append style = {#1}},
+  step counter style/.style = {/kata/style/step counter/.append style = {#1}},
 }
 %    \end{macrocode}
-% \end{macro}
 %
 %
-% \subsubsection{Environments}
 % \begin{environment}{kata}
 % this environment is basically a container for a sequence of steps.
 % Arguments:
 % \begin{enumerate}
-%   \item optional: keys from \verb|/kata/cmd/kata|
+%   \item optional: keys from \verb|/kata/kata|
 %   \item kata name
 %   \item for which belt / marginline
 %   \item optional: belt color (for drawing), if empty -> not drawn, if not present use arg 3
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentEnvironment{kata}{O{}mmo}{%
-  \pgfkeys{/kata/cmd/kata/.cd,#1}
+  \pgfkeys{/kata/kata,#1}
   \section{#2}
   \Ifstr{#3}{}{
 %    \end{macrocode}
@@ -496,7 +436,7 @@
 % add hidden steps to the last line.
 % This ensures a uniform looking grid of pictograms
 %    \begin{macrocode}
-  \pgfmathtruncatemacro{\kata@missing}{mod(\pgfkeysvalueof{/kata/cmd/kata/width} - mod(\c@kata@step,\pgfkeysvalueof{/kata/cmd/kata/width}),\pgfkeysvalueof{/kata/cmd/kata/width})}%
+  \pgfmathtruncatemacro{\kata@missing}{mod(\kata@width - mod(\c@kata@step,\kata@width),\kata@width)}%
   \setcounter{kata@step}{0}%
   \ifnum\kata@missing>0%
     \foreach \i in {1,...,\kata@missing} {%
@@ -514,6 +454,53 @@
 %    \end{macrocode}
 % \end{environment}
 %
+% \begin{macro}{\kata@beltMargin}
+%    \begin{macrocode}
+\NewDocumentCommand{\kata@beltMargin}{mm}{%
+  \marginline{%
+    \centering\footnotesize%
+    \Ifstr{#1}{}{}{%
+      $\downarrow$ #1%
+    }%
+%    \end{macrocode}
+% only linebreak if both are non-empty
+%    \begin{macrocode}
+    \Ifstr{#1}{}{}{\Ifstr{#2}{}{}{\\}}%
+    \Ifstr{#2}{}{}{%
+      \ColorBelt*[scale=0.1]{#2}%
+    }%
+  }%
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{The step environment}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/step,
+  first step/.is if = kata@step@first,
+  first step/.default = true,
+  phantom/.is if = kata@step@phantom,
+  phantom/.default = true,
+  phantom = false,
+  phantom/.append code={\ifkata@step@phantom\pgfkeysalso{/kata/style/step phantom}\fi},
+  phantom/.style = {/kata/style/step phantom},
+%    \end{macrocode}
+% allow directly appending to styles
+%    \begin{macrocode}
+  style/.style = {/kata/style/step/.append style = {#1}},
+  first step style/.style = {/kata/style/step first/.append style = {#1}},
+  phantom style/.style = {/kata/style/step phantom/.append style = {#1}},
+%    \end{macrocode}
+% defer keys to the respective locations
+%    \begin{macrocode}
+  stance/.style = {/kata/stance,#1},
+  waza/.style = {/kata/waza,#1},
+  dir/.style = {/kata/dir,#1},
+}
+%    \end{macrocode}
+%
+%
 % \begin{environment}{step}
 % this environment always should wrap \verb|kata@step|.
 % It handles the aspects of positioning the pictogram.
@@ -522,12 +509,12 @@
 %    \begin{macrocode}
 \NewDocumentEnvironment{step}{O{}+b}{%
   \kata@requirekata{\string\step}%
-  \pgfkeys{/kata/cmd/step/.cd, first=false, #1}%
-  \ifkata@first\par\nointerlineskip\vfil\else\fi%
+  \pgfkeys{/kata/step,#1}%
+  \ifkata@step@first\par\nointerlineskip\vfil\else\fi%
   \begin{kata@step}%
     #2
   \end{kata@step}%
-  \refstepcounter{kata@step}%
+  \ifkata@step@phantom\else\refstepcounter{kata@step}\fi%
 }{}
 %    \end{macrocode}
 % \end{environment}
@@ -549,8 +536,8 @@
 % filled and colorize the background as well.
 %    \begin{macrocode}
     \begin{scope}[on background layer]%
-      \node[/kata/border,/kata/customize/border] (t1) {};%
-      \node[/kata/stepCnt,/kata/customize/stepCnt] (cnt) {\kataStepCnt{kata@step}};%
+      \node[/kata/style/border] (t1) {};%
+      \node[/kata/style/step counter] (cnt) {\kataStepCnt{kata@step}};%
     \end{scope}%
   \end{tikzpicture}%
 }
@@ -559,91 +546,6 @@
 %
 %
 % \subsection{Specify the Content}
-%
-% \begin{macro}{\stance}
-% draw the arrow/path showing the stance
-% Usage:
-% \begin{enumerate}
-%   \item (optional) side to use (L/R)
-%   \item name/text
-%   \item direction
-% \end{enumerate}
-%    \begin{macrocode}
-\NewDocumentCommand{\stance}{O{}mmO{}}{%
-  \pgfkeys{/kata/cmd/content/.cd, flip=false, #4}%
-  \kata@requirestep{\string\stance}%
-  \pgfmathsetmacro{\kata@dir}{#3+90}%
-  \pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
-  \pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
-  \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
-  \draw[/kata/stance={\x}{\y}]
-    (head) -- ++(\kata@dir:2)
-    node[\ifkata@flip/kata/stanceNodeFlipped\else/kata/stanceNode\fi]
-    {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
-  ;
-}
-%    \end{macrocode}
-% \end{macro}
-%
-% \begin{macro}{\waza}
-% draw the arrow/path showing a technique.
-% Arguments:
-% \begin{enumerate}
-%   \item (optional) side to use (L/R)
-%   \item name/text
-%   \item direction
-% \end{enumerate}
-%    \begin{macrocode}
-\NewDocumentCommand{\waza}{O{}mmO{}}{%
-  \kata@requirestep{\string\waza}%
-  \pgfkeys{/kata/cmd/content/.cd, flip=false, #4}%
-  \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
-  \pgfmathsetmacro{\kata@dir}{#3+90}%
-  \draw[/kata/waza]
-    (head) -- ++(\kata@dir:2)
-    node[\ifkata@flip/kata/wazaNodeFlipped\else/kata/wazaNode\fi]
-    {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
-  ;
-}
-%    \end{macrocode}
-% \end{macro}
-%
-% \begin{macro}{\dir}
-% draw a short arrow/path indicating the next turn/direction.
-% Arguments:
-% \begin{enumerate}
-%   \item (optional) flip
-%   \item source (Center,angle)
-%   \item dst (angle)
-% \end{enumerate}
-%    \begin{macrocode}
-\NewDocumentCommand{\dir}{O{}mm}{
-  \kata@requirestep{\string\dir}
-  \pgfkeys{/kata/cmd/content/.cd, flip=false, #1,}
-  \pgfmathsetmacro{\kata@out}{#3+90}
-  \Ifstr{#2}{center}{
-    \draw[/kata/dir,/kata/customize/dir] (head.center) -- ++(\kata@out:.33em);
-  }{
-    \pgfmathsetmacro{\kata@in}{#2+90}
-    \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
-    \ifkata@flip
-      \if -\kata@outDeltaI
-        \pgfmathsetmacro{\kata@outDeltaII}{360+\kata@outDeltaI}
-      \else
-        \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI-360}
-      \fi
-    \else
-      \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
-    \fi
-    \draw[/kata/dir,/kata/customize/dir]
-      (head.center) ++ (\kata@in:.33em)
-      arc[start angle=\kata@in,delta angle=\kata@outDeltaII,radius=.33em]
-    ;
-  }
-}
-%    \end{macrocode}
-% \end{macro}
-%
 % \begin{macro}{\kiai}
 % draw indicator for \emph{kiai}.
 % Arguments:
@@ -664,133 +566,294 @@
 % \end{macro}
 %
 %
-% \subsection{For user customization}
-% \subsubsection{Colors}
-%
-% define xcolors used for coloring elements in the pictograms
+% \subsubsection{The stance command}
 %    \begin{macrocode}
-\RequirePackage{xcolor}
-\colorlet{KataColorFeet}{blue}
-\colorlet{KataColorWaza}{green}
-\colorlet{KataColorDir}{red}
+\pgfkeys{
+  /kata/stance,
+  flip/.is if = kata@stance@flip,
+  flip/.default = true,
+  style/.style = {/kata/style/stance/.append style = {#1}},
+  label/.style = {/kata/style/stance label/.append style = {#1}},
+  label flipped/.style = {/kata/style/stance label flipped/.append style = {#1}},
+}
 %    \end{macrocode}
 %
 %
-% \subsubsection{Styles}
-% Define some styles for the user to customize the output
-%
-% \paragraph{Level 1 -- Beginner}
-% \begin{macro}{\katastyle}
-% A command for setting \verb|/kata/styles| keys similar like \verb|\tikzset|
+% \begin{macro}{\stance}
+% draw the arrow/path showing the stance
+% Usage:
+% \begin{enumerate}
+%   \item (optional) side to use (L/R)
+%   \item name/text
+%   \item direction
+% \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\katastyle}{m}{%
-  \pgfkeys{/kata/styles/.cd,#1}%
-  \ignorespaces%
+\NewDocumentCommand{\stance}{O{}mmO{}}{%
+  \pgfkeys{/kata/stance,#4}%
+  \kata@requirestep{\string\stance}%
+  \pgfmathsetmacro{\kata@dir}{#3+90}%
+  \pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
+  \pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
+  \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
+  \draw[/kata/style/stance={\x}{\y}]
+    (head) -- ++(\kata@dir:2)
+    node[\ifkata@stance@flip/kata/style/stance label flipped\else/kata/style/stance label\fi]
+    {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
+  ;
 }
 %    \end{macrocode}
 % \end{macro}
+%
+%
+% \subsubsection{The waza command}
 %    \begin{macrocode}
 \pgfkeys{
-%    \end{macrocode}
-% Styles for the pictogram-border ($\to$ \verb|/kata/customize/border|)
-%    \begin{macrocode}
-  /kata/styles/border/.cd,
-%    \end{macrocode}
-% draw arrows to the right on the border, takes the color as argument
-%    \begin{macrocode}
-  right/.style={
-    /kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowRL=-90},
-  },
-  right/.meaning to context,
-%    \end{macrocode}
-% draw arrows to the left on the border, takes the color as argument
-%    \begin{macrocode}
-  left/.style={
-    /kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowRL=+90},
-  },
-  left/.meaning to context,
-%    \end{macrocode}
-% draw arrows to the top on the border, takes the color as argument
-%    \begin{macrocode}
-  up/.style={
-    /kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowUD=0},
-  },
-  up/.meaning to context,
-%    \end{macrocode}
-% draw arrows to the bottom on the border, takes the color as argument
-%    \begin{macrocode}
-  down/.style={
-    /kata/customize/border/.style={fill=#1!5,draw=#1,/kata/border/arrowUD=180},
-  },
-  down/.meaning to context,
-%    \end{macrocode}
-% resets the border modifications
-%    \begin{macrocode}
-  reset/.style={/kata/customize/border/.style={}},
-  reset/.meaning to context,
+  /kata/waza,
+  flip/.is if = kata@waza@flip,
+  flip/.default = true,
+  style/.style = {/kata/style/waza/.append style = {#1}},
+  label/.style = {/kata/style/waza label/.append style = {#1}},
+  label flipped/.style = {/kata/style/waza label flipped/.append style = {#1}},
 }
 %    \end{macrocode}
 %
 %
-% \paragraph{Level 2 -- Advanced}
-% define pgfkeys designed for cosmetic adjustments of the pictograms \verb|/kata| namespace
+% \begin{macro}{\waza}
+% draw the arrow/path showing a technique.
+% Arguments:
+% \begin{enumerate}
+%   \item (optional) side to use (L/R)
+%   \item name/text
+%   \item direction
+% \end{enumerate}
 %    \begin{macrocode}
-\pgfkeys{
-  /kata/customize/.cd,
-%    \end{macrocode}
-% executed after \verb|/kata/stepCnt|
-%    \begin{macrocode}
-  stepCnt/.style={},
-  stepCnt/.meaning to context,
-%    \end{macrocode}
-% executed after \verb|/kata/head|
-%    \begin{macrocode}
-  head/.style={},
-  head/.meaning to context,
-%    \end{macrocode}
-% executed after \verb|/kata/dir|
-%    \begin{macrocode}
-  dir/.style={},
-  dir/.meaning to context,
-%    \end{macrocode}
-% executed after \verb|/kata/border|
-%    \begin{macrocode}
-  border/.style={},
-  border/.meaning to context,
+\NewDocumentCommand{\waza}{O{}mmO{}}{%
+  \kata@requirestep{\string\waza}%
+  \pgfkeys{/kata/waza,#4}%
+  \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
+  \pgfmathsetmacro{\kata@dir}{#3+90}%
+  \draw[/kata/style/waza]
+    (head) -- ++(\kata@dir:2)
+    node[\ifkata@waza@flip/kata/style/waza label flipped\else/kata/style/waza label\fi]
+    {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
+  ;
 }
 %    \end{macrocode}
+% \end{macro}
 %
-% \subparagraph{Helpers for the border}
-% auxilary keys to be used in the \verb|customize/border| style
 %
+% \subsubsection{The dir command}
 %    \begin{macrocode}
 \pgfkeys{
-  /kata/border/.cd,
-  arrowRL/.style={
-    postaction={decorate},decoration={
-      markings,
-      mark=at position 0.125
-        with {\pgftransformrotate{#1 - 270}\arrow[line width=2pt]{stealth}},
-      mark=at position 0.625
-        with {\pgftransformrotate{#1 - 270}\arrowreversed[line width=2pt]{stealth}},
-    },
-  },
-  arrowRL/.meaning to context,
-  arrowUD/.style={
-    postaction={decorate},decoration={
-      markings,
-      mark=at position 0.375
-        with {\pgftransformrotate{#1}\arrow[line width=2pt]{stealth}},
-      mark=at position 0.875
-        with {\pgftransformrotate{#1}\arrowreversed[line width=2pt]{stealth}},
-    },
-  },
-  arrowUD/.meaning to context,
+  /kata/dir,
+  flip/.is if = kata@dir@flip,
+  flip/.default = true,
+  style/.style = {/kata/style/dir/.append style = {#1}},
 }
 %    \end{macrocode}
 %
 %
-% \subsubsection{Misc}
+% \begin{macro}{\dir}
+% draw a short arrow/path indicating the next turn/direction.
+% Arguments:
+% \begin{enumerate}
+%   \item (optional) flip
+%   \item source (Center,angle)
+%   \item dst (angle)
+% \end{enumerate}
+%    \begin{macrocode}
+\NewDocumentCommand{\dir}{O{}mm}{
+  \kata@requirestep{\string\dir}
+  \pgfkeys{/kata/dir,#1}
+  \pgfmathsetmacro{\kata@out}{#3+90}
+  \Ifstr{#2}{center}{
+    \draw[/kata/style/dir] (head.center) -- ++(\kata@out:.33em);
+  }{
+    \pgfmathsetmacro{\kata@in}{#2+90}
+    \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
+    \ifkata@dir@flip
+      \if -\kata@outDeltaI
+        \pgfmathsetmacro{\kata@outDeltaII}{360+\kata@outDeltaI}
+      \else
+        \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI-360}
+      \fi
+    \else
+      \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
+    \fi
+    \draw[/kata/style/dir]
+      (head.center) ++ (\kata@in:.33em)
+      arc[start angle=\kata@in,delta angle=\kata@outDeltaII,radius=.33em]
+    ;
+  }
+}
+%    \end{macrocode}
+% \end{macro}
+%
+%
+% \subsubsection{Internal elements}
+% \begin{macro}{\kata@nothing}
+% ensure the box is always at least the same size (internal command + always placed)
+%    \begin{macrocode}
+\NewDocumentCommand{\kata@nothing}{}{
+  \draw[draw=none] (head) -- ++(0:2.15) -- ++(180:4.3) -- ++(90:2.15) -- ++(-90:4.3);
+}
+%    \end{macrocode}
+% \end{macro}
+% \begin{macro}{\kata@head}
+% draw the circle symbolizing the head (internal command + always placed)
+%    \begin{macrocode}
+\NewDocumentCommand{\kata@head}{}{
+  \node[/kata/style/head] (head) {};
+}
+%    \end{macrocode}
+% \end{macro}
+%
+%
+% \subsection{Color keys}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/color,
+  %
+  stance/.store in = \kata@color@stance,
+  stance/.initial = blue,
+  stance = blue,
+  %
+  waza/.store in = \kata@color@waza,
+  waza/.initial = green!50!black,
+  waza = green!50!black,
+  %
+  dir/.store in = \kata@color@dir,
+  dir/.initial = red,
+  dir = red,
+  %
+  head/.store in = \kata@color@head,
+  head/.initial = black,
+  head = black,
+  %
+  border/.store in = \kata@color@border,
+  border/.initial = black,
+  border = black,
+  %
+  step counter/.store in = \kata@color@stepcounter,
+  step counter/.initial = black,
+  step counter = black,
+}
+%    \end{macrocode}
+%
+%
+% \subsection{Styles}
+% \subsubsection{Styles for drawn elements}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/style,
+  %
+  head/.style = {
+    circle,
+    draw=\kata@color@head,
+    inner xsep=0.333em,
+  },
+  %
+  stance/.style 2 args = {
+    draw=\kata@color@stance,
+    -{Stealth[scale=1.2]},
+    transform canvas={xshift=#1,yshift=#2},
+  },
+  %
+  waza/.style = {
+    draw=\kata@color@waza,
+    -{Stealth[scale=1.2]},
+  },
+  %
+  dir/.style = {
+    draw=\kata@color@dir,
+    -{Straight Barb},
+  },
+  %
+  border/.style = {
+    rectangle,
+    draw=\kata@color@border,
+    fit=(output),
+    inner sep=0pt,
+    outer sep=0pt,
+    inner xsep=0.2em,
+  },
+  %
+  step counter/.style = {
+    draw=\kata@color@stepcounter,
+    font=\sffamily\small,
+    outer sep=0pt,
+    at={(t1.north west)},
+    below right,
+    rectangle,
+  },
+}
+%    \end{macrocode}
+%
+%
+% \subsubsection{Styles for labels}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/style,
+  %
+  stance label base/.style = {
+    \kata@color@stance,
+    midway,
+    sloped,
+    font=\sffamily\scriptsize,
+    text width=1.8cm,
+  },
+  stance label/.style = {
+    /kata/style/stance label base,
+    below,
+  },
+  %
+  stance label flipped/.style = {
+    /kata/style/stance label base,
+    above,
+  },
+  %
+  waza label base/.style = {
+    \kata@color@waza,
+    midway,
+    sloped,
+    font=\sffamily\scriptsize,
+    text width=1.8cm,
+  },
+  %
+  waza label/.style = {
+    /kata/style/waza label base,
+    above,
+  },
+  %
+  waza label flipped/.style = {
+    /kata/style/waza label base,
+    below,
+  },
+}
+%    \end{macrocode}
+%
+%
+% \subsubsection{Styles for steps}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/style,
+  %
+  step/.style = {
+  },
+  %
+  step first/.style = {
+  },
+  %
+  step phantom/.style = {
+    /kata/style/border/.style={draw=none},
+    /kata/style/head/.style={draw=none},
+    /kata/style/step counter/.style={opacity=0},
+  },
+}
+%    \end{macrocode}
+%
+%
+% \subsection{Misc}
 %
 % \begin{macro}{\kataStepCnt}
 % Formats the counter for the step indicator
@@ -801,7 +864,8 @@
 %
 %
 % \subsection{Memoization}
-% 
+% TODO: which pgfkeys to add
+% TOOD: make optional depending on whether memoize is loaded or not
 %    \begin{macrocode}
 \mmzset{auto={kata@step}{
   memoize,
@@ -812,15 +876,8 @@
   csname meaning to context={stance code},
   csname meaning to context={waza code},
   csname meaning to context={dir code},
-%    \end{macrocode}
-% xcolor stored in another command -> not working as of now
-%    \begin{macrocode}
-  meaning to context={KataColorFeet},
-  meaning to context={KataColorWaza},
-  meaning to context={KataColorDir},
 }}
 %    \end{macrocode}
-%
 % \iffalse
 %</package>
 % \fi
