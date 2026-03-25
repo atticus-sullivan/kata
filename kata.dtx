@@ -156,7 +156,7 @@
 % Note this code is \enquote{run} after the box showing the code. Because of the use of \verb|\marginline| it was not possible to wrap this in \verb|dispExample*|. Also this way the \verb|\section| command will leak and insert a new section to this documentation.
 %<*doc>
 \begin{dispListing*}{listing options={language=[LaTeX]TeX}}
-\begin{kata}[width=3]{Extended Example}{blue}
+\begin{kata}[width=3]{Example}{blue}
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
@@ -167,17 +167,21 @@
     \dir{center}{90}
   \end{step}
   \pgfkeys{/kata/color/dir=brown}
-  \begin{step}
-    \stance{stance B}{180}
-    \waza{technique B}{90}
-    \dir{90}{180}
-  \end{step}
-  \renewcommand\kataStepCnt[1]{\roman{#1}}
-  \begin{step}
-    \stance{stance B}{180}
-    \waza[flip]{technique B}{90}
-    \dir[flip]{90}{180}
-  \end{step}
+  {
+    \pgfkeys{/kata/step/border preset={arrow up,accent=green}}
+    \begin{step}[]
+      \stance{stance B}{180}
+      \waza{technique B}{90}
+      \dir{90}{180}
+    \end{step}
+    \renewcommand\kataStepCnt[1]{\roman{#1}}
+    \begin{step}
+      \stance{stance B}{180}
+      \waza[flip]{technique B}{90}
+      \dir[flip]{90}{180}
+    \end{step}
+  }
+  \\
   \pgfkeys{
     /kata/customize/stepCnt/.style={xshift=1em},
     /kata/customize/border/.style={/kata/border/arrowUD=45},
@@ -199,17 +203,20 @@
     \dir{center}{90}
   \end{step}
   \pgfkeys{/kata/color/dir=brown}
-  \begin{step}
-    \stance{stance B}{180}
-    \waza{technique B}{90}
-    \dir{90}{180}
-  \end{step}
-  \renewcommand\kataStepCnt[1]{\roman{#1}}
-  \begin{step}
-    \stance{stance B}{180}
-    \waza[flip]{technique B}{90}
-    \dir[flip]{90}{180}
-  \end{step}
+  {
+    \pgfkeys{/kata/step/border preset={arrow up,accent=green}}
+    \begin{step}[]
+      \stance{stance B}{180}
+      \waza{technique B}{90}
+      \dir{90}{180}
+    \end{step}
+    \renewcommand\kataStepCnt[1]{\roman{#1}}
+    \begin{step}
+      \stance{stance B}{180}
+      \waza[flip]{technique B}{90}
+      \dir[flip]{90}{180}
+    \end{step}
+  }
   \\
   \pgfkeys{
     /kata/customize/stepCnt/.style={xshift=1em},
@@ -287,6 +294,10 @@
 % internal style definitions
 %    \begin{macrocode}
   /kata/style/.is family,
+%    \end{macrocode}
+% presets for better usability
+%    \begin{macrocode}
+  /kata/preset/border/.is family,
 }
 %    \end{macrocode}
 %
@@ -306,6 +317,7 @@
   dir/.style = {/kata/dir,#1},
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
+  border preset/.forward to = {/kata/style/border preset = {#1}},
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
   definealiases/.code = {%
     \AddToHook {begindocument} [kata/aliases] {%
@@ -411,6 +423,7 @@
 %    \begin{macrocode}
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
+  border preset/.forward to = {/kata/style/border preset = {#1}},
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
 }
 %    \end{macrocode}
@@ -511,6 +524,8 @@
 % allow directly appending to styles
 %    \begin{macrocode}
   phantom style/.style = {/kata/style/step phantom/.append style = {#1}},
+  border style/.style = {/kata/style/border/.append style = {#1}},
+  border preset/.forward to = {/kata/style/border preset = {#1}},
 %    \end{macrocode}
 % defer keys to the respective locations
 %    \begin{macrocode}
@@ -798,6 +813,10 @@
     inner xsep=0.2em,
   },
   %
+  border preset/.code={
+    \pgfkeysalso{/kata/preset/border,#1}%
+  },
+  %
   step counter/.style = {
     draw=\kata@color@stepcounter,
     font=\sffamily\small,
@@ -862,6 +881,65 @@
     /kata/style/border/.style={draw=none},
     /kata/style/head/.style={draw=none},
     /kata/style/step counter/.style={opacity=0},
+  },
+}
+%    \end{macrocode}
+%
+%
+% \subsubsection{Presets for styles}
+% \paragraph{Helpers}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/preset/helpers/.cd,
+  arrowRL/.style={
+    postaction={decorate},decoration={
+      markings,
+      mark=at position 0.125
+        with {\pgftransformrotate{#1 - 270}\arrow[line width=2pt]{stealth}},
+      mark=at position 0.625
+        with {\pgftransformrotate{#1 - 270}\arrowreversed[line width=2pt]{stealth}},
+    },
+  },
+  arrowUD/.style={
+    postaction={decorate},decoration={
+      markings,
+      mark=at position 0.375
+        with {\pgftransformrotate{#1}\arrow[line width=2pt]{stealth}},
+      mark=at position 0.875
+        with {\pgftransformrotate{#1}\arrowreversed[line width=2pt]{stealth}},
+    },
+  },
+}
+%    \end{macrocode}
+% \paragraph{Helpers}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/preset/border,
+  arrow right/.style={
+    /kata/style/border/.append style={
+      /kata/preset/helpers/arrowRL=-90,
+    },
+  },
+  arrow left/.style={
+    /kata/style/border/.append style={
+      /kata/preset/helpers/arrowRL=+90,
+    },
+  },
+  arrow up/.style={
+    /kata/style/border/.append style={
+      /kata/preset/helpers/arrowUD=0,
+    },
+  },
+  arror down/.style={
+    /kata/style/border/.append style={
+      /kata/preset/helpers/arrowUD=180,
+    },
+  },
+  accent/.style={
+    /kata/style/border/.append style={
+      fill=#1!5,
+      draw=#1,
+    },
   },
 }
 %    \end{macrocode}
