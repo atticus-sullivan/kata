@@ -194,7 +194,7 @@
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
-  \begin{step}
+  \begin{step}[color={stance=pink}]
     \stance{stance A}{0}
     \waza{technique A}{-90}
     \dir{center}{90}
@@ -294,8 +294,37 @@
 % presets for better usability
 %    \begin{macrocode}
   /kata/preset/border/.is family,
+%    \end{macrocode}
+% forwards in order to DRY
+%    \begin{macrocode}
+  /kata/forward/.is family,
 }
 %    \end{macrocode}
+%
+% \subsection{Set up pgfkeys-forwards}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/forward,
+%    \end{macrocode}
+% Common keys which simply delegate to other keys
+%    \begin{macrocode}
+  delegate common/.style={
+    stance/.style = {/kata/stance,##1},
+    waza/.style = {/kata/waza,##1},
+    dir/.style = {/kata/dir,##1},
+    color/.style = {/kata/color,##1},
+  },
+%    \end{macrocode}
+% Common keys which append to styles
+%    \begin{macrocode}
+  append common/.style={
+    head style/.style = {/kata/style/head/.append style = {##1}},
+    border style/.style = {/kata/style/border/.append style = {##1}},
+    border preset/.forward to = /kata/style/border preset,
+    step counter style/.style = {/kata/style/step counter/.append style = {##1}},
+    step phantom style/.style = {/kata/style/step phantom/.append style = {##1}},
+  },
+}
 %
 %
 % \subsection{Package wide options}
@@ -304,22 +333,13 @@
 \pgfkeys{
   /kata/setup,
   width/.style = {/kata/kata,width={#1}},
-  color/.style = {/kata/color,#1},
-  style/.style = {/kata/style,#1},
-  kata/.style = {/kata/kata,#1},
-  step/.style = {/kata/step,#1},
-  stance/.style = {/kata/stance,#1},
-  waza/.style = {/kata/waza,#1},
-  dir/.style = {/kata/dir,#1},
-  head style/.style = {/kata/style/head/.append style = {#1}},
-  border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = /kata/style/border preset,
-  step counter style/.style = {/kata/style/step counter/.append style = {#1}},
   definealiases/.code = {%
     \AddToHook {begindocument} [kata/aliases] {%
       \kataAliases%
     }%
   },
+  /kata/forward/delegate common,
+  /kata/forward/append common,
 }
 %    \end{macrocode}
 %
@@ -409,21 +429,8 @@
   width/.store in = \kata@width,
   width = 6,
   width/.value required,
-%    \end{macrocode}
-% defer keys to the respective locations
-%    \begin{macrocode}
-  step/.style = {/kata/step,#1},
-  stance/.style = {/kata/stance,#1},
-  waza/.style = {/kata/waza,#1},
-  dir/.style = {/kata/dir,#1},
-  color/.style = {/kata/color,#1},
-%    \end{macrocode}
-% allow directly appending to styles
-%    \begin{macrocode}
-  head style/.style = {/kata/style/head/.append style = {#1}},
-  border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = /kata/style/border preset,
-  step counter style/.style = {/kata/style/step counter/.append style = {#1}},
+  /kata/forward/delegate common,
+  /kata/forward/append common,
 }
 %    \end{macrocode}
 %
@@ -519,19 +526,8 @@
   phantom = false,
   phantom/.append code={\ifkata@step@phantom\pgfkeysalso{/kata/style/step phantom}\fi},
   phantom/.style = {/kata/style/step phantom},
-%    \end{macrocode}
-% allow directly appending to styles
-%    \begin{macrocode}
-  phantom style/.style = {/kata/style/step phantom/.append style = {#1}},
-  border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = /kata/style/border preset,
-%    \end{macrocode}
-% defer keys to the respective locations
-%    \begin{macrocode}
-  stance/.style = {/kata/stance,#1},
-  waza/.style = {/kata/waza,#1},
-  dir/.style = {/kata/dir,#1},
-  color/.style = {/kata/color,#1},
+  /kata/forward/delegate common,
+  /kata/forward/append common,
 }
 %    \end{macrocode}
 %
