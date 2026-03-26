@@ -398,6 +398,7 @@
 \newif\ifkata@dir@flip
 \newif\ifkata@step@first
 \newif\ifkata@step@phantom
+\newcount\kata@tmpcnta
 %    \end{macrocode}
 %
 % \subsection{The kata environment}
@@ -720,14 +721,15 @@
   }{
     \pgfmathsetmacro{\kata@in}{#2+90}
     \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
+    \kata@tmpcnta=\inteval{\kata@out-\kata@in}
     \ifkata@dir@flip
-      \if -\kata@outDeltaI
-        \pgfmathsetmacro{\kata@outDeltaII}{360+\kata@outDeltaI}
+      \ifnum\kata@tmpcnta<0
+        \pgfmathsetmacro{\kata@outDeltaII}{360+\the\kata@tmpcnta}
       \else
-        \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI-360}
+        \pgfmathsetmacro{\kata@outDeltaII}{\the\kata@tmpcnta-360}
       \fi
     \else
-      \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
+      \pgfmathsetmacro{\kata@outDeltaII}{\the\kata@tmpcnta}
     \fi
     \draw[/kata/style/dir]
       (head.center) ++ (\kata@in:.33em)
