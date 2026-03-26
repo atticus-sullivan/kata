@@ -252,7 +252,7 @@
 %
 % Define own string compare for equality so the package works without KOMA as well.
 %    \begin{macrocode}
-\ExpandArgs {nnc} \UseName {cs_set_eq:NN} {\kata@Ifstr} {str_if_eq:eeTF}
+\ExpandArgs {nnc} \UseName {cs_set_eq:NN} {\kata@ifstr} {str_if_eq:eeTF}
 %    \end{macrocode}
 %
 % \subsection{General pgfkeys setup}
@@ -345,11 +345,11 @@
 \kata@aliasesdefinedfalse
 \NewDocumentCommand{\kataAliases}{}{
   \ifkata@aliasesdefined\else%
-    \newcommand{\kata@warningDefined}[1]{\PackageWarning{kata}{Macro ##1 is already defined, did not define the alias}}%
-    \@ifundefined{stance}{\let\stance\kataStance}{\kata@warningDefined{\string\stance}}%
-    \@ifundefined{waza}{\let\waza\kataWaza}{\kata@warningDefined{\string\waza}}%
-    \@ifundefined{dir}{\let\dir\kataDir}{\kata@warningDefined{\string\dir}}%
-    \@ifundefined{kiai}{\let\kiai\kataKiai}{\kata@warningDefined{\string\kiai}}%
+    \newcommand{\kata@warningdefined}[1]{\PackageWarning{kata}{Macro ##1 is already defined, did not define the alias}}%
+    \@ifundefined{stance}{\let\stance\kataStance}{\kata@warningdefined{\string\stance}}%
+    \@ifundefined{waza}{\let\waza\kataWaza}{\kata@warningdefined{\string\waza}}%
+    \@ifundefined{dir}{\let\dir\kataDir}{\kata@warningdefined{\string\dir}}%
+    \@ifundefined{kiai}{\let\kiai\kataKiai}{\kata@warningdefined{\string\kiai}}%
     % environment begin/end macros
     \@ifundefined{step}{%
       \let\step\kataStep%
@@ -439,16 +439,16 @@
 \NewDocumentEnvironment{kata}{O{}mmo}{%
   \pgfkeys{/kata/kata,#1}
   \section{#2}
-  \kata@Ifstr{#3}{}{
+  \kata@ifstr{#3}{}{
 %    \end{macrocode}
 % show if arg 3 is empty but arg 4 was set
 %    \begin{macrocode}
-    \IfNoValueF{#4}{\kata@beltMargin{}{#4}}%
+    \IfNoValueF{#4}{\kata@beltmargin{}{#4}}%
   }{%
 %    \end{macrocode}
 % use arg 3 as fallback if arg 4 was not set
 %    \begin{macrocode}
-    \kata@beltMargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
+    \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
   }%
   \setlength{\lineskip}{6pt}\noindent%
   \setcounter{kata@step}{0}%
@@ -486,19 +486,19 @@
 %    \end{macrocode}
 % \end{environment}
 %
-% \begin{macro}{\kata@beltMargin}
+% \begin{macro}{\kata@beltmargin}
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@beltMargin}{+mm}{%
+\NewDocumentCommand{\kata@beltmargin}{+mm}{%
   \marginline{%
     \centering\footnotesize%
-    \kata@Ifstr{#1}{}{}{%
+    \kata@ifstr{#1}{}{}{%
       $\downarrow$ #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
-    \kata@Ifstr{#1}{}{}{\kata@Ifstr{#2}{}{}{\\}}%
-    \kata@Ifstr{#2}{}{}{%
+    \kata@ifstr{#1}{}{}{\kata@ifstr{#2}{}{}{\\}}%
+    \kata@ifstr{#2}{}{}{%
       \ColorBelt*[scale=0.1]{#2}%
     }%
   }%
@@ -589,10 +589,10 @@
 %    \begin{macrocode}
 \NewDocumentCommand{\kataKiai}{O{}m}{
   \kata@requirestep{\string\kataKiai}
-  \def\base{#2+90} \def\off{30} \def\ext{40} \def\rOff{4pt} \def\len{0.75}
+  \def\base{#2+90} \def\off{30} \def\ext{40} \def\roff{4pt} \def\len{0.75}
   \draw[shorten <=10pt,CtpRed]
-  ($(head)+(\base-\off:\rOff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=-2.5pt}] coordinate[pos=1] (tmpA) ++(\base-\ext:\len) 
-  ($(head)+(\base+\off:\rOff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=+2.5pt}] coordinate[pos=1] (tmpB) ++(\base+\ext:\len);
+  ($(head)+(\base-\off:\roff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=-2.5pt}] coordinate[pos=1] (tmpA) ++(\base-\ext:\len)
+  ($(head)+(\base+\off:\roff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=+2.5pt}] coordinate[pos=1] (tmpB) ++(\base+\ext:\len);
   \path (tmpA) -- (tmpB) node[midway,sloped,font={\sffamily\scriptsize},CtpRed,draw,decorate,decoration={zigzag,amplitude=1.5pt}] {Kiai};
 }
 %    \end{macrocode}
@@ -628,11 +628,11 @@
   \pgfmathsetmacro{\kata@dir}{#3+90}%
   \pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
   \pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
-  \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
+  \IfNoValueTF{#1}{\def\kata@nodecontent{}}{\def\kata@nodecontent{#1 }}%
   \draw[/kata/style/stance={\x}{\y}]
     (head) -- ++(\kata@dir:2)
     node[\ifkata@stance@flip/kata/style/stance label flipped\else/kata/style/stance label\fi]
-    {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
+    {\hangafter=1\settowidth\hangindent{\kata@nodecontent}\kata@nodecontent#2}
   ;
 }
 %    \end{macrocode}
@@ -665,12 +665,12 @@
 \NewDocumentCommand{\kataWaza}{o+mmO{}}{%
   \kata@requirestep{\string\kataWaza}%
   \pgfkeys{/kata/waza,#4}%
-  \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
+  \IfNoValueTF{#1}{\def\kata@nodecontent{}}{\def\kata@nodecontent{#1 }}%
   \pgfmathsetmacro{\kata@dir}{#3+90}%
   \draw[/kata/style/waza]
     (head) -- ++(\kata@dir:2)
     node[\ifkata@waza@flip/kata/style/waza label flipped\else/kata/style/waza label\fi]
-    {\hangafter=1\settowidth\hangindent{\kata@nodeContent}\kata@nodeContent#2}
+    {\hangafter=1\settowidth\hangindent{\kata@nodecontent}\kata@nodecontent#2}
   ;
 }
 %    \end{macrocode}
@@ -701,23 +701,23 @@
   \kata@requirestep{\string\kataDir}
   \pgfkeys{/kata/dir,#1}
   \pgfmathsetmacro{\kata@out}{#3+90}
-  \kata@Ifstr{#2}{center}{
+  \kata@ifstr{#2}{center}{
     \draw[/kata/style/dir] (head.center) -- ++(\kata@out:.33em);
   }{
     \pgfmathsetmacro{\kata@in}{#2+90}
-    \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
+    \pgfmathsetmacro{\kata@outdeltai}{\kata@out-\kata@in}
     \ifkata@dir@flip
-      \if -\kata@outDeltaI
-        \pgfmathsetmacro{\kata@outDeltaII}{360+\kata@outDeltaI}
+      \if -\kata@outdeltai
+        \pgfmathsetmacro{\kata@outdeltaii}{360+\kata@outdeltai}
       \else
-        \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI-360}
+        \pgfmathsetmacro{\kata@outdeltaii}{\kata@outdeltai-360}
       \fi
     \else
-      \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
+      \pgfmathsetmacro{\kata@outdeltaii}{\kata@outdeltai}
     \fi
     \draw[/kata/style/dir]
       (head.center) ++ (\kata@in:.33em)
-      arc[start angle=\kata@in,delta angle=\kata@outDeltaII,radius=.33em]
+      arc[start angle=\kata@in,delta angle=\kata@outdeltaii,radius=.33em]
     ;
   }
 }
