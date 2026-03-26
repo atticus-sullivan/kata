@@ -313,7 +313,7 @@
   dir/.style = {/kata/dir,#1},
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = {/kata/style/border preset = {#1}},
+  border preset/.forward to = /kata/style/border preset,
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
   definealiases/.code = {%
     \AddToHook {begindocument} [kata/aliases] {%
@@ -420,7 +420,7 @@
 %    \begin{macrocode}
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = {/kata/style/border preset = {#1}},
+  border preset/.forward to = /kata/style/border preset,
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
 }
 %    \end{macrocode}
@@ -522,7 +522,7 @@
 %    \begin{macrocode}
   phantom style/.style = {/kata/style/step phantom/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = {/kata/style/border preset = {#1}},
+  border preset/.forward to = /kata/style/border preset,
 %    \end{macrocode}
 % defer keys to the respective locations
 %    \begin{macrocode}
