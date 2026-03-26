@@ -538,7 +538,7 @@
 % this environment always should wrap \verb|kata@step|.
 % It handles the aspects of positioning the pictogram.
 % Arguments:
-% 1 (optional): whether this is the first step of the kata
+% 1 (optional): whether this is the first step of the kata / pgfkeys
 %    \begin{macrocode}
 \NewDocumentEnvironment{kataStep}{O{}+b}{%
   \kata@requirekata{\string\kataStep}%
@@ -583,8 +583,8 @@
 % draw indicator for \emph{kiai}.
 % Arguments:
 % \begin{enumerate}
-%   \item (optional) distance to head
-%   \item direction
+%   \item (optional) distance to head TODO: not implemented yet (probably will become pgf-interface)
+%   \item angle
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentCommand{\kataKiai}{O{}m}{
@@ -616,9 +616,10 @@
 % draw the arrow/path showing the stance
 % Usage:
 % \begin{enumerate}
-%   \item (optional) side to use (L/R)
+%   \item (optional) side to use (L/R) / prefix
 %   \item name/text
-%   \item direction
+%   \item angle
+%   \item (optional) pgfkeys interface
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentCommand{\kataStance}{O{}mmO{}}{%
@@ -655,9 +656,10 @@
 % draw the arrow/path showing a technique.
 % Arguments:
 % \begin{enumerate}
-%   \item (optional) side to use (L/R)
+%   \item (optional) side to use (L/R) / prefix
 %   \item name/text
-%   \item direction
+%   \item angle
+%   \item (optional) pgfkeys interface
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentCommand{\kataWaza}{O{}mmO{}}{%
@@ -690,7 +692,7 @@
 % draw a short arrow/path indicating the next turn/direction.
 % Arguments:
 % \begin{enumerate}
-%   \item (optional) flip
+%   \item (optional) flip / pgfkeys
 %   \item source (Center,angle)
 %   \item dst (angle)
 % \end{enumerate}
