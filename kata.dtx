@@ -488,7 +488,7 @@
 %
 % \begin{macro}{\kata@beltMargin}
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@beltMargin}{mm}{%
+\NewDocumentCommand{\kata@beltMargin}{+mm}{%
   \marginline{%
     \centering\footnotesize%
     \kata@Ifstr{#1}{}{}{%
@@ -622,7 +622,7 @@
 %   \item (optional) pgfkeys interface
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\kataStance}{O{}mmO{}}{%
+\NewDocumentCommand{\kataStance}{o+mmO{}}{%
   \pgfkeys{/kata/stance,#4}%
   \kata@requirestep{\string\kataStance}%
   \pgfmathsetmacro{\kata@dir}{#3+90}%
@@ -662,7 +662,7 @@
 %   \item (optional) pgfkeys interface
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentCommand{\kataWaza}{O{}mmO{}}{%
+\NewDocumentCommand{\kataWaza}{o+mmO{}}{%
   \kata@requirestep{\string\kataWaza}%
   \pgfkeys{/kata/waza,#4}%
   \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
