@@ -345,6 +345,7 @@
 \kata@aliasesdefinedfalse
 \NewDocumentCommand{\kataAliases}{}{
   \ifkata@aliasesdefined\else%
+    \kata@aliasesdefinedtrue%
     \newcommand{\kata@warningdefined}[1]{\PackageWarning{kata}{Macro ##1 is already defined, did not define the alias}}%
     \@ifundefined{stance}{\let\stance\kataStance}{\kata@warningdefined{\string\stance}}%
     \@ifundefined{waza}{\let\waza\kataWaza}{\kata@warningdefined{\string\waza}}%
