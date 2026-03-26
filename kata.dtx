@@ -232,8 +232,7 @@
 %<*package>
 % \fi
 %    \begin{macrocode}
-\RequirePackage{memoize}
-\RequirePackage{pgfkeys}
+\RequirePackage{memoizable}
 \RequirePackage{pgfopts}
 \RequirePackage{coloredbelts}
 \RequirePackage{tikz}
@@ -253,6 +252,7 @@
 % Define own string compare for equality so the package works without KOMA as well.
 %    \begin{macrocode}
 \ExpandArgs {nnc} \UseName {cs_set_eq:NN} {\kata@Ifstr} {str_if_eq:eeTF}
+\ExpandArgs {nnc} \UseName {cs_set_eq:NN} {\kata@protecteddef} {cs_new_protected:Npn}
 %    \end{macrocode}
 %
 % \subsection{General pgfkeys setup}
@@ -313,7 +313,7 @@
   dir/.style = {/kata/dir,#1},
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = {/kata/style/border preset = {#1}},
+  border preset/.forward to = /kata/style/border preset,
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
   definealiases/.code = {%
     \AddToHook {begindocument} [kata/aliases] {%
@@ -372,7 +372,7 @@
 % enforces something is run within the step environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@instep
-\NewDocumentCommand{\kata@requirestep}{m}{%
+\kata@protecteddef \kata@requirestep#1{%
   \ifkata@instep\else
     \PackageError{kata}{#1 used outside step environment}{}
   \fi
@@ -383,7 +383,7 @@
 % enforces something is run within the kata environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@inkata
-\NewDocumentCommand{\kata@requirekata}{m}{%
+\kata@protecteddef \kata@requirekata#1{%
   \ifkata@inkata\else
     \PackageError{kata}{#1 used outside kata environment}{}
   \fi
@@ -398,6 +398,7 @@
 \newif\ifkata@dir@flip
 \newif\ifkata@step@first
 \newif\ifkata@step@phantom
+\newcount\kata@tmpcnta
 %    \end{macrocode}
 %
 % \subsection{The kata environment}
@@ -405,7 +406,7 @@
 \pgfkeys{
   /kata/kata,
   width/.store in = \kata@width,
-  width/.initial = 6,
+  width = 6,
   width/.value required,
 %    \end{macrocode}
 % defer keys to the respective locations
@@ -420,7 +421,7 @@
 %    \begin{macrocode}
   head style/.style = {/kata/style/head/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = {/kata/style/border preset = {#1}},
+  border preset/.forward to = /kata/style/border preset,
   step counter style/.style = {/kata/style/step counter/.append style = {#1}},
 }
 %    \end{macrocode}
@@ -437,9 +438,9 @@
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentEnvironment{kata}{O{}mmo}{%
-  \pgfkeys{/kata/kata,#1}
-  \section{#2}
-  \kata@Ifstr{#3}{}{
+  \pgfkeys{/kata/kata,#1}%
+  \section{#2}%
+  \IfBlankTF{#3}{%
 %    \end{macrocode}
 % show if arg 3 is empty but arg 4 was set
 %    \begin{macrocode}
@@ -457,7 +458,7 @@
 %    \end{macrocode}
 % there is no harm in a single word/pictogram in the last line to turn off the corresponding penalty
 %    \begin{macrocode}
-  \widowpenalty=0%
+  \widowpenalty=0
 %    \end{macrocode}
 % allow large larger spaces between the pictograms if this avoids drawing a
 % picture outside of the textarea
@@ -470,7 +471,7 @@
 %    \begin{macrocode}
   \pgfmathtruncatemacro{\kata@missing}{mod(\kata@width - mod(\c@kata@step,\kata@width),\kata@width)}%
   \setcounter{kata@step}{0}%
-  \ifnum\kata@missing>0%
+  \ifnum\kata@missing>0
     \foreach \i in {1,...,\kata@missing} {%
       \begin{step}[phantom]\end{step} %
     }%
@@ -480,7 +481,7 @@
 % avoid left-aligning the last line. Instead it should be justified in
 % order to obtain a proper grid
 %    \begin{macrocode}
-  \parfillskip=0pt%
+  \parfillskip=0pt
   \par%
 }
 %    \end{macrocode}
@@ -488,17 +489,19 @@
 %
 % \begin{macro}{\kata@beltMargin}
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@beltMargin}{mm}{%
+\kata@protecteddef \kata@beltMargin#1#2{%
   \marginline{%
     \centering\footnotesize%
-    \kata@Ifstr{#1}{}{}{%
+    \IfBlankF{#1}{%
       $\downarrow$ #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
-    \kata@Ifstr{#1}{}{}{\kata@Ifstr{#2}{}{}{\\}}%
-    \kata@Ifstr{#2}{}{}{%
+    \IfBlankF{#1}{%
+      \IfBlankF{#2}{\\}%
+    }%
+    \IfBlankF{#2}{%
       \ColorBelt*[scale=0.1]{#2}%
     }%
   }%
@@ -522,7 +525,7 @@
 %    \begin{macrocode}
   phantom style/.style = {/kata/style/step phantom/.append style = {#1}},
   border style/.style = {/kata/style/border/.append style = {#1}},
-  border preset/.forward to = {/kata/style/border preset = {#1}},
+  border preset/.forward to = /kata/style/border preset,
 %    \end{macrocode}
 % defer keys to the respective locations
 %    \begin{macrocode}
@@ -554,6 +557,11 @@
 %
 % \begin{environment}{kata@step}
 % the environment to draw everything else in
+%
+% Suggestion: using \cs{NewDocumentEnvironment} to create internal macros isn't
+% recommended, but I'm also not sure that you really need this many layers of 
+% nested environments. 
+% Why can't this be done in the definition of kataStep?
 %    \begin{macrocode}
 \NewDocumentEnvironment{kata@step}{}{%
   \kata@requirekata{\string\step}%
@@ -612,16 +620,24 @@
 %    \end{macrocode}
 %
 %
-% \begin{macro}{\stance}
+% \begin{macro}{\kataStance}
 % draw the arrow/path showing the stance
 % Usage:
 % \begin{enumerate}
 %   \item (optional) side to use (L/R)
 %   \item name/text
 %   \item direction
+%   \item Suggestion: missing descriptor??
 % \end{enumerate}
+% Suggestion: description doesn't seem to match use for arguments
+% Suggestion: if `direction' must be numeric, maybe use `angle'?
+% (Just because compass directions, relative positions etc. are widely used in 
+% tikz.)
+% Suggestion: for free text input, consider allowing the argument to include 
+% paragraph breaks.
+% Suggestion: use a choice key for something like L/R?
 %    \begin{macrocode}
-\NewDocumentCommand{\kataStance}{O{}mmO{}}{%
+\NewDocumentCommand{\kataStance}{ommO{}}{%
   \pgfkeys{/kata/stance,#4}%
   \kata@requirestep{\string\kataStance}%
   \pgfmathsetmacro{\kata@dir}{#3+90}%
@@ -651,7 +667,7 @@
 %    \end{macrocode}
 %
 %
-% \begin{macro}{\waza}
+% \begin{macro}{\kataWaza}
 % draw the arrow/path showing a technique.
 % Arguments:
 % \begin{enumerate}
@@ -659,8 +675,9 @@
 %   \item name/text
 %   \item direction
 % \end{enumerate}
+% Suggestion: mismatch again?
 %    \begin{macrocode}
-\NewDocumentCommand{\kataWaza}{O{}mmO{}}{%
+\NewDocumentCommand{\kataWaza}{ommO{}}{%
   \kata@requirestep{\string\kataWaza}%
   \pgfkeys{/kata/waza,#4}%
   \IfNoValueTF{#1}{\def\kata@nodeContent{}}{\def\kata@nodeContent{#1 }}%
@@ -686,7 +703,7 @@
 %    \end{macrocode}
 %
 %
-% \begin{macro}{\dir}
+% \begin{macro}{\kataDir}
 % draw a short arrow/path indicating the next turn/direction.
 % Arguments:
 % \begin{enumerate}
@@ -704,14 +721,15 @@
   }{
     \pgfmathsetmacro{\kata@in}{#2+90}
     \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
+    \kata@tmpcnta=\inteval{\kata@out-\kata@in}
     \ifkata@dir@flip
-      \if -\kata@outDeltaI
-        \pgfmathsetmacro{\kata@outDeltaII}{360+\kata@outDeltaI}
+      \ifnum\kata@tmpcnta<0
+        \pgfmathsetmacro{\kata@outDeltaII}{360+\the\kata@tmpcnta}
       \else
-        \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI-360}
+        \pgfmathsetmacro{\kata@outDeltaII}{\the\kata@tmpcnta-360}
       \fi
     \else
-      \pgfmathsetmacro{\kata@outDeltaII}{\kata@outDeltaI}
+      \pgfmathsetmacro{\kata@outDeltaII}{\the\kata@tmpcnta}
     \fi
     \draw[/kata/style/dir]
       (head.center) ++ (\kata@in:.33em)
@@ -727,7 +745,7 @@
 % \begin{macro}{\kata@nothing}
 % ensure the box is always at least the same size (internal command + always placed)
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@nothing}{}{
+\newcommand* \kata@nothing{
   \draw[draw=none] (head) -- ++(0:2.15) -- ++(180:4.3) -- ++(90:2.15) -- ++(-90:4.3);
 }
 %    \end{macrocode}
@@ -735,7 +753,7 @@
 % \begin{macro}{\kata@head}
 % draw the circle symbolizing the head (internal command + always placed)
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@head}{}{
+\newcommand* \kata@head{
   \node[/kata/style/head] (head) {};
 }
 %    \end{macrocode}
@@ -748,27 +766,21 @@
   /kata/color,
   %
   stance/.store in = \kata@color@stance,
-  stance/.initial = blue,
   stance = blue,
   %
   waza/.store in = \kata@color@waza,
-  waza/.initial = green!50!black,
   waza = green!50!black,
   %
   dir/.store in = \kata@color@dir,
-  dir/.initial = red,
   dir = red,
   %
   head/.store in = \kata@color@head,
-  head/.initial = black,
   head = black,
   %
   border/.store in = \kata@color@border,
-  border/.initial = black,
   border = black,
   %
   step counter/.store in = \kata@color@stepcounter,
-  step counter/.initial = black,
   step counter = black,
 }
 %    \end{macrocode}
