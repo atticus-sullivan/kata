@@ -707,16 +707,16 @@
     \draw[/kata/style/dir] (head.center) -- ++(\kata@out:.33em);
   }{
     \pgfmathsetmacro{\kata@in}{#2+90}
-    \pgfmathsetmacro{\kata@outDeltaI}{\kata@out-\kata@in}
+    \pgfmathsetmacro{\kata@outdeltai}{\kata@out-\kata@in}
     \kata@tmpcnta=\inteval{\kata@out-\kata@in}
     \ifkata@dir@flip
       \ifnum\kata@tmpcnta<0
-        \pgfmathsetmacro{\kata@outDeltaII}{360+\the\kata@tmpcnta}
+        \pgfmathsetmacro{\kata@outdeltaii}{360+\the\kata@tmpcnta}
       \else
-        \pgfmathsetmacro{\kata@outDeltaII}{\the\kata@tmpcnta-360}
+        \pgfmathsetmacro{\kata@outdeltaii}{\the\kata@tmpcnta-360}
       \fi
     \else
-      \pgfmathsetmacro{\kata@outDeltaII}{\the\kata@tmpcnta}
+      \pgfmathsetmacro{\kata@outdeltaii}{\the\kata@tmpcnta}
     \fi
     \draw[/kata/style/dir]
       (head.center) ++ (\kata@in:.33em)
