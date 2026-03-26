@@ -405,7 +405,7 @@
 \pgfkeys{
   /kata/kata,
   width/.store in = \kata@width,
-  width/.initial = 6,
+  width = 6,
   width/.value required,
 %    \end{macrocode}
 % defer keys to the respective locations
@@ -748,27 +748,27 @@
   /kata/color,
   %
   stance/.store in = \kata@color@stance,
-  stance/.initial = blue,
+  stance/.value required,
   stance = blue,
   %
   waza/.store in = \kata@color@waza,
-  waza/.initial = green!50!black,
+  waza/.value required,
   waza = green!50!black,
   %
   dir/.store in = \kata@color@dir,
-  dir/.initial = red,
+  dir/.value required,
   dir = red,
   %
   head/.store in = \kata@color@head,
-  head/.initial = black,
+  head/.value required,
   head = black,
   %
   border/.store in = \kata@color@border,
-  border/.initial = black,
+  border/.value required,
   border = black,
   %
   step counter/.store in = \kata@color@stepcounter,
-  step counter/.initial = black,
+  step counter/.value required,
   step counter = black,
 }
 %    \end{macrocode}
