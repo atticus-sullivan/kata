@@ -437,9 +437,9 @@
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentEnvironment{kata}{O{}mmo}{%
-  \pgfkeys{/kata/kata,#1}
-  \section{#2}
-  \kata@Ifstr{#3}{}{
+  \pgfkeys{/kata/kata,#1}%
+  \section{#2}%
+  \IfBlankTF{#3}{%
 %    \end{macrocode}
 % show if arg 3 is empty but arg 4 was set
 %    \begin{macrocode}
@@ -491,14 +491,16 @@
 \kata@protecteddef \kata@beltMargin#1#2{%
   \marginline{%
     \centering\footnotesize%
-    \kata@Ifstr{#1}{}{}{%
+    \IfBlankF{#1}{%
       $\downarrow$ #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
-    \kata@Ifstr{#1}{}{}{\kata@Ifstr{#2}{}{}{\\}}%
-    \kata@Ifstr{#2}{}{}{%
+    \IfBlankF{#1}{%
+      \IfBlankF{#2}{\\}%
+    }%
+    \IfBlankF{#2}{%
       \ColorBelt*[scale=0.1]{#2}%
     }%
   }%
