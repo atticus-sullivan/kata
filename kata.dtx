@@ -44,7 +44,14 @@
 \usepackage[T1]{fontenc}
 
 \usepackage{tcolorbox}
-\tcbuselibrary{listingsutf8,documentation}
+\tcbuselibrary{listingsutf8,documentation,breakable,skins}
+\tcbset{
+  docexample/.append style={
+    skin=enhanced,
+    fonttitle=\bfseries\sffamily,
+  }
+}
+\colorlet{ExampleFrame}{blue!60}
 \makeindex
 \tcbset{
   doc head={colback=yellow!10!white,interior style=fill},
@@ -81,6 +88,29 @@
 % \tcbmakedocSubKey{docKataKey}{kata}
 % \tcbmakedocSubKey{docKataStyKey}{kata/styles}
 %
+% \NewDocumentCommand{\mockMarginline}{+m}{%
+%   Margin would be:\par%
+%   (\emph{begin marginline})%
+%   \par
+%   {%
+%     #1\par%
+%   }%
+%   (\emph{end marginline})%
+%   \par
+%   \hrule\vspace{3ex}
+% }
+%
+% \NewDocumentCommand{\mockSection}{m}{%
+%   \par%
+%   \textbf{\large X. #1}%
+%   \par%
+% }
+%
+% \def\installMocks{%
+%   \let\marginline\mockMarginline
+%   \let\section\mockSection
+% }
+%
 % \maketitle
 %
 % \begin{abstract}
@@ -109,28 +139,13 @@
 %
 %
 % \subsection{Simple Example}
-% Note this code is \enquote{run} after the box showing the code. Because of the use of \verb|\marginline| it was not possible to wrap this in \verb|dispExample*|. Also this way the \verb|\section| command will leak and insert a new section to this documentation.
+% Note:
+% The output looks slightly different in the example's output here.
+% Usually, the section is a proper section and the marginline is really show in the margin.
+%
+% {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
-\begin{dispListing*}{listing options={language=[LaTeX]TeX}}
-\begin{kata}[width=3]{Simple Example}{blue}
-  Some explanation -- normal \LaTeX code
-  \parindent=0pt
-
-  \begin{step}
-    \stance{stance A}{0}
-    \waza{technique A}{-90}
-    \dir{center}{90}
-  \end{step}
-  \begin{step}
-    \stance{stance A}{0}
-    \dir{90}{-90}
-  \end{step}
-  \begin{step}
-    \stance[R]{stance A}{0}[flip]
-    \dir[flip]{90}{-90}
-  \end{step}
-\end{kata}
-\end{dispListing*}
+\begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={A simple example without customizations (but includes flip)}}
 \begin{kata}[width=3]{Simple Example}{blue}
   Some explanation -- normal \LaTeX code
   \parindent=0pt
@@ -149,48 +164,21 @@
     \dir[flip]{90}{-90}
   \end{step}
 \end{kata}
+\end{dispExample*}
 %</doc>
+% }
 %
 %
 % \subsection{Extended Example}
-% Note this code is \enquote{run} after the box showing the code. Because of the use of \verb|\marginline| it was not possible to wrap this in \verb|dispExample*|. Also this way the \verb|\section| command will leak and insert a new section to this documentation.
+% Note:
+% The output looks slightly different in the example's output here.
+% Usually, the section is a proper section and the marginline is really show in the margin.
+%
+% {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
-\begin{dispListing*}{listing options={language=[LaTeX]TeX}}
-\begin{kata}[width=3,color={waza=orange}]{Example}{blue}
-  Some explanation -- normal \LaTeX code
-  \parindent=0pt
-
-  \begin{step}
-    \stance{stance A}{0}
-    \waza{technique A}{-90}
-    \dir{center}{90}
-  \end{step}
-  \kataSetup{color={dir=brown}}
-  {
-    \kataSetup{border preset={arrow up,accent=green}}
-    \begin{step}[]
-      \stance{stance B}{180}
-      \waza{technique B}{90}
-      \dir{90}{180}
-    \end{step}
-    \renewcommand\kataStepCnt[1]{\roman{#1}}
-    \begin{step}
-      \stance{stance B}{180}
-      \waza[RL]{technique B}{90}[flip]
-      \dir[flip]{90}{180}
-    \end{step}
-  }
-  \pgfkeys{
-    /kata/style/step counter/.append style={xshift=1em},
-    /kata/style/border/.append style={/kata/preset/helpers/arrowUD=45},
-  }
-  \begin{step}
-    \stance{stance C}{180}
-    \waza{technique D}{0}
-  \end{step}
-\end{kata}
-\end{dispListing*}
-\begin{kata}[width=3,color={waza=orange}]{Example}{blue}
+\begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Extended example with all kinds of possible customizations}}
+\installMocks % only used here to avoid problems showing inside tcolorbox
+\begin{kata}[width=3,color={waza=orange}]{Extended Example}{blue}
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
@@ -223,7 +211,9 @@
     \waza{technique D}{0}
   \end{step}
 \end{kata}
+\end{dispExample*}
 %</doc>
+% }
 %
 % \MaybeStop{}
 %
