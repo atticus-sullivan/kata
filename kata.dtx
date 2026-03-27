@@ -383,7 +383,7 @@
 % enforces something is run within the step environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@instep
-\NewDocumentCommand{\kata@requirestep}{m}{%
+\newcommand*{\kata@requirestep}[1]{%
   \ifkata@instep\else
     \PackageError{kata}{#1 used outside step environment}{}
   \fi
@@ -394,7 +394,7 @@
 % enforces something is run within the kata environment (helper)
 %    \begin{macrocode}
 \newif\ifkata@inkata
-\NewDocumentCommand{\kata@requirekata}{m}{%
+\newcommand*{\kata@requirekata}[1]{%
   \ifkata@inkata\else
     \PackageError{kata}{#1 used outside kata environment}{}
   \fi
@@ -487,7 +487,7 @@
 %
 % \begin{macro}{\kata@beltmargin}
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@beltmargin}{+mm}{%
+\newcommand{\kata@beltmargin}[2]{%
   \marginline{%
     \centering\footnotesize%
     \IfBlankF{#1}{%
@@ -543,7 +543,7 @@
 % \begin{environment}{kata@step}
 % the environment to draw everything else in
 %    \begin{macrocode}
-\NewDocumentEnvironment{kata@step}{}{%
+\newenvironment*{kata@step}{%
   \kata@requirekata{\string\step}%
   \begin{tikzpicture}[font=\scriptsize]%
     \begin{scope}[local bounding box=output]%
@@ -720,7 +720,7 @@
 % \begin{macro}{\kata@nothing}
 % ensure the box is always at least the same size (internal command + always placed)
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@nothing}{}{
+\newcommand*{\kata@nothing}{
   \draw[draw=none] (head) -- ++(0:2.15) -- ++(180:4.3) -- ++(90:2.15) -- ++(-90:4.3);
 }
 %    \end{macrocode}
@@ -728,7 +728,7 @@
 % \begin{macro}{\kata@head}
 % draw the circle symbolizing the head (internal command + always placed)
 %    \begin{macrocode}
-\NewDocumentCommand{\kata@head}{}{
+\newcommand*{\kata@head}{
   \node[/kata/style/head] (head) {};
 }
 %    \end{macrocode}
