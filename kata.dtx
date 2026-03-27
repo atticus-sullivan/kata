@@ -68,6 +68,7 @@
   \DocInput{\jobname.dtx}
   \PrintChanges
   \setcounter{IndexColumns}{2}
+  \setlength\IndexMin{100pt} % see https://tex.stackexchange.com/questions/95882/avoid-multicol-error-error-saving-partial-page
   \PrintIndex
 \end{document}
 %</driver>
@@ -75,10 +76,13 @@
 %
 % \changes{0.1.0}{2026/03/23}{Converted to DTX file}
 %
-% \providecommand*{\url}{\texttt}
 % \GetFileInfo{kata.dtx}
 % \title{\textsf{kata} -- Describe katas with pictograms}
-% \author{Lukas Heindl \\ \url{oss.heindl+latex@protonmail.com} \\Github: \url{https://github.com/atticus-sullivan/kata/}}
+% \author{Lukas Heindl\thanks{%
+%     E-Mail: \href{oss.heindl+latex@protonmail.com}{oss.heindl+latex@protonmail.com}\\%
+%     Issue tracker: \href{https://github.com/atticus-sullivan/kata/issues}{github.com/atticus-sullivan/kata/issues}\\%
+%     Github (mirror): \href{https://github.com/atticus-sullivan/kata}{github.com/atticus-sullivan/kata}%
+% }}
 % \date{\fileversion~from \filedate}
 %
 % \tcbmakedocSubKey{docKataBorderKey}{kata/border}
@@ -124,7 +128,7 @@
 %
 % \section{Introduction}
 % In many martial arts such as Karate, a kata is a predefined sequence of
-% movements \footnote{\url{https://en.wikipedia.org/wiki/Kata}}.
+% movements\footnote{\url{https://en.wikipedia.org/wiki/Kata}}.
 %
 % The \texttt{kata} package aims to provide a simple, structured way to
 % describe katas in LaTeX. Each step of a kata is expressed as a step
