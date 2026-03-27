@@ -36,6 +36,7 @@
 %
 %<*driver>
 \documentclass{ltxdoc}
+\usepackage[numbered]{hypdoc}
 
 \usepackage[disable,extract=no]{memoize}
 \usepackage{csquotes}
@@ -146,7 +147,7 @@
 % {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={A simple example without customizations (but includes flip)}}
-\begin{kata}[width=3]{Simple Example}{blue}
+\begin{kata}[width=2]{Simple Example}{blue}
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
@@ -178,7 +179,7 @@
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Extended example with all kinds of possible customizations}}
 \installMocks % only used here to avoid problems showing inside tcolorbox
-\begin{kata}[width=3,color={waza=orange}]{Extended Example}{blue}
+\begin{kata}[width=2,color={waza=orange}]{Extended Example}{blue}
   Some explanation -- normal \LaTeX code
   \parindent=0pt
 
