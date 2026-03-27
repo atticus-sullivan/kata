@@ -184,7 +184,7 @@
 
   \begin{step}[color={stance=pink}]
     \stance{stance A}{0}
-    \waza{technique A}{-90}
+    \waza{technique A}{-90}[color=black]
     \dir{center}{90}
   \end{step}
   \kataSetup{color={dir=brown}}
@@ -596,6 +596,7 @@
   style/.style = {/kata/style/stance/.append style = {#1}},
   label/.style = {/kata/style/stance label/.append style = {#1}},
   label flipped/.style = {/kata/style/stance label flipped/.append style = {#1}},
+  color/.forward to = /kata/color/stance,
 }
 %    \end{macrocode}
 %
@@ -636,6 +637,7 @@
   style/.style = {/kata/style/waza/.append style = {#1}},
   label/.style = {/kata/style/waza label/.append style = {#1}},
   label flipped/.style = {/kata/style/waza label flipped/.append style = {#1}},
+  color/.forward to = /kata/color/waza,
 }
 %    \end{macrocode}
 %
@@ -672,6 +674,7 @@
   flip/.is if = kata@dir@flip,
   flip/.default = true,
   style/.style = {/kata/style/dir/.append style = {#1}},
+  color/.forward to = /kata/dir/waza,
 }
 %    \end{macrocode}
 %
