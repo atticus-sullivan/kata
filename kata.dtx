@@ -711,10 +711,10 @@
 % Common keys which simply delegate to other keys
 %    \begin{macrocode}
   delegate common/.style={
-    stance/.style = {/kata/stance,##1},
-    waza/.style = {/kata/waza,##1},
-    dir/.style = {/kata/dir,##1},
-    color/.style = {/kata/color,##1},
+    stance/.code = \pgfkeys{/kata/stance,##1},
+    waza/.code   = \pgfkeys{/kata/waza,##1},
+    dir/.code    = \pgfkeys{/kata/dir,##1},
+    color/.code  = \pgfkeys{/kata/color,##1},
   },
 %    \end{macrocode}
 % Common keys which append to styles
