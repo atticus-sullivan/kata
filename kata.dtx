@@ -1197,33 +1197,33 @@
   /kata/style,
   %
   head/.style = {
-    head/.meaning to context,
+    /kata/style/head/.meaning to context,
     circle,
     draw=\kata@color@head,
     inner xsep=0.333em,
   },
   %
   stance/.style 2 args = {
-    stance/.meaning to context,
+    /kata/style/stance/.meaning to context,
     draw=\kata@color@stance,
     -{Stealth[scale=1.2]},
     transform canvas={xshift=#1,yshift=#2},
   },
   %
   waza/.style = {
-    waza/.meaning to context,
+    /kata/style/waza/.meaning to context,
     draw=\kata@color@waza,
     -{Stealth[scale=1.2]},
   },
   %
   dir/.style = {
-    dir/.meaning to context,
+    /kata/style/dir/.meaning to context,
     draw=\kata@color@dir,
     -{Straight Barb},
   },
   %
   border/.style = {
-    border/.meaning to context,
+    /kata/style/border/.meaning to context,
     rectangle,
     draw=\kata@color@border,
     fit=(output),
@@ -1233,7 +1233,7 @@
   },
   %
   step counter/.style = {
-    step counter/.meaning to context,
+    /kata/style/step counter/.meaning to context,
     draw=\kata@color@stepcounter,
     font=\sffamily\small,
     outer sep=0pt,
@@ -1256,7 +1256,7 @@
   /kata/style,
   %
   stance label base/.style = {
-    stance label base/.meaning to context,
+    /kata/style/stance label base/.meaning to context,
     \kata@color@stance,
     midway,
     sloped,
@@ -1264,19 +1264,19 @@
     text width=1.8cm,
   },
   stance label/.style = {
-    stance label/.meaning to context,
+    /kata/style/stance label/.meaning to context,
     /kata/style/stance label base,
     below,
   },
   %
   stance label flipped/.style = {
-    stance label flipped/.meaning to context,
+    /kata/style/stance label flipped/.meaning to context,
     /kata/style/stance label base,
     above,
   },
   %
   waza label base/.style = {
-    waza label base/.meaning to context,
+    /kata/style/waza label base/.meaning to context,
     \kata@color@waza,
     midway,
     sloped,
@@ -1285,13 +1285,13 @@
   },
   %
   waza label/.style = {
-    waza label/.meaning to context,
+    /kata/style/waza label/.meaning to context,
     /kata/style/waza label base,
     above,
   },
   %
   waza label flipped/.style = {
-    waza label flipped/.meaning to context,
+    /kata/style/waza label flipped/.meaning to context,
     /kata/style/waza label base,
     below,
   },
@@ -1305,7 +1305,7 @@
   /kata/style,
   %
   step phantom/.style = {
-    step phantom/.meaning to context,
+    /kata/style/step phantom/.meaning to context,
     /kata/style/border/.style={draw=none},
     /kata/style/head/.style={draw=none},
     /kata/style/step counter/.style={opacity=0},
