@@ -38,7 +38,6 @@
 \documentclass{ltxdoc}
 \usepackage[numbered]{hypdoc}
 
-\usepackage[disable,extract=no]{memoize}
 \usepackage{csquotes}
 
 \usepackage[definealiases]{kata}[2026/03/23]
@@ -634,7 +633,6 @@
 %<*package>
 % \fi
 %    \begin{macrocode}
-\RequirePackage{memoize}
 \RequirePackage{pgfkeys}
 \RequirePackage{pgfopts}
 \RequirePackage{coloredbelts}
@@ -710,6 +708,7 @@
 %    \end{macrocode}
 % Common keys which simply delegate to other keys
 %    \begin{macrocode}
+  % only "forwards" -> adds not to memoize context
   delegate common/.style={
     stance/.style = {/kata/stance,##1},
     waza/.style = {/kata/waza,##1},
@@ -719,6 +718,7 @@
 %    \end{macrocode}
 % Common keys which append to styles
 %    \begin{macrocode}
+  % only appends -> adds not to memoize context
   append common/.style={
     head style/.style = {/kata/style/head/.append style = {##1}},
     border style/.style = {/kata/style/border/.append style = {##1}},
@@ -734,12 +734,15 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/setup,
+  % only "forwards" -> adds not to memoize context
   width/.style = {/kata/kata,width={#1}},
+  % not relevant for step -> adds not to memoize context
   definealiases/.code = {%
     \AddToHook {begindocument} [kata/aliases] {%
       \kataAliases%
     }%
   },
+  %
   /kata/forward/delegate common,
   /kata/forward/append common,
 }
@@ -827,9 +830,11 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/kata,
+  % not relevant for step -> adds not to memoize context
   width/.store in = \kata@width,
   width = 6,
   width/.value required,
+  %
   /kata/forward/delegate common,
   /kata/forward/append common,
 }
@@ -920,12 +925,16 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/step,
+  % not relevant for inner step -> adds not to memoize context
   first step/.is if = kata@step@first,
   first step/.default = true,
+  %
+  % mostly "forwards" -> adds not to memoize context
   phantom/.is if = kata@step@phantom,
   phantom/.default = true,
   phantom = false,
   phantom/.append code={\ifkata@step@phantom\pgfkeysalso{/kata/style/step phantom}\fi},
+  %
   /kata/forward/delegate common,
   /kata/forward/append common,
 }
@@ -1001,6 +1010,7 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/stance,
+  % only inside step -> contained in hash of the body anyhow -> adds not to memoize context
   flip/.is if = kata@stance@flip,
   flip/.default = true,
   style/.style = {/kata/style/stance/.append style = {#1}},
@@ -1042,6 +1052,7 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/waza,
+  % only inside step -> contained in hash of the body anyhow -> adds not to memoize context
   flip/.is if = kata@waza@flip,
   flip/.default = true,
   style/.style = {/kata/style/waza/.append style = {#1}},
@@ -1081,6 +1092,7 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/dir,
+  % only inside step -> contained in hash of the body anyhow -> adds not to memoize context
   flip/.is if = kata@dir@flip,
   flip/.default = true,
   style/.style = {/kata/style/dir/.append style = {#1}},
@@ -1148,6 +1160,7 @@
 % \subsection{Color keys}
 %    \begin{macrocode}
 \pgfkeys{
+  % only sets macros used elsewhere in styles -> adds not to memoize context
   /kata/color,
   %
   stance/.store in = \kata@color@stance,
@@ -1184,28 +1197,33 @@
   /kata/style,
   %
   head/.style = {
+    head/.meaning to context,
     circle,
     draw=\kata@color@head,
     inner xsep=0.333em,
   },
   %
   stance/.style 2 args = {
+    stance/.meaning to context,
     draw=\kata@color@stance,
     -{Stealth[scale=1.2]},
     transform canvas={xshift=#1,yshift=#2},
   },
   %
   waza/.style = {
+    waza/.meaning to context,
     draw=\kata@color@waza,
     -{Stealth[scale=1.2]},
   },
   %
   dir/.style = {
+    dir/.meaning to context,
     draw=\kata@color@dir,
     -{Straight Barb},
   },
   %
   border/.style = {
+    border/.meaning to context,
     rectangle,
     draw=\kata@color@border,
     fit=(output),
@@ -1214,17 +1232,19 @@
     inner xsep=0.2em,
   },
   %
-  border preset/.code={
-    \pgfkeysalso{/kata/preset/border,#1}%
-  },
-  %
   step counter/.style = {
+    step counter/.meaning to context,
     draw=\kata@color@stepcounter,
     font=\sffamily\small,
     outer sep=0pt,
     at={(t1.north west)},
     below right,
     rectangle,
+  },
+  %
+  % only forwards -> adds not to memoize context
+  border preset/.code={
+    \pgfkeysalso{/kata/preset/border,#1}%
   },
 }
 %    \end{macrocode}
@@ -1236,6 +1256,7 @@
   /kata/style,
   %
   stance label base/.style = {
+    stance label base/.meaning to context,
     \kata@color@stance,
     midway,
     sloped,
@@ -1243,16 +1264,19 @@
     text width=1.8cm,
   },
   stance label/.style = {
+    stance label/.meaning to context,
     /kata/style/stance label base,
     below,
   },
   %
   stance label flipped/.style = {
+    stance label flipped/.meaning to context,
     /kata/style/stance label base,
     above,
   },
   %
   waza label base/.style = {
+    waza label base/.meaning to context,
     \kata@color@waza,
     midway,
     sloped,
@@ -1261,11 +1285,13 @@
   },
   %
   waza label/.style = {
+    waza label/.meaning to context,
     /kata/style/waza label base,
     above,
   },
   %
   waza label flipped/.style = {
+    waza label flipped/.meaning to context,
     /kata/style/waza label base,
     below,
   },
@@ -1279,6 +1305,7 @@
   /kata/style,
   %
   step phantom/.style = {
+    step phantom/.meaning to context,
     /kata/style/border/.style={draw=none},
     /kata/style/head/.style={draw=none},
     /kata/style/step counter/.style={opacity=0},
@@ -1291,6 +1318,7 @@
 % \paragraph{Helpers}
 %    \begin{macrocode}
 \pgfkeys{
+  % is not used directly -> adds not to memoize context
   /kata/preset/helpers/.cd,
   arrowRL/.style={
     postaction={decorate},decoration={
@@ -1301,6 +1329,7 @@
         with {\pgftransformrotate{#1 - 270}\arrowreversed[line width=2pt]{stealth}},
     },
   },
+  % is not used directly -> adds not to memoize context
   arrowUD/.style={
     postaction={decorate},decoration={
       markings,
@@ -1316,26 +1345,31 @@
 %    \begin{macrocode}
 \pgfkeys{
   /kata/preset/border,
+  % only appends -> adds not to memoize context
   arrow right/.style={
     /kata/style/border/.append style={
       /kata/preset/helpers/arrowRL=-90,
     },
   },
+  % only appends -> adds not to memoize context
   arrow left/.style={
     /kata/style/border/.append style={
       /kata/preset/helpers/arrowRL=+90,
     },
   },
+  % only appends -> adds not to memoize context
   arrow up/.style={
     /kata/style/border/.append style={
       /kata/preset/helpers/arrowUD=0,
     },
   },
+  % only appends -> adds not to memoize context
   arrow down/.style={
     /kata/style/border/.append style={
       /kata/preset/helpers/arrowUD=180,
     },
   },
+  % only appends -> adds not to memoize context
   accent/.style={
     /kata/style/border/.append style={
       fill=#1!5,
@@ -1357,19 +1391,16 @@
 %
 %
 % \subsection{Memoization}
-% TODO: which pgfkeys to add
-% TOOD: make optional depending on whether memoize is loaded or not
 %    \begin{macrocode}
-\mmzset{auto={kata@step}{
-  memoize,
-  csname meaning to context={environment kata@step\space code},
-  csname meaning to context={environment kata@step end aux\space},
-  csname meaning to context={nothing code},
-  csname meaning to context={head code},
-  csname meaning to context={stance code},
-  csname meaning to context={waza code},
-  csname meaning to context={dir code},
-}}
+\AtEndPreamble{%
+  \@ifpackageloaded{memoize}{%
+    \mmzset{%
+      auto={kata@step}{memoize},
+    }%
+  }{%
+    \pgfkeys{/handlers/.meaning to context/.code={}}
+  }%
+}%
 %    \end{macrocode}
 % \iffalse
 %</package>
