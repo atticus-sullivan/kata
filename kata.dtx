@@ -1395,7 +1395,11 @@
 \AtEndPreamble{%
   \@ifpackageloaded{memoize}{%
     \mmzset{%
-      auto={kata@step}{memoize},
+      auto={kata@step}{
+        memoize,
+        context={stepCnt->\arabic{kata@step},kata version->0.1.0,},
+        csname to context={kataStepCnt code},
+      },
     }%
   }{%
     \pgfkeys{/handlers/.meaning to context/.code={}}
