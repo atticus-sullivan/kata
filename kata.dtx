@@ -29,10 +29,10 @@
 \ProvidesFile{kata.dtx}
 %</driver>
 %<package>\NeedsTeXFormat{LaTeX2e}[2022/06/01]
+%<package>\def\kata@version{0.1.0}
+%<package>\def\kata@date{2026/03/23}
 %<package>\ProvidesPackage{kata}
-%<*package>
-   [2026/03/23 0.1.0 Describe a kata with lots of pictograms drawn with tikz]
-%</package>
+%<package>   [\kata@date\space \kata@version\space Describe katas with pictograms]
 %
 %<*driver>
 \documentclass{ltxdoc}
@@ -40,7 +40,7 @@
 
 \usepackage{csquotes}
 
-\usepackage[definealiases]{kata}[2026/03/23]
+\usepackage[definealiases]{kata}
 \usepackage[T1]{fontenc}
 
 \usepackage[per-mode=fraction,sticky-per]{siunitx}
@@ -81,8 +81,8 @@
 %
 % \changes{0.1.0}{2026/03/23}{Converted to DTX file}
 %
-% \GetFileInfo{kata.dtx}
-% \title{\textsf{kata} -- Describe katas with pictograms}
+% \GetFileInfo{kata.sty}
+% \title{\textsf{kata} -- \fileinfo}
 % \author{Lukas Heindl\thanks{%
 %     E-Mail: \href{oss.heindl+latex@protonmail.com}{oss.heindl+latex@protonmail.com}\\%
 %     Issue tracker: \href{https://github.com/atticus-sullivan/kata/issues}{github.com/atticus-sullivan/kata/issues}\\%
@@ -1397,7 +1397,7 @@
     \mmzset{%
       auto={kata@step}{
         memoize,
-        context={stepCnt->\arabic{kata@step},kata version->0.1.0,},
+        context={stepCnt->\arabic{kata@step},kata version->\kata@version,},
         csname meaning to context={kataStepCnt code},
       },
     }%
