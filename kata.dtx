@@ -1392,7 +1392,7 @@
 %
 % \subsection{Memoization}
 %    \begin{macrocode}
-\AtEndPreamble{%
+\AddToHook{begindocument/before}[kata-memoize]{%
   \@ifpackageloaded{memoize}{%
     \mmzset{%
       auto={kata@step}{
