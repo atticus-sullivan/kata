@@ -1423,20 +1423,18 @@
 % \end{macro}
 %
 %
-% \subsection{Memoization}
+% \subsection{memoize integration}
 %    \begin{macrocode}
-\AddToHook{begindocument/before}[kata-memoize]{%
-  \@ifpackageloaded{memoize}{%
-    \mmzset{%
-      auto={kata@step}{
-        memoize,
-        context={stepCnt->\arabic{kata@step},kata version->\kata@version,},
-        csname meaning to context={kataStepCnt code},
-      },
-    }%
-  }{%
-    \RequirePackage{memoizable}
+\@ifpackageloaded{memoize}{%
+  \mmzset{%
+    auto={kata@step}{
+      memoize,
+      context={stepCnt->\arabic{kata@step},kata version->\kata@version,},
+      csname meaning to context={kataStepCnt code},
+    },
   }%
+}{%
+  \RequirePackage{memoizable}
 }%
 %    \end{macrocode}
 % \iffalse
