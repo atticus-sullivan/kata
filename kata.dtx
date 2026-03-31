@@ -1193,7 +1193,7 @@
 % \subsection{Color keys}
 %    \begin{macrocode}
 \pgfkeys{
-  % only sets macros used elsewhere in styles -> adds not to memoize context
+  % csnames need to be (and are) added to memoize context when setting up memoize
   /kata/color,
   %
   stance/.store in = \kata@color@stance,
@@ -1431,6 +1431,12 @@
       memoize,
       context={stepCnt->\arabic{kata@step},kata version->\kata@version,},
       csname meaning to context={kataStepCnt code},
+      csname meaning to context={kata@color@stance},
+      csname meaning to context={kata@color@waza},
+      csname meaning to context={kata@color@dir},
+      csname meaning to context={kata@color@head},
+      csname meaning to context={kata@color@border},
+      csname meaning to context={kata@color@stepcounter},
     },
   }%
 }{%
