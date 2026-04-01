@@ -1029,10 +1029,10 @@
 \NewDocumentCommand{\kataKiai}{O{}m}{
   \kata@requirestep{\string\kataKiai}
   \def\base{#2+90} \def\off{30} \def\ext{40} \def\roff{4pt} \def\len{0.75}
-  \draw[shorten <=10pt,CtpRed]
+  \draw[shorten <=10pt,red]
   ($(head)+(\base-\off:\roff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=-2.5pt}] coordinate[pos=1] (tmpA) ++(\base-\ext:\len)
   ($(head)+(\base+\off:\roff)$) edge[decorate,decoration={bent,aspect=0.3,amplitude=+2.5pt}] coordinate[pos=1] (tmpB) ++(\base+\ext:\len);
-  \path (tmpA) -- (tmpB) node[midway,sloped,font={\sffamily\scriptsize},CtpRed,draw,decorate,decoration={zigzag,amplitude=1.5pt}] {Kiai};
+  \path (tmpA) -- (tmpB) node[midway,sloped,font={\sffamily\scriptsize},red,draw,decorate,decoration={zigzag,amplitude=1.5pt}] {Kiai};
 }
 %    \end{macrocode}
 % \end{macro}
