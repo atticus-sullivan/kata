@@ -888,14 +888,21 @@
   \section{#2}%
   \IfBlankTF{#3}{%
 %    \end{macrocode}
-% show if arg 3 is empty but arg 4 was set
+% draw the marginline only when arg 4 was given
 %    \begin{macrocode}
     \IfNoValueF{#4}{\kata@beltmargin{}{#4}}%
   }{%
+    \IfBlankTF{#4}{%
 %    \end{macrocode}
-% use arg 3 as fallback if arg 4 was not set
+% need to explicitly set second arg blank otherwise kata@beltmargin does not see the argument as blank
 %    \begin{macrocode}
-    \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
+      \kata@beltmargin{#3}{}%
+    }{%
+%    \end{macrocode}
+% use arg 3 as fallback for arg 4 in case it wasn't specified
+%    \begin{macrocode}
+      \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
+    }%
   }%
   \setlength{\lineskip}{6pt}\noindent%
   \setcounter{kata@step}{0}%
