@@ -1071,17 +1071,19 @@
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentCommand{\kataStance}{o+mmO{}}{%
-  \pgfkeys{/kata/stance,#4}%
-  \kata@requirestep{\string\kataStance}%
-  \pgfmathsetmacro{\kata@dir}{#3+90}%
-  \pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
-  \pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
-  \IfNoValueTF{#1}{\def\kata@nodecontent{}}{\def\kata@nodecontent{#1 }}%
-  \draw[/kata/style/stance={\x}{\y}]
+  {%
+    \pgfkeys{/kata/stance,#4}%
+    \kata@requirestep{\string\kataStance}%
+    \pgfmathsetmacro{\kata@dir}{#3+90}%
+    \pgfmathsetmacro{\x}{abs(sin(\kata@dir))}%
+    \pgfmathsetmacro{\y}{-abs(cos(\kata@dir))}%
+    \IfNoValueTF{#1}{\def\kata@nodecontent{}}{\def\kata@nodecontent{#1 }}%
+    \draw[/kata/style/stance={\x}{\y}]
     (head) -- ++(\kata@dir:2)
     node[\ifkata@stance@flip/kata/style/stance label flipped\else/kata/style/stance label\fi]
     {\hangafter=1\settowidth\hangindent{\kata@nodecontent}\kata@nodecontent#2}
-  ;
+    ;
+  }%
 }
 %    \end{macrocode}
 % \end{macro}
@@ -1113,15 +1115,17 @@
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentCommand{\kataWaza}{o+mmO{}}{%
-  \kata@requirestep{\string\kataWaza}%
-  \pgfkeys{/kata/waza,#4}%
-  \IfNoValueTF{#1}{\def\kata@nodecontent{}}{\def\kata@nodecontent{#1 }}%
-  \pgfmathsetmacro{\kata@dir}{#3+90}%
-  \draw[/kata/style/waza]
+  {%
+    \kata@requirestep{\string\kataWaza}%
+    \pgfkeys{/kata/waza,#4}%
+    \IfNoValueTF{#1}{\def\kata@nodecontent{}}{\def\kata@nodecontent{#1 }}%
+    \pgfmathsetmacro{\kata@dir}{#3+90}%
+    \draw[/kata/style/waza]
     (head) -- ++(\kata@dir:2)
     node[\ifkata@waza@flip/kata/style/waza label flipped\else/kata/style/waza label\fi]
     {\hangafter=1\settowidth\hangindent{\kata@nodecontent}\kata@nodecontent#2}
-  ;
+    ;
+  }%
 }
 %    \end{macrocode}
 % \end{macro}
@@ -1150,28 +1154,30 @@
 % \end{enumerate}
 %    \begin{macrocode}
 \NewDocumentCommand{\kataDir}{O{}mm}{
-  \kata@requirestep{\string\kataDir}
-  \pgfkeys{/kata/dir,#1}
-  \pgfmathsetmacro{\kata@out}{#3+90}
-  \kata@ifstr{#2}{center}{
-    \draw[/kata/style/dir] (head.center) -- ++(\kata@out:.33em);
-  }{
-    \pgfmathsetmacro{\kata@in}{#2+90}
-    \pgfmathsetcount{\kata@tmpcnta}{\kata@out-\kata@in}
-    \ifkata@dir@flip
-      \ifnum\kata@tmpcnta<0
-        \pgfmathsetmacro{\kata@outdeltaii}{360+\the\kata@tmpcnta}
+  {%
+    \kata@requirestep{\string\kataDir}
+    \pgfkeys{/kata/dir,#1}
+    \pgfmathsetmacro{\kata@out}{#3+90}
+    \kata@ifstr{#2}{center}{
+      \draw[/kata/style/dir] (head.center) -- ++(\kata@out:.33em);
+    }{
+      \pgfmathsetmacro{\kata@in}{#2+90}
+      \pgfmathsetcount{\kata@tmpcnta}{\kata@out-\kata@in}
+      \ifkata@dir@flip
+        \ifnum\kata@tmpcnta<0
+          \pgfmathsetmacro{\kata@outdeltaii}{360+\the\kata@tmpcnta}
+        \else
+          \pgfmathsetmacro{\kata@outdeltaii}{\the\kata@tmpcnta-360}
+        \fi
       \else
-        \pgfmathsetmacro{\kata@outdeltaii}{\the\kata@tmpcnta-360}
+        \pgfmathsetmacro{\kata@outdeltaii}{\the\kata@tmpcnta}
       \fi
-    \else
-      \pgfmathsetmacro{\kata@outdeltaii}{\the\kata@tmpcnta}
-    \fi
-    \draw[/kata/style/dir]
+      \draw[/kata/style/dir]
       (head.center) ++ (\kata@in:.33em)
       arc[start angle=\kata@in,delta angle=\kata@outdeltaii,radius=.33em]
-    ;
-  }
+      ;
+    }
+  }%
 }
 %    \end{macrocode}
 % \end{macro}
