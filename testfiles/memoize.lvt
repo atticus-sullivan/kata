@@ -1,0 +1,50 @@
+% vim: set expandtab:
+% vim: set shiftwidth=2:
+% vim: set tabstop=2:
+% vim: set ft=tex:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright (C) 2026 by Lukas Heindl <oss.heindl+latex@protonmail.com>
+% ---------------------------------------------------------------------------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008/05/04 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+%
+% The Current Maintainer of this work is Lukas Heindl.
+%
+% This work consists of all files listed in manifest.txt.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+
+\input regression-test.tex\relax
+
+\usepackage{memoize}
+\usepackage{kata}
+
+\begin{document}
+\START
+\TEST{kata-base}{%
+  \begin{kata}[width=3,color={waza=pink}]{Extended Example}{blue}
+    \begin{kataStep}[head style={dashed}]
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{-90}
+      \kataDir{center}{90}
+    \end{kataStep}
+  \end{kata}
+}
+\SHOWFILE{memoize.mmz}
+%
+\SHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo}
+\SHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo}
+%
+\SHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}
+\SHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}
+%
+\END
+\end{document}
