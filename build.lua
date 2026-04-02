@@ -6,3 +6,10 @@ manifestfile = "manifest.md"
 installfiles = {"*.sty"}
 sourcefiles = {"*.dtx", "*.ins"}
 excludefiles = {"*~","build.lua"}
+
+-- rm memoize files between tests
+dynamicfiles  = {"*.mmz", "memos/*"} 
+-- for tagging + memoize, I usually use 4+
+-- for tagging alone, 2+ (but 2 is often not sufficient) 
+-- for memoize alone, 3+
+checkruns = 4

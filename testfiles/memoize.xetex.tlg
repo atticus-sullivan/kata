@@ -1,5 +1,26 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
+-------- memoize.mmz (start) ---------
+(memoize.mmz) \mmzPrefix {memoize.memo.dir/}[nl]
+\mmzUsedCMemo {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo}[nl]
+\mmzUsedExtern {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0-1.pdf}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzUsedExtern {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91-1.pdf}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzUsedExtern {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91-1.pdf}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}[nl]
+\mmzUsedCMemo {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo}[nl]
+\mmzUsedExtern {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4-1.pdf}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzUsedExtern {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921-1.pdf}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.memo}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo}[nl]
+\mmzUsedExtern {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8-1.pdf}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}[nl]
+-------- memoize.mmz (end) -----------
 ============================================================
 TEST 1: kata-base
 ============================================================
@@ -17,22 +38,11 @@ File: judobelt-blue.pdf Graphic file (type pdf)
 [tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \kataWaza {technique A}{-90} \kataDir {center}{90} \end {kata@step}
 [tracing memoize]   Code md5sum: AD49BE559C145CD2E79C7530E6123CB1
 [tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo
-[tracing memoize]   C-memo does not exist
-[tracing memoize]   C-memo input failed
-[tracing memoize]   Memoizing
-[1]
-No file memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf
-[tracing memoize]   Memoization completed
-[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
-[tracing memoize]   Code: \begin {kata@step} \end {kata@step}
-[tracing memoize]   Code md5sum: 0A40161BB534B3F748EB35204295B7D5
-[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo
-[tracing memoize]   C-memo does not exist
-[tracing memoize]   C-memo input failed
-[tracing memoize]   Memoizing
-[1]
-No file memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf
-[tracing memoize]   Memoization completed
+(memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }\pgfkeysalso {dashed}},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/waza/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza/.meaning to context, draw=\kata@color@waza , -{Stealth[scale=1.2]}, }},pgfk@/kata/style/waza label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label/.meaning to context, /kata/style/waza label base, above, }},pgfk@/kata/style/waza label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label base/.meaning to context, \kata@color@waza , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/dir/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/dir/.meaning to context, draw=\kata@color@dir , -{Straight Barb}, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }}," --> 71E3408760193351BD5E0B035CFB1FF0
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo (indirect input)
+[tracing memoize]   Utilization successful
 [tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
 [tracing memoize]   Code: \begin {kata@step} \end {kata@step}
 [tracing memoize]   Code md5sum: 0A40161BB534B3F748EB35204295B7D5
@@ -41,696 +51,40 @@ No file memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA992
 [tracing memoize]   C-memo was processed successfully
 [tracing memoize]   Context: "padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black}," --> C93E732E2FA55563CDA9926345DDAA91
 [tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (indirect input)
-[tracing memoize]   Extern file does not exist: 0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf
-[tracing memoize]   Cc-memo input failed
-[tracing memoize]   Memoizing
-[1]
-No file memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf
-[tracing memoize]   Memoization completed
+[tracing memoize]   Utilization successful
+[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
+[tracing memoize]   Code: \begin {kata@step} \end {kata@step}
+[tracing memoize]   Code md5sum: 0A40161BB534B3F748EB35204295B7D5
+[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo
+(memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black}," --> C93E732E2FA55563CDA9926345DDAA91
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (indirect input)
+[tracing memoize]   Utilization successful
 Underfull \hbox (badness 10000) in paragraph at lines ...
  [] []
 \hbox(122.74686+0.0)x345.0, glue set 26.80081
 .\glue 3.33 plus 1.665 minus 1.11
 .\hbox(122.74686+0.0)x126.7468
-..\hbox(122.74686+0.0)x126.7468
-...\glue 63.37363
-...\hbox(0.0+0.0)x0.0, shifted -61.37366
-....\special{pdf:bcontent}
-....\special{pdf:code q }
-....\special{pdf:code 0 G }
-....\special{pdf:code 0 g }
-....\special{pdf:code 0.3985 w }
-....\special{pdf:code q }
-....\hbox(0.0+0.0)x0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
-.......\special{pdf:code S }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(61.17343+61.17345)x122.34688
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(61.17343+61.17345)x122.34688
-..........\vbox(0.0+0.0)x122.34688
-...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
-............\glue(\leftskip) 0.0 plus 1.0fil
-............\hbox(0.0+0.0)x0.0
-............\hbox(0.0+0.0)x0.0
-............\penalty 10000
-............\glue(\parfillskip) 0.0
-............\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
-.......\special{pdf:code S }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(6.084+0.19798)x4.626
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(6.084+0.19798)x4.626
-..........\TU/lmss/m/n/9 0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code Q }
-....\hbox(0.0+0.0)x0.0
-.....\special{pdf:code q }
-.....\special{pdf:code q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code [ 2.98883 2.98883 ] 0.0 d }
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code [ 2.98883 2.98883 ] 0.0 d }
-.......\special{pdf:code 4.6963 0.0 m }
-.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
-.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
-.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
-.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
-.......\special{pdf:code h }
-.......\special{pdf:code 0.0 0.0 m }
-.......\special{pdf:code S }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code q }
-.....\special{pdf:code 0 0 1 RG }
-.....\special{pdf:code 1.0 0.0 0.0 1.0 0.99628 0.0 cm }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code 0.0 4.89557 m }
-.....\special{pdf:code 0.0 52.98413 l }
-.....\special{pdf:code S }
-.....\special{pdf:code q }
-.....\special{pdf:code 0 0 1 rg }
-.....\special{pdf:code 0.0 1.0 -1.0 0.0 0.0 50.95511 cm }
-.....\special{pdf:code q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
-.....\special{pdf:code Q }
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{color push rgb 0 0 1}
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{color push rgb 0 0 1}
-.......\glue 0.0
-.......\special{color pop}
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 0.0 1.0 -1.0 0.0 8.35973 5.28241}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(4.858+0.06999)x51.21504
-.........\special{pdf:code 0 0 1 RG }
-.........\special{pdf:code 0 0 1 rg }
-.........\hbox(4.858+0.06999)x51.21504
-..........\vbox(4.858+0.06999)x51.21504
-...........\hbox(4.858+0.06999)x51.21504, glue set 24.36797fil
-............\hbox(0.0+0.0)x0.0
-............\hbox(0.0+0.0)x0.0
-............\special{color push rgb 0 0 1}
-............\TU/lmss/m/n/7 stance
-............\glue(\spaceskip) 2.33308
-............\TU/lmss/m/n/7 A
-............\special{color pop}
-............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
-............\glue(\rightskip) 0.0 plus 14.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{color pop}
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code q }
-.....\special{pdf:code 1 0.75 0.75 RG }
-.....\special{pdf:code 4.89557 0.0 m }
-.....\special{pdf:code 52.98413 0.0 l }
-.....\special{pdf:code S }
-.....\special{pdf:code q }
-.....\special{pdf:code 1 0.75 0.75 rg }
-.....\special{pdf:code 1.0 0.0 0.0 1.0 50.95511 0.0 cm }
-.....\special{pdf:code q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
-.....\special{pdf:code Q }
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{color push rgb 1 0.75 0.75}
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{color push rgb 1 0.75 0.75}
-.......\glue 0.0
-.......\special{color pop}
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 5.28241 4.87273}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(4.858+1.35799)x51.21504
-.........\special{pdf:code 1 0.75 0.75 RG }
-.........\special{pdf:code 1 0.75 0.75 rg }
-.........\hbox(4.858+1.35799)x51.21504
-..........\vbox(4.858+1.35799)x51.21504
-...........\hbox(4.858+1.35799)x51.21504, glue set 14.18297fil
-............\hbox(0.0+0.0)x0.0
-............\hbox(0.0+0.0)x0.0
-............\special{color push rgb 1 0.75 0.75}
-............\TU/lmss/m/n/7 technique
-............\glue(\spaceskip) 2.33308
-............\TU/lmss/m/n/7 A
-............\special{color pop}
-............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
-............\glue(\rightskip) 0.0 plus 14.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{color pop}
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code q }
-.....\special{pdf:code 1 0 0 RG }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code 0.0 0.0 m }
-.....\special{pdf:code -2.80669 0.0 l }
-.....\special{pdf:code S }
-.....\special{pdf:code q }
-.....\special{pdf:code 1 0 0 rg }
-.....\special{pdf:code -1.0 0.0 0.0 -1.0 -0.71452 0.0 cm }
-.....\special{pdf:code q [ ] 0.0 d 0 j 0 J 0.0 2.29141 m 2.29141 0.0 l 0.0 -2.29141 l S Q  }
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\special{pdf:code q }
-.....\special{pdf:code 0.3985 w }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code n }
-....\special{pdf:code Q }
-....\special{pdf:econtent}
-....\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(122.7486+0.0)x126.74353
+...\hbox(267.28857+0.0)x199.01352, shifted 72.26999
+....\glue -72.26999
+....\XeTeXpdffile ".../AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf"
 .\glue 3.33 plus 1.665 minus 1.11
 .\hbox(122.34688+0.0)x122.34688
-..\hbox(122.34688+0.0)x122.34688
-...\glue 61.17366
-...\hbox(0.0+0.0)x0.0, shifted -61.17366
-....\special{pdf:bcontent}
-....\special{pdf:code q }
-....\special{pdf:code 0 G }
-....\special{pdf:code 0 g }
-....\special{pdf:code 0.3985 w }
-....\special{pdf:code q }
-....\hbox(0.0+0.0)x0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code /pgf@CA0 gs }
-.......\special{pdf:code /pgf@ca0 gs }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code /pgf@CA0 gs }
-.......\special{pdf:code /pgf@ca0 gs }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -1.98409 -2.2456}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(4.648+0.13998)x3.983
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(4.648+0.13998)x3.983
-..........\TU/lmr/m/n/7 0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code Q }
-....\hbox(0.0+0.0)x0.0
-.....\special{pdf:code q }
-.....\special{pdf:code q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\special{pdf:code q }
-.....\special{pdf:code 0.3985 w }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code n }
-....\special{pdf:code Q }
-....\special{pdf:econtent}
-....\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(122.3471+0.0)x122.3471
+...\hbox(266.88708+0.0)x194.6171, shifted 72.26999
+....\glue -72.26999
+....\XeTeXpdffile ".../0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf"
 .\glue(\rightskip) 0.0
 Underfull \hbox (badness 10000) in paragraph at lines ...
 []
 \hbox(122.34688+0.0)x345.0
 .\hbox(122.34688+0.0)x122.34688
-..\hbox(122.34688+0.0)x122.34688
-...\glue 61.17366
-...\hbox(0.0+0.0)x0.0, shifted -61.17366
-....\special{pdf:bcontent}
-....\special{pdf:code q }
-....\special{pdf:code 0 G }
-....\special{pdf:code 0 g }
-....\special{pdf:code 0.3985 w }
-....\special{pdf:code q }
-....\hbox(0.0+0.0)x0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code /pgf@CA0 gs }
-.......\special{pdf:code /pgf@ca0 gs }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code /pgf@CA0 gs }
-.......\special{pdf:code /pgf@ca0 gs }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -1.98409 -2.2456}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(4.648+0.13998)x3.983
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(4.648+0.13998)x3.983
-..........\TU/lmr/m/n/7 0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code Q }
-....\hbox(0.0+0.0)x0.0
-.....\special{pdf:code q }
-.....\special{pdf:code q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\special{pdf:code q }
-.....\special{pdf:code 0.3985 w }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code n }
-....\special{pdf:code Q }
-....\special{pdf:econtent}
-....\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(122.3471+0.0)x122.3471
+...\hbox(266.88708+0.0)x194.6171, shifted 72.26999
+....\glue -72.26999
+....\XeTeXpdffile ".../0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf"
 .\penalty 10000
 .\glue(\parfillskip) 0.0
 .\glue(\rightskip) 0.0
@@ -742,12 +96,11 @@ File: judobelt-blue.pdf Graphic file (type pdf)
 [tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \end {kata@step}
 [tracing memoize]   Code md5sum: B54184C7AD750E521A129E6CD355AB74
 [tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo
-[tracing memoize]   C-memo does not exist
-[tracing memoize]   C-memo input failed
-[tracing memoize]   Memoizing
-[1]
-No file memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.pdf
-[tracing memoize]   Memoization completed
+(memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->blue},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }}," --> 26EA234D450BEFD4FC33A9CDE5CDE6F4
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo (indirect input)
+[tracing memoize]   Utilization successful
 [tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
 [tracing memoize]   Code: \begin {kata@step} \end {kata@step}
 [tracing memoize]   Code md5sum: 0A40161BB534B3F748EB35204295B7D5
@@ -756,421 +109,22 @@ No file memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9
 [tracing memoize]   C-memo was processed successfully
 [tracing memoize]   Context: "padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->blue},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black}," --> 2CD77CA5033C360864D9FE9411BE7921
 [tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.memo (indirect input)
-[tracing memoize]   CC-memo does not exist
-[tracing memoize]   Cc-memo input failed
-[tracing memoize]   Memoizing
-[1]
-No file memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.pdf
-[tracing memoize]   Memoization completed
+[tracing memoize]   Utilization successful
 Underfull \hbox (badness 10000) in paragraph at lines ...
  [] []
 \hbox(122.74686+0.0)x345.0, glue set 26.80081
 .\glue 3.33 plus 1.665 minus 1.11
 .\hbox(122.74686+0.0)x126.7468
-..\hbox(122.74686+0.0)x126.7468
-...\glue 63.37363
-...\hbox(0.0+0.0)x0.0, shifted -61.37366
-....\special{pdf:bcontent}
-....\special{pdf:code q }
-....\special{pdf:code 0 G }
-....\special{pdf:code 0 g }
-....\special{pdf:code 0.3985 w }
-....\special{pdf:code q }
-....\hbox(0.0+0.0)x0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
-.......\special{pdf:code S }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(61.17343+61.17345)x122.34688
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(61.17343+61.17345)x122.34688
-..........\vbox(0.0+0.0)x122.34688
-...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
-............\glue(\leftskip) 0.0 plus 1.0fil
-............\hbox(0.0+0.0)x0.0
-............\hbox(0.0+0.0)x0.0
-............\penalty 10000
-............\glue(\parfillskip) 0.0
-............\glue(\rightskip) 0.0 plus 1.0fil
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
-.......\special{pdf:code S }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(6.084+0.19798)x4.626
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(6.084+0.19798)x4.626
-..........\TU/lmss/m/n/9 0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code Q }
-....\hbox(0.0+0.0)x0.0
-.....\special{pdf:code q }
-.....\special{pdf:code q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code q }
-.......\special{pdf:code 0 G }
-.......\special{pdf:code 4.6963 0.0 m }
-.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
-.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
-.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
-.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
-.......\special{pdf:code h }
-.......\special{pdf:code 0.0 0.0 m }
-.......\special{pdf:code S }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code q }
-.....\special{pdf:code 0 0 1 RG }
-.....\special{pdf:code 1.0 0.0 0.0 1.0 0.99628 0.0 cm }
-.....\special{pdf:code 0.0 4.89557 m }
-.....\special{pdf:code 0.0 52.98413 l }
-.....\special{pdf:code S }
-.....\special{pdf:code q }
-.....\special{pdf:code 0 0 1 rg }
-.....\special{pdf:code 0.0 1.0 -1.0 0.0 0.0 50.95511 cm }
-.....\special{pdf:code q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
-.....\special{pdf:code Q }
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{color push rgb 0 0 1}
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{color push rgb 0 0 1}
-.......\glue 0.0
-.......\special{color pop}
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 0.0 1.0 -1.0 0.0 8.35973 5.28241}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(4.858+0.06999)x51.21504
-.........\special{pdf:code 0 0 1 RG }
-.........\special{pdf:code 0 0 1 rg }
-.........\hbox(4.858+0.06999)x51.21504
-..........\vbox(4.858+0.06999)x51.21504
-...........\hbox(4.858+0.06999)x51.21504, glue set 24.36797fil
-............\hbox(0.0+0.0)x0.0
-............\hbox(0.0+0.0)x0.0
-............\special{color push rgb 0 0 1}
-............\TU/lmss/m/n/7 stance
-............\glue(\spaceskip) 2.33308
-............\TU/lmss/m/n/7 A
-............\special{color pop}
-............\penalty 10000
-............\glue(\parfillskip) 0.0 plus 1.0fil
-............\glue(\rightskip) 0.0 plus 14.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{color pop}
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\special{pdf:code q }
-.....\special{pdf:code 0.3985 w }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code n }
-....\special{pdf:code Q }
-....\special{pdf:econtent}
-....\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(122.7486+0.0)x126.74353
+...\hbox(267.28857+0.0)x199.01352, shifted 72.26999
+....\glue -72.26999
+....\XeTeXpdffile ".../B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.pdf"
 .\glue 3.33 plus 1.665 minus 1.11
 .\hbox(122.34688+0.0)x122.34688
-..\hbox(122.34688+0.0)x122.34688
-...\glue 61.17366
-...\hbox(0.0+0.0)x0.0, shifted -61.17366
-....\special{pdf:bcontent}
-....\special{pdf:code q }
-....\special{pdf:code 0 G }
-....\special{pdf:code 0 g }
-....\special{pdf:code 0.3985 w }
-....\special{pdf:code q }
-....\hbox(0.0+0.0)x0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\special{pdf:code /pgf@CA0 gs }
-.......\special{pdf:code /pgf@ca0 gs }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code /pgf@CA0 gs }
-.......\special{pdf:code /pgf@ca0 gs }
-.......\glue 0.0
-.......\special{pdf:code Q }
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -1.98409 -2.2456}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(4.648+0.13998)x3.983
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(4.648+0.13998)x3.983
-..........\TU/lmr/m/n/7 0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code Q }
-....\hbox(0.0+0.0)x0.0
-.....\special{pdf:code q }
-.....\special{pdf:code q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\hbox(0.0+0.0)x0.0
-......\hbox(0.0+0.0)x0.0
-.......\special{pdf:code q }
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code q }
-.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
-.......\special{pdf: econtent}
-.......\special{pdf: bcontent}
-.......\special{pdf:code -1 0 0 -1 0 0 cm}
-.......\special{pdf:code q}
-.......\special{pdf: econtent}
-.......\special{pdf:code 0 J [] 0 d}
-.......\special{pdf:bcolor [1]}
-.......\special{pdf:bcolor [0]}
-.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
-.......\hbox(0.0+0.0)x0.0
-........\hbox(0.0+0.0)x0.0
-.........\special{pdf:code 0 G }
-.........\special{pdf:code 0 g }
-.........\hbox(0.0+0.0)x0.0
-.........\glue 0.0
-.......\special{pdf:etrans}
-.......\special{pdf:ecolor}
-.......\special{pdf:ecolor}
-.......\special{pdf: bcontent}
-.......\special{pdf:code Q Q Q}
-.......\special{pdf:code Q }
-.......\glue 0.0
-.......\glue 0.0
-.......\special{pdf:code Q }
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\special{pdf:code q }
-.....\special{pdf:code 0.3985 w }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0
-.....\special{pdf:code Q }
-.....\glue 0.0 plus 1.0fil minus 1.0fil
-....\special{pdf:code n }
-....\special{pdf:code Q }
-....\special{pdf:econtent}
-....\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(122.3471+0.0)x122.3471
+...\hbox(266.88708+0.0)x194.6171, shifted 72.26999
+....\glue -72.26999
+....\XeTeXpdffile ".../0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.pdf"
 .\penalty 10000
 .\glue(\parfillskip) 0.0
 .\glue(\rightskip) 0.0
@@ -1178,15 +132,11 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 [tracing memoize]   Code: \begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}
 [tracing memoize]   Code md5sum: 0A2450D890F084315497BA7BB4448C8A
 [tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo
-[tracing memoize]   C-memo does not exist
-[tracing memoize]   C-memo input failed
-[tracing memoize]   Memoizing
-[1]
-No file memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf
-[tracing memoize]   Memoization completed
--------- memoize.mmz (start) ---------
-(memoize.mmz) [nl]
--------- memoize.mmz (end) -----------
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in)," --> E778DCCCB8AAB0BBD3F6CFEEFD2421F8
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (indirect input)
+[tracing memoize]   Utilization successful
 extended example -- visible step
 -------- memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo (start) ---------
 (memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo) \mmzMemo[nl]
@@ -1230,7 +180,7 @@ tikzpicture with clean context
 -------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (start) ---------
 (memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo) \mmzResource{0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}%[nl]
 \mmzMemo[nl]
-\quitvmode \mmzIncludeExtern {0}\hbox {28.86594pt}{14.44592pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
+\quitvmode \mmzIncludeExtern {0}\hbox {28.87155pt}{13.89926pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
 \mmzThisContext[nl]
 padding=(1in,1in,1in,1in),[nl]
 \mmzEndMemo[nl]
