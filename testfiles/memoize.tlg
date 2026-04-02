@@ -1173,24 +1173,6 @@ padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pg
 \mmzEndMemo[nl]
 -------- memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (end) -----------
 ============================================================
-tikzpicture with clean context
-============================================================
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (start) ---------
-(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo) \mmzMemo[nl]
-\global \mmzContextExtra {}%[nl]
-%[nl]
-\mmzSource[nl]
-\begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}[nl]
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (end) -----------
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (start) ---------
-(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo) \mmzResource{0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}%[nl]
-\mmzMemo[nl]
-\quitvmode \mmzIncludeExtern {0}\hbox {28.87155pt}{13.89926pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
-\mmzThisContext[nl]
-padding=(1in,1in,1in,1in),[nl]
-\mmzEndMemo[nl]
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (end) -----------
-============================================================
 extended example 2 -- visible step
 ============================================================
 -------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo (start) ---------
@@ -1208,4 +1190,22 @@ extended example 2 -- visible step
 padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->blue},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }},[nl]
 \mmzEndMemo[nl]
 -------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo (end) -----------
+============================================================
+tikzpicture with clean context
+============================================================
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (start) ---------
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo) \mmzMemo[nl]
+\global \mmzContextExtra {}%[nl]
+%[nl]
+\mmzSource[nl]
+\begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}[nl]
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (end) -----------
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (start) ---------
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo) \mmzResource{0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}%[nl]
+\mmzMemo[nl]
+\quitvmode \mmzIncludeExtern {0}\hbox {28.87155pt}{13.89926pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
+\mmzThisContext[nl]
+padding=(1in,1in,1in,1in),[nl]
+\mmzEndMemo[nl]
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (end) -----------
 ============================================================
