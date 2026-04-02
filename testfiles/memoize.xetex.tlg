@@ -775,6 +775,10 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 .\penalty 10000
 .\glue(\parfillskip) 0.0
 .\glue(\rightskip) 0.0
+============================================================
+============================================================
+TEST 2: kata-base2
+============================================================
 File: judobelt-blue.pdf Graphic file (type pdf)
 <use judobelt-blue.pdf>
 File: judobelt-blue.pdf Graphic file (type pdf)
@@ -1219,6 +1223,10 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 .\penalty 10000
 .\glue(\parfillskip) 0.0
 .\glue(\rightskip) 0.0
+============================================================
+============================================================
+TEST 3: kata-ordinary-tikzpicture
+============================================================
 [tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
 [tracing memoize]   Code: \begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}
 [tracing memoize]   Code md5sum: 0A2450D890F084315497BA7BB4448C8A
@@ -1233,7 +1241,13 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 [1]
 No file memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf
 [tracing memoize]   Memoization completed
+============================================================
+============================================================
+TEST 4: kata-memos
+============================================================
+============================================================
 extended example -- visible step
+============================================================
 -------- memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo (start) ---------
 (memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo) \mmzMemo[nl]
 \global \mmzContextExtra {\detokenize {pgfk@/kata/style/head/.@cmd}\ifcsname pgfk@/kata/style/head/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/head/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance/.@cmd}\ifcsname pgfk@/kata/style/stance/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label/.@cmd}\ifcsname pgfk@/kata/style/stance label/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label base/.@cmd}\ifcsname pgfk@/kata/style/stance label base/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label base/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/waza/.@cmd}\ifcsname pgfk@/kata/style/waza/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/waza/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/waza label/.@cmd}\ifcsname pgfk@/kata/style/waza label/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/waza label/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/waza label base/.@cmd}\ifcsname pgfk@/kata/style/waza label base/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/waza label base/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/dir/.@cmd}\ifcsname pgfk@/kata/style/dir/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/dir/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/border/.@cmd}\ifcsname pgfk@/kata/style/border/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/border/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/step counter/.@cmd}\ifcsname pgfk@/kata/style/step counter/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/step counter/.@cmd\endcsname }\fi ,}%[nl]
@@ -1249,7 +1263,9 @@ extended example -- visible step
 padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }\pgfkeysalso {dashed}},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/waza/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza/.meaning to context, draw=\kata@color@waza , -{Stealth[scale=1.2]}, }},pgfk@/kata/style/waza label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label/.meaning to context, /kata/style/waza label base, above, }},pgfk@/kata/style/waza label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label base/.meaning to context, \kata@color@waza , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/dir/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/dir/.meaning to context, draw=\kata@color@dir , -{Straight Barb}, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }},[nl]
 \mmzEndMemo[nl]
 -------- memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo (end) -----------
+============================================================
 single externalized phantom step
+============================================================
 -------- memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo (start) ---------
 (memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo) \mmzMemo[nl]
 \global \mmzContextExtra {}%[nl]
@@ -1265,23 +1281,9 @@ single externalized phantom step
 padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},[nl]
 \mmzEndMemo[nl]
 -------- memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (end) -----------
-tikzpicture with clean context
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (start) ---------
-(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo) \mmzMemo[nl]
-\global \mmzContextExtra {}%[nl]
-%[nl]
-\mmzSource[nl]
-\begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}[nl]
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (end) -----------
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (start) ---------
-(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo) \mmzResource{0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}%[nl]
-\mmzMemo[nl]
-\quitvmode \mmzIncludeExtern {0}\hbox {28.86594pt}{14.44592pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
-\mmzThisContext[nl]
-padding=(1in,1in,1in,1in),[nl]
-\mmzEndMemo[nl]
--------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (end) -----------
+============================================================
 extended example 2 -- visible step
+============================================================
 -------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo (start) ---------
 (memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo) \mmzMemo[nl]
 \global \mmzContextExtra {\detokenize {pgfk@/kata/style/head/.@cmd}\ifcsname pgfk@/kata/style/head/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/head/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance/.@cmd}\ifcsname pgfk@/kata/style/stance/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label/.@cmd}\ifcsname pgfk@/kata/style/stance label/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label base/.@cmd}\ifcsname pgfk@/kata/style/stance label base/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label base/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/border/.@cmd}\ifcsname pgfk@/kata/style/border/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/border/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/step counter/.@cmd}\ifcsname pgfk@/kata/style/step counter/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/step counter/.@cmd\endcsname }\fi ,}%[nl]
@@ -1297,4 +1299,22 @@ extended example 2 -- visible step
 padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->blue},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }},[nl]
 \mmzEndMemo[nl]
 -------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo (end) -----------
+============================================================
+tikzpicture with clean context
+============================================================
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (start) ---------
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo) \mmzMemo[nl]
+\global \mmzContextExtra {}%[nl]
+%[nl]
+\mmzSource[nl]
+\begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}[nl]
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (end) -----------
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (start) ---------
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo) \mmzResource{0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}%[nl]
+\mmzMemo[nl]
+\quitvmode \mmzIncludeExtern {0}\hbox {28.86594pt}{14.44592pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
+\mmzThisContext[nl]
+padding=(1in,1in,1in,1in),[nl]
+\mmzEndMemo[nl]
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (end) -----------
 ============================================================
