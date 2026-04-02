@@ -24,13 +24,24 @@
 
 \input regression-test.tex\relax
 
+\newcommand\IFEXISTSSHOWFILE[1]{%
+  \IfFileExists{#1}{%
+    \SHOWFILE{#1}%
+  }{%
+    \TYPE{NO FILE #1!}%
+  }%
+}
+\START
+\IFEXISTSSHOWFILE{\jobname.mmz}
+\OMIT
+
 \usepackage{memoize}
 \mmzset{include context in ccmemo,trace}
 
 \usepackage{kata}
 
 \begin{document}
-\START
+\TIMO
 \TEST{kata-base}{%
   \begin{kata}[width=3,color={waza=pink}]{Extended Example}{blue}
     \begin{kataStep}[head style={dashed}]
@@ -51,23 +62,21 @@
     \node[draw] {ABC};
   \end{tikzpicture}
   %
-  \SHOWFILE{memoize.mmz}
-  %
   \TYPE{extended example -- visible step}
-  \SHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo}
-  \SHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo}
   %
   \TYPE{single externalized phantom step}
-  \SHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}
-  \SHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}
   %
   \TYPE{tikzpicture with clean context}
-  \SHOWFILE{memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo}
-  \SHOWFILE{memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}
   %
   \TYPE{extended example 2 -- visible step}
-  \SHOWFILE{memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo}
-  \SHOWFILE{memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo}
+  \IFEXISTSSHOWFILE{memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo}
 }
 %
 \END
