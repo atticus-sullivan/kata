@@ -1,0 +1,668 @@
+% vim: set expandtab:
+% vim: set shiftwidth=2:
+% vim: set tabstop=2:
+% vim: set ft=tex:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright (C) 2026 by Lukas Heindl <oss.heindl+latex@protonmail.com>
+% ---------------------------------------------------------------------------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008/05/04 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+%
+% The Current Maintainer of this work is Lukas Heindl.
+%
+% This work consists of all files listed in manifest.txt.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+
+\input regression-test.tex\relax
+
+\usepackage{kata}
+
+% hook into internals in order to inspect how many phantoms have been generated
+\newcounter{kataTestPhantoms}
+\pgfkeys{/kata/style/step phantom/.append code={\stepcounter{kataTestPhantoms}}}
+
+% hook into internals in order to check which style was used
+\pgfkeys{
+  /kata/style/stance label/.append code={\TYPE{stance-label=normal}},
+  /kata/style/stance label flipped/.append code={\TYPE{stance-label=flipped}},
+  /kata/style/waza label/.append code={\TYPE{waza-label=normal}},
+  /kata/style/waza label flipped/.append code={\TYPE{waza-label=flipped}},
+  /kata/style/step phantom/.append code={\TYPE{step-phantom-style-applied}},
+}
+
+% overwrite marginline to inspect the margin content
+\newcommand\marginline[1]{%
+  \TYPE{marginline=\detokenize{#1}}%
+  \marginpar[{\raggedleft #1}]{\raggedright #1}%
+}
+
+% One wrapper for all kata regression cases
+\NewDocumentCommand{\KataTestCase}{om+m}{%
+  \TEST{#2}{%
+    \setcounter{kataTestPhantoms}{0}%
+    #3%
+    \SEPARATOR%
+    \TYPE{manually added constraints}%
+    \TYPE{kataTestPhantoms=\arabic{kataTestPhantoms}}%
+    \IfValueT{#1}{%
+      \ifnum \value{kataTestPhantoms}=#1 \else \ERROR \fi%
+    }%
+  }%
+}
+
+% function to dump all colors defined
+\makeatletter
+\newcommand\KataDumpColors{%
+  \TYPE{stance=\kata@color@stance}%
+  \TYPE{waza=\kata@color@waza}%
+  \TYPE{dir=\kata@color@dir}%
+  \TYPE{head=\kata@color@head}%
+  \TYPE{border=\kata@color@border}%
+  \TYPE{stepcounter=\kata@color@stepcounter}%
+}
+\makeatother
+
+\tikzset{
+  debugPhantomStyle/.style={
+    draw=red,
+    fill=red!10,
+  }
+}
+
+\begin{document}
+\START
+
+%%%%%%%%%%%%%
+%% PHANTOM %%
+%%%%%%%%%%%%%
+\part{Basic}
+
+\KataTestCase{kata-basic}{%
+  \begin{kata}[width=1]{section title}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{-90}
+      \kataDir{center}{90}
+      \kataKiai{90}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%
+%% PHANTOM %%
+%%%%%%%%%%%%%
+\part{Phantom}
+
+\KataTestCase[0]{kata-phantom-none}{%
+  \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
+  \begin{kata}[width=2]{phantom none}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance B}{180}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase[1]{kata-phantom-one}{%
+  \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
+  \begin{kata}[width=2]{phantom one}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase[2]{kata-phantom-two}{%
+  \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
+  \begin{kata}[width=3]{phantom two}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase[1]{kata-phantom-manual}{%
+  \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
+  \begin{kata}[width=2]{manual phantom}{blue}
+    \begin{kataStep}[phantom]
+    \end{kataStep}
+    \stepcounter{kata@step} % manually step because phantom does not step
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase[2]{kata-phantom-mixed}{%
+  \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
+  \begin{kata}[width=3]{mixed phantom}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+    \end{kataStep}
+    \begin{kataStep}[phantom]
+    \end{kataStep}
+    \stepcounter{kata@step} % manually step because phantom does not step
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%
+%% MARGINLINE %%
+%%%%%%%%%%%%%%%%
+\part{Marginline}
+
+\KataTestCase{kata-marginline-text+belt}{%
+  \begin{kata}[width=1]{text and belt given}{arbitrary text}[red]%
+    should show text and use the custom belt color\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-marginline-text+emptyBelt}{%
+  \begin{kata}[width=1]{text and empty belt}{arbitrary text}[]%
+    should show text but no belt\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-marginline-text+noBelt}{%
+  \begin{kata}[width=1]{text but no belt}{blue}%
+    should show text and use text as belt color\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-marginline-emptyText+belt}{%
+  \begin{kata}[width=1]{empty text but belt}{}[red]%
+    should show no text but the belt\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-marginline-emptyText+emptyBelt}{%
+  \begin{kata}[width=1]{empty text and empty belt}{}[]%
+    should not draw a marginline\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-marginline-emptyText+noBelt}{%
+  \begin{kata}[width=1]{empty text and no belt}{}%
+    should not draw a marginline\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% STEP COUNTER FORMAT %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Step counter formatting}
+
+\KataTestCase{kata-stepcnt-default}{%
+  \begin{kata}[width=1]{step counter default}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-stepcnt-roman}{%
+    \renewcommand\kataStepCnt[1]{\roman{#1}}%
+    \begin{kata}[width=1]{step counter roman}{blue}
+      \begin{kataStep}
+      \end{kataStep}
+      \begin{kataStep}
+      \end{kataStep}
+    \end{kata}
+}
+
+\KataTestCase{kata-stepcnt-local}{%
+  only the second image should have a roman counter\par
+  \begin{kata}[width=1]{step counter local}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+    {%
+      \renewcommand\kataStepCnt[1]{\roman{#1}}%
+      \begin{kataStep}
+      \end{kataStep}
+    }%
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%%%%%%
+%% PGF-KEYS > flip %%
+%%%%%%%%%%%%%%%%%%%%%
+\part{PGF-Keys -- flip}
+
+\KataTestCase{kata-stance-flip-off}{%
+  \begin{kata}[width=1]{stance un-flipped}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-stance-flip-on}{%
+  \begin{kata}[width=1]{stance flipped}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}[flip]
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-waza-flip-off}{%
+  \begin{kata}[width=1]{waza un-flipped}{blue}
+    \begin{kataStep}
+      \kataWaza{technique A}{0}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-waza-flip-on}{%
+  \begin{kata}[width=1]{waza fliped}{blue}
+    \begin{kataStep}
+      \kataWaza{technique A}{0}[flip]
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-dir-normal}{%
+  \begin{kata}[width=1]{dir un-flipped}{blue}
+    \begin{kataStep}
+      \kataDir{0}{180}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-dir-flip}{%
+  \begin{kata}[width=1]{dir flipped}{blue}
+    \begin{kataStep}
+      \kataDir[flip]{0}{180}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% PGF-KEYS > color %%
+%%%%%%%%%%%%%%%%%%%%%%
+\part{PGF-Keys -- color}
+
+\KataTestCase{kata-color-kata}{%
+  \begin{kata}[width=1,color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]{colors kata}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{90}
+      \kataDir{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{90}
+      \kataDir{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-color-step}{%
+  \begin{kata}[width=1]{colors step}{blue}
+    \begin{kataStep}[color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{90}
+      \kataDir{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{90}
+      \kataDir{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-color-global}{%
+  \kataSetup{color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}}
+  \begin{kata}[width=1]{colors global}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{90}
+      \kataDir{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+      \kataWaza{technique A}{90}
+      \kataDir{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-color-local}{%
+  \begin{kata}[width=1,color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]{colors local}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}[color=orange]
+      \kataWaza{technique A}{90}[color=brown]
+      \kataDir[color=magenta]{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance A}{0}[color=orange]
+      \kataWaza{technique A}{90}[color=brown]
+      \kataDir[color=magenta]{0}{180}
+      \KataDumpColors
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% PGF-KEYS > border %%
+%%%%%%%%%%%%%%%%%%%%%%%
+\part{PGF-Keys -- border}
+
+\KataTestCase{kata-border-style}{%
+  \begin{kata}[width=1]{border style}{blue}
+    \begin{kataStep}[border style={dashed}]
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-border-arrow-up}{%
+  \begin{kata}[width=1]{border arrow up}{blue}
+    \begin{kataStep}[border preset={arrow up}]
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-border-accent}{%
+  \begin{kata}[width=1]{border accent}{blue}
+    \begin{kataStep}[border preset={accent=blue}]
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-border-combined-step}{%
+  \begin{kata}[width=1]{border combined (step-level)}{blue}
+    \begin{kataStep}[border style={dashed},border preset={arrow up,accent=blue}]
+    \end{kataStep}
+  \end{kata}
+}
+\KataTestCase{kata-border-combined-kata}{%
+  \begin{kata}[width=1,border style={dotted},border preset={arrow right,accent=blue}]{border combined (kata-level)}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+\KataTestCase{kata-border-combined-global}{%
+  \kataSetup{border style={dashed},border preset={arrow down,accent=blue}}
+  \begin{kata}[width=1]{border combined (global-level)}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% PGF-KEYS > styles %%
+%%%%%%%%%%%%%%%%%%%%%%%
+\part{PGF-Keys -- styles}
+
+\KataTestCase{kata-head-style-kata}{%
+  \begin{kata}[width=1,head style={dashed}]{head style (kata)}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+\KataTestCase{kata-head-style-step}{%
+  \begin{kata}[width=1]{head style (step)}{blue}
+    \begin{kataStep}[head style={dashed}]
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+\KataTestCase{kata-head-style-global}{%
+  \kataSetup{head style={dashed}}
+  \begin{kata}[width=1]{head style (global)}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-stepcounter-style-kata}{%
+  \begin{kata}[width=1,step counter style={dashed}]{step counter style (kata)}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+\KataTestCase{kata-stepcounter-style-step}{%
+  \begin{kata}[width=1]{step counter style (step)}{blue}
+    \begin{kataStep}[step counter style={dashed}]
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+\KataTestCase{kata-stepcounter-style-global}{%
+  \kataSetup{step counter style={dashed}}
+  \begin{kata}[width=1]{step counter style (global)}{blue}
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%
+%% ANGLE ARGS %%
+%%%%%%%%%%%%%%%%
+\part{Angle args}
+
+\KataTestCase{kata-angle-stance}{%
+  \begin{kata}[width=1]{stance angles}{blue}
+    \begin{kataStep}
+      \kataStance{stance A $-360$}{-360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance A $0$}{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance A $360$}{360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance B $180$}{180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance B $-180$}{-180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance C $90$}{90}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataStance{stance D $-90$}{-90}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-angle-waza}{%
+  \begin{kata}[width=1]{waza angles}{blue}
+    \begin{kataStep}
+      \kataWaza{technique A $-360$}{-360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataWaza{technique A $0$}{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataWaza{technique A $360$}{360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataWaza{technique B $180$}{180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataWaza{technique B $-180$}{-180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataWaza{technique C $90$}{90}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataWaza{technique D $-90$}{-90}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-angle-kiai}{%
+  \begin{kata}[width=1]{kiai angles}{blue}
+    \begin{kataStep}
+      \kataKiai{360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataKiai{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataKiai{-360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataKiai{180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataKiai{-180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataKiai{90}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataKiai{-90}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-angle-dir-center}{%
+  \begin{kata}[width=1]{dir angles -- center}{blue}
+    \begin{kataStep}
+      \kataDir{center}{360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{center}{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{center}{-360}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{center}{180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{center}{-180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{center}{90}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{center}{-90}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-angle-dir-turn}{%
+  \begin{kata}[width=1]{dir angles -- turn}{blue}
+    \begin{kataStep}
+      \kataDir{0}{180}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{180}{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{-90}{90}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{-90}{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir[flip]{-90}{0}
+    \end{kataStep}
+    \begin{kataStep}
+      \kataDir{270}{90}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIDE / PREFIX ARGUMENT %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{prefix/side arguments}
+
+\KataTestCase{kata-prefix-stance}{%
+  \begin{kata}[width=1]{stance}{blue}
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+      \kataStance[R]{stance A}{90}
+      \kataStance[L]{stance B}{180}
+      \kataStance[arbitrary]{stance C}{-90}
+    \end{kataStep}
+  \end{kata}
+}
+
+\KataTestCase{kata-prefix-waza}{%
+  \begin{kata}[width=1]{waza}{blue}
+    \begin{kataStep}
+      \kataWaza{technique A}{0}
+      \kataWaza[R]{technique A}{90}
+      \kataWaza[L]{technique B}{180}
+      \kataWaza[arbitrary]{technique C}{-90}
+    \end{kataStep}
+  \end{kata}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CMDs AT INVALID PLACES %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Commands at invalid places (check for errors)}
+
+\KataTestCase{kata-cmd-invalid-places-kata}{%
+  \begin{kata}[width=1]{waza}{blue}
+      \kataWaza{technique A}{0}
+      \kataStance{stance A}{0}
+      \kataDir{-90}{0}
+      \kataKiai{360}
+  \end{kata}
+}
+
+\KataTestCase{kata-cmd-invalid-places-global}{%
+  \kataWaza{technique A}{0}
+  \kataStance{stance A}{0}
+  \kataDir{-90}{0}
+  \kataKiai{360}
+}
+
+\KataTestCase{kata-step-invalid-places-global}{%
+  \begin{kataStep}
+  \end{kataStep}
+}
+
+\vfil\break % so the full output can be checked on l3build save
+\END
+\end{document}

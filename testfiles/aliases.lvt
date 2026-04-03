@@ -1,0 +1,57 @@
+% vim: set expandtab:
+% vim: set shiftwidth=2:
+% vim: set tabstop=2:
+% vim: set ft=tex:
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Copyright (C) 2026 by Lukas Heindl <oss.heindl+latex@protonmail.com>
+% ---------------------------------------------------------------------------
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3c
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3c or later is part of all distributions of LaTeX
+% version 2008/05/04 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+%
+% The Current Maintainer of this work is Lukas Heindl.
+%
+% This work consists of all files listed in manifest.txt.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{article}
+
+\input regression-test.tex\relax
+
+\usepackage[definealiases]{kata}
+
+\newcounter{kataTestPhantoms}
+\pgfkeys{/kata/style/step phantom/.append code={\stepcounter{kataTestPhantoms}}}
+
+% One wrapper for all kata regression cases
+\newcommand\KataTestCase[2]{%
+  \TEST{#1}{%
+    \setcounter{kataTestPhantoms}{0}%
+    #2%
+    \SEPARATOR%
+    \TYPE{manually added constraints}%
+    \TYPE{kataTestPhantoms=\arabic{kataTestPhantoms}}%
+  }%
+}
+
+\begin{document}
+\START
+\KataTestCase{kata-aliased-basic}{%
+  \setcounter{kataTestPhantoms}{0}
+  \begin{kata}{section title}{blue}
+    \begin{step}
+      \stance{stance A}{0}
+      \waza{technique A}{-90}
+      \dir{center}{90}
+      \kiai{90}
+    \end{step}
+  \end{kata}
+}
+\END
+\end{document}

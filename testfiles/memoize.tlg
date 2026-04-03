@@ -1,0 +1,1211 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+-------- memoize.mmz (start) ---------
+(memoize.mmz) \mmzPrefix {memoize.memo.dir/}[nl]
+\mmzUsedCMemo {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo}[nl]
+\mmzNewCMemo {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo}[nl]
+\mmzNewCCMemo {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo}[nl]
+\mmzNewExtern {memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf}{1}{271.28677pt}{267.28683pt}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}[nl]
+\mmzNewCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzNewCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}[nl]
+\mmzNewExtern {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf}{2}{266.88686pt}{266.88686pt}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}[nl]
+\mmzNewCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzNewCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}[nl]
+\mmzNewExtern {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf}{3}{266.88686pt}{266.88686pt}[nl]
+\mmzUsedCMemo {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo}[nl]
+\mmzNewCMemo {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo}[nl]
+\mmzNewCCMemo {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo}[nl]
+\mmzNewExtern {memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.pdf}{4}{271.28677pt}{267.28683pt}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.memo}[nl]
+\mmzNewCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}[nl]
+\mmzNewCCMemo {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.memo}[nl]
+\mmzNewExtern {memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.pdf}{5}{266.88686pt}{266.88686pt}[nl]
+\mmzUsedCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo}[nl]
+\mmzUsedCCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}[nl]
+\mmzNewCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo}[nl]
+\mmzNewCCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}[nl]
+\mmzNewExtern {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}{6}{173.41153pt}{158.43924pt}[nl]
+-------- memoize.mmz (end) -----------
+============================================================
+TEST 1: kata-base
+============================================================
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
+<judobelt-blue.pdf, id=4, 360.34625pt x 139.52126pt>
+File: judobelt-blue.pdf Graphic file (type pdf)
+<use judobelt-blue.pdf>
+Package pdftex.def Info: judobelt-blue.pdf  used on input line ....
+(pdftex.def)             Requested size: 36.03673pt x 13.95294pt.
+File: judobelt-blue.pdf Graphic file (type pdf)
+<use judobelt-blue.pdf>
+Package pdftex.def Info: judobelt-blue.pdf  used on input line ....
+(pdftex.def)             Requested size: 36.03673pt x 13.95294pt.
+[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
+[tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \kataWaza {technique A}{-90} \kataDir {center}{90} \end {kata@step}
+[tracing memoize]   Code md5sum: AD49BE559C145CD2E79C7530E6123CB1
+[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo
+(memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }\pgfkeysalso {dashed}},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/waza/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza/.meaning to context, draw=\kata@color@waza , -{Stealth[scale=1.2]}, }},pgfk@/kata/style/waza label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label/.meaning to context, /kata/style/waza label base, above, }},pgfk@/kata/style/waza label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label base/.meaning to context, \kata@color@waza , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/dir/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/dir/.meaning to context, draw=\kata@color@dir , -{Straight Barb}, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }}," --> 71E3408760193351BD5E0B035CFB1FF0
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo (indirect input)
+[tracing memoize]   Extern file does not exist: AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf
+[tracing memoize]   Cc-memo input failed
+[tracing memoize]   Memoizing
+[1]
+No file memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf
+[tracing memoize]   Memoization completed
+[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
+[tracing memoize]   Code: \begin {kata@step} \end {kata@step}
+[tracing memoize]   Code md5sum: 0A40161BB534B3F748EB35204295B7D5
+[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo
+(memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black}," --> C93E732E2FA55563CDA9926345DDAA91
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (indirect input)
+[tracing memoize]   Extern file does not exist: 0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf
+[tracing memoize]   Cc-memo input failed
+[tracing memoize]   Memoizing
+[1]
+No file memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf
+[tracing memoize]   Memoization completed
+[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
+[tracing memoize]   Code: \begin {kata@step} \end {kata@step}
+[tracing memoize]   Code md5sum: 0A40161BB534B3F748EB35204295B7D5
+[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo
+(memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black}," --> C93E732E2FA55563CDA9926345DDAA91
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (indirect input)
+[tracing memoize]   Extern file does not exist: 0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf
+[tracing memoize]   Cc-memo input failed
+[tracing memoize]   Memoizing
+[1]
+No file memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf
+[tracing memoize]   Memoization completed
+Underfull \hbox (badness 10000) in paragraph at lines ...
+ [] []
+\hbox(122.74686+0.0)x345.0, glue set 26.77206
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\hbox(122.74686+0.0)x126.7468
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{[ 2.98883 2.98883 ] 0.0 d }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{[ 2.98883 2.98883 ] 0.0 d }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{q }
+.....\pdfliteral{0 0 1 RG }
+.....\pdfliteral{1.0 0.0 0.0 1.0 0.99628 0.0 cm }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{0.0 4.89557 m }
+.....\pdfliteral{0.0 52.98413 l }
+.....\pdfliteral{S }
+.....\pdfliteral{q }
+.....\pdfliteral{0 0 1 rg }
+.....\pdfliteral{0.0 1.0 -1.0 0.0 0.0 50.95511 cm }
+.....\pdfliteral{q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
+.....\pdfliteral{Q }
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 8.39406
+........\hbox(0.0+0.0)x0.0, shifted -5.30215
+.........\pdfliteral{0.0 1.0 -1.0 0.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(4.8611+0.0)x51.21504
+...........\pdfliteral{0 0 1 RG }
+...........\pdfliteral{0 0 1 rg }
+...........\hbox(4.8611+0.0)x51.21504
+............\vbox(4.8611+0.0)x51.21504
+.............\hbox(4.8611+0.0)x51.21504, glue set 24.21637fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+..............\OT1/cmss/m/n/7 s
+..............\OT1/cmss/m/n/7 t
+..............\OT1/cmss/m/n/7 a
+..............\OT1/cmss/m/n/7 n
+..............\OT1/cmss/m/n/7 c
+..............\OT1/cmss/m/n/7 e
+..............\glue(\spaceskip) 2.47893
+..............\OT1/cmss/m/n/7 A
+..............\pdfcolorstack 0 pop
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0 plus 1.0fil
+..............\glue(\rightskip) 0.0 plus 14.87521
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{q }
+.....\pdfliteral{1 0.75 0.75 RG }
+.....\pdfliteral{4.89557 0.0 m }
+.....\pdfliteral{52.98413 0.0 l }
+.....\pdfliteral{S }
+.....\pdfliteral{q }
+.....\pdfliteral{1 0.75 0.75 rg }
+.....\pdfliteral{1.0 0.0 0.0 1.0 50.95511 0.0 cm }
+.....\pdfliteral{q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
+.....\pdfliteral{Q }
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {1 0.75 0.75 rg 1 0.75 0.75 RG}
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {1 0.75 0.75 rg 1 0.75 0.75 RG}
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 5.30215
+........\hbox(0.0+0.0)x0.0, shifted -4.89407
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(4.8611+1.3611)x51.21504
+...........\pdfliteral{1 0.75 0.75 RG }
+...........\pdfliteral{1 0.75 0.75 rg }
+...........\hbox(4.8611+1.3611)x51.21504
+............\vbox(4.8611+1.3611)x51.21504
+.............\hbox(4.8611+1.3611)x51.21504, glue set 14.03952fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\pdfcolorstack 0 push {1 0.75 0.75 rg 1 0.75 0.75 RG}
+..............\OT1/cmss/m/n/7 t
+..............\OT1/cmss/m/n/7 e
+..............\OT1/cmss/m/n/7 c
+..............\OT1/cmss/m/n/7 h
+..............\OT1/cmss/m/n/7 n
+..............\OT1/cmss/m/n/7 i
+..............\OT1/cmss/m/n/7 q
+..............\OT1/cmss/m/n/7 u
+..............\OT1/cmss/m/n/7 e
+..............\glue(\spaceskip) 2.47893
+..............\OT1/cmss/m/n/7 A
+..............\pdfcolorstack 0 pop
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0 plus 1.0fil
+..............\glue(\rightskip) 0.0 plus 14.87521
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{q }
+.....\pdfliteral{1 0 0 RG }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{0.0 0.0 m }
+.....\pdfliteral{-2.80669 0.0 l }
+.....\pdfliteral{S }
+.....\pdfliteral{q }
+.....\pdfliteral{1 0 0 rg }
+.....\pdfliteral{-1.0 0.0 0.0 -1.0 -0.71452 0.0 cm }
+.....\pdfliteral{q [ ] 0.0 d 0 j 0 J 0.0 2.29141 m 2.29141 0.0 l 0.0 -2.29141 l S Q  }
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\hbox(122.34688+0.0)x122.34688
+..\hbox(122.34688+0.0)x122.34688
+...\glue 61.17366
+...\hbox(0.0+0.0)x0.0, shifted -61.17366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{/pgf@CA0 gs }
+.......\pdfliteral{/pgf@ca0 gs }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{/pgf@CA0 gs }
+.......\pdfliteral{/pgf@ca0 gs }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -1.99306
+........\hbox(0.0+0.0)x0.0, shifted 2.25555
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(4.51111+0.0)x3.98613
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(4.51111+0.0)x3.98613
+............\OT1/cmr/m/n/7 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue(\rightskip) 0.0
+Underfull \hbox (badness 10000) in paragraph at lines ...
+[]
+\hbox(122.34688+0.0)x345.0
+.\hbox(122.34688+0.0)x122.34688
+..\hbox(122.34688+0.0)x122.34688
+...\glue 61.17366
+...\hbox(0.0+0.0)x0.0, shifted -61.17366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{/pgf@CA0 gs }
+.......\pdfliteral{/pgf@ca0 gs }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{/pgf@CA0 gs }
+.......\pdfliteral{/pgf@ca0 gs }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -1.99306
+........\hbox(0.0+0.0)x0.0, shifted 2.25555
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(4.51111+0.0)x3.98613
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(4.51111+0.0)x3.98613
+............\OT1/cmr/m/n/7 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
+============================================================
+============================================================
+TEST 2: kata-base2
+============================================================
+File: judobelt-blue.pdf Graphic file (type pdf)
+<use judobelt-blue.pdf>
+Package pdftex.def Info: judobelt-blue.pdf  used on input line ....
+(pdftex.def)             Requested size: 36.03673pt x 13.95294pt.
+File: judobelt-blue.pdf Graphic file (type pdf)
+<use judobelt-blue.pdf>
+Package pdftex.def Info: judobelt-blue.pdf  used on input line ....
+(pdftex.def)             Requested size: 36.03673pt x 13.95294pt.
+[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
+[tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \end {kata@step}
+[tracing memoize]   Code md5sum: B54184C7AD750E521A129E6CD355AB74
+[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo
+(memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->blue},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }}," --> 26EA234D450BEFD4FC33A9CDE5CDE6F4
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo (indirect input)
+[tracing memoize]   Extern file does not exist: B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.pdf
+[tracing memoize]   Cc-memo input failed
+[tracing memoize]   Memoizing
+[1]
+No file memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.pdf
+[tracing memoize]   Memoization completed
+[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
+[tracing memoize]   Code: \begin {kata@step} \end {kata@step}
+[tracing memoize]   Code md5sum: 0A40161BB534B3F748EB35204295B7D5
+[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo
+(memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->blue},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black}," --> 2CD77CA5033C360864D9FE9411BE7921
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.memo (indirect input)
+[tracing memoize]   Extern file does not exist: 0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.pdf
+[tracing memoize]   Cc-memo input failed
+[tracing memoize]   Memoizing
+[1]
+No file memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-2CD77CA5033C360864D9FE9411BE7921.pdf
+[tracing memoize]   Memoization completed
+Underfull \hbox (badness 10000) in paragraph at lines ...
+ [] []
+\hbox(122.74686+0.0)x345.0, glue set 26.77206
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\hbox(122.74686+0.0)x126.7468
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{q }
+.....\pdfliteral{0 0 1 RG }
+.....\pdfliteral{1.0 0.0 0.0 1.0 0.99628 0.0 cm }
+.....\pdfliteral{0.0 4.89557 m }
+.....\pdfliteral{0.0 52.98413 l }
+.....\pdfliteral{S }
+.....\pdfliteral{q }
+.....\pdfliteral{0 0 1 rg }
+.....\pdfliteral{0.0 1.0 -1.0 0.0 0.0 50.95511 cm }
+.....\pdfliteral{q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
+.....\pdfliteral{Q }
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 8.39406
+........\hbox(0.0+0.0)x0.0, shifted -5.30215
+.........\pdfliteral{0.0 1.0 -1.0 0.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(4.8611+0.0)x51.21504
+...........\pdfliteral{0 0 1 RG }
+...........\pdfliteral{0 0 1 rg }
+...........\hbox(4.8611+0.0)x51.21504
+............\vbox(4.8611+0.0)x51.21504
+.............\hbox(4.8611+0.0)x51.21504, glue set 24.21637fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+..............\OT1/cmss/m/n/7 s
+..............\OT1/cmss/m/n/7 t
+..............\OT1/cmss/m/n/7 a
+..............\OT1/cmss/m/n/7 n
+..............\OT1/cmss/m/n/7 c
+..............\OT1/cmss/m/n/7 e
+..............\glue(\spaceskip) 2.47893
+..............\OT1/cmss/m/n/7 A
+..............\pdfcolorstack 0 pop
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0 plus 1.0fil
+..............\glue(\rightskip) 0.0 plus 14.87521
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\hbox(122.34688+0.0)x122.34688
+..\hbox(122.34688+0.0)x122.34688
+...\glue 61.17366
+...\hbox(0.0+0.0)x0.0, shifted -61.17366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{/pgf@CA0 gs }
+.......\pdfliteral{/pgf@ca0 gs }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{/pgf@CA0 gs }
+.......\pdfliteral{/pgf@ca0 gs }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -1.99306
+........\hbox(0.0+0.0)x0.0, shifted 2.25555
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(4.51111+0.0)x3.98613
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(4.51111+0.0)x3.98613
+............\OT1/cmr/m/n/7 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
+============================================================
+============================================================
+TEST 3: kata-ordinary-tikzpicture
+============================================================
+[tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
+[tracing memoize]   Code: \begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}
+[tracing memoize]   Code md5sum: 0A2450D890F084315497BA7BB4448C8A
+[tracing memoize]   Attempting to utilize c-memo memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo)
+[tracing memoize]   C-memo was processed successfully
+[tracing memoize]   Context: "padding=(1in,1in,1in,1in)," --> E778DCCCB8AAB0BBD3F6CFEEFD2421F8
+[tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (indirect input)
+[tracing memoize]   Extern file does not exist: 0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf
+[tracing memoize]   Cc-memo input failed
+[tracing memoize]   Memoizing
+[1]
+No file memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf
+[tracing memoize]   Memoization completed
+============================================================
+============================================================
+TEST 4: kata-memos
+============================================================
+============================================================
+extended example -- visible step
+============================================================
+-------- memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo (start) ---------
+(memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo) \mmzMemo[nl]
+\global \mmzContextExtra {\detokenize {pgfk@/kata/style/head/.@cmd}\ifcsname pgfk@/kata/style/head/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/head/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance/.@cmd}\ifcsname pgfk@/kata/style/stance/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label/.@cmd}\ifcsname pgfk@/kata/style/stance label/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label base/.@cmd}\ifcsname pgfk@/kata/style/stance label base/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label base/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/waza/.@cmd}\ifcsname pgfk@/kata/style/waza/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/waza/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/waza label/.@cmd}\ifcsname pgfk@/kata/style/waza label/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/waza label/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/waza label base/.@cmd}\ifcsname pgfk@/kata/style/waza label base/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/waza label base/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/dir/.@cmd}\ifcsname pgfk@/kata/style/dir/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/dir/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/border/.@cmd}\ifcsname pgfk@/kata/style/border/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/border/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/step counter/.@cmd}\ifcsname pgfk@/kata/style/step counter/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/step counter/.@cmd\endcsname }\fi ,}%[nl]
+%[nl]
+\mmzSource[nl]
+\begin {kata@step}\kataStance {stance A}{0} \kataWaza {technique A}{-90} \kataDir {center}{90} \end {kata@step}[nl]
+-------- memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo (end) -----------
+-------- memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo (start) ---------
+(memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo) \mmzResource{AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf}%[nl]
+\mmzMemo[nl]
+\quitvmode \mmzIncludeExtern {0}\hbox {126.7468pt}{122.74686pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
+\mmzThisContext[nl]
+padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }\pgfkeysalso {dashed}},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/waza/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza/.meaning to context, draw=\kata@color@waza , -{Stealth[scale=1.2]}, }},pgfk@/kata/style/waza label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label/.meaning to context, /kata/style/waza label base, above, }},pgfk@/kata/style/waza label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label base/.meaning to context, \kata@color@waza , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/dir/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/dir/.meaning to context, draw=\kata@color@dir , -{Straight Barb}, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }},[nl]
+\mmzEndMemo[nl]
+-------- memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo (end) -----------
+============================================================
+single externalized phantom step
+============================================================
+-------- memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo (start) ---------
+(memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo) \mmzMemo[nl]
+\global \mmzContextExtra {}%[nl]
+%[nl]
+\mmzSource[nl]
+\begin {kata@step} \end {kata@step}[nl]
+-------- memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo (end) -----------
+-------- memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (start) ---------
+(memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo) \mmzResource{0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.pdf}%[nl]
+\mmzMemo[nl]
+\quitvmode \mmzIncludeExtern {0}\hbox {122.34688pt}{122.34688pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
+\mmzThisContext[nl]
+padding=(1in,1in,1in,1in),pgfk@/kata/style/step phantom/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step phantom/.meaning to context, /kata/style/border/.style={draw=none}, /kata/style/head/.style={draw=none}, /kata/style/step counter/.style={opacity=0}, }},stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},[nl]
+\mmzEndMemo[nl]
+-------- memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo (end) -----------
+============================================================
+extended example 2 -- visible step
+============================================================
+-------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo (start) ---------
+(memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo) \mmzMemo[nl]
+\global \mmzContextExtra {\detokenize {pgfk@/kata/style/head/.@cmd}\ifcsname pgfk@/kata/style/head/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/head/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance/.@cmd}\ifcsname pgfk@/kata/style/stance/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label/.@cmd}\ifcsname pgfk@/kata/style/stance label/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/stance label base/.@cmd}\ifcsname pgfk@/kata/style/stance label base/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/stance label base/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/border/.@cmd}\ifcsname pgfk@/kata/style/border/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/border/.@cmd\endcsname }\fi ,\detokenize {pgfk@/kata/style/step counter/.@cmd}\ifcsname pgfk@/kata/style/step counter/.@cmd\endcsname ={\expandafter \meaning \csname pgfk@/kata/style/step counter/.@cmd\endcsname }\fi ,}%[nl]
+%[nl]
+\mmzSource[nl]
+\begin {kata@step}\kataStance {stance A}{0} \end {kata@step}[nl]
+-------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74.memo (end) -----------
+-------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo (start) ---------
+(memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo) \mmzResource{B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.pdf}%[nl]
+\mmzMemo[nl]
+\quitvmode \mmzIncludeExtern {0}\hbox {126.7468pt}{122.74686pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
+\mmzThisContext[nl]
+padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->blue},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }},[nl]
+\mmzEndMemo[nl]
+-------- memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.memo (end) -----------
+============================================================
+tikzpicture with clean context
+============================================================
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (start) ---------
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo) \mmzMemo[nl]
+\global \mmzContextExtra {}%[nl]
+%[nl]
+\mmzSource[nl]
+\begin {tikzpicture} \node [draw] {ABC}; \end {tikzpicture}[nl]
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo (end) -----------
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (start) ---------
+(memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo) \mmzResource{0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}%[nl]
+\mmzMemo[nl]
+\quitvmode \mmzIncludeExtern {0}\hbox {28.87155pt}{13.89926pt}{0.0pt}{72.26999pt}{72.26999pt}{72.26999pt}{72.26999pt}\mmzStepPgfPictureId {1}%[nl]
+\mmzThisContext[nl]
+padding=(1in,1in,1in,1in),[nl]
+\mmzEndMemo[nl]
+-------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (end) -----------
+============================================================
