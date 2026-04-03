@@ -1,6 +1,7 @@
 % vim: set expandtab:
 % vim: set shiftwidth=2:
 % vim: set tabstop=2:
+% vim: set ft=tex:
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Copyright (C) 2026 by Lukas Heindl <oss.heindl+latex@protonmail.com>
