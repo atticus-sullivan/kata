@@ -39,11 +39,13 @@
   /kata/style/step phantom/.append code={\TYPE{step-phantom-style-applied}},
 }
 
+\makeatletter
 % overwrite marginline to inspect the margin content
-\newcommand\marginline[1]{%
-  \TYPE{marginline=\detokenize{#1}}%
-  \marginpar[{\raggedleft #1}]{\raggedright #1}%
+\renewcommand{\kata@beltmargin}[2]{%
+  \TYPE{beltmargin = #1 | #2}%
+  % \marginpar[{\raggedleft #1}]{\raggedright #1}%
 }
+\makeatother
 
 % One wrapper for all kata regression cases
 \NewDocumentCommand{\KataTestCase}{om+m}{%
