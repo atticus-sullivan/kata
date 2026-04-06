@@ -80,23 +80,31 @@
   }
 }
 
+\newbox\katabox
+
 \begin{document}
 \START
 
-%%%%%%%%%%%%%
-%% PHANTOM %%
-%%%%%%%%%%%%%
+%%%%%%%%%%%
+%% BASIC %%
+%%%%%%%%%%%
 \part{Basic}
 
 \KataTestCase{kata-basic}{%
-  \begin{kata}[width=1]{section title}{blue}
-    \begin{kataStep}
-      \kataStance{stance A}{0}
-      \kataWaza{technique A}{-90}
-      \kataDir{center}{90}
-      \kataKiai{90}
-    \end{kataStep}
-  \end{kata}
+  \setbox\katabox=\vbox{%
+    \begin{kata}[width=1]{section title}{blue}
+      \begin{kataStep}
+        \kataStance{stance A}{0}
+        \kataWaza{technique A}{-90}
+        \kataDir{center}{90}
+        \kataKiai{90}
+      \end{kataStep}
+    \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%
