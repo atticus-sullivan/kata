@@ -834,7 +834,7 @@
 \newif\ifkata@instep
 \newcommand*{\kata@requirestep}[1]{%
   \ifkata@instep\else
-    \PackageError{kata}{#1 used outside step environment}{}
+    \PackageError{kata}{#1 used outside step environment}{}%
   \fi
 }
 %    \end{macrocode}
@@ -845,7 +845,7 @@
 \newif\ifkata@inkata
 \newcommand*{\kata@requirekata}[1]{%
   \ifkata@inkata\else
-    \PackageError{kata}{#1 used outside kata environment}{}
+    \PackageError{kata}{#1 used outside kata environment}{}%
   \fi
 }
 %    \end{macrocode}
@@ -887,7 +887,7 @@
 %    \begin{macrocode}
 \NewDocumentEnvironment{kata}{O{}mmo}{%
   \pgfkeys{/kata/kata,#1}%
-  \section{#2}%
+  \section{#2}% ^^A what if I want slides? a poster? a figure? a sub-section?
   \IfBlankTF{#3}{%
 %    \end{macrocode}
 % draw the marginline only when arg 4 was given
@@ -906,10 +906,11 @@
       \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
     }%
   }%
-  \setlength{\lineskip}{6pt}\noindent%
+  \setlength{\lineskip}{6pt}% ^^A\noindent%
+  \parindent=0pt %
   \setcounter{kata@step}{0}%
   \kata@inkatatrue%
-  \ignorespaces%
+  % ^^A \ignorespaces%
 %    \end{macrocode}
 % there is no harm in a single word/pictogram in the last line to turn off the corresponding penalty
 %    \begin{macrocode}
@@ -918,7 +919,7 @@
 % allow large larger spaces between the pictograms if this avoids drawing a
 % picture outside of the textarea
 %    \begin{macrocode}
-  \sloppy
+  % ^^A\sloppy
 }{%
 %    \end{macrocode}
 % add hidden steps to the last line.
@@ -928,16 +929,16 @@
   \setcounter{kata@step}{0}%
   \ifnum\kata@missing>0
     \foreach \i in {1,...,\kata@missing} {%
-      \begin{kataStep}[phantom]\end{kataStep} %
+     \begin{kataStep}[phantom]\end{kataStep}%
     }%
-  \fi%
-  \kata@inkatafalse%
+  \fi
+  \kata@inkatafalse %% this does nothing
 %    \end{macrocode}
 % avoid left-aligning the last line. Instead it should be justified in
 % order to obtain a proper grid
 %    \begin{macrocode}
   \parfillskip=0pt
-  \par%
+  \par %
 }
 %    \end{macrocode}
 % \end{environment}
@@ -946,7 +947,7 @@
 %    \begin{macrocode}
 \newcommand{\kata@beltmargin}[2]{%
   \marginline{%
-    \centering\footnotesize%
+    \centering\footnotesize
     \IfBlankF{#1}{%
       $\downarrow$ #1%
     }%
@@ -988,10 +989,19 @@
 % Arguments:
 % 1 (optional): whether this is the first step of the kata / pgfkeys
 %    \begin{macrocode}
+\UseName{cs_new_eq:Nc} \kata@int@mod {int_mod:nn}% ^^A probably should use pgfmath
 \NewDocumentEnvironment{kataStep}{O{}+b}{%
   \kata@requirekata{\string\kataStep}%
   \pgfkeys{/kata/step,#1}%
-  \ifkata@step@first\par\nointerlineskip\vfil\else\fi%
+  \ifkata@step@first\par\nointerlineskip\vfil
+  \else
+    \edef\kata@tempa{\kata@int@mod{\value{kata@step}}{\kata@width}}%
+    \expandafter\ifnum\kata@tempa=\numexpr\kata@width %
+      \par
+    \else
+      \hskip 0.0pt plus 1.0fil %
+    \fi
+  \fi
   \begin{kata@step}%
     #2
   \end{kata@step}%
@@ -1146,7 +1156,7 @@
 %    \end{macrocode}
 %
 %
-% \begin{macro}{\dir}
+% \begin{macro}{\kataDir}
 % draw a short arrow/path indicating the next turn/direction.
 % Arguments:
 % \begin{enumerate}
