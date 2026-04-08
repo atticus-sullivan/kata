@@ -226,7 +226,7 @@
 %
 % Note:
 %   After all steps have been drawn, it will automatically add a number of \emph{phantom}-\refEnv{kataStep}s (see \refKey{/kata/setup/step phantom style} and\refKey{/kata/step/phantom}) trying to generate a uniform looking grid of pictograms.
-%   For this to work correctly, \refKey{/kata/kata/width} needs be set to the number of pictograms fitting one line on the page.
+%   For this to work correctly, \refKey{/kata/kata/columns} needs be set to the number of pictograms fitting one line on the page.
 % \end{docEnvironment}
 %
 % \begin{docEnvironment}[]{kataStep}{\oarg{options}}
@@ -307,7 +307,7 @@
 % {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={A simple example without customizations (but includes flip)}}
-\begin{kata}[width=2]{Simple Example}{blue}
+\begin{kata}[columns=2]{Simple Example}{blue}
   Some explanation -- normal \LaTeX{} code
   \parindent=0pt
 
@@ -438,8 +438,8 @@
 % \subsubsection{Package/Setup specific} \label{sec:opt-setup}
 % These options are specific to the package-options and \refCom{kataSetup}.
 %
-% \begin{docKey}[kata/setup]{width}{=\meta{width}}{initially: 6}
-%   Similar like \refKey{/kata/kata/width}.
+% \begin{docKey}[kata/setup]{columns}{=\meta{columns}}{initially: 6}
+%   Similar like \refKey{/kata/kata/columns}.
 % \end{docKey}
 %
 % \begin{docKey}{definealiases}{}{cmd-key}
@@ -454,9 +454,9 @@
 % \subsubsection{Kata environment} \label{sec:opt-kata}
 % These options are specific to \refEnv{kata}.
 %
-% \begin{docKey}[kata/kata]{width}{=\meta{width}}{initially: 6}
+% \begin{docKey}[kata/kata]{columns}{=\meta{columns}}{initially: 6}
 %   Sets the amount of pictograms which fit one line in the document.
-%   As of now this package cannot measure this on its own so you need to set this manually (usually only once for the whole document via \refKey{/kata/setup/width}).
+%   As of now this package cannot measure this on its own so you need to set this manually (usually only once for the whole document via \refKey{/kata/setup/columns}).
 %
 %   The effect of this is that at the end of a kata, a not fully populated line is filled up with \refKey{/kata/step/phantom} \refEnv{kataStep}s.
 %%  This is needed if you want a proper grid of pictograms in the output.
@@ -570,7 +570,7 @@
   myPreset/.style={fill=#1!50},
 }
 
-\begin{kata}[width=2]{xyz}{orange}
+\begin{kata}[columns=2]{xyz}{orange}
   \parindent=0pt
 
   \begin{step}[border style={myPreset=orange}]
@@ -590,7 +590,7 @@
 % {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Extended example with all kinds of possible customizations}}
-\begin{kata}[width=2,color={waza=orange}]{Extended Example}{blue}
+\begin{kata}[columns=2,color={waza=orange}]{Extended Example}{blue}
   Some explanation -- normal \LaTeX{} code
   \parindent=0pt
 
@@ -769,7 +769,7 @@
 \pgfkeys{
   /kata/setup,
   % only "forwards" -> adds not to memoize context
-  width/.style = {/kata/kata,width={#1}},
+  columns/.style = {/kata/kata,columns={#1}},
   % not relevant for step -> adds not to memoize context
   definealiases/.code = {%
     \AddToHook {begindocument} [kata/aliases] {%
@@ -865,9 +865,9 @@
 \pgfkeys{
   /kata/kata,
   % not relevant for step -> adds not to memoize context
-  width/.store in = \kata@width,
-  width = 6,
-  width/.value required,
+  columns/.store in = \kata@columns,
+  columns = 6,
+  columns/.value required,
   %
   /kata/forward/delegate common,
   /kata/forward/append common,
@@ -924,7 +924,7 @@
 % add hidden steps to the last line.
 % This ensures a uniform looking grid of pictograms
 %    \begin{macrocode}
-  \pgfmathtruncatemacro{\kata@missing}{mod(\kata@width - mod(\c@kata@step,\kata@width),\kata@width)}%
+  \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
   \setcounter{kata@step}{0}%
   \ifnum\kata@missing>0
     \foreach \i in {1,...,\kata@missing} {%
