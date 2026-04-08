@@ -225,7 +225,7 @@
 % See \cref{sec:options} for the available \meta{options}.
 %
 % Note:
-%   After all steps have been drawn, it will automatically add a number of \emph{phantom}-\refEnv{kataStep}s (see \refKey{/kata/setup/step phantom style} and\refKey{/kata/step/phantom}) trying to generate a uniform looking grid of pictograms.
+%   After all steps have been drawn, it will automatically add phantom \verb|\rule|s filling up the last line. The goal of this is to achieve a uniform looking appearance of the grid which is formed by the \refEnv{step}s.
 %   For this to work correctly, \refKey{/kata/kata/columns} needs be set to the number of pictograms fitting one line on the page.
 % \end{docEnvironment}
 %
@@ -401,12 +401,6 @@
 %   Appends the \meta{options} to the style for the \TikZ{} node showing the number of the step (usually placed at the top left corner).
 % \end{docKeys}
 %
-% \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{options}}]{{doc name=setup/step phantom style},{doc name=kata/step phantom style},{doc name=step/step phantom style}}
-%   Similar like \refKey{/kata/setup/head style} etc.
-%
-%   Appends the \meta{options} to the style activated when \refKey{/kata/step/phantom} is set to true (is also used automatically in \refEnv{kata}).
-% \end{docKeys}
-%
 % \paragraph{Colors} \label{sec:ops-color}
 % A collection of keys used to adjust the color used for drawing elements in the pictograms.
 % As \meta{color}, everything can be passed here which \TikZ{} can use as a color.
@@ -458,8 +452,11 @@
 %   Sets the amount of pictograms which fit one line in the document.
 %   As of now this package cannot measure this on its own so you need to set this manually (usually only once for the whole document via \refKey{/kata/setup/columns}).
 %
-%   The effect of this is that at the end of a kata, a not fully populated line is filled up with \refKey{/kata/step/phantom} \refEnv{kataStep}s.
-%%  This is needed if you want a proper grid of pictograms in the output.
+%   The effect of this is that at the end of a kata, if the last line is not fully populated, it is filled up with \verb|\rule|s with the width of one \refEnv{step}.
+%   In order to know if and if yes how many places need to be filled, this key is required.
+%   This is needed if you want a proper grid of pictograms in the output.
+%
+%   Note by setting it to 0, you can deactivate this behavior.
 % \end{docKey}
 %
 % \subsubsection{Step environment} \label{sec:opt-step}
@@ -473,13 +470,6 @@
 %   The idea is that this makes reading easier when skipping from one page to another.
 %
 %   Beware, in the future additional adjustments might get coupled to this.
-% \end{docKey}
-%
-% \begin{docKey}[kata/step]{phantom}{}{bool, initially: false, default: true}
-%  Activates \refKey{/kata/step/step phantom style} for the most part.
-%
-%  The idea is that this makes the \refEnv{kataStep} still occupy space while being invisble in the output.
-%  At the moment, this only works for empty steps (no manual content specified).
 % \end{docKey}
 %
 % \subsubsection{Typical content commands} \label{sec:opt-typ-content}
@@ -758,7 +748,6 @@
     border style/.style = {/kata/style/border/.append style = {##1}},
     border preset/.forward to = /kata/style/border preset,
     step counter style/.style = {/kata/style/step counter/.append style = {##1}},
-    step phantom style/.style = {/kata/style/step phantom/.append style = {##1}},
   },
 }
 %
@@ -856,7 +845,6 @@
 \newif\ifkata@waza@flip
 \newif\ifkata@dir@flip
 \newif\ifkata@step@first
-\newif\ifkata@step@phantom
 \newcount\kata@tmpcnta
 %    \end{macrocode}
 %
@@ -966,11 +954,6 @@
   first step/.default = true,
   %
   % mostly "forwards" -> adds not to memoize context
-  phantom/.is if = kata@step@phantom,
-  phantom/.default = true,
-  phantom = false,
-  phantom/.append code={\ifkata@step@phantom\pgfkeysalso{/kata/style/step phantom}\fi},
-  %
   /kata/forward/delegate common,
   /kata/forward/append common,
 }
@@ -999,7 +982,7 @@
   \begin{kata@step}%
     #2
   \end{kata@step}%
-  \ifkata@step@phantom\else\refstepcounter{kata@step}\fi%
+  \refstepcounter{kata@step}
 }{}
 %    \end{macrocode}
 % \end{environment}
@@ -1345,21 +1328,6 @@
     /kata/style/waza label flipped/.meaning to context,
     /kata/style/waza label base,
     below,
-  },
-}
-%    \end{macrocode}
-%
-%
-% \subsubsection{Styles for steps}
-%    \begin{macrocode}
-\pgfkeys{
-  /kata/style,
-  %
-  step phantom/.style = {
-    /kata/style/step phantom/.meaning to context,
-    /kata/style/border/.append style={draw=none},
-    /kata/style/head/.append style={draw=none},
-    /kata/style/step counter/.append style={opacity=0},
   },
 }
 %    \end{macrocode}
