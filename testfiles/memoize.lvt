@@ -29,15 +29,26 @@
 \SHOWFILE{\jobname.mmz}
 \OMIT
 
-\usepackage{memoize}
+\usepackage[extract=python]{memoize}
 \mmzset{include context in ccmemo,trace}
 
 \usepackage{kata}
+
+\makeatletter
+% overwrite marginline to inspect the margin content
+\renewcommand{\kata@beltmargin}[2]{%
+  \TYPE{beltmargin = #1 | #2}%
+  % \marginpar[{\raggedleft #1}]{\raggedright #1}%
+}
+\makeatother
+
+\newbox\katabox
 
 \begin{document}
 \TIMO
 %
 \TEST{kata-base}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=3,color={waza=pink}]{Extended Example}{blue}
     \begin{kataStep}[head style={dashed}]
       \kataStance{stance A}{0}
@@ -45,14 +56,25 @@
       \kataDir{center}{90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 %
 \TEST{kata-base2}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=2,color={waza=blue}]{Extended Example 2}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 %
 \TEST{kata-ordinary-tikzpicture}{%

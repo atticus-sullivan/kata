@@ -113,6 +113,7 @@
 \part{Phantom}
 
 \KataTestCase[0]{kata-phantom-none}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
   \begin{kata}[width=2]{phantom none}{blue}
     \begin{kataStep}
@@ -122,27 +123,45 @@
       \kataStance{stance B}{180}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase[1]{kata-phantom-one}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
   \begin{kata}[width=2]{phantom one}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase[2]{kata-phantom-two}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
   \begin{kata}[width=3]{phantom two}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase[1]{kata-phantom-manual}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
   \begin{kata}[width=2]{manual phantom}{blue}
     \begin{kataStep}[phantom]
@@ -152,9 +171,15 @@
       \kataStance{stance A}{0}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase[2]{kata-phantom-mixed}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{step phantom style={/kata/style/step counter/.style={debugPhantomStyle}}}
   \begin{kata}[width=3]{mixed phantom}{blue}
     \begin{kataStep}
@@ -164,6 +189,11 @@
     \end{kataStep}
     \stepcounter{kata@step} % manually step because phantom does not step
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%
@@ -172,51 +202,87 @@
 \part{Marginline}
 
 \KataTestCase{kata-marginline-text+belt}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{text and belt given}{arbitrary text}[red]%
     should show text and use the custom belt color\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-marginline-text+emptyBelt}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{text and empty belt}{arbitrary text}[]%
     should show text but no belt\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-marginline-text+noBelt}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{text but no belt}{blue}%
     should show text and use text as belt color\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-marginline-emptyText+belt}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{empty text but belt}{}[red]%
     should show no text but the belt\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-marginline-emptyText+emptyBelt}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{empty text and empty belt}{}[]%
     should not draw a marginline\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-marginline-emptyText+noBelt}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{empty text and no belt}{}%
     should not draw a marginline\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -225,15 +291,22 @@
 \part{Step counter formatting}
 
 \KataTestCase{kata-stepcnt-default}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{step counter default}{blue}
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-stepcnt-roman}{%
+  \setbox\katabox=\vbox{%
     \renewcommand\kataStepCnt[1]{\roman{#1}}%
     \begin{kata}[width=1]{step counter roman}{blue}
       \begin{kataStep}
@@ -241,9 +314,15 @@
       \begin{kataStep}
       \end{kataStep}
     \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-stepcnt-local}{%
+  \setbox\katabox=\vbox{%
   only the second image should have a roman counter\par
   \begin{kata}[width=1]{step counter local}{blue}
     \begin{kataStep}
@@ -256,6 +335,11 @@
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%%%%%%
@@ -264,51 +348,87 @@
 \part{PGF-Keys -- flip}
 
 \KataTestCase{kata-stance-flip-off}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{stance un-flipped}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-stance-flip-on}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{stance flipped}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}[flip]
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-waza-flip-off}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{waza un-flipped}{blue}
     \begin{kataStep}
       \kataWaza{technique A}{0}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-waza-flip-on}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{waza fliped}{blue}
     \begin{kataStep}
       \kataWaza{technique A}{0}[flip]
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-dir-normal}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{dir un-flipped}{blue}
     \begin{kataStep}
       \kataDir{0}{180}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-dir-flip}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{dir flipped}{blue}
     \begin{kataStep}
       \kataDir[flip]{0}{180}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%%%%%%%
@@ -317,6 +437,7 @@
 \part{PGF-Keys -- color}
 
 \KataTestCase{kata-color-kata}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1,color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]{colors kata}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}
@@ -331,9 +452,15 @@
       \KataDumpColors
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-color-step}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{colors step}{blue}
     \begin{kataStep}[color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]
       \kataStance{stance A}{0}
@@ -348,9 +475,15 @@
       \KataDumpColors
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-color-global}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}}
   \begin{kata}[width=1]{colors global}{blue}
     \begin{kataStep}
@@ -366,9 +499,15 @@
       \KataDumpColors
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-color-local}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1,color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]{colors local}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}[color=orange]
@@ -383,6 +522,11 @@
       \KataDumpColors
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -391,44 +535,80 @@
 \part{PGF-Keys -- border}
 
 \KataTestCase{kata-border-style}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{border style}{blue}
     \begin{kataStep}[border style={dashed}]
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-border-arrow-up}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{border arrow up}{blue}
     \begin{kataStep}[border preset={arrow up}]
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-border-accent}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{border accent}{blue}
     \begin{kataStep}[border preset={accent=blue}]
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-border-combined-step}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{border combined (step-level)}{blue}
     \begin{kataStep}[border style={dashed},border preset={arrow up,accent=blue}]
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 \KataTestCase{kata-border-combined-kata}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1,border style={dotted},border preset={arrow right,accent=blue}]{border combined (kata-level)}{blue}
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 \KataTestCase{kata-border-combined-global}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{border style={dashed},border preset={arrow down,accent=blue}}
   \begin{kata}[width=1]{border combined (global-level)}{blue}
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -437,22 +617,35 @@
 \part{PGF-Keys -- styles}
 
 \KataTestCase{kata-head-style-kata}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1,head style={dashed}]{head style (kata)}{blue}
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 \KataTestCase{kata-head-style-step}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{head style (step)}{blue}
     \begin{kataStep}[head style={dashed}]
     \end{kataStep}
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 \KataTestCase{kata-head-style-global}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{head style={dashed}}
   \begin{kata}[width=1]{head style (global)}{blue}
     \begin{kataStep}
@@ -460,25 +653,43 @@
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-stepcounter-style-kata}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1,step counter style={dashed}]{step counter style (kata)}{blue}
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 \KataTestCase{kata-stepcounter-style-step}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{step counter style (step)}{blue}
     \begin{kataStep}[step counter style={dashed}]
     \end{kataStep}
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 \KataTestCase{kata-stepcounter-style-global}{%
+  \setbox\katabox=\vbox{%
   \kataSetup{step counter style={dashed}}
   \begin{kata}[width=1]{step counter style (global)}{blue}
     \begin{kataStep}
@@ -486,6 +697,11 @@
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%
@@ -494,6 +710,7 @@
 \part{Angle args}
 
 \KataTestCase{kata-angle-stance}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{stance angles}{blue}
     \begin{kataStep}
       \kataStance{stance A $-360$}{-360}
@@ -517,9 +734,15 @@
       \kataStance{stance D $-90$}{-90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-angle-waza}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{waza angles}{blue}
     \begin{kataStep}
       \kataWaza{technique A $-360$}{-360}
@@ -543,9 +766,15 @@
       \kataWaza{technique D $-90$}{-90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-angle-kiai}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{kiai angles}{blue}
     \begin{kataStep}
       \kataKiai{360}
@@ -569,9 +798,15 @@
       \kataKiai{-90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-angle-dir-center}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{dir angles -- center}{blue}
     \begin{kataStep}
       \kataDir{center}{360}
@@ -595,9 +830,15 @@
       \kataDir{center}{-90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-angle-dir-turn}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{dir angles -- turn}{blue}
     \begin{kataStep}
       \kataDir{0}{180}
@@ -618,6 +859,11 @@
       \kataDir{270}{90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -626,6 +872,7 @@
 \part{prefix/side arguments}
 
 \KataTestCase{kata-prefix-stance}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{stance}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}
@@ -634,9 +881,15 @@
       \kataStance[arbitrary]{stance C}{-90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-prefix-waza}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{waza}{blue}
     \begin{kataStep}
       \kataWaza{technique A}{0}
@@ -645,6 +898,11 @@
       \kataWaza[arbitrary]{technique C}{-90}
     \end{kataStep}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -653,15 +911,22 @@
 \part{Commands at invalid places (check for errors)}
 
 \KataTestCase{kata-cmd-invalid-places-kata}{%
+  \setbox\katabox=\vbox{%
   \begin{kata}[width=1]{waza}{blue}
       \kataWaza{technique A}{0}
       \kataStance{stance A}{0}
       \kataDir{-90}{0}
       \kataKiai{360}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 
 \KataTestCase{kata-cmd-invalid-places-global}{%
+  \setbox\katabox=\vbox{%
   \kataWaza{technique A}{0}
   \kataStance{stance A}{0}
   \kataDir{-90}{0}
@@ -669,6 +934,7 @@
 }
 
 \KataTestCase{kata-step-invalid-places-global}{%
+  \setbox\katabox=\vbox{%
   \begin{kataStep}
   \end{kataStep}
 }
