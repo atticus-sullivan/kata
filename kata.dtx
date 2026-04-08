@@ -906,7 +906,7 @@
       \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
     }%
   }%
-  \setlength{\lineskip}{6pt}\noindent%
+  \setlength{\lineskip}{6pt}%
   \setcounter{kata@step}{0}%
   \kata@inkatatrue%
 %    \end{macrocode}
@@ -987,7 +987,7 @@
   \kata@requirekata{\string\kataStep}%
   \pgfkeys{/kata/step,#1}%
   \ifkata@step@first%
-    \par\nointerlineskip\vfil%
+    \vfil\noindent%
   \else%
     \pgfmathtruncatemacro{\kata@step@column}{mod(\value{kata@step},\kata@columns)}%
     \ifnum\kata@step@column=\kata@columns%
