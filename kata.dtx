@@ -920,17 +920,6 @@
   \sloppy
   \ignorespaces%
 }{%
-%    \end{macrocode}
-% add hidden steps to the last line.
-% This ensures a uniform looking grid of pictograms
-%    \begin{macrocode}
-  \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
-  \setcounter{kata@step}{0}%
-  \ifnum\kata@missing>0
-    \foreach \i in {1,...,\kata@missing} {%
-      \begin{kataStep}[phantom]\end{kataStep} %
-    }%
-  \fi%
   \kata@inkatafalse%
 %    \end{macrocode}
 % avoid left-aligning the last line. Instead it should be justified in
