@@ -1146,7 +1146,7 @@
 %    \end{macrocode}
 %
 %
-% \begin{macro}{\dir}
+% \begin{macro}{\kataDir}
 % draw a short arrow/path indicating the next turn/direction.
 % Arguments:
 % \begin{enumerate}
@@ -1353,9 +1353,9 @@
   %
   step phantom/.style = {
     /kata/style/step phantom/.meaning to context,
-    /kata/style/border/.style={draw=none},
-    /kata/style/head/.style={draw=none},
-    /kata/style/step counter/.style={opacity=0},
+    /kata/style/border/.append style={draw=none},
+    /kata/style/head/.append style={draw=none},
+    /kata/style/step counter/.append style={opacity=0},
   },
 }
 %    \end{macrocode}

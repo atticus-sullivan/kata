@@ -26,6 +26,14 @@
 
 \usepackage[definealiases]{kata}
 
+\makeatletter
+% overwrite marginline to inspect the margin content
+\renewcommand{\kata@beltmargin}[2]{%
+  \TYPE{beltmargin = #1 | #2}%
+  % \marginpar[{\raggedleft #1}]{\raggedright #1}%
+}
+\makeatother
+
 \newcounter{kataTestPhantoms}
 \pgfkeys{/kata/style/step phantom/.append code={\stepcounter{kataTestPhantoms}}}
 
@@ -40,9 +48,12 @@
   }%
 }
 
+\newbox\katabox
+
 \begin{document}
 \START
 \KataTestCase{kata-aliased-basic}{%
+  \setbox\katabox=\vbox{%
   \setcounter{kataTestPhantoms}{0}
   \begin{kata}{section title}{blue}
     \begin{step}
@@ -52,6 +63,11 @@
       \kiai{90}
     \end{step}
   \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
 }
 \END
 \end{document}
