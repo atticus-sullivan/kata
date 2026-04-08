@@ -915,6 +915,17 @@
   \widowpenalty=0
   \ignorespaces%
 }{%
+%    \end{macrocode}
+% add hidden steps to the last line.
+% This ensures a uniform looking grid of pictograms
+%    \begin{macrocode}
+  \pgfmathtruncatemacro{\kata@missing}{mod(\kata@width - mod(\c@kata@step,\kata@width),\kata@width)}%
+  \ifnum\kata@missing>0
+    \foreach \i in {1,...,\kata@missing} {%
+      \hskip 0pt plus 1fil
+      \rule{\the\kata@phantomstep@width}{\the\kata@phantomsteprule@width}
+    }%
+  \fi%
   \kata@inkatafalse%
 %    \end{macrocode}
 % avoid left-aligning the last line. Instead it should be justified in
@@ -1450,6 +1461,22 @@
   \RequirePackage{memoizable}
 }%
 %    \end{macrocode}
+%
+%
+% \subsection{Internal variables / lengths maybe useful for debugging}
+% \begin{macro}{\kata@phantomsteprule@width}
+%    \begin{macrocode}
+\newdimen\kata@phantomsteprule@width
+\kata@phantomsteprule@width=0pt
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\kata@phantomstep@width}
+%    \begin{macrocode}
+\newdimen\kata@phantomstep@width
+\kata@phantomstep@width=\dimexpr 4.3cm + 0.2em * 2 + 0.4pt * 2\relax
+%    \end{macrocode}
+% \end{macro}
 % \iffalse
 %</package>
 % \fi
