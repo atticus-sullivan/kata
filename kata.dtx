@@ -907,12 +907,14 @@
 % add hidden steps to the last line.
 % This ensures a uniform looking grid of pictograms
 %    \begin{macrocode}
-  \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
-  \ifnum\kata@missing>0
-    \foreach \i in {1,...,\kata@missing} {%
-      \hskip 0pt plus 1fil
-      \rule{\the\kata@phantomstep@width}{\the\kata@phantomsteprule@width}
-    }%
+  \ifnum\kata@columns=0\else%
+    \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
+    \ifnum\kata@missing>0
+      \foreach \i in {1,...,\kata@missing} {%
+        \hskip 0pt plus 1fil
+        \rule{\the\kata@phantomstep@width}{\the\kata@phantomsteprule@width}
+      }%
+    \fi%
   \fi%
   \kata@inkatafalse%
 %    \end{macrocode}
@@ -972,11 +974,15 @@
   \ifkata@step@first%
     \vfil\noindent%
   \else%
-    \pgfmathtruncatemacro{\kata@step@column}{mod(\value{kata@step},\kata@columns)}%
-    \ifnum\kata@step@column=\kata@columns%
-      \par
-    \else%
+    \ifnum\kata@columns=0%
       \hskip 0.0pt plus 1.0fil %
+    \else
+      \pgfmathtruncatemacro{\kata@step@column}{mod(\value{kata@step},\kata@columns)}%
+      \ifnum\kata@step@column=\kata@columns%
+        \par
+      \else%
+        \hskip 0.0pt plus 1.0fil %
+      \fi%
     \fi%
   \fi%
   \begin{kata@step}%
