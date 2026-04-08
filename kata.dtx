@@ -975,7 +975,8 @@
 \NewDocumentEnvironment{kataStep}{O{}+b}{%
   \kata@requirekata{\string\kataStep}%
   \pgfkeys{/kata/step,#1}%
-  \ifkata@step@first\par\nointerlineskip\vfil%
+  \ifkata@step@first%
+    \par\nointerlineskip\vfil%
   \else%
     \pgfmathtruncatemacro{\kata@step@column}{mod(\value{kata@step},\kata@width)}%
     \ifnum\kata@step@column=\kata@width%
