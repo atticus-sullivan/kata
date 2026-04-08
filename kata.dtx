@@ -1448,7 +1448,16 @@
 % \begin{macro}{\kata@phantomstep@width}
 %    \begin{macrocode}
 \newdimen\kata@phantomstep@width
-\kata@phantomstep@width=\dimexpr 4.3cm + 0.2em * 2 + 0.4pt * 2\relax
+%    \end{macrocode}
+% A word on the calculation:
+% \begin{itemize}
+%   \item \verb|4.3cm| this is the forced width of each step
+%   \item \verb|0.2em * 2| this is the xsep which is present on both sides (left+right)
+%   \item \verb|0.4pt * 2 / 2| this is the (default) border linewidth which is present on both sides (left+right), but half of the border presses to the inside (thus the division by 2)
+% \end{itemize}
+% See how this may be fragile in terms of changes to how the step is presented (adjustments regarding the \texttt{xsep} or the linewidth of the border
+%    \begin{macrocode}
+\kata@phantomstep@width=\dimexpr 4.3cm + 0.2em * 2 + 0.4pt * 2 / 2\relax
 %    \end{macrocode}
 % \end{macro}
 % \iffalse
