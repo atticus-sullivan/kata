@@ -34,17 +34,12 @@
 }
 \makeatother
 
-\newcounter{kataTestPhantoms}
-\pgfkeys{/kata/style/step phantom/.append code={\stepcounter{kataTestPhantoms}}}
-
 % One wrapper for all kata regression cases
 \newcommand\KataTestCase[2]{%
   \TEST{#1}{%
-    \setcounter{kataTestPhantoms}{0}%
     #2%
     \SEPARATOR%
     \TYPE{manually added constraints}%
-    \TYPE{kataTestPhantoms=\arabic{kataTestPhantoms}}%
   }%
 }
 
@@ -54,7 +49,6 @@
 \START
 \KataTestCase{kata-aliased-basic}{%
   \setbox\katabox=\vbox{%
-  \setcounter{kataTestPhantoms}{0}
   \begin{kata}{section title}{blue}
     \begin{step}
       \stance{stance A}{0}

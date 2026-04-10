@@ -225,7 +225,7 @@
 % See \cref{sec:options} for the available \meta{options}.
 %
 % Note:
-%   After all steps have been drawn, it will automatically add a number of \emph{phantom}-\refEnv{kataStep}s (see \refKey{/kata/setup/step phantom style} and\refKey{/kata/step/phantom}) trying to generate a uniform looking grid of pictograms.
+%   After all steps have been drawn, it will automatically add phantom \verb|\rule|s filling up the last line. The goal of this is to achieve a uniform looking appearance of the grid which is formed by the \refEnv{step}s.
 %   For this to work correctly, \refKey{/kata/kata/columns} needs be set to the number of pictograms fitting one line on the page.
 % \end{docEnvironment}
 %
@@ -401,12 +401,6 @@
 %   Appends the \meta{options} to the style for the \TikZ{} node showing the number of the step (usually placed at the top left corner).
 % \end{docKeys}
 %
-% \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{options}}]{{doc name=setup/step phantom style},{doc name=kata/step phantom style},{doc name=step/step phantom style}}
-%   Similar like \refKey{/kata/setup/head style} etc.
-%
-%   Appends the \meta{options} to the style activated when \refKey{/kata/step/phantom} is set to true (is also used automatically in \refEnv{kata}).
-% \end{docKeys}
-%
 % \paragraph{Colors} \label{sec:ops-color}
 % A collection of keys used to adjust the color used for drawing elements in the pictograms.
 % As \meta{color}, everything can be passed here which \TikZ{} can use as a color.
@@ -458,8 +452,11 @@
 %   Sets the amount of pictograms which fit one line in the document.
 %   As of now this package cannot measure this on its own so you need to set this manually (usually only once for the whole document via \refKey{/kata/setup/columns}).
 %
-%   The effect of this is that at the end of a kata, a not fully populated line is filled up with \refKey{/kata/step/phantom} \refEnv{kataStep}s.
-%%  This is needed if you want a proper grid of pictograms in the output.
+%   The effect of this is that at the end of a kata, if the last line is not fully populated, it is filled up with \verb|\rule|s with the width of one \refEnv{step}.
+%   In order to know if and if yes how many places need to be filled, this key is required.
+%   This is needed if you want a proper grid of pictograms in the output.
+%
+%   Note by setting it to 0, you can deactivate this behavior.
 % \end{docKey}
 %
 % \subsubsection{Step environment} \label{sec:opt-step}
@@ -473,13 +470,6 @@
 %   The idea is that this makes reading easier when skipping from one page to another.
 %
 %   Beware, in the future additional adjustments might get coupled to this.
-% \end{docKey}
-%
-% \begin{docKey}[kata/step]{phantom}{}{bool, initially: false, default: true}
-%  Activates \refKey{/kata/step/step phantom style} for the most part.
-%
-%  The idea is that this makes the \refEnv{kataStep} still occupy space while being invisble in the output.
-%  At the moment, this only works for empty steps (no manual content specified).
 % \end{docKey}
 %
 % \subsubsection{Typical content commands} \label{sec:opt-typ-content}
@@ -537,6 +527,22 @@
 %
 % \paragraph{Kiai command} \label{sec:opt-kiai}
 % nothing additional
+%
+% \subsubsection{Misc commands} \label{sec:misc}
+% This section contains miscellaneous commands.
+%
+% \begin{docCommand}[]{kataStepPhantom}{}
+%   Places a phantom/invisible \refEnv{step} which can be used to \enquote{skip} one place in the grid.
+%   This is exactly what \refEnv{kata} potentially appends to the last line in order to generate a proper grid.
+%
+%   Note for performance reasons, internally this does not place a \verb|tikzpicture|.
+%   The only goal is to produce the same spacing like there would have been a \refEnv{step}.
+%
+%   Also note this increases the counter which numbers the \refEnv{step}s.
+%   This is required because the grid generation relies on this counter.
+%   You'll notice the effect because the indicator displaying the counter will seem to have skipped one number.
+% \end{docCommand}
+%
 %
 % \subsubsection{Presets} \label{sec:presets}
 % In order to make common but more complex style modifications easier, this package defines some \emph{presets} which can usually be applied with the respective \verb|<> preset| key.
@@ -758,7 +764,6 @@
     border style/.style = {/kata/style/border/.append style = {##1}},
     border preset/.forward to = /kata/style/border preset,
     step counter style/.style = {/kata/style/step counter/.append style = {##1}},
-    step phantom style/.style = {/kata/style/step phantom/.append style = {##1}},
   },
 }
 %
@@ -856,7 +861,6 @@
 \newif\ifkata@waza@flip
 \newif\ifkata@dir@flip
 \newif\ifkata@step@first
-\newif\ifkata@step@phantom
 \newcount\kata@tmpcnta
 %    \end{macrocode}
 %
@@ -906,30 +910,26 @@
       \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
     }%
   }%
-  \setlength{\lineskip}{6pt}\noindent%
+  \setlength{\lineskip}{6pt}%
   \setcounter{kata@step}{0}%
   \kata@inkatatrue%
-  \ignorespaces%
 %    \end{macrocode}
 % there is no harm in a single word/pictogram in the last line to turn off the corresponding penalty
 %    \begin{macrocode}
   \widowpenalty=0
-%    \end{macrocode}
-% allow large larger spaces between the pictograms if this avoids drawing a
-% picture outside of the textarea
-%    \begin{macrocode}
-  \sloppy
+  \ignorespaces%
 }{%
 %    \end{macrocode}
 % add hidden steps to the last line.
 % This ensures a uniform looking grid of pictograms
 %    \begin{macrocode}
-  \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
-  \setcounter{kata@step}{0}%
-  \ifnum\kata@missing>0
-    \foreach \i in {1,...,\kata@missing} {%
-      \begin{kataStep}[phantom]\end{kataStep} %
-    }%
+  \ifnum\kata@columns=0\else%
+    \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
+    \ifnum\kata@missing>0
+      \foreach \i in {1,...,\kata@missing} {%
+        \kataStepPhantom%
+      }%
+    \fi%
   \fi%
   \kata@inkatafalse%
 %    \end{macrocode}
@@ -971,16 +971,46 @@
   first step/.default = true,
   %
   % mostly "forwards" -> adds not to memoize context
-  phantom/.is if = kata@step@phantom,
-  phantom/.default = true,
-  phantom = false,
-  phantom/.append code={\ifkata@step@phantom\pgfkeysalso{/kata/style/step phantom}\fi},
-  %
   /kata/forward/delegate common,
   /kata/forward/append common,
 }
 %    \end{macrocode}
 %
+%
+% \begin{macro}{\kata@step@interspace}
+% places a space (with glue) / a linebreak to be used between two \verb|step|s
+% What exactly is placed is determined based on two parameters:
+% \begin{enumerate}
+%   \item the amount of columns the resulting grid should have
+%   \item the index (starting at 0) of the current \verb|step|
+% \end{enumerate}
+% This macro assumes the space is placed \emph{before} the \verb|step|.
+%    \begin{macrocode}
+\newcommand{\kata@step@interspace}[2]{%
+  \ifnum#1=0%
+    \hskip 0.0pt plus 1.0fil %
+  \else%
+    \pgfmathtruncatemacro{\kata@step@column}{mod(#2,#1)}%
+    \ifnum\kata@step@column=#1%
+      \par
+    \else%
+      \hskip 0.0pt plus 1.0fil %
+    \fi%
+  \fi%
+}%
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\kataStepPhantom}
+% Places a phantom (invisible) \verb|step| with the correct width and spacing to be consistent with the grid.
+%    \begin{macrocode}
+\NewDocumentCommand{\kataStepPhantom}{}{%
+  \kata@step@interspace{\kata@columns}{\value{kata@step}}%
+  \rule{\the\kata@phantomstep@width}{\the\kata@phantomsteprule@width}
+  \refstepcounter{kata@step}
+}
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{environment}{step}
 % this environment always should wrap \verb|kata@step|.
@@ -991,11 +1021,15 @@
 \NewDocumentEnvironment{kataStep}{O{}+b}{%
   \kata@requirekata{\string\kataStep}%
   \pgfkeys{/kata/step,#1}%
-  \ifkata@step@first\par\nointerlineskip\vfil\else\fi%
+  \ifkata@step@first%
+    \vfil\noindent%
+  \else%
+    \kata@step@interspace{\kata@columns}{\value{kata@step}}%
+  \fi%
   \begin{kata@step}%
     #2
   \end{kata@step}%
-  \ifkata@step@phantom\else\refstepcounter{kata@step}\fi%
+  \refstepcounter{kata@step}
 }{}
 %    \end{macrocode}
 % \end{environment}
@@ -1346,21 +1380,6 @@
 %    \end{macrocode}
 %
 %
-% \subsubsection{Styles for steps}
-%    \begin{macrocode}
-\pgfkeys{
-  /kata/style,
-  %
-  step phantom/.style = {
-    /kata/style/step phantom/.meaning to context,
-    /kata/style/border/.append style={draw=none},
-    /kata/style/head/.append style={draw=none},
-    /kata/style/step counter/.append style={opacity=0},
-  },
-}
-%    \end{macrocode}
-%
-%
 % \subsubsection{Presets for styles}
 % \paragraph{Helpers}
 %    \begin{macrocode}
@@ -1457,6 +1476,31 @@
   \RequirePackage{memoizable}
 }%
 %    \end{macrocode}
+%
+%
+% \subsection{Internal variables / lengths maybe useful for debugging}
+% \begin{macro}{\kata@phantomsteprule@width}
+%    \begin{macrocode}
+\newdimen\kata@phantomsteprule@width
+\kata@phantomsteprule@width=0pt
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\kata@phantomstep@width}
+%    \begin{macrocode}
+\newdimen\kata@phantomstep@width
+%    \end{macrocode}
+% A word on the calculation:
+% \begin{itemize}
+%   \item \verb|4.3cm| this is the forced width of each step
+%   \item \verb|0.2em * 2| this is the xsep which is present on both sides (left+right)
+%   \item \verb|0.4pt * 2 / 2| this is the (default) border linewidth which is present on both sides (left+right), but half of the border presses to the inside (thus the division by 2)
+% \end{itemize}
+% See how this may be fragile in terms of changes to how the step is presented (adjustments regarding the \texttt{xsep} or the linewidth of the border
+%    \begin{macrocode}
+\kata@phantomstep@width=\dimexpr 4.3cm + 0.2em * 2 + 0.4pt * 2 / 2\relax
+%    \end{macrocode}
+% \end{macro}
 % \iffalse
 %</package>
 % \fi
