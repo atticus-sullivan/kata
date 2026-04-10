@@ -592,7 +592,7 @@
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Extended example with all kinds of possible customizations}}
 \kataSetup{styled kata={section,margin,belt},columns=0}
 
-\begin{kata}[columns=2,color={waza=orange},no section,no margin,belt color=orange,title={Extended Example}]
+\begin{kata}[columns=2,color={waza=orange},no section,no margin,belt color=orange,title={Extended Example},step={before first={first}}]
   Some explanation -- normal \LaTeX{} code
   \parindent=0pt
 
@@ -754,6 +754,7 @@
     waza/.code   = \pgfkeys{/kata/waza,##1},
     dir/.code    = \pgfkeys{/kata/dir,##1},
     color/.code  = \pgfkeys{/kata/color,##1},
+    step/.code   = \pgfkeys{/kata/step,##1},
   },
 %    \end{macrocode}
 % Common keys which append to styles
@@ -1037,6 +1038,7 @@
   % not relevant for inner step -> adds not to memoize context
   before first/.store in = \kata@step@first@before,
   before first = {},
+  before first/.value required,
   %
   % mostly "forwards" -> adds not to memoize context
   /kata/forward/delegate common,
