@@ -464,16 +464,6 @@
 % \subsubsection{Step environment} \label{sec:opt-step}
 % These options are specific to \refEnv{kataStep}.
 %
-% \begin{docKey}[kata/step/]{first step}{}{bool, initially: false, default: true}
-%   Set this option on the first \refEnv{kataStep} in a \refEnv{kata}.
-%   As a result some spacing adjustments will be made.
-%
-%   Specifically this pushes the lines showing the \refEnv{kataStep}s at the bottom of the page.
-%   The idea is that this makes reading easier when skipping from one page to another.
-%
-%   Beware, in the future additional adjustments might get coupled to this.
-% \end{docKey}
-%
 % \subsubsection{Typical content commands} \label{sec:opt-typ-content}
 % Similarly like for global options there is a set of options which apply to all \emph{typical} content commands.
 % \emph{Typical} here refers to content commands which draw something and also have a label.
@@ -873,8 +863,6 @@
 \newif\ifkata@waza@flip
 \newif\ifkata@dir@flip
 %
-\newif\ifkata@step@first
-%
 \newif\ifkata@show@section
 \newif\ifkata@show@margin
 \newif\ifkata@show@belt
@@ -1047,8 +1035,8 @@
 \pgfkeys{
   /kata/step,
   % not relevant for inner step -> adds not to memoize context
-  first step/.is if = kata@step@first,
-  first step/.default = true,
+  before first/.store in = \kata@step@first@before,
+  before first = {},
   %
   % mostly "forwards" -> adds not to memoize context
   /kata/forward/delegate common,
@@ -1096,13 +1084,13 @@
 % this environment always should wrap \verb|kata@step|.
 % It handles the aspects of positioning the pictogram.
 % Arguments:
-% 1 (optional): whether this is the first step of the kata / pgfkeys
+% 1 (optional): pgfkeys
 %    \begin{macrocode}
 \NewDocumentEnvironment{kataStep}{O{}+b}{%
   \kata@requirekata{\string\kataStep}%
   \pgfkeys{/kata/step,#1}%
-  \ifkata@step@first%
-    \vfil\noindent%
+  \ifnum\value{kata@step}=0
+    \kata@step@first@before\noindent%
   \else%
     \kata@step@interspace{\kata@columns}{\value{kata@step}}%
   \fi%
