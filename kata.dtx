@@ -911,8 +911,7 @@
     \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
     \ifnum\kata@missing>0
       \foreach \i in {1,...,\kata@missing} {%
-        \hskip 0pt plus 1fil
-        \rule{\the\kata@phantomstep@width}{\the\kata@phantomsteprule@width}
+        \kataStepPhantom%
       }%
     \fi%
   \fi%
@@ -962,6 +961,41 @@
 %    \end{macrocode}
 %
 %
+% \begin{macro}{\kata@step@interspace}
+% places a space (with glue) / a linebreak to be used between two \verb|step|s
+% What exactly is placed is determined based on two parameters:
+% \begin{enumerate}
+%   \item the amount of columns the resulting grid should have
+%   \item the index (starting at 0) of the current \verb|step|
+% \end{enumerate}
+% This macro assumes the space is placed \emph{before} the \verb|step|.
+%    \begin{macrocode}
+\newcommand{\kata@step@interspace}[2]{%
+  \ifnum#1=0%
+    \hskip 0.0pt plus 1.0fil %
+  \else%
+    \pgfmathtruncatemacro{\kata@step@column}{mod(#2,#1)}%
+    \ifnum\kata@step@column=#1%
+      \par
+    \else%
+      \hskip 0.0pt plus 1.0fil %
+    \fi%
+  \fi%
+}%
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\kataStepPhantom}
+% Places a phantom (invisible) \verb|step| with the correct width and spacing to be consistent with the grid.
+%    \begin{macrocode}
+\NewDocumentCommand{\kataStepPhantom}{}{%
+  \kata@step@interspace{\kata@columns}{\value{kata@step}}%
+  \rule{\the\kata@phantomstep@width}{\the\kata@phantomsteprule@width}
+  \refstepcounter{kata@step}
+}
+%    \end{macrocode}
+% \end{macro}
+%
 % \begin{environment}{step}
 % this environment always should wrap \verb|kata@step|.
 % It handles the aspects of positioning the pictogram.
@@ -974,16 +1008,7 @@
   \ifkata@step@first%
     \vfil\noindent%
   \else%
-    \ifnum\kata@columns=0%
-      \hskip 0.0pt plus 1.0fil %
-    \else
-      \pgfmathtruncatemacro{\kata@step@column}{mod(\value{kata@step},\kata@columns)}%
-      \ifnum\kata@step@column=\kata@columns%
-        \par
-      \else%
-        \hskip 0.0pt plus 1.0fil %
-      \fi%
-    \fi%
+    \kata@step@interspace{\kata@columns}{\value{kata@step}}%
   \fi%
   \begin{kata@step}%
     #2
