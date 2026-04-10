@@ -841,7 +841,8 @@
 % \subsection{Core internals}
 % A counter for each pictogram to enable referencing.
 %    \begin{macrocode}
-\newcounter{kata@step}[section]
+\newcounter{kata@kata}
+\newcounter{kata@step}[kata@kata]
 %    \end{macrocode}
 %
 % \begin{macro}{\kata@requirestep}
@@ -907,7 +908,7 @@
 \NewDocumentEnvironment{kataRaw}{O{}}{%
   \pgfkeys{/kata/kata,#1}%
   \setlength{\lineskip}{6pt}%
-  \setcounter{kata@step}{0}%
+  \stepcounter{kata@kata}%
   \kata@inkatatrue%
 %    \end{macrocode}
 % there is no harm in a single word/pictogram in the last line to turn off the corresponding penalty
@@ -920,7 +921,7 @@
 % This ensures a uniform looking grid of pictograms
 %    \begin{macrocode}
   \ifnum\kata@columns=0\else%
-    \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
+    \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\value{kata@step},\kata@columns),\kata@columns)}%
     \ifnum\kata@missing>0
       \foreach \i in {1,...,\kata@missing} {%
         \kataStepPhantom%
