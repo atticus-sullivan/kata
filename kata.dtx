@@ -528,6 +528,22 @@
 % \paragraph{Kiai command} \label{sec:opt-kiai}
 % nothing additional
 %
+% \subsubsection{Misc commands} \label{sec:misc}
+% This section contains miscellaneous commands.
+%
+% \begin{docCommand}[]{kataStepPhantom}{}
+%   Places a phantom/invisible \refEnv{step} which can be used to \enquote{skip} one place in the grid.
+%   This is exactly what \refEnv{kata} potentially appends to the last line in order to generate a proper grid.
+%
+%   Note for performance reasons, internally this does not place a \verb|tikzpicture|.
+%   The only goal is to produce the same spacing like there would have been a \refEnv{step}.
+%
+%   Also note this increases the counter which numbers the \refEnv{step}s.
+%   This is required because the grid generation relies on this counter.
+%   You'll notice the effect because the indicator displaying the counter will seem to have skipped one number.
+% \end{docCommand}
+%
+%
 % \subsubsection{Presets} \label{sec:presets}
 % In order to make common but more complex style modifications easier, this package defines some \emph{presets} which can usually be applied with the respective \verb|<> preset| key.
 %
