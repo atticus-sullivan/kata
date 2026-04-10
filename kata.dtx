@@ -307,7 +307,9 @@
 % {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={A simple example without customizations (but includes flip)}}
-\begin{kata}[columns=2]{Simple Example}{blue}
+\kataSetup{styled kata={section,margin,belt},columns=2}
+
+\begin{kata}[belt color=blue,title={Simple Example}]
   Some explanation -- normal \LaTeX{} code
   \parindent=0pt
 
@@ -576,7 +578,9 @@
   myPreset/.style={fill=#1!50},
 }
 
-\begin{kata}[columns=2]{xyz}{orange}
+\kataSetup{columns=0}
+
+\begin{kata}
   \parindent=0pt
 
   \begin{step}[border style={myPreset=orange}]
@@ -596,7 +600,9 @@
 % {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Extended example with all kinds of possible customizations}}
-\begin{kata}[columns=2,color={waza=orange}]{Extended Example}{blue}
+\kataSetup{styled kata={section,margin,belt},columns=0}
+
+\begin{kata}[columns=2,color={waza=orange},no section,no margin,belt color=orange,title={Extended Example}]
   Some explanation -- normal \LaTeX{} code
   \parindent=0pt
 
@@ -703,9 +709,13 @@
 %    \begin{macrocode}
   /kata/setup/.is family,
 %    \end{macrocode}
-% for settings regarding for the kata env
+% for settings regarding for the kataRaw env
 %    \begin{macrocode}
   /kata/kata/.is family,
+%    \end{macrocode}
+% for settings specific for the wrapper around kataRaw (kata)
+%    \begin{macrocode}
+  /kata/kata/styled/.is family,
 %    \end{macrocode}
 % for settings regarding for the step env
 %    \begin{macrocode}
@@ -777,10 +787,11 @@
   columns/.style = {/kata/kata,columns={#1}},
   % not relevant for step -> adds not to memoize context
   definealiases/.code = {%
-    \AddToHook {begindocument} [kata/aliases] {%
+    \AddToHook{begindocument}[kata/aliases]{%
       \kataAliases%
     }%
   },
+  styled kata/.code = \pgfkeys{/kata/kata/styled,#1},
   %
   /kata/forward/delegate common,
   /kata/forward/append common,
@@ -860,11 +871,19 @@
 \newif\ifkata@stance@flip
 \newif\ifkata@waza@flip
 \newif\ifkata@dir@flip
+%
 \newif\ifkata@step@first
+%
+\newif\ifkata@show@section
+\newif\ifkata@show@margin
+\newif\ifkata@show@belt
+%
 \newcount\kata@tmpcnta
 %    \end{macrocode}
 %
-% \subsection{The kata environment}
+% \subsection{The kataRaw environment}
+% This is the low-level raw kata environment.
+% It is only for wrapping the \verb|step|s and trying to generate a proper grid (by placing the correct space in the end).
 %    \begin{macrocode}
 \pgfkeys{
   /kata/kata,
@@ -878,38 +897,15 @@
 }
 %    \end{macrocode}
 %
-%
-% \begin{environment}{kata}
+% \begin{environment}{kataRaw}
 % this environment is basically a container for a sequence of steps.
 % Arguments:
 % \begin{enumerate}
 %   \item optional: keys from \verb|/kata/kata|
-%   \item kata name
-%   \item for which belt / marginline
-%   \item optional: belt color (for drawing), if empty -> not drawn, if not present use arg 3
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentEnvironment{kata}{O{}mmo}{%
+\NewDocumentEnvironment{kataRaw}{O{}}{%
   \pgfkeys{/kata/kata,#1}%
-  \section{#2}%
-  \IfBlankTF{#3}{%
-%    \end{macrocode}
-% draw the marginline only when arg 4 was given
-%    \begin{macrocode}
-    \IfNoValueF{#4}{\kata@beltmargin{}{#4}}%
-  }{%
-    \IfBlankTF{#4}{%
-%    \end{macrocode}
-% need to explicitly set second arg blank otherwise kata@beltmargin does not see the argument as blank
-%    \begin{macrocode}
-      \kata@beltmargin{#3}{}%
-    }{%
-%    \end{macrocode}
-% use arg 3 as fallback for arg 4 in case it wasn't specified
-%    \begin{macrocode}
-      \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
-    }%
-  }%
   \setlength{\lineskip}{6pt}%
   \setcounter{kata@step}{0}%
   \kata@inkatatrue%
@@ -941,7 +937,91 @@
 %    \end{macrocode}
 % \end{environment}
 %
+%
+% \subsection{The kata environment}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/kata/styled,
+  /kata/kata/styled/.search also={/kata/kata},
+  % not relevant for step -> adds not to memoize context
+  section/.is if = kata@show@section,
+  section/.default = true,
+  section = false,
+  no section/.style={/kata/kata/styled/section=false},
+  %
+%    \end{macrocode}
+% Not using a plain \verb|.store in| trying to shield against the user passing a command with more than one argument or no arguments.
+%    \begin{macrocode}
+  section cmd/.code = {%
+    \def\kata@section@cmd##1{#1{##1}}%
+  },
+  section cmd = \section,
+  section cmd/.value required,
+  %
+  title/.store in = \kata@title,
+  title = {},
+  title/.value required,
+  %
+  %
+  margin/.is if = kata@show@margin,
+  margin/.default = true,
+  margin = false,
+  no margin/.style={/kata/kata/styled/margin=false},
+  %
+  belt/.is if = kata@show@belt,
+  belt/.default = true,
+  belt = false,
+  no belt/.style={/kata/kata/styled/belt=false},
+  %
+  belt color/.store in = \kata@belt,
+  belt color = {},
+  belt color/.value required,
+  %
+  note/.store in = \kata@note,
+  note = {},
+  note/.value required,
+}
+%    \end{macrocode}
+%
+% \begin{environment}{kata}
+% this environment is basically a container for a sequence of steps. TODO
+% Arguments:
+% \begin{enumerate}
+%   \item optional: keys from \verb|/kata/kata|
+% \end{enumerate}
+%    \begin{macrocode}
+\NewDocumentEnvironment{kata}{O{}}{%
+  \pgfkeys{/kata/kata/styled,#1}%
+  \ifkata@show@section%
+    \kata@section@cmd{\kata@title}%
+  \fi%
+  \ifkata@show@margin%
+    \ifkata@show@belt%
+      \ifx\kata@belt\@empty%
+        \kata@beltmargin{\kata@note}{\kata@note}%
+      \else%
+        \kata@beltmargin{\kata@note}{\kata@belt}%
+      \fi%
+    \else%
+      \kata@beltmargin{\kata@note}{}%
+    \fi%
+  \fi%
+  \begin{kataRaw}%
+  \ignorespaces%
+}{%
+  \end{kataRaw}%
+}
+%    \end{macrocode}
+% \end{environment}
+%
+%
 % \begin{macro}{\kata@beltmargin}
+% Takes two arguments:
+% \begin{enumerate}
+%   \item the note
+%   \item the belt color
+% \end{enumerate}
+% If an argument is empty, the corresponding element will not be shown.
 %    \begin{macrocode}
 \newcommand{\kata@beltmargin}[2]{%
   \marginline{%
