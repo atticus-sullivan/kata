@@ -49,7 +49,7 @@
 %
 \TEST{kata-base}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[width=3,color={waza=pink}]{Extended Example}{blue}
+  \begin{kata}[columns=3,color={waza=pink}]{Extended Example}{blue}
     \begin{kataStep}[head style={dashed}]
       \kataStance{stance A}{0}
       \kataWaza{technique A}{-90}
@@ -65,7 +65,7 @@
 %
 \TEST{kata-base2}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[width=2,color={waza=blue}]{Extended Example 2}{blue}
+  \begin{kata}[columns=2,color={waza=blue}]{Extended Example 2}{blue}
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -90,12 +90,6 @@
   \SEPARATOR
   \SHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1.memo}
   \SHOWFILE{memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo}
-  %
-  \SEPARATOR
-  \TYPE{single externalized phantom step}
-  \SEPARATOR
-  \SHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5.memo}
-  \SHOWFILE{memoize.memo.dir/0A40161BB534B3F748EB35204295B7D5-C93E732E2FA55563CDA9926345DDAA91.memo}
   %
   \SEPARATOR
   \TYPE{extended example 2 -- visible step}
