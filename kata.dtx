@@ -248,9 +248,16 @@
 % The body will be the content of a \verb|tikzpicture| so normal \LaTeX{} code won't work as expected.
 % Instead, if you want/need to, you can draw arbitraty \TikZ{} code in this environment.
 %
-% Note: The circle representing the \emph{head}, is drawn right at the start of this environment as a node named \emph{head}.
-%       You may use it as a regular \TikZ{} node when writing custom \TikZ{}-code.
-%       The advice is not to draw out of the normal bounds as this will break the alignment of the pictograms.
+% Notes:
+% \begin{itemize}
+%   \item
+%     The circle representing the \emph{head}, is drawn right at the start of this environment as a node named \emph{head}.
+%     You may use it as a regular \TikZ{} node when writing custom \TikZ{}-code.
+%     The advice is not to draw out of the normal bounds as this will break the alignment of the pictograms.
+%   \item
+%     The counter which is also normally shown in the top left corner of each step also adds a \emph{reference point}.
+%     In effect, you can use \verb|\label| to label a step and reference that step later with the typical \LaTeX{} mechanisms.
+% \end{itemize}
 %
 % Usually you'll use \refCom{kataWaza}, \refCom{kataStance} and \refCom{kataDir} to populate the step with contents.
 % Note that all of these commands may be present (multiple times) but they don't need to be present all.
@@ -349,7 +356,7 @@
 %
 % \subsection{Options / Customization} \label{sec:options}
 % The idea is you can set any option with any command (offering generic \meta{options}) which makes sense at this place.
-% For example you can set the style in which the \emph{border} of a step is drawn at the \refEnv{kataStep}, \refEnv{kata} and \refCom{kataSetup}/package level all with varying scopes.
+% For example you can set the style in which the \emph{border} of a step is drawn at the \refEnv{kataStep}, \refEnv{kataRaw} and \refCom{kataSetup}/package level all with varying scopes.
 % But you cannot set the \emph{border} style at the \refCom{kataWaza} or \refCom{kataStance} level as it does not make sense.
 %
 % Note: You should never needs to specify paths manually when specifying options.
@@ -366,7 +373,7 @@
 % \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{options}}]{{doc name=setup/stance},{doc name=kata/stance},{doc name=step/stance}}
 %   Sets the \meta{options} as if they are passed to every \refCom{kataStance} in the scope.
 %
-%   Scope means, e.g. if this is passed to \refEnv{kata}, all \refCom{kataStance} commands in this kata will get these \meta{options}.
+%   Scope means, e.g. if this is passed to \refEnv{kataRaw}/\refEnv{kata}, all \refCom{kataStance} commands in this kata will get these \meta{options}.
 %   But for the next kata, the \meta{options} are not applied.
 % \end{docKeys}
 %
@@ -471,7 +478,7 @@
 %   Sets the amount of pictograms which fit one line in the document.
 %   As of now this package cannot measure this on its own so you need to set this manually (usually only once for the whole document via \refKey{/kata/setup/columns}).
 %
-%   The effect of this is that at the end of a \refEnv{kata}, if the last line is not fully populated, it is filled up with \verb|\rule|s with the width of one \refEnv{step}.
+%   The effect of this is that at the end of a \refEnv{kataRaw}, if the last line is not fully populated, it is filled up with \verb|\rule|s with the width of one \refEnv{step}.
 %   In order to know if and if yes how many places need to be filled, this key is required.
 %   This is needed if you want a proper grid of pictograms in the output.
 %
@@ -604,7 +611,7 @@
 %
 % \begin{docCommand}[]{kataStepPhantom}{}
 %   Places a phantom/invisible \refEnv{step} which can be used to \enquote{skip} one place in the grid.
-%   This is exactly what \refEnv{kata} potentially appends to the last line in order to generate a proper grid.
+%   This is exactly what \refEnv{kataRaw} potentially appends to the last line in order to generate a proper grid.
 %
 %   Note for performance reasons, internally this does not place a \verb|tikzpicture|.
 %   The only goal is to produce the same spacing like there would have been a \refEnv{step}.
