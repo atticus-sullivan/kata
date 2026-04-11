@@ -411,8 +411,14 @@
 %
 % \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{presets}}]{{doc name=setup/border preset},{doc name=kata/border preset},{doc name=step/border preset}}
 %   Similar like \refKey{/kata/setup/head style} etc.
-%   But intead of appending raw \TikZ{} options, this option allows passing \meta{presets}  defined by this package for the border.
+%   But intead of appending raw \TikZ{} options, this option allows passing \meta{presets} defined by this package for the border.
 %   See \cref{sec:presets:border} for more detailled information and a list of defined border presets.
+% \end{docKeys}
+%
+% \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{presets}}]{{doc name=setup/step preset},{doc name=kata/step preset},{doc name=step/step preset}}
+%   Similar like \refKey{/kata/setup/head style} etc.
+%   But intead of appending raw \TikZ{} options, this option allows passing \meta{presets} defined by this package for the steps.
+%   See \cref{sec:presets:step} for more detailled information and a list of defined step presets.
 % \end{docKeys}
 %
 % \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{options}}]{{doc name=setup/step counter style},{doc name=kata/step counter style},{doc name=step/step counter style}}
@@ -546,7 +552,7 @@
 % \subsubsection{Step environment} \label{sec:opt-step}
 % These options are specific to \refEnv{kataStep}.
 %
-% \begin{docKey}[kata/step]{first step}{}{}
+% \begin{docKey}[kata/step]{before first}{}{}
 %   This key can be used to inject arbitrary code which is executed \emph{before the first \refEnv{step}}.
 %
 %   You may use this for example to place a \verb|\vfill| before the first step, resulting in the steps being placed closer to the pagebreak which might make (digitally) reading easier.
@@ -643,6 +649,24 @@
 %   Colors the border with \meta{color}. Also fills the border with \qty{5}{\percent} (transparent for the rest part) of that color to highlight/accent it.
 %
 %   As \meta{color}, everything can be passed here which \TikZ{} can use as a color.
+% \end{docKey}
+%
+% \paragraph{Presets for steps} \label{sec:presets:step}
+% \begin{docKey}[kata/preset/step]{align page bottom}{}{}
+%   You usually write \refEnv{kata}s in two stages.
+%   First, some additional explanations.
+%   Second, the \refEnv{step}s.
+%   This preset sets the steps up so they are pushed down as far as possible on the first page.
+%   The idea is that this way when reading (digitally), you need to skip less space when switching from one page to the next one.
+%   There is one caveat: If you don't use sections and don't place explanations before the steps, this preset might do nothing.
+%
+%   Note: Under the hood, this just sets \refKey{/kata/step/before first} to \verb|\vfill|.
+% \end{docKey}
+%
+% \begin{docKey}[kata/preset/step]{align reset}{}{}
+%   Undoes (locally) the changes done by \refKey{/kata/preset/step/align page bottom} etc.
+%
+%   Note, usually you should not need this, as setting these keys/presets is always local (setting it for one \refEnv{kata} won't affect the other ones).
 % \end{docKey}
 %
 % \paragraph{Custom presets} \label{sec:presets:custom}
@@ -822,6 +846,7 @@
 % presets for better usability
 %    \begin{macrocode}
   /kata/preset/border/.is family,
+  /kata/preset/step/.is family,
 %    \end{macrocode}
 % forwards in order to DRY
 %    \begin{macrocode}
@@ -852,6 +877,7 @@
     head style/.style = {/kata/style/head/.append style = {##1}},
     border style/.style = {/kata/style/border/.append style = {##1}},
     border preset/.forward to = /kata/style/border preset,
+    step preset/.forward to = /kata/style/step preset,
     step counter style/.style = {/kata/style/step counter/.append style = {##1}},
   },
 }
@@ -1497,6 +1523,11 @@
   border preset/.code={
     \pgfkeysalso{/kata/preset/border,#1}%
   },
+  %
+  % only forwards -> adds not to memoize context
+  step preset/.code={
+    \pgfkeysalso{/kata/preset/step,#1}%
+  },
 }
 %    \end{macrocode}
 %
@@ -1611,6 +1642,19 @@
       fill=#1!5,
       draw=#1,
     },
+  },
+}
+%    \end{macrocode}
+% \paragraph{Step presets}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/preset/step,
+  % only appends -> adds not to memoize context
+  align page bottom/.style={
+    /kata/step/before first={\vfill},
+  },
+  align reset/.style={
+    /kata/step/before first={},
   },
 }
 %    \end{macrocode}
