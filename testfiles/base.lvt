@@ -493,6 +493,25 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
   \TIMO
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%
+%% BEFORE FIRST STEP %%
+%%%%%%%%%%%%%%%%%%%%%%%
+\part{before first step}
+
+\KataTestCase{kata-step-before-first}{%
+  \setbox\katabox=\vbox{%
+    \begin{kata}[title={before first step},note={blue},step={before first={before}}]
+    \begin{kataStep}
+      \kataStance{stance A}{0}
+    \end{kataStep}
+  \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+}
+
 %%%%%%%%%%%%%%%%%%%%%
 %% PGF-KEYS > flip %%
 %%%%%%%%%%%%%%%%%%%%%
