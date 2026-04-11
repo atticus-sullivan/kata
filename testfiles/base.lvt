@@ -27,7 +27,7 @@
 \usepackage{kata}
 
 \kataSetup{
-  styled kata={section,belt,margin},
+  styled kata={section,belt,no margin},
   columns=2,
 }
 
@@ -47,7 +47,7 @@
 
 \makeatletter
 % overwrite marginline to inspect the margin content
-\renewcommand{\kata@beltmargin}[2]{%
+\renewcommand{\kata@beltmargin@raw}[2]{%
   \TYPE{beltmargin = #1 | #2}%
   beltmargin = #1 $|$ #2\par%
 }
@@ -165,7 +165,7 @@
 \KataTestCase{kata-phantom-two}{%
   \begin{minipage}{15cm}
   \setbox\katabox=\vbox{%
-    \begin{kata}[columns=3,title={phantom two},note={blue}]
+  \begin{kata}[columns=3,title={phantom two},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -180,7 +180,7 @@
 
 \KataTestCase{kata-phantom-manual}{%
   \setbox\katabox=\vbox{%
-    \begin{kata}[columns=2,title={manual phantom},note={blue}]
+  \begin{kata}[columns=2,title={manual phantom},note={blue}]
     should show: manual phantom | step (2 cols)\par
     \kataStepPhantom%
     \begin{kataStep}
@@ -197,7 +197,7 @@
 \KataTestCase{kata-phantom-mixed}{%
   \begin{minipage}{15cm}
   \setbox\katabox=\vbox{%
-    \begin{kata}[columns=3,title={mixed phantom},note={blue}]
+  \begin{kata}[columns=3,title={mixed phantom},note={blue}]
     should show: step | manual phantom | automatic phantom (3 cols)\par
     \begin{kataStep}
       \kataStance{stance A}{0}
@@ -287,6 +287,8 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 %%%%%%%%%%%%%%%%
 \part{Marginline}
 
+{
+\kataSetup{styled kata={margin}}
 \KataTestCase{kata-marginline-text+belt}{%
   \setbox\katabox=\vbox{%
   \begin{kata}[title={text and belt given},note={arbitrary text},belt color={red}]
@@ -357,11 +359,82 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
   \TIMO
 }
 
+\KataTestCase{kata-marginline-all-empty}{%
+  \setbox\katabox=\vbox{%
+  \begin{kata}[title={all empty},note={},belt color={}]
+    should not draw a marginline\par
+    \par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+}
+}
+
 %%%%%%%%%%%%%
 %% SECTION %%
 %%%%%%%%%%%%%
 \part{Section}
-% TODO
+\KataTestCase{kata-section-enabled}{%
+  \setbox\katabox=\vbox{%
+  \begin{kata}[title={title}]
+    normal title\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+}
+
+\KataTestCase{kata-section-enabled-but-empty}{%
+  \setbox\katabox=\vbox{%
+  \begin{kata}[title={}]
+    empty title\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+}
+
+\KataTestCase{kata-section-disabled}{%
+  \setbox\katabox=\vbox{%
+  \begin{kata}[title={title},no section]
+    disabled section\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+}
+
+\KataTestCase{kata-section-custom}{%
+  \setbox\katabox=\vbox{%
+  \renewcommand\kataSection[1]{my section command $|$#1$|$\par}
+  \begin{kata}[title={title}]
+    custom section command\par
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kata}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %% STEP COUNTER FORMAT %%

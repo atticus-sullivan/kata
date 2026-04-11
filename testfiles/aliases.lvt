@@ -26,7 +26,7 @@
 
 \usepackage[definealiases]{kata}
 \kataSetup{
-  styled kata={section,belt,margin},
+  styled kata={section,belt,no margin},
   columns=2,
 }
 
