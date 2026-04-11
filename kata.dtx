@@ -1089,7 +1089,7 @@
 % \end{environment}
 %
 %
-% \begin{macro}{\kata@beltmargin}
+% \begin{macro}{\kata@beltmargin@raw}
 % Takes two arguments:
 % \begin{enumerate}
 %   \item the note
@@ -1097,19 +1097,36 @@
 % \end{enumerate}
 % If an argument is empty, the corresponding element will not be shown.
 %    \begin{macrocode}
-\newcommand{\kata@beltmargin}[2]{%
+\newcommand{\kata@beltmargin@raw}[2]{%
   \marginline{%
     \centering\footnotesize%
-    \IfBlankF{#1}{%
+    \kata@ifstr{#1}{}{}{%
       $\downarrow$ #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
-  \IfBlankF{#1}{\IfBlankF{#2}{\\}}%
-  \IfBlankF{#2}{%
+  \kata@ifstr{#1}{}{}{\kata@ifstr{#2}{}{}{\\}}%
+  \kata@ifstr{#2}{}{}{%
       \ColorBelt*[scale=0.1]{#2}%
   }%
+  }%
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\kata@beltmargin}
+% Analog to \verb|\kata@beltmargin@raw| but wraps for display policy reasons:
+%
+% If everything is empty this avoids drawing a marginline at all.
+%    \begin{macrocode}
+\newcommand{\kata@beltmargin}[2]{%
+  \kata@ifstr{#1}{}{%
+    \kata@ifstr{#2}{}{}{%
+      \kata@beltmargin@raw{#1}{#2}%
+    }%
+  }{%
+    \kata@beltmargin@raw{#1}{#2}%
   }%
 }
 %    \end{macrocode}
