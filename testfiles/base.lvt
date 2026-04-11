@@ -26,6 +26,11 @@
 
 \usepackage{kata}
 
+\kataSetup{
+  styled kata={section,belt,margin},
+  columns=2,
+}
+
 % make the phantoms visible to check it in the output
 \makeatletter
 \kata@phantomsteprule@width=4pt
@@ -88,7 +93,7 @@
 
 \KataTestCase{kata-basic}{%
   \setbox\katabox=\vbox{%
-    \begin{kata}[columns=1]{section title}{blue}
+    \begin{kata}[title={section title},note={blue}]
       \begin{kataStep}
         \kataStance{stance A}{0}
         \kataWaza{technique A}{-90}
@@ -110,7 +115,7 @@
 
 \KataTestCase{kata-phantom-none}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=2]{phantom none}{blue}
+    \begin{kata}[columns=2,title={phantom none},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -127,7 +132,7 @@
 
 \KataTestCase{kata-phantom-one}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=2]{phantom one}{blue}
+    \begin{kata}[columns=2,title={phantom one},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -141,7 +146,7 @@
 
 \KataTestCase{kata-phantom-two}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=3]{phantom two}{blue}
+    \begin{kata}[columns=3,title={phantom two},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -155,7 +160,7 @@
 
 \KataTestCase{kata-phantom-manual}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=2]{manual phantom}{blue}%
+    \begin{kata}[columns=2,title={manual phantom},note={blue}]
     manual phantom | step (2 cols)\par
     \kataStepPhantom%
     \begin{kataStep}
@@ -171,7 +176,7 @@
 
 \KataTestCase{kata-phantom-mixed}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=3]{mixed phantom}{blue}
+    \begin{kata}[columns=3,title={mixed phantom},note={blue}]
     step | manual phantom | automatic phantom (3 cols)\par
     \begin{kataStep}
       \kataStance{stance A}{0}
@@ -196,8 +201,8 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
   \begin{minipage}{15cm}
   \setbox\katabox=\vbox{%
   \setlength{\textwidth}{15cm}
-  \begin{kata}[columns=3]{full grid}{blue}
-    \begin{kataStep}[first step]
+  \begin{kata}[columns=3,title={full grid},note={blue}]
+    \begin{kataStep}
     \end{kataStep}
     \kataStepPhantom
     \begin{kataStep}
@@ -227,10 +232,11 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 %% MARGINLINE %%
 %%%%%%%%%%%%%%%%
 \part{Marginline}
+% TODO
 
 \KataTestCase{kata-marginline-text+belt}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{text and belt given}{arbitrary text}[red]%
+  \begin{kata}[title={text and belt given},note={arbitrary text},belt color={red}]
     should show text and use the custom belt color\par
     \begin{kataStep}
     \end{kataStep}
@@ -244,7 +250,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-marginline-text+emptyBelt}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{text and empty belt}{arbitrary text}[]%
+    \begin{kata}[title={text and empty belt},note={arbitrary text}]
     should show text but no belt\par
     \begin{kataStep}
     \end{kataStep}
@@ -258,7 +264,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-marginline-text+noBelt}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{text but no belt}{blue}%
+    \begin{kata}[title={text but no belt},note={blue}]
     should show text and use text as belt color\par
     \begin{kataStep}
     \end{kataStep}
@@ -272,7 +278,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-marginline-emptyText+belt}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{empty text but belt}{}[red]%
+  \begin{kata}[title={empty text but belt},belt color={red}]
     should show no text but the belt\par
     \begin{kataStep}
     \end{kataStep}
@@ -286,7 +292,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-marginline-emptyText+emptyBelt}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{empty text and empty belt}{}[]%
+    \begin{kata}[title={empty text and empty belt},note={}]
     should not draw a marginline\par
     \begin{kataStep}
     \end{kataStep}
@@ -300,7 +306,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-marginline-emptyText+noBelt}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{empty text and no belt}{}%
+    \begin{kata}[title={empty text and no belt},note={}]
     should not draw a marginline\par
     \begin{kataStep}
     \end{kataStep}
@@ -319,7 +325,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-stepcnt-default}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{step counter default}{blue}
+    \begin{kata}[title={step counter default},note={blue}]
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
@@ -335,7 +341,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 \KataTestCase{kata-stepcnt-roman}{%
   \setbox\katabox=\vbox{%
     \renewcommand\kataStepCnt[1]{\roman{#1}}%
-    \begin{kata}[columns=1]{step counter roman}{blue}
+    \begin{kata}[title={step counter roman},note={blue}]
       \begin{kataStep}
       \end{kataStep}
       \begin{kataStep}
@@ -351,7 +357,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 \KataTestCase{kata-stepcnt-local}{%
   \setbox\katabox=\vbox{%
   only the second image should have a roman counter\par
-  \begin{kata}[columns=1]{step counter local}{blue}
+  \begin{kata}[title={step counter local},note={blue}]
     \begin{kataStep}
     \end{kataStep}
     {%
@@ -376,7 +382,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-stance-flip-off}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{stance un-flipped}{blue}
+    \begin{kata}[title={stance un-flipped},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -390,7 +396,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-stance-flip-on}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{stance flipped}{blue}
+    \begin{kata}[title={stance flipped},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}[flip]
     \end{kataStep}
@@ -404,7 +410,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-waza-flip-off}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{waza un-flipped}{blue}
+    \begin{kata}[title={waza un-flipped},note={blue}]
     \begin{kataStep}
       \kataWaza{technique A}{0}
     \end{kataStep}
@@ -418,7 +424,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-waza-flip-on}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{waza fliped}{blue}
+    \begin{kata}[title={waza fliped},note={blue}]
     \begin{kataStep}
       \kataWaza{technique A}{0}[flip]
     \end{kataStep}
@@ -432,7 +438,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-dir-normal}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{dir un-flipped}{blue}
+    \begin{kata}[title={dir un-flipped},note={blue}]
     \begin{kataStep}
       \kataDir{0}{180}
     \end{kataStep}
@@ -446,7 +452,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-dir-flip}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{dir flipped}{blue}
+    \begin{kata}[title={dir flipped},note={blue}]
     \begin{kataStep}
       \kataDir[flip]{0}{180}
     \end{kataStep}
@@ -465,7 +471,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-color-kata}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1,color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]{colors kata}{blue}
+    \begin{kata}[color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple},title={colors kata},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
       \kataWaza{technique A}{90}
@@ -488,7 +494,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-color-step}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{colors step}{blue}
+    \begin{kata}[title={colors step},note={blue}]
     \begin{kataStep}[color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]
       \kataStance{stance A}{0}
       \kataWaza{technique A}{90}
@@ -512,7 +518,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 \KataTestCase{kata-color-global}{%
   \setbox\katabox=\vbox{%
   \kataSetup{color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}}
-  \begin{kata}[columns=1]{colors global}{blue}
+  \begin{kata}[title={colors global},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
       \kataWaza{technique A}{90}
@@ -535,7 +541,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-color-local}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1,color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple}]{colors local}{blue}
+    \begin{kata}[color={stance=red,waza=green,dir=cyan,head=black,border=gray,step counter=purple},title={colors local},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}[color=orange]
       \kataWaza{technique A}{90}[color=brown]
@@ -563,7 +569,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-border-style}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{border style}{blue}
+    \begin{kata}[title={border style},note={blue}]
     \begin{kataStep}[border style={dashed}]
     \end{kataStep}
   \end{kata}
@@ -576,7 +582,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-border-arrow-up}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{border arrow up}{blue}
+    \begin{kata}[title={border arrow up},note={blue}]
     \begin{kataStep}[border preset={arrow up}]
     \end{kataStep}
   \end{kata}
@@ -589,7 +595,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-border-accent}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{border accent}{blue}
+    \begin{kata}[title={border accent},note={blue}]
     \begin{kataStep}[border preset={accent=blue}]
     \end{kataStep}
   \end{kata}
@@ -602,7 +608,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-border-combined-step}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{border combined (step-level)}{blue}
+    \begin{kata}[title={border combined (step-level)},note={blue}]
     \begin{kataStep}[border style={dashed},border preset={arrow up,accent=blue}]
     \end{kataStep}
   \end{kata}
@@ -614,7 +620,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 }
 \KataTestCase{kata-border-combined-kata}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1,border style={dotted},border preset={arrow right,accent=blue}]{border combined (kata-level)}{blue}
+    \begin{kata}[border style={dotted},border preset={arrow right,accent=blue},title={border combined (kata-level)},note={blue}]
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
@@ -627,7 +633,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 \KataTestCase{kata-border-combined-global}{%
   \setbox\katabox=\vbox{%
   \kataSetup{border style={dashed},border preset={arrow down,accent=blue}}
-  \begin{kata}[columns=1]{border combined (global-level)}{blue}
+  \begin{kata}[title={border combined (global-level)},note={blue}]
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
@@ -645,7 +651,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-head-style-kata}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1,head style={dashed}]{head style (kata)}{blue}
+    \begin{kata}[head style={dashed},title={head style (kata)},note={blue}]
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
@@ -659,7 +665,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 }
 \KataTestCase{kata-head-style-step}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{head style (step)}{blue}
+    \begin{kata}[title={head style (step)},note={blue}]
     \begin{kataStep}[head style={dashed}]
     \end{kataStep}
     \begin{kataStep}
@@ -674,7 +680,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 \KataTestCase{kata-head-style-global}{%
   \setbox\katabox=\vbox{%
   \kataSetup{head style={dashed}}
-  \begin{kata}[columns=1]{head style (global)}{blue}
+  \begin{kata}[title={head style (global)},note={blue}]
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
@@ -689,7 +695,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-stepcounter-style-kata}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1,step counter style={dashed}]{step counter style (kata)}{blue}
+    \begin{kata}[step counter style={dashed},title={step counter style (kata)},note={blue}]
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
@@ -703,7 +709,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 }
 \KataTestCase{kata-stepcounter-style-step}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{step counter style (step)}{blue}
+    \begin{kata}[title={step counter style (step)},note={blue}]
     \begin{kataStep}[step counter style={dashed}]
     \end{kataStep}
     \begin{kataStep}
@@ -718,7 +724,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 \KataTestCase{kata-stepcounter-style-global}{%
   \setbox\katabox=\vbox{%
   \kataSetup{step counter style={dashed}}
-  \begin{kata}[columns=1]{step counter style (global)}{blue}
+  \begin{kata}[title={step counter style (global)},note={blue}]
     \begin{kataStep}
     \end{kataStep}
     \begin{kataStep}
@@ -738,7 +744,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-angle-stance}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{stance angles}{blue}
+    \begin{kata}[title={stance angles},note={blue}]
     \begin{kataStep}
       \kataStance{stance A $-360$}{-360}
     \end{kataStep}
@@ -770,7 +776,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-angle-waza}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{waza angles}{blue}
+    \begin{kata}[title={waza angles},note={blue}]
     \begin{kataStep}
       \kataWaza{technique A $-360$}{-360}
     \end{kataStep}
@@ -802,7 +808,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-angle-kiai}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{kiai angles}{blue}
+    \begin{kata}[title={kiai angles},note={blue}]
     \begin{kataStep}
       \kataKiai{360}
     \end{kataStep}
@@ -834,7 +840,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-angle-dir-center}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{dir angles -- center}{blue}
+    \begin{kata}[title={dir angles -- center},note={blue}]
     \begin{kataStep}
       \kataDir{center}{360}
     \end{kataStep}
@@ -866,7 +872,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-angle-dir-turn}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{dir angles -- turn}{blue}
+    \begin{kata}[title={dir angles -- turn},note={blue}]
     \begin{kataStep}
       \kataDir{0}{180}
     \end{kataStep}
@@ -900,7 +906,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-prefix-stance}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{stance}{blue}
+    \begin{kata}[title={stance},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
       \kataStance[R]{stance A}{90}
@@ -917,7 +923,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-prefix-waza}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=1]{waza}{blue}
+    \begin{kata}[title={waza},note={blue}]
     \begin{kataStep}
       \kataWaza{technique A}{0}
       \kataWaza[R]{technique A}{90}
@@ -938,7 +944,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 \part{Commands at invalid places (check for errors)}
 
 \KataTestCase{kata-cmd-invalid-places-kata}{%
-  \begin{kata}[columns=1]{waza}{blue}
+  \begin{kata}[title={waza},note={blue}]
       \kataWaza{technique A}{0}
       \kataStance{stance A}{0}
       \kataDir{-90}{0}
