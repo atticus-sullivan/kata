@@ -3,15 +3,10 @@ Don't change this file in any respect.
 ============================================================
 TEST 1: kata-basic
 ============================================================
-beltmargin = blue | blue
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line ....
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line ....
 stance-label=normal
 waza-label=normal
 > \box...=
-\vbox(163.1496+0.0)x345.0
+\vbox(148.6496+0.0)x345.0
 .\hbox(9.99998+0.0)x345.0, glue set 237.4268fil
 ..\hbox(9.27998+0.0)x24.29997
 ...\glue 0.0
@@ -37,40 +32,6 @@ waza-label=normal
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.5
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -1482,11 +1443,10 @@ manually added constraints
 ============================================================
 TEST 3: kata-phantom-none
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 stance-label=normal
 > \box...=
-\vbox(163.1496+0.0)x345.0
+\vbox(151.44958+0.0)x345.0
 .\hbox(9.99998+2.79999)x345.0, glue set 219.48352fil
 ..\hbox(9.27998+0.0)x24.29997
 ...\glue 0.0
@@ -1512,40 +1472,6 @@ stance-label=normal
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2011,10 +1937,9 @@ manually added constraints
 ============================================================
 TEST 4: kata-phantom-one
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -2042,40 +1967,6 @@ stance-label=normal
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {4}phantom one}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2321,10 +2212,9 @@ manually added constraints
 ============================================================
 TEST 5: kata-phantom-two
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(163.1496+0.0)x426.79134
+\vbox(151.44958+0.0)x426.79134
 .\hbox(9.99998+2.79999)x426.79134, glue set 309.56654fil
 ..\hbox(9.27998+0.0)x24.29997
 ...\glue 0.0
@@ -2350,40 +2240,6 @@ stance-label=normal
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {5}phantom two}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x426.79134, glue set 318.70778fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2628,16 +2484,20 @@ stance-label=normal
 <argument> ...ep} \end {kata} } \showbox \katabox 
                                                   \OMIT \box \katabox \TIMO ...
 l. ...}
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
 ============================================================
 manually added constraints
 ============================================================
 Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 []$[]$
-\hbox(84.0748+79.0748)x345.0
+\hbox(78.2248+73.2248)x345.0
 .\hbox(0.0+0.0)x15.0
 .\mathon
-.\vbox(84.0748+79.0748)x426.79134
-..\vbox(163.1496+0.0)x426.79134
+.\vbox(78.2248+73.2248)x426.79134
+..\vbox(151.44958+0.0)x426.79134
 ...\hbox(9.99998+2.79999)x426.79134, glue set 309.56654fil
 ....\hbox(9.27998+0.0)x24.29997
 .....\glue 0.0
@@ -2663,40 +2523,6 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {5}phantom two}{\thepage }{}\protected@file@percent }}
 ...\penalty 10000
 ...\glue 9.90276 plus 0.86108
-...\glue(\parskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 1.70001
-...\hbox(7.5+2.5)x426.79134, glue set 318.70778fil
-....\OT1/cmr/m/n/10 b
-....\kern0.27779
-....\OT1/cmr/m/n/10 e
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 t
-....\OT1/cmr/m/n/10 m
-....\OT1/cmr/m/n/10 a
-....\OT1/cmr/m/n/10 r
-....\OT1/cmr/m/n/10 g
-....\OT1/cmr/m/n/10 i
-....\OT1/cmr/m/n/10 n
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 =
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 b
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 u
-....\OT1/cmr/m/n/10 e
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\mathon
-....\OMS/cmsy/m/n/10 j
-....\mathoff
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 b
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 u
-....\OT1/cmr/m/n/10 e
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 6.0
@@ -2942,14 +2768,12 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 Underfull \hbox (badness 10000) in paragraph at lines ...
 \hbox(0.0+0.0)x345.0
 .\glue(\rightskip) 0.0
-[2]
 ============================================================
 TEST 6: kata-phantom-manual
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(190.219+0.0)x345.0
+\vbox(178.219+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -2984,42 +2808,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 2.0
-.\hbox(7.5+2.5)x345.0, glue set 125.61073fil
-..\hbox(0.0+0.0)x15.0
+.\hbox(7.5+2.5)x345.0, glue set 140.61073fil
 ..\OT1/cmr/m/n/10 s
 ..\OT1/cmr/m/n/10 h
 ..\OT1/cmr/m/n/10 o
@@ -3316,10 +3105,10 @@ manually added constraints
 ============================================================
 TEST 7: kata-phantom-mixed
 ============================================================
-beltmargin = blue | blue
+[2]
 stance-label=normal
 > \box...=
-\vbox(175.1496+0.0)x426.79134
+\vbox(163.1496+0.0)x426.79134
 .\hbox(9.99998+2.79999)x426.79134, glue set 291.82487fil
 ..\hbox(9.27998+0.0)x24.29997
 ...\glue 0.0
@@ -3348,42 +3137,7 @@ stance-label=normal
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x426.79134, glue set 318.70778fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 2.0
 .\hbox(7.5+2.5)x426.79134, glue set 119.90184fil
-..\hbox(0.0+0.0)x0.0
 ..\OT1/cmr/m/n/10 s
 ..\OT1/cmr/m/n/10 h
 ..\OT1/cmr/m/n/10 o
@@ -3703,11 +3457,11 @@ manually added constraints
 ============================================================
 Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 []$[]$
-\hbox(90.0748+85.0748)x345.0
+\hbox(84.0748+79.0748)x345.0
 .\hbox(0.0+0.0)x15.0
 .\mathon
-.\vbox(90.0748+85.0748)x426.79134
-..\vbox(175.1496+0.0)x426.79134
+.\vbox(84.0748+79.0748)x426.79134
+..\vbox(163.1496+0.0)x426.79134
 ...\hbox(9.99998+2.79999)x426.79134, glue set 291.82487fil
 ....\hbox(9.27998+0.0)x24.29997
 .....\glue 0.0
@@ -3736,42 +3490,7 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 1.70001
-...\hbox(7.5+2.5)x426.79134, glue set 318.70778fil
-....\OT1/cmr/m/n/10 b
-....\kern0.27779
-....\OT1/cmr/m/n/10 e
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 t
-....\OT1/cmr/m/n/10 m
-....\OT1/cmr/m/n/10 a
-....\OT1/cmr/m/n/10 r
-....\OT1/cmr/m/n/10 g
-....\OT1/cmr/m/n/10 i
-....\OT1/cmr/m/n/10 n
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 =
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 b
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 u
-....\OT1/cmr/m/n/10 e
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\mathon
-....\OMS/cmsy/m/n/10 j
-....\mathoff
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 b
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 u
-....\OT1/cmr/m/n/10 e
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 2.0
 ...\hbox(7.5+2.5)x426.79134, glue set 119.90184fil
-....\hbox(0.0+0.0)x0.0
 ....\OT1/cmr/m/n/10 s
 ....\OT1/cmr/m/n/10 h
 ....\OT1/cmr/m/n/10 o
@@ -4090,10 +3809,8 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 ============================================================
 TEST 8: kata-full-grid
 ============================================================
-[3]
-beltmargin = blue | blue
 > \box...=
-\vbox(420.64331+0.0)x426.79134
+\vbox(408.9433+0.0)x426.79134
 .\hbox(9.99998+2.79999)x426.79134, glue set 345.92479fil
 ..\hbox(9.27998+0.0)x24.29997
 ...\glue 0.0
@@ -4114,40 +3831,6 @@ beltmargin = blue | blue
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {8}full grid}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x426.79134, glue set 318.70778fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -4477,7 +4160,7 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 10000
+.\penalty 150
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x426.79134, glue set 16.60883fil
 ..\hbox(122.74686+0.0)x126.7468
@@ -5300,11 +4983,11 @@ manually added constraints
 ============================================================
 Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 []$[]$
-\hbox(212.82166+207.82166)x345.0
+\hbox(206.97165+201.97165)x345.0
 .\hbox(0.0+0.0)x15.0
 .\mathon
-.\vbox(212.82166+207.82166)x426.79134
-..\vbox(420.64331+0.0)x426.79134
+.\vbox(206.97165+201.97165)x426.79134
+..\vbox(408.9433+0.0)x426.79134
 ...\hbox(9.99998+2.79999)x426.79134, glue set 345.92479fil
 ....\hbox(9.27998+0.0)x24.29997
 .....\glue 0.0
@@ -5325,40 +5008,6 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {8}full grid}{\thepage }{}\protected@file@percent }}
 ...\penalty 10000
 ...\glue 9.90276 plus 0.86108
-...\glue(\parskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 1.70001
-...\hbox(7.5+2.5)x426.79134, glue set 318.70778fil
-....\OT1/cmr/m/n/10 b
-....\kern0.27779
-....\OT1/cmr/m/n/10 e
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 t
-....\OT1/cmr/m/n/10 m
-....\OT1/cmr/m/n/10 a
-....\OT1/cmr/m/n/10 r
-....\OT1/cmr/m/n/10 g
-....\OT1/cmr/m/n/10 i
-....\OT1/cmr/m/n/10 n
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 =
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 b
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 u
-....\OT1/cmr/m/n/10 e
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\mathon
-....\OMS/cmsy/m/n/10 j
-....\mathoff
-....\glue 3.33333 plus 1.66666 minus 1.11111
-....\OT1/cmr/m/n/10 b
-....\OT1/cmr/m/n/10 l
-....\OT1/cmr/m/n/10 u
-....\OT1/cmr/m/n/10 e
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 6.0
@@ -5688,7 +5337,7 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ......\pdfliteral{Q }
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\glue(\rightskip) 0.0
-...\penalty 10000
+...\penalty 150
 ...\glue(\lineskip) 6.0
 ...\hbox(122.74686+0.0)x426.79134, glue set 16.60883fil
 ....\hbox(122.74686+0.0)x126.7468
@@ -6507,6 +6156,7 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 Underfull \hbox (badness 10000) in paragraph at lines ...
 \hbox(0.0+0.0)x345.0
 .\glue(\rightskip) 0.0
+[3]
 ============================================================
 TEST 9: kata-raw-full-grid
 ============================================================
@@ -10321,18 +9971,1153 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[7]
 ============================================================
-TEST 15: kata-stepcnt-default
+TEST 15: kata-marginline-all-empty
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(163.1496+0.0)x345.0
-.\hbox(9.99998+2.79999)x345.0, glue set 170.54355fil
+\vbox(177.66344+0.0)x345.0
+.\penalty -300
+.\glue 15.0694 plus 4.30554 minus 0.86108
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\hbox(9.99998+2.79999)x345.0, glue set 246.0335fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 1
 ...\OT1/cmr/bx/n/14.4 4
+...\glue 16.19998
+..\OT1/cmr/bx/n/14.4 a
+..\OT1/cmr/bx/n/14.4 l
+..\OT1/cmr/bx/n/14.4 l
+..\glue 5.4 plus 2.7 minus 1.79999
+..\OT1/cmr/bx/n/14.4 e
+..\OT1/cmr/bx/n/14.4 m
+..\OT1/cmr/bx/n/14.4 p
+..\OT1/cmr/bx/n/14.4 t
+..\kern-0.45001
+..\OT1/cmr/bx/n/14.4 y
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {14}all empty}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\glue 9.90276 plus 0.86108
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 2.25557
+.\hbox(6.94444+1.94444)x345.0, glue set 216.27751fil
+..\OT1/cmr/m/n/10 s
+..\OT1/cmr/m/n/10 h
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 u
+..\OT1/cmr/m/n/10 l
+..\OT1/cmr/m/n/10 d
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 n
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 t
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 d
+..\OT1/cmr/m/n/10 r
+..\OT1/cmr/m/n/10 a
+..\kern-0.27779
+..\OT1/cmr/m/n/10 w
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 a
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 m
+..\OT1/cmr/m/n/10 a
+..\OT1/cmr/m/n/10 r
+..\OT1/cmr/m/n/10 g
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 n
+..\OT1/cmr/m/n/10 l
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 n
+..\OT1/cmr/m/n/10 e
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 16: kata-section-enabled
+============================================================
+> \box...=
+\vbox(160.6496+0.0)x345.0
+.\hbox(9.99998+0.0)x345.0, glue set 283.60843fil
+..\hbox(9.27998+0.0)x32.39996
+...\glue 0.0
+...\OT1/cmr/bx/n/14.4 1
+...\OT1/cmr/bx/n/14.4 5
+...\glue 16.19998
+..\OT1/cmr/bx/n/14.4 t
+..\OT1/cmr/bx/n/14.4 i
+..\OT1/cmr/bx/n/14.4 t
+..\OT1/cmr/bx/n/14.4 l
+..\OT1/cmr/bx/n/14.4 e
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {15}title}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\penalty 10000
+.\glue 9.90276 plus 0.86108
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 5.05556
+.\hbox(6.94444+0.0)x345.0, glue set 293.30544fil
+..\OT1/cmr/m/n/10 n
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 r
+..\OT1/cmr/m/n/10 m
+..\OT1/cmr/m/n/10 a
+..\OT1/cmr/m/n/10 l
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 l
+..\OT1/cmr/m/n/10 e
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 17: kata-section-enabled-but-empty
+============================================================
+> \box...=
+\vbox(176.94344+0.0)x345.0
+.\penalty -300
+.\glue 15.0694 plus 4.30554 minus 0.86108
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\hbox(9.27998+0.0)x345.0, glue set 312.60004fil
+..\hbox(9.27998+0.0)x32.39996
+...\glue 0.0
+...\OT1/cmr/bx/n/14.4 1
+...\OT1/cmr/bx/n/14.4 6
+...\glue 16.19998
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {16}}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\glue 9.90276 plus 0.86108
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 5.05556
+.\hbox(6.94444+1.94444)x345.0, glue set 296.66656fil
+..\OT1/cmr/m/n/10 e
+..\OT1/cmr/m/n/10 m
+..\OT1/cmr/m/n/10 p
+..\OT1/cmr/m/n/10 t
+..\kern-0.27779
+..\OT1/cmr/m/n/10 y
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 l
+..\OT1/cmr/m/n/10 e
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 18: kata-section-disabled
+============================================================
+> \box...=
+\vbox(135.6913+0.0)x345.0
+.\hbox(6.94444+0.0)x345.0, glue set 260.99988fil
+..\hbox(0.0+0.0)x15.0
+..\OT1/cmr/m/n/10 d
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 s
+..\OT1/cmr/m/n/10 a
+..\OT1/cmr/m/n/10 b
+..\OT1/cmr/m/n/10 l
+..\OT1/cmr/m/n/10 e
+..\OT1/cmr/m/n/10 d
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 s
+..\OT1/cmr/m/n/10 e
+..\OT1/cmr/m/n/10 c
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 n
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 19: kata-section-custom
+============================================================
+> \box...=
+\vbox(148.24686+0.0)x345.0
+.\hbox(7.5+2.5)x345.0, glue set 211.05531fil
+..\hbox(0.0+0.0)x15.0
+..\OT1/cmr/m/n/10 m
+..\kern-0.27779
+..\OT1/cmr/m/n/10 y
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 s
+..\OT1/cmr/m/n/10 e
+..\OT1/cmr/m/n/10 c
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 n
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 c
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 m
+..\OT1/cmr/m/n/10 m
+..\OT1/cmr/m/n/10 a
+..\OT1/cmr/m/n/10 n
+..\OT1/cmr/m/n/10 d
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\mathon
+..\OMS/cmsy/m/n/10 j
+..\mathoff
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 l
+..\OT1/cmr/m/n/10 e
+..\mathon
+..\OMS/cmsy/m/n/10 j
+..\mathoff
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 2.55556
+.\hbox(6.94444+0.0)x345.0, glue set 219.88867fil
+..\hbox(0.0+0.0)x15.0
+..\OT1/cmr/m/n/10 c
+..\OT1/cmr/m/n/10 u
+..\OT1/cmr/m/n/10 s
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 m
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 s
+..\OT1/cmr/m/n/10 e
+..\OT1/cmr/m/n/10 c
+..\OT1/cmr/m/n/10 t
+..\OT1/cmr/m/n/10 i
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 n
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\OT1/cmr/m/n/10 c
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 m
+..\OT1/cmr/m/n/10 m
+..\OT1/cmr/m/n/10 a
+..\OT1/cmr/m/n/10 n
+..\OT1/cmr/m/n/10 d
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+[9]
+============================================================
+TEST 20: kata-stepcnt-default
+============================================================
+> \box...=
+\vbox(151.44958+0.0)x345.0
+.\hbox(9.99998+2.79999)x345.0, glue set 170.54355fil
+..\hbox(9.27998+0.0)x32.39996
+...\glue 0.0
+...\OT1/cmr/bx/n/14.4 1
+...\OT1/cmr/bx/n/14.4 7
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -10358,44 +11143,10 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {14}step counter default}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {17}step counter default}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -10731,11 +11482,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 16: kata-stepcnt-roman
+TEST 21: kata-stepcnt-roman
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(177.499+0.0)x345.0
+\vbox(165.79898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -10744,7 +11494,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 1
-...\OT1/cmr/bx/n/14.4 5
+...\OT1/cmr/bx/n/14.4 8
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -10768,43 +11518,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {15}step counter roman}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {18}step counter roman}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -11139,11 +11855,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 17: kata-stepcnt-local
+TEST 22: kata-stepcnt-local
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(321.91031+0.0)x345.0
+\vbox(310.2103+0.0)x345.0
 .\hbox(6.94444+1.94444)x345.0, glue set 102.88847fil
 ..\hbox(0.0+0.0)x15.0
 ..\OT1/cmr/m/n/10 o
@@ -11210,7 +11925,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 1
-...\OT1/cmr/bx/n/14.4 6
+...\OT1/cmr/bx/n/14.4 9
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -11235,43 +11950,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {16}step counter local}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {19}step counter local}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -11596,7 +12277,7 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 10000
+.\penalty 150
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
@@ -11773,18 +12454,304 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
+[10]
 ============================================================
-TEST 18: kata-stance-flip-off
+TEST 23: kata-step-before-first
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(163.1496+0.0)x345.0
+\vbox(151.44958+0.0)x345.0
+.\hbox(9.99998+2.79999)x345.0, glue set 200.51178fil
+..\hbox(9.27998+0.0)x32.39996
+...\glue 0.0
+...\OT1/cmr/bx/n/14.4 2
+...\OT1/cmr/bx/n/14.4 0
+...\glue 16.19998
+..\OT1/cmr/bx/n/14.4 b
+..\kern0.45
+..\OT1/cmr/bx/n/14.4 e
+..\OT1/cmr/bx/n/14.4 f
+..\OT1/cmr/bx/n/14.4 o
+..\OT1/cmr/bx/n/14.4 r
+..\OT1/cmr/bx/n/14.4 e
+..\glue 5.4 plus 2.7 minus 1.79999
+..\OT1/cmr/bx/n/14.4 ^^L (ligature fi)
+..\OT1/cmr/bx/n/14.4 r
+..\OT1/cmr/bx/n/14.4 s
+..\OT1/cmr/bx/n/14.4 t
+..\glue 5.4 plus 2.7 minus 1.79999
+..\OT1/cmr/bx/n/14.4 s
+..\OT1/cmr/bx/n/14.4 t
+..\OT1/cmr/bx/n/14.4 e
+..\OT1/cmr/bx/n/14.4 p
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {20}before first step}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\penalty 10000
+.\glue 9.90276 plus 0.86108
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 54.81186fil
+..\OT1/cmr/m/n/10 b
+..\kern0.27779
+..\OT1/cmr/m/n/10 e
+..\OT1/cmr/m/n/10 f
+..\OT1/cmr/m/n/10 o
+..\OT1/cmr/m/n/10 r
+..\OT1/cmr/m/n/10 e
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\pdfliteral{q }
+....\pdfliteral{0 G }
+....\pdfliteral{0 g }
+....\pdfliteral{0.3985 w }
+....\pdfliteral{q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 -60.94589 125.87639 121.89134 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -61.17366
+........\hbox(0.0+0.0)x0.0, shifted 0.00023
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(61.17343+61.17345)x122.34688
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(61.17343+61.17345)x122.34688
+............\vbox(0.0+0.0)x122.34688
+.............\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+..............\glue(\leftskip) 0.0 plus 1.0fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0
+..............\glue(\rightskip) 0.0 plus 1.0fil
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{-62.93842 48.43735 11.24889 12.50809 re }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue -59.84065
+........\hbox(0.0+0.0)x0.0, shifted -51.95134
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(5.88889+0.0)x4.62497
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(5.88889+0.0)x4.62497
+............\OT1/cmss/m/n/9 0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{Q }
+....\hbox(0.0+0.0)x0.0
+.....\pdfliteral{q }
+.....\pdfliteral{q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{q }
+.......\pdfliteral{0 G }
+.......\pdfliteral{4.6963 0.0 m }
+.......\pdfliteral{4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\pdfliteral{-2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\pdfliteral{-4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\pdfliteral{2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\pdfliteral{h }
+.......\pdfliteral{0.0 0.0 m }
+.......\pdfliteral{S }
+.......\glue 0.0
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 0.0
+........\hbox(0.0+0.0)x0.0
+.........\pdfliteral{1.0 0.0 0.0 1.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(0.0+0.0)x0.0
+...........\pdfliteral{0 G }
+...........\pdfliteral{0 g }
+...........\hbox(0.0+0.0)x0.0
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{q }
+.....\pdfliteral{0 0 1 RG }
+.....\pdfliteral{1.0 0.0 0.0 1.0 0.99628 0.0 cm }
+.....\pdfliteral{0.0 4.89557 m }
+.....\pdfliteral{0.0 52.98413 l }
+.....\pdfliteral{S }
+.....\pdfliteral{q }
+.....\pdfliteral{0 0 1 rg }
+.....\pdfliteral{0.0 1.0 -1.0 0.0 0.0 50.95511 cm }
+.....\pdfliteral{q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
+.....\pdfliteral{Q }
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfliteral{q }
+.......\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.......\pdfliteral{q }
+.......\hbox(0.0+0.0)x0.0
+........\glue 8.39406
+........\hbox(0.0+0.0)x0.0, shifted -5.30215
+.........\pdfliteral{0.0 1.0 -1.0 0.0 0.0 0.0 cm }
+.........\pdfliteral{q }
+.........\hbox(0.0+0.0)x0.0
+..........\hbox(4.8611+0.0)x51.21504
+...........\pdfliteral{0 0 1 RG }
+...........\pdfliteral{0 0 1 rg }
+...........\hbox(4.8611+0.0)x51.21504
+............\vbox(4.8611+0.0)x51.21504
+.............\hbox(4.8611+0.0)x51.21504, glue set 24.21637fil
+..............\hbox(0.0+0.0)x0.0
+..............\hbox(0.0+0.0)x0.0
+..............\pdfcolorstack 0 push {0 0 1 rg 0 0 1 RG}
+..............\OT1/cmss/m/n/7 s
+..............\OT1/cmss/m/n/7 t
+..............\OT1/cmss/m/n/7 a
+..............\OT1/cmss/m/n/7 n
+..............\OT1/cmss/m/n/7 c
+..............\OT1/cmss/m/n/7 e
+..............\glue(\spaceskip) 2.47893
+..............\OT1/cmss/m/n/7 A
+..............\pdfcolorstack 0 pop
+..............\penalty 10000
+..............\glue(\parfillskip) 0.0 plus 1.0fil
+..............\glue(\rightskip) 0.0 plus 14.87521
+...........\glue 0.0
+.........\pdfliteral{Q }
+.........\glue 0.0
+........\glue 0.0 plus 1.0fil minus 1.0fil
+.......\pdfliteral{Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\pdfcolorstack 0 pop
+.......\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\pdfliteral{q }
+.....\pdfliteral{0.3985 w }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0
+.....\pdfliteral{Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\pdfliteral{n }
+....\pdfliteral{Q }
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+[11]
+============================================================
+TEST 24: kata-stance-flip-off
+============================================================
+stance-label=normal
+> \box...=
+\vbox(151.44958+0.0)x345.0
 .\hbox(9.99998+2.79999)x345.0, glue set 191.30186fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
+...\OT1/cmr/bx/n/14.4 2
 ...\OT1/cmr/bx/n/14.4 1
-...\OT1/cmr/bx/n/14.4 7
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -11807,44 +12774,10 @@ stance-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {17}stance un-flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {21}stance un-flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -12088,12 +13021,11 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 19: kata-stance-flip-on
+TEST 25: kata-stance-flip-on
 ============================================================
-beltmargin = blue | blue
 stance-label=flipped
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -12101,8 +13033,8 @@ stance-label=flipped
 .\hbox(9.99998+2.79999)x345.0, glue set 214.70183fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 1
-...\OT1/cmr/bx/n/14.4 8
+...\OT1/cmr/bx/n/14.4 2
+...\OT1/cmr/bx/n/14.4 2
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -12121,43 +13053,9 @@ stance-label=flipped
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {18}stance flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {22}stance flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -12401,12 +13299,11 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 20: kata-waza-flip-off
+TEST 26: kata-waza-flip-off
 ============================================================
-beltmargin = blue | blue
 waza-label=normal
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -12414,8 +13311,8 @@ waza-label=normal
 .\hbox(9.99998+2.79999)x345.0, glue set 201.25856fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 1
-...\OT1/cmr/bx/n/14.4 9
+...\OT1/cmr/bx/n/14.4 2
+...\OT1/cmr/bx/n/14.4 3
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 w
 ..\kern-0.45001
@@ -12437,43 +13334,9 @@ waza-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {19}waza un-flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {23}waza un-flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -12719,12 +13582,11 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 21: kata-waza-flip-on
+TEST 27: kata-waza-flip-on
 ============================================================
-beltmargin = blue | blue
 waza-label=flipped
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -12733,7 +13595,7 @@ waza-label=flipped
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 0
+...\OT1/cmr/bx/n/14.4 4
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 w
 ..\kern-0.45001
@@ -12750,43 +13612,9 @@ waza-label=flipped
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {20}waza fliped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {24}waza fliped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -13032,11 +13860,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 22: kata-dir-normal
+TEST 28: kata-dir-normal
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -13045,7 +13872,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 1
+...\OT1/cmr/bx/n/14.4 5
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 d
 ..\OT1/cmr/bx/n/14.4 i
@@ -13065,43 +13892,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {21}dir un-flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {25}dir un-flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -13309,11 +14102,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 23: kata-dir-flip
+TEST 29: kata-dir-flip
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -13322,7 +14114,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 2
+...\OT1/cmr/bx/n/14.4 6
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 d
 ..\OT1/cmr/bx/n/14.4 i
@@ -13338,43 +14130,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {22}dir flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {26}dir flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -13580,11 +14338,9 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[11]
 ============================================================
-TEST 24: kata-color-kata
+TEST 30: kata-color-kata
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -13602,12 +14358,12 @@ head=black
 border=gray
 stepcounter=purple
 > \box...=
-\vbox(163.1496+0.0)x345.0
+\vbox(148.6496+0.0)x345.0
 .\hbox(9.99998+0.0)x345.0, glue set 236.59346fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 3
+...\OT1/cmr/bx/n/14.4 7
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 c
 ..\OT1/cmr/bx/n/14.4 o
@@ -13624,44 +14380,10 @@ stepcounter=purple
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {23}colors kata}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {27}colors kata}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.5
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -14319,9 +15041,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 25: kata-color-step
+TEST 31: kata-color-step
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -14339,7 +15060,7 @@ head=black
 border=black
 stepcounter=black
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -14348,7 +15069,7 @@ stepcounter=black
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 4
+...\OT1/cmr/bx/n/14.4 8
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 c
 ..\OT1/cmr/bx/n/14.4 o
@@ -14364,43 +15085,9 @@ stepcounter=black
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {24}colors step}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {28}colors step}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -15058,9 +15745,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 26: kata-color-global
+TEST 32: kata-color-global
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -15078,7 +15764,7 @@ head=black
 border=gray
 stepcounter=purple
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -15087,7 +15773,7 @@ stepcounter=purple
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 5
+...\OT1/cmr/bx/n/14.4 9
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 c
 ..\OT1/cmr/bx/n/14.4 o
@@ -15105,43 +15791,9 @@ stepcounter=purple
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {25}colors global}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {29}colors global}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -15799,9 +16451,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 27: kata-color-local
+TEST 33: kata-color-local
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -15819,7 +16470,7 @@ head=black
 border=gray
 stepcounter=purple
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(163.719+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -15827,8 +16478,8 @@ stepcounter=purple
 .\hbox(9.99998+0.0)x345.0, glue set 233.66846fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 6
+...\OT1/cmr/bx/n/14.4 3
+...\OT1/cmr/bx/n/14.4 0
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 c
 ..\OT1/cmr/bx/n/14.4 o
@@ -15846,43 +16497,9 @@ stepcounter=purple
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {26}colors local}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {30}colors local}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.5
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -16539,18 +17156,17 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[13]
+[14]
 ============================================================
-TEST 28: kata-border-style
+TEST 34: kata-border-style
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(163.1496+0.0)x345.0
+\vbox(151.44958+0.0)x345.0
 .\hbox(9.99998+2.79999)x345.0, glue set 227.34346fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 7
+...\OT1/cmr/bx/n/14.4 3
+...\OT1/cmr/bx/n/14.4 1
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 b
 ..\kern0.45
@@ -16569,44 +17185,10 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {27}border style}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {31}border style}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -16788,11 +17370,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 29: kata-border-arrow-up
+TEST 35: kata-border-arrow-up
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(166.51898+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -16800,8 +17381,8 @@ beltmargin = blue | blue
 .\hbox(9.99998+2.79999)x345.0, glue set 196.16684fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
+...\OT1/cmr/bx/n/14.4 3
 ...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 8
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 b
 ..\kern0.45
@@ -16823,43 +17404,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {28}border arrow up}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {32}border arrow up}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -17087,11 +17634,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 30: kata-border-accent
+TEST 36: kata-border-accent
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.219+0.0)x345.0
+\vbox(163.719+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -17099,8 +17645,8 @@ beltmargin = blue | blue
 .\hbox(9.99998+0.0)x345.0, glue set 215.50848fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 2
-...\OT1/cmr/bx/n/14.4 9
+...\OT1/cmr/bx/n/14.4 3
+...\OT1/cmr/bx/n/14.4 3
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 b
 ..\kern0.45
@@ -17120,43 +17666,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {29}border accent}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {33}border accent}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.5
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -17340,11 +17852,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 31: kata-border-combined-step
+TEST 37: kata-border-combined-step
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -17353,7 +17864,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 0
+...\OT1/cmr/bx/n/14.4 4
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 b
 ..\kern0.45
@@ -17390,43 +17901,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {30}border combined (step-level)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {34}border combined (step-level)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -17658,11 +18135,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 32: kata-border-combined-kata
+TEST 38: kata-border-combined-kata
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -17671,7 +18147,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 1
+...\OT1/cmr/bx/n/14.4 5
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 b
 ..\kern0.45
@@ -17709,43 +18185,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {31}border combined (kata-level)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {35}border combined (kata-level)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -17977,11 +18419,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 33: kata-border-combined-global
+TEST 39: kata-border-combined-global
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -17990,7 +18431,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 2
+...\OT1/cmr/bx/n/14.4 6
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 b
 ..\kern0.45
@@ -18029,43 +18470,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {32}border combined (global-level)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {36}border combined (global-level)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -18296,18 +18703,16 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[15]
 ============================================================
-TEST 34: kata-head-style-kata
+TEST 40: kata-head-style-kata
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(163.9496+0.0)x345.0
+\vbox(153.04959+0.0)x345.0
 .\hbox(10.79999+3.59999)x345.0, glue set 193.5519fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 3
+...\OT1/cmr/bx/n/14.4 7
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 h
 ..\OT1/cmr/bx/n/14.4 e
@@ -18331,44 +18736,10 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {33}head style (kata)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {37}head style (kata)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -18708,11 +19079,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 35: kata-head-style-step
+TEST 41: kata-head-style-step
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -18721,7 +19091,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 4
+...\OT1/cmr/bx/n/14.4 8
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 h
 ..\OT1/cmr/bx/n/14.4 e
@@ -18744,43 +19114,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {34}head style (step)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {38}head style (step)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -19118,11 +19454,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 36: kata-head-style-global
+TEST 42: kata-head-style-global
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -19131,7 +19466,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 5
+...\OT1/cmr/bx/n/14.4 9
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 h
 ..\OT1/cmr/bx/n/14.4 e
@@ -19156,43 +19491,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {35}head style (global)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {39}head style (global)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -19532,11 +19833,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 37: kata-stepcounter-style-kata
+TEST 43: kata-stepcounter-style-kata
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -19544,8 +19844,8 @@ beltmargin = blue | blue
 .\hbox(10.79999+3.59999)x345.0, glue set 139.1786fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 6
+...\OT1/cmr/bx/n/14.4 4
+...\OT1/cmr/bx/n/14.4 0
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -19578,43 +19878,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {36}step counter style (kata)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {40}step counter style (kata)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -19954,11 +20220,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 38: kata-stepcounter-style-step
+TEST 44: kata-stepcounter-style-step
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -19966,8 +20231,8 @@ beltmargin = blue | blue
 .\hbox(10.79999+3.59999)x345.0, glue set 139.79689fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 7
+...\OT1/cmr/bx/n/14.4 4
+...\OT1/cmr/bx/n/14.4 1
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -19999,43 +20264,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {37}step counter style (step)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {41}step counter style (step)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -20373,11 +20604,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 39: kata-stepcounter-style-global
+TEST 45: kata-stepcounter-style-global
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.019+0.0)x345.0
+\vbox(168.11899+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -20385,8 +20615,8 @@ beltmargin = blue | blue
 .\hbox(10.79999+3.59999)x345.0, glue set 126.80362fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
-...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 8
+...\OT1/cmr/bx/n/14.4 4
+...\OT1/cmr/bx/n/14.4 2
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -20420,43 +20650,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {38}step counter style (global)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {42}step counter style (global)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.90001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -20796,9 +20992,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 40: kata-angle-stance
+TEST 46: kata-angle-stance
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 stance-label=normal
 stance-label=normal
@@ -20807,12 +21002,12 @@ stance-label=normal
 stance-label=normal
 stance-label=normal
 > \box...=
-\vbox(549.39017+0.0)x345.0
+\vbox(537.69016+0.0)x345.0
 .\hbox(9.99998+2.79999)x345.0, glue set 219.78679fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
+...\OT1/cmr/bx/n/14.4 4
 ...\OT1/cmr/bx/n/14.4 3
-...\OT1/cmr/bx/n/14.4 9
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -20830,44 +21025,10 @@ stance-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {39}stance angles}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {43}stance angles}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -22503,9 +22664,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 41: kata-angle-waza
+TEST 47: kata-angle-waza
 ============================================================
-beltmargin = blue | blue
 waza-label=normal
 waza-label=normal
 waza-label=normal
@@ -22514,7 +22674,7 @@ waza-label=normal
 waza-label=normal
 waza-label=normal
 > \box...=
-\vbox(564.45956+0.0)x345.0
+\vbox(552.75955+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -22523,7 +22683,7 @@ waza-label=normal
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 4
-...\OT1/cmr/bx/n/14.4 0
+...\OT1/cmr/bx/n/14.4 4
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 w
 ..\kern-0.45001
@@ -22540,43 +22700,9 @@ waza-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {40}waza angles}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {44}waza angles}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -22777,7 +22903,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.47893
 ..............\OT1/cmss/m/n/7 A
 ..............\glue(\rightskip) 0.0 plus 14.87521
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.12779
 .............\hbox(4.51111+0.83334)x51.21504, glue set 33.00664fil
 ..............\OMS/cmsy/m/n/7 ^^@
@@ -24236,11 +24362,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 42: kata-angle-kiai
+TEST 48: kata-angle-kiai
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(564.45956+0.0)x345.0
+\vbox(552.75955+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -24249,7 +24374,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 4
-...\OT1/cmr/bx/n/14.4 1
+...\OT1/cmr/bx/n/14.4 5
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 k
 ..\OT1/cmr/bx/n/14.4 i
@@ -24265,43 +24390,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {41}kiai angles}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {45}kiai angles}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -26393,11 +26484,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 43: kata-angle-dir-center
+TEST 49: kata-angle-dir-center
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(564.45956+0.0)x345.0
+\vbox(552.75955+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -26406,7 +26496,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 4
-...\OT1/cmr/bx/n/14.4 2
+...\OT1/cmr/bx/n/14.4 6
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 d
 ..\OT1/cmr/bx/n/14.4 i
@@ -26432,43 +26522,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {42}dir angles -- center}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {46}dir angles -- center}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -27748,11 +27804,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 44: kata-angle-dir-turn
+TEST 50: kata-angle-dir-turn
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(435.7127+0.0)x345.0
+\vbox(424.0127+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -27761,7 +27816,7 @@ beltmargin = blue | blue
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 4
-...\OT1/cmr/bx/n/14.4 3
+...\OT1/cmr/bx/n/14.4 7
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 d
 ..\OT1/cmr/bx/n/14.4 i
@@ -27784,43 +27839,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {43}dir angles -- turn}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {47}dir angles -- turn}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70001
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -28965,20 +28986,19 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 45: kata-prefix-stance
+TEST 51: kata-prefix-stance
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 stance-label=normal
 stance-label=normal
 stance-label=normal
 > \box...=
-\vbox(162.4296+0.0)x345.0
+\vbox(147.9296+0.0)x345.0
 .\hbox(9.27998+0.0)x345.0, glue set 268.4434fil
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 4
-...\OT1/cmr/bx/n/14.4 4
+...\OT1/cmr/bx/n/14.4 8
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 s
 ..\OT1/cmr/bx/n/14.4 t
@@ -28989,44 +29009,10 @@ stance-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {44}stance}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {48}stance}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.5
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -29434,7 +29420,7 @@ stance-label=normal
 ..............\OT1/cmss/m/n/7 c
 ..............\OT1/cmss/m/n/7 e
 ..............\glue(\rightskip) 0.0 plus 14.87521
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 1.7778
 .............\hbox(4.8611+0.0)x51.21504, glue set 46.46324fil
 ..............\OT1/cmss/m/n/7 C
@@ -29484,15 +29470,14 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 46: kata-prefix-waza
+TEST 52: kata-prefix-waza
 ============================================================
-beltmargin = blue | blue
 waza-label=normal
 waza-label=normal
 waza-label=normal
 waza-label=normal
 > \box...=
-\vbox(177.499+0.0)x345.0
+\vbox(162.999+0.0)x345.0
 .\penalty -300
 .\glue 15.0694 plus 4.30554 minus 0.86108
 .\glue(\parskip) 0.0 plus 1.0
@@ -29501,7 +29486,7 @@ waza-label=normal
 ..\hbox(9.27998+0.0)x32.39996
 ...\glue 0.0
 ...\OT1/cmr/bx/n/14.4 4
-...\OT1/cmr/bx/n/14.4 5
+...\OT1/cmr/bx/n/14.4 9
 ...\glue 16.19998
 ..\OT1/cmr/bx/n/14.4 w
 ..\kern-0.45001
@@ -29511,43 +29496,9 @@ waza-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {45}waza}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {49}waza}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.5
-.\hbox(7.5+2.5)x345.0, glue set 236.91644fil
-..\OT1/cmr/m/n/10 b
-..\kern0.27779
-..\OT1/cmr/m/n/10 e
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 t
-..\OT1/cmr/m/n/10 m
-..\OT1/cmr/m/n/10 a
-..\OT1/cmr/m/n/10 r
-..\OT1/cmr/m/n/10 g
-..\OT1/cmr/m/n/10 i
-..\OT1/cmr/m/n/10 n
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 =
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\OT1/cmr/m/n/10 b
-..\OT1/cmr/m/n/10 l
-..\OT1/cmr/m/n/10 u
-..\OT1/cmr/m/n/10 e
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -29960,7 +29911,7 @@ waza-label=normal
 ..............\discretionary
 ..............\OT1/cmss/m/n/7 -
 ..............\glue(\rightskip) 0.0 plus 14.87521
-.............\penalty 250
+.............\penalty 10100
 .............\glue(\baselineskip) 1.7778
 .............\hbox(4.8611+1.3611)x51.21504, glue set 27.38344fil
 ..............\OT1/cmss/m/n/7 n
@@ -30016,9 +29967,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 47: kata-cmd-invalid-places-kata
+TEST 53: kata-cmd-invalid-places-kata
 ============================================================
-beltmargin = blue | blue
 ! Package kata Error: \kataWaza used outside step environment.
 See the kata package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -30091,99 +30041,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-Overfull \hbox (15.49968pt too wide) in paragraph at lines ...
-\OT1/cmr/m/n/10 nique A ;   [/kata/style/stance=1.00.0] (head) -- ++(90.0:2) node[/kata/style/stance
-\hbox(7.5+2.5)x345.0, glue set - 1.0
-.\OT1/cmr/m/n/10 n
-.\OT1/cmr/m/n/10 i
-.\OT1/cmr/m/n/10 q
-.\OT1/cmr/m/n/10 u
-.\OT1/cmr/m/n/10 e
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\OT1/cmr/m/n/10 A
-.\glue 3.33333 plus 1.66498 minus 1.11221
-.\OT1/cmr/m/n/10 ;
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\OT1/cmr/m/n/10 [
-.\OT1/cmr/m/n/10 /
-.\OT1/cmr/m/n/10 k
-.\kern-0.55556
-.\OT1/cmr/m/n/10 a
-.\OT1/cmr/m/n/10 t
-.\OT1/cmr/m/n/10 a
-.\OT1/cmr/m/n/10 /
-.\OT1/cmr/m/n/10 s
-.\OT1/cmr/m/n/10 t
-.\kern-0.27779
-.\OT1/cmr/m/n/10 y
-.\OT1/cmr/m/n/10 l
-.\OT1/cmr/m/n/10 e
-.\OT1/cmr/m/n/10 /
-.\OT1/cmr/m/n/10 s
-.\OT1/cmr/m/n/10 t
-.\OT1/cmr/m/n/10 a
-.\OT1/cmr/m/n/10 n
-.\OT1/cmr/m/n/10 c
-.\OT1/cmr/m/n/10 e
-.\OT1/cmr/m/n/10 =
-.\OT1/cmr/m/n/10 1
-.\OT1/cmr/m/n/10 .
-.\OT1/cmr/m/n/10 0
-.\OT1/cmr/m/n/10 0
-.\OT1/cmr/m/n/10 .
-.\OT1/cmr/m/n/10 0
-.\OT1/cmr/m/n/10 ]
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\OT1/cmr/m/n/10 (
-.\OT1/cmr/m/n/10 h
-.\OT1/cmr/m/n/10 e
-.\OT1/cmr/m/n/10 a
-.\OT1/cmr/m/n/10 d
-.\OT1/cmr/m/n/10 )
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\OT1/cmr/m/n/10 { (ligature --)
-.\discretionary
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\OT1/cmr/m/n/10 +
-.\OT1/cmr/m/n/10 +
-.\OT1/cmr/m/n/10 (
-.\OT1/cmr/m/n/10 9
-.\OT1/cmr/m/n/10 0
-.\OT1/cmr/m/n/10 .
-.\OT1/cmr/m/n/10 0
-.\OT1/cmr/m/n/10 :
-.\OT1/cmr/m/n/10 2
-.\OT1/cmr/m/n/10 )
-.\glue 3.33333 plus 1.66666 minus 1.11111
-.\OT1/cmr/m/n/10 n
-.\OT1/cmr/m/n/10 o
-.\kern0.27779
-.\OT1/cmr/m/n/10 d
-.\OT1/cmr/m/n/10 e
-.\OT1/cmr/m/n/10 [
-.\OT1/cmr/m/n/10 /
-.\OT1/cmr/m/n/10 k
-.\kern-0.55556
-.\OT1/cmr/m/n/10 a
-.\OT1/cmr/m/n/10 t
-.\OT1/cmr/m/n/10 a
-.\OT1/cmr/m/n/10 /
-.\OT1/cmr/m/n/10 s
-.\OT1/cmr/m/n/10 t
-.\kern-0.27779
-.\OT1/cmr/m/n/10 y
-.\OT1/cmr/m/n/10 l
-.\OT1/cmr/m/n/10 e
-.\OT1/cmr/m/n/10 /
-.\OT1/cmr/m/n/10 s
-.\OT1/cmr/m/n/10 t
-.\OT1/cmr/m/n/10 a
-.\OT1/cmr/m/n/10 n
-.\OT1/cmr/m/n/10 c
-.\OT1/cmr/m/n/10 e
-.\glue(\rightskip) 0.0
 Overfull \hbox (286.70198pt too wide) in paragraph at lines ...
 \OT1/cmr/m/n/10 di-nate[pos=1] (tmpB) ++(360+90+40:0.75); (tmpA) -- (tmpB) node[midway,sloped,font=,red,draw,decorate,decoration=zigzag,amplitude=1.5pt]
 \hbox(7.5+2.5)x345.0, glue set - 1.0
@@ -30345,12 +30202,12 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 .\penalty 10000
 .\glue(\parfillskip) 0.0
 .\glue(\rightskip) 0.0
-[24]
+[25]
 ============================================================
 manually added constraints
 ============================================================
 ============================================================
-TEST 48: kata-cmd-invalid-places-global
+TEST 54: kata-cmd-invalid-places-global
 ============================================================
 ! Package kata Error: \kataWaza used outside step environment.
 See the kata package documentation for explanation.
@@ -30667,7 +30524,7 @@ Overfull \hbox (286.70198pt too wide) in paragraph at lines ...
 .\OT1/cmr/m/n/10 ]
 .\glue(\rightskip) 0.0
 ============================================================
-TEST 49: kata-step-invalid-places-global
+TEST 55: kata-step-invalid-places-global
 ============================================================
 ! Package kata Error: \kataStep used outside kata environment.
 See the kata package documentation for explanation.
@@ -30684,4 +30541,4 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[25]
+[26]

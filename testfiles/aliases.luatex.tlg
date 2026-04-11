@@ -3,7 +3,6 @@ Don't change this file in any respect.
 ============================================================
 TEST 1: kata-aliased-basic
 ============================================================
-beltmargin = blue | blue
 > \box...=
 \vbox(163.82483+0.0)x345.0, direction TLT
 .\penalty -300

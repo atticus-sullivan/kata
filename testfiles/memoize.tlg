@@ -15,7 +15,6 @@ Don't change this file in any respect.
 ============================================================
 TEST 1: kata-base
 ============================================================
-beltmargin = blue | blue
 [tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
 [tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \kataWaza {technique A}{-90} \kataDir {center}{90} \end {kata@step}
 [tracing memoize]   Code md5sum: AD49BE559C145CD2E79C7530E6123CB1
@@ -99,7 +98,6 @@ l. ...}
 ============================================================
 TEST 2: kata-base2
 ============================================================
-beltmargin = blue | blue
 [tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
 [tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \end {kata@step}
 [tracing memoize]   Code md5sum: B54184C7AD750E521A129E6CD355AB74

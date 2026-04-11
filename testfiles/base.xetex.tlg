@@ -3,15 +3,10 @@ Don't change this file in any respect.
 ============================================================
 TEST 1: kata-basic
 ============================================================
-beltmargin = blue | blue
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line ....
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line ....
 stance-label=normal
 waza-label=normal
 > \box...=
-\vbox(163.15344+0.0)x345.0
+\vbox(148.73982+0.0)x345.0
 .\hbox(9.99359+0.08638)x345.0, glue set 239.17445fil
 ..\hbox(9.4464+0.0)x22.50719
 ...\glue 0.0
@@ -27,24 +22,6 @@ waza-label=normal
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.41362
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -1540,11 +1517,10 @@ manually added constraints
 ============================================================
 TEST 3: kata-phantom-none
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 stance-label=normal
 > \box...=
-\vbox(163.15344+0.0)x345.0
+\vbox(151.44702+0.0)x345.0
 .\hbox(9.99359+2.79358)x345.0, glue set 221.24646fil
 ..\hbox(9.4464+0.17279)x22.50719
 ...\glue 0.0
@@ -1560,24 +1536,6 @@ stance-label=normal
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2093,10 +2051,9 @@ manually added constraints
 ============================================================
 TEST 4: kata-phantom-one
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(178.23843+0.0)x345.0
+\vbox(166.53201+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -2115,24 +2072,6 @@ stance-label=normal
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {4}phantom one}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2403,10 +2342,9 @@ manually added constraints
 ============================================================
 TEST 5: kata-phantom-two
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(163.15344+0.0)x426.79134
+\vbox(151.44702+0.0)x426.79134
 .\hbox(9.99359+2.79358)x426.79134, glue set 311.30339fil
 ..\hbox(9.4464+0.17279)x22.50719
 ...\glue 0.0
@@ -2421,24 +2359,6 @@ stance-label=normal
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {5}phantom two}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x426.79134, glue set 318.69354fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2708,16 +2628,20 @@ stance-label=normal
 <argument> ...ep} \end {kata} } \showbox \katabox 
                                                   \OMIT \box \katabox \TIMO ...
 l. ...}
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line ....
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line ....
 ============================================================
 manually added constraints
 ============================================================
 Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 []$[]$
-\hbox(84.07672+79.07672)x345.0
+\hbox(78.22351+73.22351)x345.0
 .\hbox(0.0+0.0)x15.0
 .\mathon
-.\vbox(84.07672+79.07672)x426.79134
-..\vbox(163.15344+0.0)x426.79134
+.\vbox(78.22351+73.22351)x426.79134
+..\vbox(151.44702+0.0)x426.79134
 ...\hbox(9.99359+2.79358)x426.79134, glue set 311.30339fil
 ....\hbox(9.4464+0.17279)x22.50719
 .....\glue 0.0
@@ -2732,24 +2656,6 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {5}phantom two}{\thepage }{}\protected@file@percent }}
 ...\penalty 10000
 ...\glue 9.913 plus 0.86198
-...\glue(\parskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 1.70642
-...\hbox(7.5+2.5)x426.79134, glue set 318.69354fil
-....\TU/lmr/m/n/10 beltmargin
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 =
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 blue
-....\glue 3.33 plus 1.665 minus 1.11
-....\mathon
-....\OMS/cmsy/m/n/10 j
-....\mathoff
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 blue
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 6.0
@@ -3020,14 +2926,12 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 Underfull \hbox (badness 10000) in paragraph at lines ...
 \hbox(0.0+0.0)x345.0
 .\glue(\rightskip) 0.0
-[2]
 ============================================================
 TEST 6: kata-phantom-manual
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(190.23842+0.0)x345.0
+\vbox(178.23842+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -3049,26 +2953,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 2.0
-.\hbox(7.5+2.49998)x345.0, glue set 132.84fil
-..\hbox(0.0+0.0)x15.0
+.\hbox(7.5+2.49998)x345.0, glue set 147.84fil
 ..\TU/lmr/m/n/10 should
 ..\glue 3.33 plus 1.665 minus 1.11
 ..\TU/lmr/m/n/10 show:
@@ -3359,10 +3244,10 @@ manually added constraints
 ============================================================
 TEST 7: kata-phantom-mixed
 ============================================================
-beltmargin = blue | blue
+[2]
 stance-label=normal
 > \box...=
-\vbox(175.15343+0.0)x426.79134
+\vbox(163.15343+0.0)x426.79134
 .\hbox(9.99359+2.79358)x426.79134, glue set 293.577fil
 ..\hbox(9.73439+0.17279)x22.50719
 ...\glue 0.0
@@ -3380,26 +3265,7 @@ stance-label=normal
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x426.79134, glue set 318.69354fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 2.0
 .\hbox(7.5+2.49998)x426.79134, glue set 134.35133fil
-..\hbox(0.0+0.0)x0.0
 ..\TU/lmr/m/n/10 should
 ..\glue 3.33 plus 1.665 minus 1.11
 ..\TU/lmr/m/n/10 show:
@@ -3698,11 +3564,11 @@ manually added constraints
 ============================================================
 Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 []$[]$
-\hbox(90.07672+85.0767)x345.0
+\hbox(84.07672+79.0767)x345.0
 .\hbox(0.0+0.0)x15.0
 .\mathon
-.\vbox(90.07672+85.0767)x426.79134
-..\vbox(175.15343+0.0)x426.79134
+.\vbox(84.07672+79.0767)x426.79134
+..\vbox(163.15343+0.0)x426.79134
 ...\hbox(9.99359+2.79358)x426.79134, glue set 293.577fil
 ....\hbox(9.73439+0.17279)x22.50719
 .....\glue 0.0
@@ -3720,26 +3586,7 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 1.70642
-...\hbox(7.5+2.5)x426.79134, glue set 318.69354fil
-....\TU/lmr/m/n/10 beltmargin
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 =
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 blue
-....\glue 3.33 plus 1.665 minus 1.11
-....\mathon
-....\OMS/cmsy/m/n/10 j
-....\mathoff
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 blue
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 2.0
 ...\hbox(7.5+2.49998)x426.79134, glue set 134.35133fil
-....\hbox(0.0+0.0)x0.0
 ....\TU/lmr/m/n/10 should
 ....\glue 3.33 plus 1.665 minus 1.11
 ....\TU/lmr/m/n/10 show:
@@ -4037,10 +3884,8 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 ============================================================
 TEST 8: kata-full-grid
 ============================================================
-[3]
-beltmargin = blue | blue
 > \box...=
-\vbox(420.73357+0.0)x426.79134
+\vbox(409.12794+0.0)x426.79134
 .\hbox(10.08+2.89438)x426.79134, glue set 347.67778fil
 ..\hbox(9.4464+0.17279)x22.50719
 ...\glue 0.0
@@ -4055,24 +3900,6 @@ beltmargin = blue | blue
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {8}full grid}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.60562
-.\hbox(7.5+2.5)x426.79134, glue set 318.69354fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -4448,7 +4275,7 @@ beltmargin = blue | blue
 ....\special{pdf:econtent}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 10000
+.\penalty 150
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x426.79134, glue set 16.61548fil
 ..\hbox(122.74686+0.0)x126.7468
@@ -5386,11 +5213,11 @@ manually added constraints
 ============================================================
 Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 []$[]$
-\hbox(212.86679+207.86678)x345.0
+\hbox(207.06398+202.06396)x345.0
 .\hbox(0.0+0.0)x15.0
 .\mathon
-.\vbox(212.86679+207.86678)x426.79134
-..\vbox(420.73357+0.0)x426.79134
+.\vbox(207.06398+202.06396)x426.79134
+..\vbox(409.12794+0.0)x426.79134
 ...\hbox(10.08+2.89438)x426.79134, glue set 347.67778fil
 ....\hbox(9.4464+0.17279)x22.50719
 .....\glue 0.0
@@ -5405,24 +5232,6 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {8}full grid}{\thepage }{}\protected@file@percent }}
 ...\penalty 10000
 ...\glue 9.913 plus 0.86198
-...\glue(\parskip) 0.0
-...\glue(\parskip) 0.0
-...\glue(\baselineskip) 1.60562
-...\hbox(7.5+2.5)x426.79134, glue set 318.69354fil
-....\TU/lmr/m/n/10 beltmargin
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 =
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 blue
-....\glue 3.33 plus 1.665 minus 1.11
-....\mathon
-....\OMS/cmsy/m/n/10 j
-....\mathoff
-....\glue 3.33 plus 1.665 minus 1.11
-....\TU/lmr/m/n/10 blue
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 6.0
@@ -5798,7 +5607,7 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 ......\special{pdf:econtent}
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\glue(\rightskip) 0.0
-...\penalty 10000
+...\penalty 150
 ...\glue(\lineskip) 6.0
 ...\hbox(122.74686+0.0)x426.79134, glue set 16.61548fil
 ....\hbox(122.74686+0.0)x126.7468
@@ -6732,6 +6541,7 @@ Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
 Underfull \hbox (badness 10000) in paragraph at lines ...
 \hbox(0.0+0.0)x345.0
 .\glue(\rightskip) 0.0
+[3]
 ============================================================
 TEST 9: kata-raw-full-grid
 ============================================================
@@ -10692,17 +10502,1167 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[7]
 ============================================================
-TEST 15: kata-stepcnt-default
+TEST 15: kata-marginline-all-empty
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(163.23985+0.0)x345.0
-.\hbox(10.08+2.79358)x345.0, glue set 172.28647fil
+\vbox(177.79842+0.0)x345.0
+.\penalty -300
+.\glue 15.08499 plus 4.31 minus 0.86198
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\hbox(9.99359+2.87999)x345.0, glue set 247.78564fil
 ..\hbox(9.47519+0.0)x30.6144
 ...\glue 0.0
 ...\TU/lmr/bx/n/14.4 14
+...\glue 14.4
+..\TU/lmr/bx/n/14.4 all
+..\glue 5.4 plus 2.7 minus 1.79999
+..\TU/lmr/bx/n/14.4 empty
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {14}all empty}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\glue 9.913 plus 0.86198
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 2.18001
+.\hbox(6.94+2.05998)x345.0, glue set 216.26fil
+..\TU/lmr/m/n/10 should
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 not
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 draw
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 a
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 marginline
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\special{pdf:bcontent}
+....\special{pdf:code q }
+....\special{pdf:code 0 G }
+....\special{pdf:code 0 g }
+....\special{pdf:code 0.3985 w }
+....\special{pdf:code q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(61.17343+61.17345)x122.34688
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(61.17343+61.17345)x122.34688
+..........\vbox(0.0+0.0)x122.34688
+...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(6.084+0.19798)x4.626
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(6.084+0.19798)x4.626
+..........\TU/lmss/m/n/9 0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code Q }
+....\hbox(0.0+0.0)x0.0
+.....\special{pdf:code q }
+.....\special{pdf:code q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code 4.6963 0.0 m }
+.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\special{pdf:code h }
+.......\special{pdf:code 0.0 0.0 m }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(0.0+0.0)x0.0
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(0.0+0.0)x0.0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\special{pdf:code q }
+.....\special{pdf:code 0.3985 w }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code n }
+....\special{pdf:code Q }
+....\special{pdf:econtent}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33 plus 1.665 minus 1.11
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 16: kata-section-enabled
+============================================================
+> \box...=
+\vbox(160.76343+0.0)x345.0
+.\hbox(9.99359+0.17279)x345.0, glue set 285.36961fil
+..\hbox(9.4464+0.17279)x30.6144
+...\glue 0.0
+...\TU/lmr/bx/n/14.4 15
+...\glue 14.4
+..\TU/lmr/bx/n/14.4 title
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {15}title}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\penalty 10000
+.\glue 9.913 plus 0.86198
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 4.8872
+.\hbox(6.94+0.10999)x345.0, glue set 293.3fil
+..\TU/lmr/m/n/10 normal
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 title
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\special{pdf:bcontent}
+....\special{pdf:code q }
+....\special{pdf:code 0 G }
+....\special{pdf:code 0 g }
+....\special{pdf:code 0.3985 w }
+....\special{pdf:code q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(61.17343+61.17345)x122.34688
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(61.17343+61.17345)x122.34688
+..........\vbox(0.0+0.0)x122.34688
+...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(6.084+0.19798)x4.626
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(6.084+0.19798)x4.626
+..........\TU/lmss/m/n/9 0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code Q }
+....\hbox(0.0+0.0)x0.0
+.....\special{pdf:code q }
+.....\special{pdf:code q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code 4.6963 0.0 m }
+.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\special{pdf:code h }
+.......\special{pdf:code 0.0 0.0 m }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(0.0+0.0)x0.0
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(0.0+0.0)x0.0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\special{pdf:code q }
+.....\special{pdf:code 0.3985 w }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code n }
+....\special{pdf:code Q }
+....\special{pdf:econtent}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33 plus 1.665 minus 1.11
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 17: kata-section-enabled-but-empty
+============================================================
+> \box...=
+\vbox(177.24123+0.0)x345.0
+.\penalty -300
+.\glue 15.08499 plus 4.31 minus 0.86198
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\hbox(9.4464+0.17279)x345.0, glue set 314.3856fil
+..\hbox(9.4464+0.17279)x30.6144
+...\glue 0.0
+...\TU/lmr/bx/n/14.4 16
+...\glue 14.4
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {16}}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\glue 9.913 plus 0.86198
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 4.8872
+.\hbox(6.94+2.04999)x345.0, glue set 296.67fil
+..\TU/lmr/m/n/10 empty
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 title
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\special{pdf:bcontent}
+....\special{pdf:code q }
+....\special{pdf:code 0 G }
+....\special{pdf:code 0 g }
+....\special{pdf:code 0.3985 w }
+....\special{pdf:code q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(61.17343+61.17345)x122.34688
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(61.17343+61.17345)x122.34688
+..........\vbox(0.0+0.0)x122.34688
+...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(6.084+0.19798)x4.626
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(6.084+0.19798)x4.626
+..........\TU/lmss/m/n/9 0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code Q }
+....\hbox(0.0+0.0)x0.0
+.....\special{pdf:code q }
+.....\special{pdf:code q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code 4.6963 0.0 m }
+.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\special{pdf:code h }
+.......\special{pdf:code 0.0 0.0 m }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(0.0+0.0)x0.0
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(0.0+0.0)x0.0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\special{pdf:code q }
+.....\special{pdf:code 0.3985 w }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code n }
+....\special{pdf:code Q }
+....\special{pdf:econtent}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33 plus 1.665 minus 1.11
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 18: kata-section-disabled
+============================================================
+> \box...=
+\vbox(135.79684+0.0)x345.0
+.\hbox(6.94+0.10999)x345.0, glue set 261.0fil
+..\hbox(0.0+0.0)x15.0
+..\TU/lmr/m/n/10 disabled
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 section
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\special{pdf:bcontent}
+....\special{pdf:code q }
+....\special{pdf:code 0 G }
+....\special{pdf:code 0 g }
+....\special{pdf:code 0.3985 w }
+....\special{pdf:code q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(61.17343+61.17345)x122.34688
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(61.17343+61.17345)x122.34688
+..........\vbox(0.0+0.0)x122.34688
+...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(6.084+0.19798)x4.626
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(6.084+0.19798)x4.626
+..........\TU/lmss/m/n/9 0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code Q }
+....\hbox(0.0+0.0)x0.0
+.....\special{pdf:code q }
+.....\special{pdf:code q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code 4.6963 0.0 m }
+.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\special{pdf:code h }
+.......\special{pdf:code 0.0 0.0 m }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(0.0+0.0)x0.0
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(0.0+0.0)x0.0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\special{pdf:code q }
+.....\special{pdf:code 0.3985 w }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code n }
+....\special{pdf:code Q }
+....\special{pdf:econtent}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33 plus 1.665 minus 1.11
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+============================================================
+TEST 19: kata-section-custom
+============================================================
+> \box...=
+\vbox(148.35684+0.0)x345.0
+.\hbox(7.5+2.5)x345.0, glue set 211.07442fil
+..\hbox(0.0+0.0)x15.0
+..\TU/lmr/m/n/10 my
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 section
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 command
+..\glue 3.33 plus 1.665 minus 1.11
+..\mathon
+..\OMS/cmsy/m/n/10 j
+..\mathoff
+..\TU/lmr/m/n/10 title
+..\mathon
+..\OMS/cmsy/m/n/10 j
+..\mathoff
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\baselineskip) 2.56
+.\hbox(6.94+0.10999)x345.0, glue set 219.90999fil
+..\hbox(0.0+0.0)x15.0
+..\TU/lmr/m/n/10 custom
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 section
+..\glue 3.33 plus 1.665 minus 1.11
+..\TU/lmr/m/n/10 command
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\special{pdf:bcontent}
+....\special{pdf:code q }
+....\special{pdf:code 0 G }
+....\special{pdf:code 0 g }
+....\special{pdf:code 0.3985 w }
+....\special{pdf:code q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(61.17343+61.17345)x122.34688
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(61.17343+61.17345)x122.34688
+..........\vbox(0.0+0.0)x122.34688
+...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(6.084+0.19798)x4.626
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(6.084+0.19798)x4.626
+..........\TU/lmss/m/n/9 0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code Q }
+....\hbox(0.0+0.0)x0.0
+.....\special{pdf:code q }
+.....\special{pdf:code q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code 4.6963 0.0 m }
+.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\special{pdf:code h }
+.......\special{pdf:code 0.0 0.0 m }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(0.0+0.0)x0.0
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(0.0+0.0)x0.0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\special{pdf:code q }
+.....\special{pdf:code 0.3985 w }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code n }
+....\special{pdf:code Q }
+....\special{pdf:econtent}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33 plus 1.665 minus 1.11
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+[9]
+============================================================
+TEST 20: kata-stepcnt-default
+============================================================
+> \box...=
+\vbox(151.53343+0.0)x345.0
+.\hbox(10.08+2.79358)x345.0, glue set 172.28647fil
+..\hbox(9.73439+0.17279)x30.6144
+...\glue 0.0
+...\TU/lmr/bx/n/14.4 17
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 step
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -10712,28 +11672,10 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {14}step counter default}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {17}step counter default}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -11115,11 +12057,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 16: kata-stepcnt-roman
+TEST 21: kata-stepcnt-roman
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(177.69124+0.0)x345.0
+\vbox(165.98482+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -11127,7 +12068,7 @@ beltmargin = blue | blue
 .\hbox(9.4464+2.79358)x345.0, glue set 176.20326fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 15
+...\TU/lmr/bx/n/14.4 18
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 step
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -11137,27 +12078,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {15}step counter roman}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {18}step counter roman}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -11538,11 +12461,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 17: kata-stepcnt-local
+TEST 22: kata-stepcnt-local
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(321.9317+0.0)x345.0
+\vbox(310.22528+0.0)x345.0
 .\hbox(6.94+2.05998)x345.0, glue set 102.9fil
 ..\hbox(0.0+0.0)x15.0
 ..\TU/lmr/m/n/10 only
@@ -11573,7 +12495,7 @@ beltmargin = blue | blue
 .\hbox(9.99359+2.79358)x345.0, glue set 188.67366fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 16
+...\TU/lmr/bx/n/14.4 19
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 step
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -11583,27 +12505,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {16}step counter local}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {19}step counter local}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -11974,7 +12878,7 @@ beltmargin = blue | blue
 ....\special{pdf:econtent}
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 10000
+.\penalty 150
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x345.0, glue set 81.51634fil
 ..\hbox(122.74686+0.0)x126.7468
@@ -12174,17 +13078,309 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
+[10]
 ============================================================
-TEST 18: kata-stance-flip-off
+TEST 23: kata-step-before-first
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 > \box...=
-\vbox(163.23985+0.0)x345.0
-.\hbox(10.08+2.79358)x345.0, glue set 193.08005fil
-..\hbox(9.73439+0.17279)x30.6144
+\vbox(151.53343+0.10999)x345.0
+.\hbox(10.08+2.79358)x345.0, glue set 202.26727fil
+..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 17
+...\TU/lmr/bx/n/14.4 20
+...\glue 14.4
+..\TU/lmr/bx/n/14.4 before
+..\glue 5.4 plus 2.7 minus 1.79999
+..\TU/lmr/bx/n/14.4 first
+..\glue 5.4 plus 2.7 minus 1.79999
+..\TU/lmr/bx/n/14.4 step
+..\penalty 10000
+..\glue(\parfillskip) 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {20}before first step}{\thepage }{}\protected@file@percent }}
+.\penalty 10000
+.\penalty 10000
+.\glue 9.913 plus 0.86198
+.\glue(\parskip) 0.0 plus 1.0
+.\glue(\parskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.10999)x345.0, glue set 54.81635fil
+..\TU/lmr/m/n/10 before
+..\hbox(122.74686+0.0)x126.7468
+...\glue 63.37363
+...\hbox(0.0+0.0)x0.0, shifted -61.37366
+....\special{pdf:bcontent}
+....\special{pdf:code q }
+....\special{pdf:code 0 G }
+....\special{pdf:code 0 g }
+....\special{pdf:code 0.3985 w }
+....\special{pdf:code q }
+....\hbox(0.0+0.0)x0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 -60.94589 125.87639 121.89134 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -60.94589 -0.00021}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(61.17343+61.17345)x122.34688
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(61.17343+61.17345)x122.34688
+..........\vbox(0.0+0.0)x122.34688
+...........\hbox(0.0+0.0)x122.34688, glue set 61.17345fil
+............\glue(\leftskip) 0.0 plus 1.0fil
+............\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0
+............\penalty 10000
+............\glue(\parfillskip) 0.0
+............\glue(\rightskip) 0.0 plus 1.0fil
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code -62.93842 48.04572 11.24991 12.89972 re }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 -59.61784 51.56352}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(6.084+0.19798)x4.626
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(6.084+0.19798)x4.626
+..........\TU/lmss/m/n/9 0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code Q }
+....\hbox(0.0+0.0)x0.0
+.....\special{pdf:code q }
+.....\special{pdf:code q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code q }
+.......\special{pdf:code 0 G }
+.......\special{pdf:code 4.6963 0.0 m }
+.......\special{pdf:code 4.6963 2.59372 2.59372 4.6963 0.0 4.6963 c }
+.......\special{pdf:code -2.59372 4.6963 -4.6963 2.59372 -4.6963 0.0 c }
+.......\special{pdf:code -4.6963 -2.59372 -2.59372 -4.6963 0.0 -4.6963 c }
+.......\special{pdf:code 2.59372 -4.6963 4.6963 -2.59372 4.6963 0.0 c }
+.......\special{pdf:code h }
+.......\special{pdf:code 0.0 0.0 m }
+.......\special{pdf:code S }
+.......\glue 0.0
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 1.0 0.0 0.0 1.0 0.0 0.0}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(0.0+0.0)x0.0
+.........\special{pdf:code 0 G }
+.........\special{pdf:code 0 g }
+.........\hbox(0.0+0.0)x0.0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\special{pdf:code q }
+.....\special{pdf:code 0 0 1 RG }
+.....\special{pdf:code 1.0 0.0 0.0 1.0 0.99628 0.0 cm }
+.....\special{pdf:code 0.0 4.89557 m }
+.....\special{pdf:code 0.0 52.98413 l }
+.....\special{pdf:code S }
+.....\special{pdf:code q }
+.....\special{pdf:code 0 0 1 rg }
+.....\special{pdf:code 0.0 1.0 -1.0 0.0 0.0 50.95511 cm }
+.....\special{pdf:code q [ ] 0.0 d 0 j 5.17104 0.0 m 0.64343 1.70436 l 2.12863 0.0 l 0.64343 -1.70436 l h B Q  }
+.....\special{pdf:code Q }
+.....\hbox(0.0+0.0)x0.0
+......\hbox(0.0+0.0)x0.0
+.......\special{pdf:code q }
+.......\special{color push rgb 0 0 1}
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\glue 0.0
+.......\special{pdf:code q }
+.......\special{color push rgb 0 0 1}
+.......\glue 0.0
+.......\special{color pop}
+.......\special{pdf:code Q }
+.......\special{pdf:code q }
+.......\special{pdf:code q -1 0 0 -1 0 0 cm q}
+.......\special{pdf: econtent}
+.......\special{pdf: bcontent}
+.......\special{pdf:code -1 0 0 -1 0 0 cm}
+.......\special{pdf:code q}
+.......\special{pdf: econtent}
+.......\special{pdf:code 0 J [] 0 d}
+.......\special{pdf:bcolor [1]}
+.......\special{pdf:bcolor [0]}
+.......\special{pdf:btrans matrix 0.0 1.0 -1.0 0.0 8.35973 5.28241}
+.......\hbox(0.0+0.0)x0.0
+........\hbox(4.858+0.06999)x51.21504
+.........\special{pdf:code 0 0 1 RG }
+.........\special{pdf:code 0 0 1 rg }
+.........\hbox(4.858+0.06999)x51.21504
+..........\vbox(4.858+0.06999)x51.21504
+...........\hbox(4.858+0.06999)x51.21504, glue set 24.36797fil
+............\hbox(0.0+0.0)x0.0
+............\hbox(0.0+0.0)x0.0
+............\special{color push rgb 0 0 1}
+............\TU/lmss/m/n/7 stance
+............\glue(\spaceskip) 2.33308
+............\TU/lmss/m/n/7 A
+............\special{color pop}
+............\penalty 10000
+............\glue(\parfillskip) 0.0 plus 1.0fil
+............\glue(\rightskip) 0.0 plus 14.0
+.........\glue 0.0
+.......\special{pdf:etrans}
+.......\special{pdf:ecolor}
+.......\special{pdf:ecolor}
+.......\special{pdf: bcontent}
+.......\special{pdf:code Q Q Q}
+.......\special{pdf:code Q }
+.......\glue 0.0
+.......\glue 0.0
+.......\special{color pop}
+.......\special{pdf:code Q }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0
+.....\glue 0.0
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\special{pdf:code q }
+.....\special{pdf:code 0.3985 w }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0
+.....\special{pdf:code Q }
+.....\glue 0.0 plus 1.0fil minus 1.0fil
+....\special{pdf:code n }
+....\special{pdf:code Q }
+....\special{pdf:econtent}
+....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33 plus 1.665 minus 1.11
+..\penalty 10000
+..\glue(\parfillskip) 0.0
+..\glue(\rightskip) 0.0
+! OK.
+<argument> ...ep} \end {kata} } \showbox \katabox 
+                                                  \OMIT \box \katabox \TIMO ...
+l. ...}
+============================================================
+manually added constraints
+============================================================
+[11]
+============================================================
+TEST 24: kata-stance-flip-off
+============================================================
+stance-label=normal
+> \box...=
+\vbox(151.53343+0.0)x345.0
+.\hbox(10.08+2.79358)x345.0, glue set 193.08005fil
+..\hbox(9.4464+0.0)x30.6144
+...\glue 0.0
+...\TU/lmr/bx/n/14.4 21
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 stance
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -12192,28 +13388,10 @@ stance-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {17}stance un-flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {21}stance un-flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -12482,20 +13660,19 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 19: kata-stance-flip-on
+TEST 25: kata-stance-flip-on
 ============================================================
-beltmargin = blue | blue
 stance-label=flipped
 > \box...=
-\vbox(178.32484+0.0)x345.0
+\vbox(166.61842+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.08+2.79358)x345.0, glue set 216.48004fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.4464+0.0)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 18
+...\TU/lmr/bx/n/14.4 22
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 stance
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -12503,27 +13680,9 @@ stance-label=flipped
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {18}stance flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {22}stance flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -12792,12 +13951,11 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 20: kata-waza-flip-off
+TEST 26: kata-waza-flip-off
 ============================================================
-beltmargin = blue | blue
 waza-label=normal
 > \box...=
-\vbox(178.32484+0.0)x345.0
+\vbox(166.61842+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -12805,7 +13963,7 @@ waza-label=normal
 .\hbox(10.08+2.79358)x345.0, glue set 203.03044fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 19
+...\TU/lmr/bx/n/14.4 23
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 waza
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -12813,27 +13971,9 @@ waza-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {19}waza un-flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {23}waza un-flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -13101,20 +14241,19 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 21: kata-waza-flip-on
+TEST 27: kata-waza-flip-on
 ============================================================
-beltmargin = blue | blue
 waza-label=flipped
 > \box...=
-\vbox(178.32484+0.0)x345.0
+\vbox(166.61842+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.08+2.79358)x345.0, glue set 235.43044fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.47519+0.0)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 20
+...\TU/lmr/bx/n/14.4 24
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 waza
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -13122,27 +14261,9 @@ waza-label=flipped
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {20}waza fliped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {24}waza fliped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -13410,19 +14531,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 22: kata-dir-normal
+TEST 28: kata-dir-normal
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.32484+0.0)x345.0
+\vbox(166.61842+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.08+2.79358)x345.0, glue set 217.11363fil
-..\hbox(9.4464+0.0)x30.6144
+..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 21
+...\TU/lmr/bx/n/14.4 25
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 dir
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -13430,27 +14550,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {21}dir un-flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {25}dir un-flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -13681,19 +14783,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 23: kata-dir-flip
+TEST 29: kata-dir-flip
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.32484+0.0)x345.0
+\vbox(166.61842+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.08+2.79358)x345.0, glue set 240.51363fil
-..\hbox(9.4464+0.0)x30.6144
+..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 22
+...\TU/lmr/bx/n/14.4 26
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 dir
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -13701,27 +14802,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {22}dir flipped}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {26}dir flipped}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -13950,11 +15033,9 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[11]
 ============================================================
-TEST 24: kata-color-kata
+TEST 30: kata-color-kata
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -13972,11 +15053,11 @@ head=black
 border=gray
 stepcounter=purple
 > \box...=
-\vbox(163.15344+0.0)x345.0
+\vbox(148.82623+0.0)x345.0
 .\hbox(9.99359+0.17279)x345.0, glue set 237.43204fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.73439+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 23
+...\TU/lmr/bx/n/14.4 27
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 colors
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -13984,28 +15065,10 @@ stepcounter=purple
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {23}colors kata}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {27}colors kata}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.32721
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -14711,9 +15774,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 25: kata-color-step
+TEST 31: kata-color-step
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -14731,15 +15793,15 @@ head=black
 border=black
 stepcounter=black
 > \box...=
-\vbox(178.23843+0.0)x345.0
+\vbox(166.53201+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(9.99359+2.79358)x345.0, glue set 238.95845fil
-..\hbox(9.47519+0.0)x30.6144
+..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 24
+...\TU/lmr/bx/n/14.4 28
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 colors
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -14747,27 +15809,9 @@ stepcounter=black
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {24}colors step}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {28}colors step}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -15473,9 +16517,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 26: kata-color-global
+TEST 32: kata-color-global
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -15493,7 +16536,7 @@ head=black
 border=gray
 stepcounter=purple
 > \box...=
-\vbox(178.23843+0.0)x345.0
+\vbox(166.63281+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -15501,7 +16544,7 @@ stepcounter=purple
 .\hbox(9.99359+2.89438)x345.0, glue set 225.94084fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 25
+...\TU/lmr/bx/n/14.4 29
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 colors
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -15509,27 +16552,9 @@ stepcounter=purple
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {25}colors global}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {29}colors global}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.60562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -16235,9 +17260,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 27: kata-color-local
+TEST 33: kata-color-local
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 waza-label=normal
 stance=red
@@ -16255,7 +17279,7 @@ head=black
 border=gray
 stepcounter=purple
 > \box...=
-\vbox(178.23843+0.0)x345.0
+\vbox(163.91122+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -16263,7 +17287,7 @@ stepcounter=purple
 .\hbox(9.99359+0.17279)x345.0, glue set 235.40164fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 26
+...\TU/lmr/bx/n/14.4 30
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 colors
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -16271,27 +17295,9 @@ stepcounter=purple
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {26}colors local}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {30}colors local}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.32721
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -16996,17 +18002,16 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[13]
+[14]
 ============================================================
-TEST 28: kata-border-style
+TEST 34: kata-border-style
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(163.15344+0.0)x345.0
+\vbox(151.53343+0.0)x345.0
 .\hbox(9.99359+2.87999)x345.0, glue set 229.09444fil
-..\hbox(9.73439+0.17279)x30.6144
+..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 27
+...\TU/lmr/bx/n/14.4 31
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 border
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -17014,28 +18019,10 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {27}border style}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {31}border style}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.62001
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -17240,11 +18227,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 29: kata-border-arrow-up
+TEST 35: kata-border-arrow-up
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.23843+0.0)x345.0
+\vbox(166.53201+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -17252,7 +18238,7 @@ beltmargin = blue | blue
 .\hbox(9.99359+2.79358)x345.0, glue set 197.90405fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 28
+...\TU/lmr/bx/n/14.4 32
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 border
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -17262,27 +18248,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {28}border arrow up}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {32}border arrow up}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.70642
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -17533,11 +18501,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 30: kata-border-accent
+TEST 36: kata-border-accent
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(178.23843+0.0)x345.0
+\vbox(163.91122+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -17545,7 +18512,7 @@ beltmargin = blue | blue
 .\hbox(9.99359+0.17279)x345.0, glue set 217.27205fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 29
+...\TU/lmr/bx/n/14.4 33
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 border
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -17553,27 +18520,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {29}border accent}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {33}border accent}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.32721
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -17780,19 +18729,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 31: kata-border-combined-step
+TEST 37: kata-border-combined-step
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.8+3.61438)x345.0, glue set 110.1361fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.47519+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 30
+...\TU/lmr/bx/n/14.4 34
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 border
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -17802,27 +18750,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {30}border combined (step-level)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {34}border combined (step-level)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -18077,11 +19007,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 32: kata-border-combined-kata
+TEST 38: kata-border-combined-kata
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -18089,7 +19018,7 @@ beltmargin = blue | blue
 .\hbox(10.8+3.61438)x345.0, glue set 108.6097fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 31
+...\TU/lmr/bx/n/14.4 35
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 border
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -18099,27 +19028,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {31}border combined (kata-level)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {35}border combined (kata-level)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -18374,11 +19285,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 33: kata-border-combined-global
+TEST 39: kata-border-combined-global
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -18386,7 +19296,7 @@ beltmargin = blue | blue
 .\hbox(10.8+3.61438)x345.0, glue set 97.1185fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 32
+...\TU/lmr/bx/n/14.4 36
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 border
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -18396,27 +19306,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {32}border combined (global-level)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {36}border combined (global-level)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -18670,17 +19562,15 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[15]
 ============================================================
-TEST 34: kata-head-style-kata
+TEST 40: kata-head-style-kata
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(163.95985+0.0)x345.0
+\vbox(153.07423+0.0)x345.0
 .\hbox(10.8+3.61438)x345.0, glue set 194.39044fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.73439+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 33
+...\TU/lmr/bx/n/14.4 37
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 head
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -18690,28 +19580,10 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {33}head style (kata)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {37}head style (kata)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -19097,19 +19969,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 35: kata-head-style-step
+TEST 41: kata-head-style-step
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.8+3.61438)x345.0, glue set 195.91685fil
-..\hbox(9.47519+0.17279)x30.6144
+..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 34
+...\TU/lmr/bx/n/14.4 38
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 head
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -19119,27 +19990,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {34}head style (step)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {38}head style (step)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -19523,11 +20376,10 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 36: kata-head-style-global
+TEST 42: kata-head-style-global
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -19535,7 +20387,7 @@ beltmargin = blue | blue
 .\hbox(10.8+3.61438)x345.0, glue set 182.89925fil
 ..\hbox(9.4464+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 35
+...\TU/lmr/bx/n/14.4 39
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 head
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -19545,27 +20397,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {35}head style (global)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {39}head style (global)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -19951,19 +20785,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 37: kata-stepcounter-style-kata
+TEST 43: kata-stepcounter-style-kata
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.8+3.61438)x345.0, glue set 139.98727fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.47519+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 36
+...\TU/lmr/bx/n/14.4 40
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 step
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -19975,27 +20808,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {36}step counter style (kata)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {40}step counter style (kata)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -20381,19 +21196,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 38: kata-stepcounter-style-step
+TEST 44: kata-stepcounter-style-step
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.8+3.61438)x345.0, glue set 141.51369fil
-..\hbox(9.73439+0.17279)x30.6144
+..\hbox(9.47519+0.0)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 37
+...\TU/lmr/bx/n/14.4 41
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 step
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -20405,27 +21219,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {37}step counter style (step)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {41}step counter style (step)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -20809,19 +21605,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 39: kata-stepcounter-style-global
+TEST 45: kata-stepcounter-style-global
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(179.04485+0.0)x345.0
+\vbox(168.15923+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(10.8+3.61438)x345.0, glue set 128.49608fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.47519+0.0)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 38
+...\TU/lmr/bx/n/14.4 42
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 step
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -20833,27 +21628,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {38}step counter style (global)}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {42}step counter style (global)}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 0.88562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -21239,9 +22016,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 40: kata-angle-stance
+TEST 46: kata-angle-stance
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 stance-label=normal
 stance-label=normal
@@ -21250,11 +22026,11 @@ stance-label=normal
 stance-label=normal
 stance-label=normal
 > \box...=
-\vbox(549.39401+0.0)x345.0
+\vbox(537.78839+0.0)x345.0
 .\hbox(9.99359+2.89438)x345.0, glue set 221.54884fil
-..\hbox(9.4464+0.17279)x30.6144
+..\hbox(9.47519+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 39
+...\TU/lmr/bx/n/14.4 43
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 stance
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -21262,28 +22038,10 @@ stance-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {39}stance angles}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {43}stance angles}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.60562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -23094,9 +23852,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 41: kata-angle-waza
+TEST 47: kata-angle-waza
 ============================================================
-beltmargin = blue | blue
 waza-label=normal
 waza-label=normal
 waza-label=normal
@@ -23105,15 +23862,15 @@ waza-label=normal
 waza-label=normal
 waza-label=normal
 > \box...=
-\vbox(564.479+0.0)x345.0
+\vbox(552.87338+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(9.99359+2.89438)x345.0, glue set 231.49924fil
-..\hbox(9.47519+0.17279)x30.6144
+..\hbox(9.47519+0.0)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 40
+...\TU/lmr/bx/n/14.4 44
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 waza
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -23121,27 +23878,9 @@ waza-label=normal
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {40}waza angles}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {44}waza angles}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.60562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -23361,7 +24100,7 @@ waza-label=normal
 ............\glue(\spaceskip) 2.33308
 ............\TU/lmss/m/n/7 A
 ............\glue(\rightskip) 0.0 plus 14.0
-...........\penalty 150
+...........\penalty 10000
 ...........\glue(\baselineskip) 2.1309
 ...........\hbox(4.51111+0.83334)x51.21504, glue set 33.00664fil
 ............\OMS/cmsy/m/n/7 ^^@
@@ -24955,19 +25694,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 42: kata-angle-kiai
+TEST 48: kata-angle-kiai
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(564.479+0.0)x345.0
+\vbox(552.87338+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(9.99359+2.89438)x345.0, glue set 240.26883fil
-..\hbox(9.47519+0.0)x30.6144
+..\hbox(9.47519+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 41
+...\TU/lmr/bx/n/14.4 45
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 kiai
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -24975,27 +25713,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {41}kiai angles}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {45}kiai angles}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.60562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -27276,19 +27996,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 43: kata-angle-dir-center
+TEST 49: kata-angle-dir-center
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(564.479+0.0)x345.0
+\vbox(552.87338+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(9.99359+2.89438)x345.0, glue set 183.21606fil
-..\hbox(9.47519+0.0)x30.6144
+..\hbox(9.47519+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 42
+...\TU/lmr/bx/n/14.4 46
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 dir
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -27301,27 +28020,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {42}dir angles -- center}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {46}dir angles -- center}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.60562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -28762,19 +29463,18 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 44: kata-angle-dir-turn
+TEST 50: kata-angle-dir-turn
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(435.73215+0.0)x345.0
+\vbox(424.12653+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\hbox(9.99359+2.89438)x345.0, glue set 195.74406fil
-..\hbox(9.47519+0.17279)x30.6144
+..\hbox(9.73439+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 43
+...\TU/lmr/bx/n/14.4 47
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 dir
 ..\glue 5.4 plus 2.7 minus 1.79999
@@ -28787,27 +29487,9 @@ beltmargin = blue | blue
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {43}dir angles -- turn}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {47}dir angles -- turn}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 1.60562
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -30090,46 +30772,27 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 45: kata-prefix-stance
+TEST 51: kata-prefix-stance
 ============================================================
-beltmargin = blue | blue
 stance-label=normal
 stance-label=normal
 stance-label=normal
 stance-label=normal
 > \box...=
-\vbox(162.63504+0.0)x345.0
-.\hbox(9.47519+0.08638)x345.0, glue set 270.22083fil
-..\hbox(9.47519+0.0)x30.6144
+\vbox(148.30783+0.0)x345.0
+.\hbox(9.47519+0.17279)x345.0, glue set 270.22083fil
+..\hbox(9.47519+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 44
+...\TU/lmr/bx/n/14.4 48
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 stance
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {44}stance}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {48}stance}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.41362
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -30555,7 +31218,7 @@ stance-label=normal
 ............\glue(\spaceskip) 2.33308
 ............\TU/lmss/m/n/7 stance
 ............\glue(\rightskip) 0.0 plus 14.0
-...........\penalty 150
+...........\penalty 10000
 ...........\glue(\baselineskip) 1.63702
 ...........\hbox(4.935+0.06999)x51.21504, glue set 46.46204fil
 ............\TU/lmss/m/n/7 C
@@ -30608,15 +31271,14 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 46: kata-prefix-waza
+TEST 52: kata-prefix-waza
 ============================================================
-beltmargin = blue | blue
 waza-label=normal
 waza-label=normal
 waza-label=normal
 waza-label=normal
 > \box...=
-\vbox(177.72003+0.0)x345.0
+\vbox(163.39282+0.0)x345.0
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -30624,33 +31286,15 @@ waza-label=normal
 .\hbox(9.47519+0.17279)x345.0, glue set 280.17122fil
 ..\hbox(9.47519+0.17279)x30.6144
 ...\glue 0.0
-...\TU/lmr/bx/n/14.4 45
+...\TU/lmr/bx/n/14.4 49
 ...\glue 14.4
 ..\TU/lmr/bx/n/14.4 waza
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0 plus 1.0fil
 ..\glue(\rightskip) 0.0
-.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {45}waza}{\thepage }{}\protected@file@percent }}
+.\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {49}waza}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue(\parskip) 0.0 plus 1.0
-.\glue(\parskip) 0.0
-.\glue(\baselineskip) 4.32721
-.\hbox(7.5+2.5)x345.0, glue set 236.9022fil
-..\TU/lmr/m/n/10 beltmargin
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 =
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\glue 3.33 plus 1.665 minus 1.11
-..\mathon
-..\OMS/cmsy/m/n/10 j
-..\mathoff
-..\glue 3.33 plus 1.665 minus 1.11
-..\TU/lmr/m/n/10 blue
-..\penalty 10000
-..\glue(\parfillskip) 0.0 plus 1.0fil
-..\glue(\rightskip) 0.0
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -31072,7 +31716,7 @@ waza-label=normal
 ............\glue(\spaceskip) 2.33308
 ............\TU/lmss/m/n/7 tech-
 ............\glue(\rightskip) 0.0 plus 14.0
-...........\penalty 250
+...........\penalty 10100
 ...........\glue(\baselineskip) 1.63702
 ...........\hbox(4.935+1.35799)x51.21504, glue set 27.52495fil
 ............\TU/lmss/m/n/7 nique
@@ -31127,9 +31771,8 @@ l. ...}
 manually added constraints
 ============================================================
 ============================================================
-TEST 47: kata-cmd-invalid-places-kata
+TEST 53: kata-cmd-invalid-places-kata
 ============================================================
-beltmargin = blue | blue
 ! Package kata Error: \kataWaza used outside step environment.
 See the kata package documentation for explanation.
 Type  H <return>  for immediate help.
@@ -31202,28 +31845,6 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-Overfull \hbox (16.61891pt too wide) in paragraph at lines ...
-\TU/lmr/m/n/10 nique A ;   [/kata/style/stance=1.00.0] (head) – ++(90.0:2) node[/kata/style/stance
-\hbox(7.5+2.49998)x345.0, glue set - 1.0
-.\TU/lmr/m/n/10 nique
-.\glue 3.33 plus 1.665 minus 1.11
-.\TU/lmr/m/n/10 A
-.\glue 3.33 plus 1.66331 minus 1.1111
-.\TU/lmr/m/n/10 ;
-.\glue 3.33 plus 1.665 minus 1.11
-.\glue 3.33 plus 1.665 minus 1.11
-.\glue 3.33 plus 1.665 minus 1.11
-.\TU/lmr/m/n/10 [/kata/style/stance=1.00.0]
-.\glue 3.33 plus 1.665 minus 1.11
-.\TU/lmr/m/n/10 (head)
-.\glue 3.33 plus 1.665 minus 1.11
-.\TU/lmr/m/n/10 –
-.\discretionary
-.\glue 3.33 plus 1.665 minus 1.11
-.\TU/lmr/m/n/10 ++(90.0:2)
-.\glue 3.33 plus 1.665 minus 1.11
-.\TU/lmr/m/n/10 node[/kata/style/stance
-.\glue(\rightskip) 0.0
 Overfull \hbox (286.79672pt too wide) in paragraph at lines ...
 \TU/lmr/m/n/10 dinate[pos=1] (tmpB) ++(360+90+40:0.75); (tmpA) – (tmpB) node[midway,sloped,font=,red,draw,decorate,decoration=zigzag,amplitude=1.5pt]
 \hbox(7.5+2.49998)x345.0, glue set - 1.0
@@ -31250,12 +31871,12 @@ Underfull \hbox (badness 10000) in paragraph at lines ...
 .\penalty 10000
 .\glue(\parfillskip) 0.0
 .\glue(\rightskip) 0.0
-[24]
+[25]
 ============================================================
 manually added constraints
 ============================================================
 ============================================================
-TEST 48: kata-cmd-invalid-places-global
+TEST 54: kata-cmd-invalid-places-global
 ============================================================
 ! Package kata Error: \kataWaza used outside step environment.
 See the kata package documentation for explanation.
@@ -31370,7 +31991,7 @@ Overfull \hbox (286.79672pt too wide) in paragraph at lines ...
 .\TU/lmr/m/n/10 node[midway,sloped,font=,red,draw,decorate,decoration=zigzag,amplitude=1.5pt]
 .\glue(\rightskip) 0.0
 ============================================================
-TEST 49: kata-step-invalid-places-global
+TEST 55: kata-step-invalid-places-global
 ============================================================
 ! Package kata Error: \kataStep used outside kata environment.
 See the kata package documentation for explanation.
@@ -31387,4 +32008,4 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
-[25]
+[26]
