@@ -36,6 +36,15 @@ beltmargin = blue | blue
 [1]
 No file memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf
 [tracing memoize]   Memoization completed
+Underfull \hbox (badness 10000) in paragraph at lines ...
+[] 
+\hbox(0.0+0.0)x345.0, glue set 129.08348
+.\hbox(0.0+0.0)x126.74686
+..\rule(0.0+0.0)x126.74686
+.\glue 3.33 plus 1.665 minus 1.11
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
 > \box...=
 \vbox(178.53201+0.0)x345.0
 .\penalty -300
@@ -59,8 +68,7 @@ No file memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.84634fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\hbox(122.74686+0.0)x126.7468
 ....\glue 63.37363
@@ -424,15 +432,15 @@ No file memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B
 .....\special{pdf:code Q }
 .....\special{pdf:econtent}
 .....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\baselineskip) 12.0
-.\hbox(0.0+0.0)x345.0, glue set 81.51628fil
-..\hbox(0.0+0.0)x126.74686
-...\rule(0.0+0.0)x126.74686
 ..\glue 3.33 plus 1.665 minus 1.11
 ..\glue 3.33 plus 1.665 minus 1.11
 ..\glue 0.0 plus 1.0fil
+..\hbox(0.0+0.0)x126.74686
+...\rule(0.0+0.0)x126.74686
+..\glue(\rightskip) 0.0
+.\penalty 150
+.\glue(\baselineskip) 12.0
+.\hbox(0.0+0.0)x345.0, glue set 129.08348
 ..\hbox(0.0+0.0)x126.74686
 ...\rule(0.0+0.0)x126.74686
 ..\glue 3.33 plus 1.665 minus 1.11
@@ -487,8 +495,7 @@ No file memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75818fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\hbox(122.74686+0.0)x126.7468
 ....\glue 63.37363

@@ -45,13 +45,12 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -536,6 +535,11 @@ waza-label=normal
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -589,13 +593,12 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -1110,13 +1113,12 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75818fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -1366,6 +1368,15 @@ TEST 4: kata-phantom-two
 ============================================================
 beltmargin = blue | blue
 stance-label=normal
+Underfull \hbox (badness 10000) in paragraph at lines ...
+[] 
+\hbox(4.0+0.0)x345.0, glue set 129.08348, direction TLT
+.\hbox(4.0+0.0)x126.74686, direction TLT
+..\rule(4.0+0.0)x126.74686
+.\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
 > \box...=
 \vbox(178.53203+0.0)x345.0, direction TLT
 .\penalty -300
@@ -1407,13 +1418,12 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.84634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -1642,15 +1652,15 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\baselineskip) 8.0
-.\hbox(4.0+0.0)x345.0, glue set 81.51628fil, direction TLT
-..\hbox(4.0+0.0)x126.74686, direction TLT
-...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\rightskip) 0.0
+.\penalty 150
+.\glue(\baselineskip) 8.0
+.\hbox(4.0+0.0)x345.0, glue set 129.08348, direction TLT
 ..\hbox(4.0+0.0)x126.74686, direction TLT
 ...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -2019,6 +2029,15 @@ TEST 6: kata-phantom-mixed
 ============================================================
 beltmargin = blue | blue
 stance-label=normal
+Underfull \hbox (badness 10000) in paragraph at lines ...
+[] 
+\hbox(4.0+0.0)x345.0, glue set 129.08348, direction TLT
+.\hbox(4.0+0.0)x126.74686, direction TLT
+..\rule(4.0+0.0)x126.74686
+.\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
 > \box...=
 \vbox(190.23843+0.0)x345.0, direction TLT
 .\penalty -300
@@ -2135,14 +2154,12 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 203.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.84634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\hbox(0.0+0.0)x15.0, direction TLT
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -2371,15 +2388,15 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 10000
-.\glue(\baselineskip) 8.0
-.\hbox(4.0+0.0)x345.0, glue set 81.51628fil, direction TLT
-..\hbox(4.0+0.0)x126.74686, direction TLT
-...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\baselineskip) 8.0
+.\hbox(4.0+0.0)x345.0, glue set 129.08348, direction TLT
 ..\hbox(4.0+0.0)x126.74686, direction TLT
 ...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -2425,7 +2442,6 @@ beltmargin = blue | blue
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {7}full grid}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.913 plus 0.86198
-.\glue 0.0 plus 1.0fil
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2764,7 +2780,7 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 10000
+.\penalty 150
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x426.79134, glue set 16.61548fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
@@ -3599,14 +3615,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ============================================================
 manually added constraints
 ============================================================
-Overfull \hbox (81.79134pt too wide) in paragraph at lines ...
-$[]$
+Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
+[]$[]$
 \hbox(207.06398+202.06398)x345.0, direction TLT
 .\localpar
 ..\localinterlinepenalty=0
 ..\localbrokenpenalty=0
 ..\localleftbox=null
 ..\localrightbox=null
+.\hbox(0.0+0.0)x15.0, direction TLT
 .\mathon
 .\vbox(207.06398+202.06398)x426.79134, direction TLT
 ..\vbox(409.12796+0.0)x426.79134, direction TLT
@@ -3635,7 +3652,6 @@ $[]$
 ...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {7}full grid}{\thepage }{}\protected@file@percent }}
 ...\penalty 10000
 ...\glue 9.913 plus 0.86198
-...\glue 0.0 plus 1.0fil
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 6.0
@@ -3974,7 +3990,7 @@ $[]$
 ......\pdfliteral origin{Q }
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\glue(\rightskip) 0.0
-...\penalty 10000
+...\penalty 150
 ...\glue(\lineskip) 6.0
 ...\hbox(122.74686+0.0)x426.79134, glue set 16.61548fil, direction TLT
 ....\hbox(122.74686+0.0)x126.7468, direction TLT
@@ -4913,14 +4929,12 @@ beltmargin = arbitrary text | red
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\hbox(0.0+0.0)x15.0, direction TLT
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -5082,6 +5096,11 @@ beltmargin = arbitrary text | red
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -5095,7 +5114,7 @@ manually added constraints
 ============================================================
 TEST 9: kata-marginline-text+emptyBelt
 ============================================================
-beltmargin = arbitrary text | 
+beltmargin = arbitrary text | arbitrary text
 > \box...=
 \vbox(175.84843+0.0)x345.0, direction TLT
 .\penalty -300
@@ -5184,14 +5203,12 @@ beltmargin = arbitrary text |
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\hbox(0.0+0.0)x15.0, direction TLT
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -5352,6 +5369,11 @@ beltmargin = arbitrary text |
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -5467,14 +5489,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\hbox(0.0+0.0)x15.0, direction TLT
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -5635,6 +5655,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -5743,14 +5768,12 @@ beltmargin =  | red
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\hbox(0.0+0.0)x15.0, direction TLT
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -5911,6 +5934,11 @@ beltmargin =  | red
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -6023,14 +6051,12 @@ beltmargin =  |
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\hbox(0.0+0.0)x15.0, direction TLT
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -6192,6 +6218,11 @@ beltmargin =  |
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -6205,6 +6236,7 @@ manually added constraints
 ============================================================
 TEST 13: kata-marginline-emptyText+noBelt
 ============================================================
+beltmargin =  | 
 > \box...=
 \vbox(177.79843+0.0)x345.0, direction TLT
 .\penalty -300
@@ -6298,14 +6330,12 @@ TEST 13: kata-marginline-emptyText+noBelt
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\hbox(0.0+0.0)x15.0, direction TLT
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -6467,6 +6497,11 @@ TEST 13: kata-marginline-emptyText+noBelt
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -6528,13 +6563,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -6920,13 +6954,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -7381,13 +7414,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -7548,10 +7580,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -7712,9 +7743,10 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 150
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -7876,6 +7908,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -7933,13 +7970,12 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -8169,6 +8205,11 @@ stance-label=normal
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -8224,13 +8265,12 @@ stance-label=flipped
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -8460,6 +8500,11 @@ stance-label=flipped
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -8519,13 +8564,12 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -8759,6 +8803,11 @@ waza-label=normal
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -8812,13 +8861,12 @@ waza-label=flipped
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -9052,6 +9100,11 @@ waza-label=flipped
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -9108,13 +9161,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -9304,6 +9356,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -9355,13 +9412,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -9550,6 +9606,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -9616,13 +9677,12 @@ stepcounter=purple
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -10358,13 +10418,12 @@ stepcounter=black
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -11102,13 +11161,12 @@ stepcounter=purple
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -11848,13 +11906,12 @@ stepcounter=purple
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -12575,13 +12632,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -12745,6 +12801,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -12806,13 +12867,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -13022,6 +13082,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -13081,13 +13146,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -13252,6 +13316,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -13330,13 +13399,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -13550,6 +13618,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -13627,13 +13700,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -13847,6 +13919,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -13926,13 +14003,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -14146,6 +14222,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -14201,13 +14282,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -14594,13 +14674,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -14987,13 +15066,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -15389,13 +15467,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -15791,13 +15868,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -16193,13 +16269,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75821fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -16587,13 +16662,12 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -16829,10 +16903,9 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -17065,9 +17138,10 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -17302,9 +17376,9 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -17539,9 +17613,9 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -17777,9 +17851,9 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -18013,9 +18087,9 @@ stance-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -18251,6 +18325,11 @@ stance-label=normal
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -18312,13 +18391,12 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -18560,10 +18638,9 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -18800,9 +18877,10 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -19008,7 +19086,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.33308
 ..............\TU/lmss/m/n/7 A
 ..............\glue(\rightskip) 0.0 plus 14.0
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.13089
 .............\hbox(4.51111+0.0)x51.21504, glue set 39.25665fil, direction TLT
 ..............\OT1/cmr/m/n/7 3
@@ -19043,9 +19121,9 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -19251,7 +19329,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.33308
 ..............\TU/lmss/m/n/7 B
 ..............\glue(\rightskip) 0.0 plus 14.0
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.13089
 .............\hbox(4.51111+0.0)x51.21504, glue set 39.25665fil, direction TLT
 ..............\OT1/cmr/m/n/7 1
@@ -19286,9 +19364,9 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -19494,7 +19572,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.33308
 ..............\TU/lmss/m/n/7 B
 ..............\glue(\rightskip) 0.0 plus 14.0
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.13089
 .............\hbox(4.51111+0.83334)x51.21504, glue set 33.00664fil, direction TLT
 ..............\OMS/cmsy/m/n/7 ^^@
@@ -19530,9 +19608,9 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -19770,9 +19848,9 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -19978,7 +20056,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.33308
 ..............\TU/lmss/m/n/7 D
 ..............\glue(\rightskip) 0.0 plus 14.0
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.13089
 .............\hbox(4.51111+0.83334)x51.21504, glue set 36.99277fil, direction TLT
 ..............\OMS/cmsy/m/n/7 ^^@
@@ -20013,6 +20091,11 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -20067,13 +20150,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -20368,10 +20450,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -20666,9 +20747,10 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -20963,9 +21045,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -21260,9 +21342,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -21557,9 +21639,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -21854,9 +21936,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -22152,6 +22234,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -22216,13 +22303,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -22402,10 +22488,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -22585,9 +22670,10 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -22767,9 +22853,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -22949,9 +23035,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -23131,9 +23217,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.5164fil, direction TLT
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -23313,9 +23399,9 @@ beltmargin = blue | blue
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -23496,6 +23582,11 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -23555,13 +23646,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 42.4232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -23941,7 +24031,7 @@ beltmargin = blue | blue
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 150
+.\penalty 10000
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x345.0, glue set 84.8464fil, direction TLT
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
@@ -24750,13 +24840,12 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -25216,6 +25305,11 @@ stance-label=normal
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -25265,13 +25359,12 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.9232fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -25747,6 +25840,11 @@ waza-label=normal
 ....\pdfliteral origin{n }
 ....\pdfliteral origin{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686, direction TLT
+...\rule(4.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0

@@ -36,8 +36,7 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -511,6 +510,11 @@ waza-label=normal
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -557,8 +561,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -1054,8 +1057,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75319fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -1299,6 +1301,15 @@ TEST 4: kata-phantom-two
 ============================================================
 beltmargin = blue | blue
 stance-label=normal
+Underfull \hbox (badness 10000) in paragraph at lines ...
+[] 
+\hbox(4.0+0.0)x345.0, glue set 128.95268
+.\hbox(4.0+0.0)x126.74686
+..\rule(4.0+0.0)x126.74686
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
 > \box...=
 \vbox(178.51898+0.0)x345.0
 .\penalty -300
@@ -1333,8 +1344,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83969fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -1557,15 +1567,15 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\baselineskip) 8.0
-.\hbox(4.0+0.0)x345.0, glue set 81.5063fil
-..\hbox(4.0+0.0)x126.74686
-...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue(\rightskip) 0.0
+.\penalty 150
+.\glue(\baselineskip) 8.0
+.\hbox(4.0+0.0)x345.0, glue set 128.95268
 ..\hbox(4.0+0.0)x126.74686
 ...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
@@ -1905,6 +1915,15 @@ TEST 6: kata-phantom-mixed
 ============================================================
 beltmargin = blue | blue
 stance-label=normal
+Underfull \hbox (badness 10000) in paragraph at lines ...
+[] 
+\hbox(4.0+0.0)x345.0, glue set 128.95268
+.\hbox(4.0+0.0)x126.74686
+..\rule(4.0+0.0)x126.74686
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
 > \box...=
 \vbox(190.219+0.0)x345.0
 .\penalty -300
@@ -1999,9 +2018,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 203.2532fil
-..\hbox(0.0+0.0)x15.0
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83969fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -2224,15 +2241,15 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 10000
-.\glue(\baselineskip) 8.0
-.\hbox(4.0+0.0)x345.0, glue set 81.5063fil
-..\hbox(4.0+0.0)x126.74686
-...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\baselineskip) 8.0
+.\hbox(4.0+0.0)x345.0, glue set 128.95268
 ..\hbox(4.0+0.0)x126.74686
 ...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
@@ -2273,7 +2290,6 @@ beltmargin = blue | blue
 .\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {7}full grid}{\thepage }{}\protected@file@percent }}
 .\penalty 10000
 .\glue 9.90276 plus 0.86108
-.\glue 0.0 plus 1.0fil
 .\glue(\parskip) 0.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
@@ -2603,7 +2619,7 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 10000
+.\penalty 150
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x426.79134, glue set 16.60883fil
 ..\hbox(122.74686+0.0)x126.7468
@@ -3428,9 +3444,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ============================================================
 manually added constraints
 ============================================================
-Overfull \hbox (81.79134pt too wide) in paragraph at lines ...
-$[]$
+Overfull \hbox (96.79134pt too wide) in paragraph at lines ...
+[]$[]$
 \hbox(206.97165+201.97165)x345.0
+.\hbox(0.0+0.0)x15.0
 .\mathon
 .\vbox(206.97165+201.97165)x426.79134
 ..\vbox(408.9433+0.0)x426.79134
@@ -3454,7 +3471,6 @@ $[]$
 ...\write1{\@writefile{toc}{\protect \contentsline {section}{\protect \numberline {7}full grid}{\thepage }{}\protected@file@percent }}
 ...\penalty 10000
 ...\glue 9.90276 plus 0.86108
-...\glue 0.0 plus 1.0fil
 ...\glue(\parskip) 0.0
 ...\glue(\parskip) 0.0
 ...\glue(\lineskip) 6.0
@@ -3784,7 +3800,7 @@ $[]$
 ......\pdfliteral{Q }
 ......\glue 0.0 plus 1.0fil minus 1.0fil
 ....\glue(\rightskip) 0.0
-...\penalty 10000
+...\penalty 150
 ...\glue(\lineskip) 6.0
 ...\hbox(122.74686+0.0)x426.79134, glue set 16.60883fil
 ....\hbox(122.74686+0.0)x126.7468
@@ -4701,9 +4717,7 @@ beltmargin = arbitrary text | red
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.91988fil
-..\hbox(0.0+0.0)x15.0
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -4863,6 +4877,11 @@ beltmargin = arbitrary text | red
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -4876,7 +4895,7 @@ manually added constraints
 ============================================================
 TEST 9: kata-marginline-text+emptyBelt
 ============================================================
-beltmargin = arbitrary text | 
+beltmargin = arbitrary text | arbitrary text
 > \box...=
 \vbox(175.719+0.0)x345.0
 .\penalty -300
@@ -4955,9 +4974,7 @@ beltmargin = arbitrary text |
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.91988fil
-..\hbox(0.0+0.0)x15.0
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -5116,6 +5133,11 @@ beltmargin = arbitrary text |
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -5221,9 +5243,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.91988fil
-..\hbox(0.0+0.0)x15.0
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -5382,6 +5402,11 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -5480,9 +5505,7 @@ beltmargin =  | red
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.91988fil
-..\hbox(0.0+0.0)x15.0
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -5641,6 +5664,11 @@ beltmargin =  | red
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -5741,9 +5769,7 @@ beltmargin =  |
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.91988fil
-..\hbox(0.0+0.0)x15.0
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -5903,6 +5929,11 @@ beltmargin =  |
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -5916,6 +5947,7 @@ manually added constraints
 ============================================================
 TEST 13: kata-marginline-emptyText+noBelt
 ============================================================
+beltmargin =  | 
 > \box...=
 \vbox(177.66344+0.0)x345.0
 .\penalty -300
@@ -5997,9 +6029,7 @@ TEST 13: kata-marginline-emptyText+noBelt
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 199.91988fil
-..\hbox(0.0+0.0)x15.0
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -6159,6 +6189,11 @@ TEST 13: kata-marginline-emptyText+noBelt
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -6213,8 +6248,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -6589,8 +6623,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -7023,8 +7056,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -7183,10 +7215,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -7345,9 +7376,10 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 150
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -7507,6 +7539,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -7558,8 +7595,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -7783,6 +7819,11 @@ stance-label=normal
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -7833,8 +7874,7 @@ stance-label=flipped
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -8058,6 +8098,11 @@ stance-label=flipped
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -8111,8 +8156,7 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -8338,6 +8382,11 @@ waza-label=normal
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -8386,8 +8435,7 @@ waza-label=flipped
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -8613,6 +8661,11 @@ waza-label=flipped
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -8663,8 +8716,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -8852,6 +8904,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -8898,8 +8955,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -9086,6 +9142,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -9146,8 +9207,7 @@ stepcounter=purple
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -9852,8 +9912,7 @@ stepcounter=black
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -10560,8 +10619,7 @@ stepcounter=purple
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -11268,8 +11326,7 @@ stepcounter=purple
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -11959,8 +12016,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -12122,6 +12178,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -12174,8 +12235,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -12383,6 +12443,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -12433,8 +12498,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -12597,6 +12661,11 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -12665,8 +12734,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -12877,6 +12945,11 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -12946,8 +13019,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -13159,6 +13231,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -13228,8 +13305,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -13441,6 +13517,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -13492,8 +13573,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -13871,8 +13951,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -14250,8 +14329,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -14639,8 +14717,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -15027,8 +15104,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -15415,8 +15491,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75322fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -15793,8 +15868,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -16024,10 +16098,9 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -16254,9 +16327,10 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -16485,9 +16559,9 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -16716,9 +16790,9 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -16948,9 +17022,9 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -17178,9 +17252,9 @@ stance-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -17410,6 +17484,11 @@ stance-label=normal
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -17464,8 +17543,7 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -17699,10 +17777,9 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -17931,9 +18008,10 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -18130,7 +18208,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.47893
 ..............\OT1/cmss/m/n/7 A
 ..............\glue(\rightskip) 0.0 plus 14.87521
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.12779
 .............\hbox(4.51111+0.0)x51.21504, glue set 39.25665fil
 ..............\OT1/cmr/m/n/7 3
@@ -18166,9 +18244,9 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -18365,7 +18443,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.47893
 ..............\OT1/cmss/m/n/7 B
 ..............\glue(\rightskip) 0.0 plus 14.87521
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.12779
 .............\hbox(4.51111+0.0)x51.21504, glue set 39.25665fil
 ..............\OT1/cmr/m/n/7 1
@@ -18401,9 +18479,9 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -18600,7 +18678,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.47893
 ..............\OT1/cmss/m/n/7 B
 ..............\glue(\rightskip) 0.0 plus 14.87521
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.12779
 .............\hbox(4.51111+0.83334)x51.21504, glue set 33.00664fil
 ..............\OMS/cmsy/m/n/7 ^^@
@@ -18637,9 +18715,9 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -18869,9 +18947,9 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -19068,7 +19146,7 @@ waza-label=normal
 ..............\glue(\spaceskip) 2.47893
 ..............\OT1/cmss/m/n/7 D
 ..............\glue(\rightskip) 0.0 plus 14.87521
-.............\penalty 150
+.............\penalty 10000
 .............\glue(\baselineskip) 2.12779
 .............\hbox(4.51111+0.83334)x51.21504, glue set 36.99277fil
 ..............\OMS/cmsy/m/n/7 ^^@
@@ -19104,6 +19182,11 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -19151,8 +19234,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -19446,10 +19528,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -19743,9 +19824,10 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -20039,9 +20121,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -20335,9 +20417,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -20631,9 +20713,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -20927,9 +21009,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -21224,6 +21306,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -21280,8 +21367,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -21459,10 +21545,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -21640,9 +21725,10 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\penalty 10000
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -21820,9 +21906,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -22000,9 +22086,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -22180,9 +22266,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue(\rightskip) 0.0
-.\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 81.50642fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -22360,9 +22446,9 @@ beltmargin = blue | blue
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 3.33333 plus 1.66666 minus 1.11111
-..\glue 0.0 plus 1.0fil
+..\glue(\rightskip) 0.0
+.\glue(\lineskip) 6.0
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -22541,6 +22627,11 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -22594,8 +22685,7 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 42.41988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -22971,7 +23061,7 @@ beltmargin = blue | blue
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue(\rightskip) 0.0
-.\penalty 150
+.\penalty 10000
 .\glue(\lineskip) 6.0
 .\hbox(122.74686+0.0)x345.0, glue set 84.83975fil
 ..\hbox(122.74686+0.0)x126.7468
@@ -23767,8 +23857,7 @@ stance-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -24206,6 +24295,11 @@ stance-label=normal
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
 ..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
+..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
 ..\glue(\rightskip) 0.0
@@ -24250,8 +24344,7 @@ waza-label=normal
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 214.91988fil
-..\glue 0.0 plus 1.0fil
+.\hbox(122.74686+0.0)x345.0, glue set 81.50636fil
 ..\hbox(122.74686+0.0)x126.7468
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366
@@ -24699,6 +24792,11 @@ waza-label=normal
 ....\pdfliteral{n }
 ....\pdfliteral{Q }
 ....\glue 0.0 plus 1.0fil minus 1.0fil
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 3.33333 plus 1.66666 minus 1.11111
+..\glue 0.0 plus 1.0fil
+..\hbox(4.0+0.0)x126.74686
+...\rule(4.0+0.0)x126.74686
 ..\glue 3.33333 plus 1.66666 minus 1.11111
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
