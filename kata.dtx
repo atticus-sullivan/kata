@@ -505,12 +505,14 @@
 %   This is the content for the section (if it was enabled, see \refKey{/kata/kata/styled/section}).
 % \end{docKey}
 %
-% \begin{docKey}[kata/kata/styled]{section cmd}{}{(initially: \texttt{\textbackslash section})}
+% \begin{docCommand}[]{kataSection}{}
 %   The command with which the section is generated.
 %   The usual use-case of changing this key probably is to generate a \emph{subsection} instead a \emph{section} or similar changes.
 %
-%   Note, the specified macro should handle exactly one argument.
-% \end{docKey}
+%   Adjust it by using e.g. \verb|\renewcommand[1]{\subsection{#1}}|.
+%
+%   Note, the specified macro must handle exactly one argument.
+% \end{docCommand}
 %
 % \paragraph{Margin}
 % These keys decide whether and if so what content to place in a marginline generated at the begin of the \refEnv{kata}.
@@ -1015,6 +1017,11 @@
 %
 %
 % \subsection{The kata environment}
+% \begin{macro}{\kataSection}
+%    \begin{macrocode}
+\newcommand\kataSection[1]{\section{#1}}
+%    \end{macrocode}
+% \end{macro}
 %    \begin{macrocode}
 \pgfkeys{
   /kata/kata/styled,
@@ -1024,15 +1031,6 @@
   section/.default = true,
   section = false,
   no section/.style={/kata/kata/styled/section=false},
-  %
-%    \end{macrocode}
-% Not using a plain \verb|.store in| trying to shield against the user passing a command with more than one argument or no arguments.
-%    \begin{macrocode}
-  section cmd/.code = {%
-    \def\kata@section@cmd##1{#1{##1}}%
-  },
-  section cmd = \section,
-  section cmd/.value required,
   %
   title/.store in = \kata@title,
   title = {},
@@ -1069,7 +1067,7 @@
 \NewDocumentEnvironment{kata}{O{}}{%
   \pgfkeys{/kata/kata/styled,#1}%
   \ifkata@show@section%
-    \kata@section@cmd{\kata@title}%
+    \kataSection{\kata@title}%
   \fi%
   \ifkata@show@margin%
     \ifkata@show@belt%
