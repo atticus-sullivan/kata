@@ -49,7 +49,7 @@
 % overwrite marginline to inspect the margin content
 \renewcommand{\kata@beltmargin}[2]{%
   \TYPE{beltmargin = #1 | #2}%
-  % \marginpar[{\raggedleft #1}]{\raggedright #1}%
+  beltmargin = #1 $|$ #2\par%
 }
 \makeatother
 
@@ -108,6 +108,24 @@
   \TIMO
 }
 
+\section{Raw}
+\KataTestCase{kata-basic-raw}{%
+  \setbox\katabox=\vbox{%
+    \begin{kataRaw}[columns=1]
+      \begin{kataStep}
+        \kataStance{stance A}{0}
+        \kataWaza{technique A}{-90}
+        \kataDir{center}{90}
+        \kataKiai{90}
+      \end{kataStep}
+    \end{kataRaw}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+}
+
 %%%%%%%%%%%%%
 %% PHANTOM %%
 %%%%%%%%%%%%%
@@ -145,6 +163,7 @@
 }
 
 \KataTestCase{kata-phantom-two}{%
+  \begin{minipage}{15cm}
   \setbox\katabox=\vbox{%
     \begin{kata}[columns=3,title={phantom two},note={blue}]
     \begin{kataStep}
@@ -156,12 +175,13 @@
   \OMIT
   \box\katabox
   \TIMO
+  \end{minipage}
 }
 
 \KataTestCase{kata-phantom-manual}{%
   \setbox\katabox=\vbox{%
     \begin{kata}[columns=2,title={manual phantom},note={blue}]
-    manual phantom | step (2 cols)\par
+    should show: manual phantom | step (2 cols)\par
     \kataStepPhantom%
     \begin{kataStep}
       \kataStance{stance A}{0}
@@ -175,9 +195,10 @@
 }
 
 \KataTestCase{kata-phantom-mixed}{%
+  \begin{minipage}{15cm}
   \setbox\katabox=\vbox{%
     \begin{kata}[columns=3,title={mixed phantom},note={blue}]
-    step | manual phantom | automatic phantom (3 cols)\par
+    should show: step | manual phantom | automatic phantom (3 cols)\par
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -188,6 +209,7 @@
   \OMIT
   \box\katabox
   \TIMO
+  \end{minipage}
 }
 
 
@@ -228,11 +250,42 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
   \end{minipage}
 }
 
+\subsection{Raw}
+\KataTestCase{kata-raw-full-grid}{%
+  \begin{minipage}{15cm}
+  \setbox\katabox=\vbox{%
+  \setlength{\textwidth}{15cm}
+  \begin{kataRaw}[columns=3]
+    \begin{kataStep}
+    \end{kataStep}
+    \kataStepPhantom
+    \begin{kataStep}
+    \end{kataStep}
+    %
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+    %
+    \begin{kataStep}
+    \end{kataStep}
+    \begin{kataStep}
+    \end{kataStep}
+  \end{kataRaw}
+  }
+  \showbox\katabox
+  \OMIT
+  \box\katabox
+  \TIMO
+  \end{minipage}
+}
+
 %%%%%%%%%%%%%%%%
 %% MARGINLINE %%
 %%%%%%%%%%%%%%%%
 \part{Marginline}
-% TODO
 
 \KataTestCase{kata-marginline-text+belt}{%
   \setbox\katabox=\vbox{%
@@ -250,8 +303,8 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-marginline-text+emptyBelt}{%
   \setbox\katabox=\vbox{%
-    \begin{kata}[title={text and empty belt},note={arbitrary text}]
-    should show text but no belt\par
+  \begin{kata}[title={text and empty belt},note={blue},belt color={}]
+    should show text and use the text as fallback for the belt color\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
@@ -262,10 +315,10 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
   \TIMO
 }
 
-\KataTestCase{kata-marginline-text+noBelt}{%
+\KataTestCase{kata-marginline-text+disabledBelt}{%
   \setbox\katabox=\vbox{%
-    \begin{kata}[title={text but no belt},note={blue}]
-    should show text and use text as belt color\par
+  \begin{kata}[title={text but disabled belt},note={blue},no belt,belt color={red}]
+    should show text but not a belt indicator\par
     \begin{kataStep}
     \end{kataStep}
   \end{kata}
@@ -278,7 +331,7 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 
 \KataTestCase{kata-marginline-emptyText+belt}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[title={empty text but belt},belt color={red}]
+  \begin{kata}[title={empty text but belt},note={},belt color={red}]
     should show no text but the belt\par
     \begin{kataStep}
     \end{kataStep}
@@ -290,9 +343,9 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
   \TIMO
 }
 
-\KataTestCase{kata-marginline-emptyText+emptyBelt}{%
+\KataTestCase{kata-marginline-disabled}{%
   \setbox\katabox=\vbox{%
-    \begin{kata}[title={empty text and empty belt},note={}]
+    \begin{kata}[title={text and belt but disabled margin},note={text},belt color={blue},no margin]
     should not draw a marginline\par
     \begin{kataStep}
     \end{kataStep}
@@ -304,19 +357,11 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
   \TIMO
 }
 
-\KataTestCase{kata-marginline-emptyText+noBelt}{%
-  \setbox\katabox=\vbox{%
-    \begin{kata}[title={empty text and no belt},note={}]
-    should not draw a marginline\par
-    \begin{kataStep}
-    \end{kataStep}
-  \end{kata}
-  }
-  \showbox\katabox
-  \OMIT
-  \box\katabox
-  \TIMO
-}
+%%%%%%%%%%%%%
+%% SECTION %%
+%%%%%%%%%%%%%
+\part{Section}
+% TODO
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %% STEP COUNTER FORMAT %%
