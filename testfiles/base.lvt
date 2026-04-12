@@ -1102,5 +1102,4 @@ Tests implicitly \verb|kata@step@interspace| and \verb|\kataStepPhantom|
 }
 
 \vfil\break % so the full output can be checked on l3build save
-\END
 \end{document}

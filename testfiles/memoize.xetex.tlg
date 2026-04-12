@@ -17,6 +17,7 @@ Don't change this file in any respect.
 \mmzNewCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo}[nl]
 \mmzNewCCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}[nl]
 \mmzNewExtern {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf}{3}{173.40591pt}{158.9859pt}[nl]
+\endinput[nl]
 -------- memoize.mmz (end) -----------
 ============================================================
 TEST 1: kata-base
@@ -832,3 +833,7 @@ padding=(1in,1in,1in,1in),[nl]
 \mmzEndMemo[nl]
 -------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (end) -----------
 ============================================================
+[1
+]
+Package memoize Warning: The compilation produced 3 new externs on input line ....
+(memoize.aux)
