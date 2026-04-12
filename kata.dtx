@@ -205,27 +205,38 @@
 %
 % \subsection{Specifying a kata}
 %
-% \begin{docEnvironment}[]{kata}{\oarg{options}\marg{title}\marg{margin}\oarg{belt-color}}
+% \begin{docEnvironment}[]{kata}{\oarg{options}}
 % The environment which holds an entire kata.
 % Within it, normal \LaTeX{} code can be typeset.
 % Mostly the content usually consists of \refEnv{kataStep} environments each representing one step in the kata.
 %
-% This will also add a section named \meta{title}.
-%
-% It also adds a marginline which is intended to indicate for which belt this kata is required.
-% Thus, the marginline consists of
-% \begin{itemize}
-%   \item an arrow pointing down
-%   \item \meta{margin}
-%   \item a drawing showing a belt. The color by default will be \meta{margin} but it may be overwritten with \meta{belt-color}
-%     If \meta{margin} is empty and \meta{belt-color} is not given, no marginline will be drawn
-% \end{itemize}
+% Depending on the \meta{options}, this will also add various additional elements such as a section or a marginline.
 %
 % See \cref{sec:options} for the available \meta{options}.
 %
-% Note:
-%   After all steps have been drawn, it will automatically add phantom \verb|\rule|s filling up the last line. The goal of this is to achieve a uniform looking appearance of the grid which is formed by the \refEnv{step}s.
-%   For this to work correctly, \refKey{/kata/kata/columns} needs be set to the number of pictograms fitting one line on the page.
+% Internally this environment uses \refEnv{kataRaw}.
+% Thus, the remarks on that environment are also relevant for this one (particularly regarding how the grid is formed and the relevance of \refKey{/kata/kata/columns}).
+% \end{docEnvironment}
+%
+% \begin{docEnvironment}[]{kataRaw}{\oarg{options}}
+% This is the lightweight variant of \refEnv{kata}.
+% Similarly it also holds an entire kata.
+% The huge difference is it does \emph{no additional styling of the kata}.
+%
+% See \cref{sec:options} for the available \meta{options}.
+%
+% It just places the steps and tries to generatr a proper grid of \refEnv{step}s.
+% In order to do so, this environment automatically adds phantom/invisible \verb|\rule|s in the end which are supposed to fill up the last line of \refEnv{step}s.
+% For this reason, it is crucial \refKey{/kata/kata/columns} is set to the amount of \refEnv{step}s fitting onto one line.
+% This setting is used to determine in which column the current \refEnv{step} shall be placed which is a requirement for the correct spacing.
+% Also it is necessary in order to determine the amount of \verb|\rule|s which need to be placed in the end.
+%
+% Notes:
+% \begin{itemize}
+%   \item You can set \refKey{/kata/kata/columns} to \texttt{0} which \emph{disables many automatisms}.
+%     As a result, between every \refEnv{step} a simple \verb|\hskip 0.0pt plus 1.0fil| is placed no matter what the current column is.
+%     Also, this disables the automatic placement of \verb|\rule|s in the end (you may of course still padd manually with \refCom{kataStepPhantom}s.
+% \end{itemize}
 % \end{docEnvironment}
 %
 % \begin{docEnvironment}[]{kataStep}{\oarg{options}}
@@ -235,10 +246,17 @@
 %
 % The body will be the content of a \verb|tikzpicture| so normal \LaTeX{} code won't work as expected.
 % Instead, if you want/need to, you can draw arbitraty \TikZ{} code in this environment.
-% \\
-% Note: The circle representing the \emph{head}, is drawn right at the start of this environment as a node named \emph{head}.
-%       You may use it as a regular \TikZ{} node when writing custom \TikZ{}-code.
-%       The advice is not to draw out of the normal bounds as this will break the alignment of the pictograms.
+%
+% Notes:
+% \begin{itemize}
+%   \item
+%     The circle representing the \emph{head}, is drawn right at the start of this environment as a node named \emph{head}.
+%     You may use it as a regular \TikZ{} node when writing custom \TikZ{}-code.
+%     The advice is not to draw out of the normal bounds as this will break the alignment of the pictograms.
+%   \item
+%     The counter which is also normally shown in the top left corner of each step also adds a \emph{reference point}.
+%     In effect, you can use \verb|\label| to label a step and reference that step later with the typical \LaTeX{} mechanisms.
+% \end{itemize}
 %
 % Usually you'll use \refCom{kataWaza}, \refCom{kataStance} and \refCom{kataDir} to populate the step with contents.
 % Note that all of these commands may be present (multiple times) but they don't need to be present all.
@@ -306,7 +324,9 @@
 % {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={A simple example without customizations (but includes flip)}}
-\begin{kata}[columns=2]{Simple Example}{blue}
+\kataSetup{styled kata={section,margin,belt},columns=2}
+
+\begin{kata}[belt color=blue,title={Simple Example}]
   Some explanation -- normal \LaTeX{} code
   \parindent=0pt
 
@@ -335,7 +355,7 @@
 %
 % \subsection{Options / Customization} \label{sec:options}
 % The idea is you can set any option with any command (offering generic \meta{options}) which makes sense at this place.
-% For example you can set the style in which the \emph{border} of a step is drawn at the \refEnv{kataStep}, \refEnv{kata} and \refCom{kataSetup}/package level all with varying scopes.
+% For example you can set the style in which the \emph{border} of a step is drawn at the \refEnv{kataStep}, \refEnv{kataRaw} and \refCom{kataSetup}/package level all with varying scopes.
 % But you cannot set the \emph{border} style at the \refCom{kataWaza} or \refCom{kataStance} level as it does not make sense.
 %
 % Note: You should never needs to specify paths manually when specifying options.
@@ -344,15 +364,15 @@
 %
 % Structuring the options, it became evident there are groups of commands/environments which should accept a common set of options following that logic.
 % These are described in \cref{sec:opt-common}.
-% \Cref{sec:opt-setup,sec:opt-kata,sec:opt-step,sec:opt-typ-content,sec:opt-atyp-content} describe options specific to the commands/environments.
+% \Cref{sec:opt-setup,sec:opt-raw-kata,sec:opt-styled-kata,sec:opt-step,sec:opt-typ-content,sec:opt-atyp-content} describe options specific to the commands/environments.
 %
 % \subsubsection{Common options} \label{sec:opt-common}
-% These options can be applied at \refEnv{kataStep}, \refEnv{kata} and \refCom{kataSetup}/package level.
+% These options can be applied at \refEnv{kataStep}, \refEnv{kataRaw} and \refCom{kataSetup}/package level.
 %
 % \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{options}}]{{doc name=setup/stance},{doc name=kata/stance},{doc name=step/stance}}
 %   Sets the \meta{options} as if they are passed to every \refCom{kataStance} in the scope.
 %
-%   Scope means, e.g. if this is passed to \refEnv{kata}, all \refCom{kataStance} commands in this kata will get these \meta{options}.
+%   Scope means, e.g. if this is passed to \refEnv{kataRaw}/\refEnv{kata}, all \refCom{kataStance} commands in this kata will get these \meta{options}.
 %   But for the next kata, the \meta{options} are not applied.
 % \end{docKeys}
 %
@@ -390,8 +410,14 @@
 %
 % \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{presets}}]{{doc name=setup/border preset},{doc name=kata/border preset},{doc name=step/border preset}}
 %   Similar like \refKey{/kata/setup/head style} etc.
-%   But intead of appending raw \TikZ{} options, this option allows passing \meta{presets}  defined by this package for the border.
+%   But intead of appending raw \TikZ{} options, this option allows passing \meta{presets} defined by this package for the border.
 %   See \cref{sec:presets:border} for more detailled information and a list of defined border presets.
+% \end{docKeys}
+%
+% \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{presets}}]{{doc name=setup/step preset},{doc name=kata/step preset},{doc name=step/step preset}}
+%   Similar like \refKey{/kata/setup/head style} etc.
+%   But intead of appending raw \TikZ{} options, this option allows passing \meta{presets} defined by this package for the steps.
+%   See \cref{sec:presets:step} for more detailled information and a list of defined step presets.
 % \end{docKeys}
 %
 % \begin{docKeys}[doc keypath=kata,doc parameter={=\meta{options}}]{{doc name=setup/step counter style},{doc name=kata/step counter style},{doc name=step/step counter style}}
@@ -435,7 +461,7 @@
 %   Similar like \refKey{/kata/kata/columns}.
 % \end{docKey}
 %
-% \begin{docKey}{definealiases}{}{cmd-key}
+% \begin{docKey}[kata/setup]{definealiases}{}{cmd-key}
 %   Defines the same aliases like \refCom{kataAliases} when set.
 %
 %   Defining the aliases is deferred until the begin of the document.
@@ -444,31 +470,91 @@
 %   At the moment, this option only has an effect when given in the preamble (via \refCom{kataSetup}) or in the package-options.
 % \end{docKey}
 %
-% \subsubsection{Kata environment} \label{sec:opt-kata}
-% These options are specific to \refEnv{kata}.
+% \begin{docKey}[kata/setup]{styled kata}{}{}
+%   Similar like \refKey{/kata/setup/stance} etc.
+%
+%   Sets the \meta{options} as if they are passed to every \refEnv{kata} (which is referred to as \emph{styled kata} here in contrast to a \emph{raw kata}) in the scope.
+% \end{docKey}
+%
+% \subsubsection{Raw Kata environment} \label{sec:opt-raw-kata}
+% These options are specific to \refEnv{kataRaw}.
 %
 % \begin{docKey}[kata/kata]{columns}{=\meta{columns}}{initially: 6}
 %   Sets the amount of pictograms which fit one line in the document.
 %   As of now this package cannot measure this on its own so you need to set this manually (usually only once for the whole document via \refKey{/kata/setup/columns}).
 %
-%   The effect of this is that at the end of a kata, if the last line is not fully populated, it is filled up with \verb|\rule|s with the width of one \refEnv{step}.
+%   The effect of this is that at the end of a \refEnv{kataRaw}, if the last line is not fully populated, it is filled up with \verb|\rule|s with the width of one \refEnv{step}.
 %   In order to know if and if yes how many places need to be filled, this key is required.
 %   This is needed if you want a proper grid of pictograms in the output.
 %
-%   Note by setting it to 0, you can deactivate this behavior.
+%   Note by setting this key to 0, you can deactivate this behavior.
 % \end{docKey}
+%
+% \subsubsection{Styled Kata environment} \label{sec:opt-styled-kata}
+% These options are specific to \refEnv{kata}.
+% Note you can also pass keys from \verb|/kata/kata| here (including common options \cref{sec:opt-common}).
+% As long as no key with the same name is defined here, the key (+value) will be forwarded to \verb|/kata/kata|.
+%
+% \paragraph{Section}
+% These keys are all about the sectioning.
+%
+% \begin{docKey}[kata/kata/styled]{section}{}{(initially: false, default: true)}
+%   Determines whether to generate a section at all at the beginning of the \refEnv{kata}.
+% \end{docKey}
+% \begin{docKey}[kata/kata/styled]{no section}{}{}
+%   Shortcut for specifying \refKey{/kata/kata/styled/section}\verb|=false|
+% \end{docKey}
+% 
+% \begin{docKey}[kata/kata/styled]{title}{}{}
+%   The title/name of the kata.
+%   This is the content for the section (if it was enabled, see \refKey{/kata/kata/styled/section}).
+% \end{docKey}
+%
+% \begin{docCommand}[]{kataSection}{}
+%   The command with which the section is generated.
+%   The usual use-case of changing this key probably is to generate a \emph{subsection} instead a \emph{section} or similar changes.
+%
+%   Adjust it by using e.g. \verb|\renewcommand[1]{\subsection{#1}}|.
+%
+%   Note, the specified macro must handle exactly one argument.
+% \end{docCommand}
+%
+% \paragraph{Margin}
+% These keys decide whether and if so what content to place in a marginline generated at the begin of the \refEnv{kata}.
+%
+% \begin{docKey}[kata/kata/styled]{margin}{}{(initially: false, default: true)}
+%   Determines whether to place a marginline at all at the beginning of the \refEnv{kata}.
+% \end{docKey}
+% \begin{docKey}[kata/kata/styled]{no margin}{}{}
+%   Shortcut for specifying \refKey{/kata/kata/styled/margin}\verb|=false|
+% \end{docKey}
+%
+% \begin{docKey}[kata/kata/styled]{belt}{}{(initially: false, default: true)}
+%   Determines if the note in the margin (if enabled, see \refKey{/kata/kata/styled/margin}) should contain an indicator with the belt color.
+% \end{docKey}
+% \begin{docKey}[kata/kata/styled]{no belt}{}{}
+%   Shortcut for specifying \refKey{/kata/kata/styled/belt}\verb|=false|
+% \end{docKey}
+%
+% \begin{docKey}[kata/kata/styled]{belt color}{}{}
+%   The belt color for the indicator set in the note in the margin (in case this indicator as well as the margin are enabled, see \refKey{/kata/kata/styled/margin} and \refKey{/kata/kata/styled/belt}).
+% \end{docKey}
+%
+% \begin{docKey}[kata/kata/styled]{note}{}{}
+%   A note which is placed in the margin at the beginning of the \refEnv{kata}.
+%   Is only placed if the margin was enabled (see \refKey{/kata/kata/styled/margin}).
+%
+%   \emph{Note:} If the belt indicator was enabled (\refKey{/kata/kata/styled/belt}) but no belt color was set (\refKey{/kata/kata/styled/belt color}), the value of this key is used as fallback for the belt color.
+% \end{docKey}
+%
 %
 % \subsubsection{Step environment} \label{sec:opt-step}
 % These options are specific to \refEnv{kataStep}.
 %
-% \begin{docKey}[kata/step/]{first step}{}{bool, initially: false, default: true}
-%   Set this option on the first \refEnv{kataStep} in a \refEnv{kata}.
-%   As a result some spacing adjustments will be made.
+% \begin{docKey}[kata/step]{before first}{}{}
+%   This key can be used to inject arbitrary code which is executed \emph{before the first \refEnv{step}}.
 %
-%   Specifically this pushes the lines showing the \refEnv{kataStep}s at the bottom of the page.
-%   The idea is that this makes reading easier when skipping from one page to another.
-%
-%   Beware, in the future additional adjustments might get coupled to this.
+%   You may use this for example to place a \verb|\vfill| before the first step, resulting in the steps being placed closer to the pagebreak which might make (digitally) reading easier.
 % \end{docKey}
 %
 % \subsubsection{Typical content commands} \label{sec:opt-typ-content}
@@ -532,7 +618,7 @@
 %
 % \begin{docCommand}[]{kataStepPhantom}{}
 %   Places a phantom/invisible \refEnv{step} which can be used to \enquote{skip} one place in the grid.
-%   This is exactly what \refEnv{kata} potentially appends to the last line in order to generate a proper grid.
+%   This is exactly what \refEnv{kataRaw} potentially appends to the last line in order to generate a proper grid.
 %
 %   Note for performance reasons, internally this does not place a \verb|tikzpicture|.
 %   The only goal is to produce the same spacing like there would have been a \refEnv{step}.
@@ -564,6 +650,24 @@
 %   As \meta{color}, everything can be passed here which \TikZ{} can use as a color.
 % \end{docKey}
 %
+% \paragraph{Presets for steps} \label{sec:presets:step}
+% \begin{docKey}[kata/preset/step]{align page bottom}{}{}
+%   You usually write \refEnv{kata}s in two stages.
+%   First, some additional explanations.
+%   Second, the \refEnv{step}s.
+%   This preset sets the steps up so they are pushed down as far as possible on the first page.
+%   The idea is that this way when reading (digitally), you need to skip less space when switching from one page to the next one.
+%   There is one caveat: If you don't use sections and don't place explanations before the steps, this preset might do nothing.
+%
+%   Note: Under the hood, this just sets \refKey{/kata/step/before first} to \verb|\vfill|.
+% \end{docKey}
+%
+% \begin{docKey}[kata/preset/step]{align reset}{}{}
+%   Undoes (locally) the changes done by \refKey{/kata/preset/step/align page bottom} etc.
+%
+%   Note, usually you should not need this, as setting these keys/presets is always local (setting it for one \refEnv{kata} won't affect the other ones).
+% \end{docKey}
+%
 % \paragraph{Custom presets} \label{sec:presets:custom}
 % Note: Styles (e.g. \refKey{/kata/waza/style}) are evaluated in a \verb|/tikz| context eventually.
 % So if you want to declare a custom reusable style here is an example how you could declare a preset/style which only sets a background color (frame stays black) with less transparency:
@@ -575,7 +679,9 @@
   myPreset/.style={fill=#1!50},
 }
 
-\begin{kata}[columns=2]{xyz}{orange}
+\kataSetup{columns=0}
+
+\begin{kata}
   \parindent=0pt
 
   \begin{step}[border style={myPreset=orange}]
@@ -595,7 +701,9 @@
 % {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Extended example with all kinds of possible customizations}}
-\begin{kata}[columns=2,color={waza=orange}]{Extended Example}{blue}
+\kataSetup{styled kata={section,margin,belt},columns=0}
+
+\begin{kata}[columns=2,color={waza=orange},no section,no margin,belt color=orange,title={Extended Example},step={before first={first}}]
   Some explanation -- normal \LaTeX{} code
   \parindent=0pt
 
@@ -702,9 +810,13 @@
 %    \begin{macrocode}
   /kata/setup/.is family,
 %    \end{macrocode}
-% for settings regarding for the kata env
+% for settings regarding for the kataRaw env
 %    \begin{macrocode}
   /kata/kata/.is family,
+%    \end{macrocode}
+% for settings specific for the wrapper around kataRaw (kata)
+%    \begin{macrocode}
+  /kata/kata/styled/.is family,
 %    \end{macrocode}
 % for settings regarding for the step env
 %    \begin{macrocode}
@@ -733,6 +845,7 @@
 % presets for better usability
 %    \begin{macrocode}
   /kata/preset/border/.is family,
+  /kata/preset/step/.is family,
 %    \end{macrocode}
 % forwards in order to DRY
 %    \begin{macrocode}
@@ -753,6 +866,7 @@
     waza/.code   = \pgfkeys{/kata/waza,##1},
     dir/.code    = \pgfkeys{/kata/dir,##1},
     color/.code  = \pgfkeys{/kata/color,##1},
+    step/.code   = \pgfkeys{/kata/step,##1},
   },
 %    \end{macrocode}
 % Common keys which append to styles
@@ -762,6 +876,7 @@
     head style/.style = {/kata/style/head/.append style = {##1}},
     border style/.style = {/kata/style/border/.append style = {##1}},
     border preset/.forward to = /kata/style/border preset,
+    step preset/.forward to = /kata/style/step preset,
     step counter style/.style = {/kata/style/step counter/.append style = {##1}},
   },
 }
@@ -776,10 +891,11 @@
   columns/.style = {/kata/kata,columns={#1}},
   % not relevant for step -> adds not to memoize context
   definealiases/.code = {%
-    \AddToHook {begindocument} [kata/aliases] {%
+    \AddToHook{begindocument}[kata/aliases]{%
       \kataAliases%
     }%
   },
+  styled kata/.code = \pgfkeys{/kata/kata/styled,#1},
   %
   /kata/forward/delegate common,
   /kata/forward/append common,
@@ -829,7 +945,8 @@
 % \subsection{Core internals}
 % A counter for each pictogram to enable referencing.
 %    \begin{macrocode}
-\newcounter{kata@step}[section]
+\newcounter{kata@kata}
+\newcounter{kata@step}[kata@kata]
 %    \end{macrocode}
 %
 % \begin{macro}{\kata@requirestep}
@@ -859,11 +976,17 @@
 \newif\ifkata@stance@flip
 \newif\ifkata@waza@flip
 \newif\ifkata@dir@flip
-\newif\ifkata@step@first
+%
+\newif\ifkata@show@section
+\newif\ifkata@show@margin
+\newif\ifkata@show@belt
+%
 \newcount\kata@tmpcnta
 %    \end{macrocode}
 %
-% \subsection{The kata environment}
+% \subsection{The kataRaw environment}
+% This is the low-level raw kata environment.
+% It is only for wrapping the \verb|step|s and trying to generate a proper grid (by placing the correct space in the end).
 %    \begin{macrocode}
 \pgfkeys{
   /kata/kata,
@@ -877,40 +1000,17 @@
 }
 %    \end{macrocode}
 %
-%
-% \begin{environment}{kata}
+% \begin{environment}{kataRaw}
 % this environment is basically a container for a sequence of steps.
 % Arguments:
 % \begin{enumerate}
 %   \item optional: keys from \verb|/kata/kata|
-%   \item kata name
-%   \item for which belt / marginline
-%   \item optional: belt color (for drawing), if empty -> not drawn, if not present use arg 3
 % \end{enumerate}
 %    \begin{macrocode}
-\NewDocumentEnvironment{kata}{O{}mmo}{%
+\NewDocumentEnvironment{kataRaw}{O{}}{%
   \pgfkeys{/kata/kata,#1}%
-  \section{#2}%
-  \IfBlankTF{#3}{%
-%    \end{macrocode}
-% draw the marginline only when arg 4 was given
-%    \begin{macrocode}
-    \IfNoValueF{#4}{\kata@beltmargin{}{#4}}%
-  }{%
-    \IfBlankTF{#4}{%
-%    \end{macrocode}
-% need to explicitly set second arg blank otherwise kata@beltmargin does not see the argument as blank
-%    \begin{macrocode}
-      \kata@beltmargin{#3}{}%
-    }{%
-%    \end{macrocode}
-% use arg 3 as fallback for arg 4 in case it wasn't specified
-%    \begin{macrocode}
-      \kata@beltmargin{#3}{\IfNoValueTF{#4}{#3}{#4}}%
-    }%
-  }%
   \setlength{\lineskip}{6pt}%
-  \setcounter{kata@step}{0}%
+  \stepcounter{kata@kata}%
   \kata@inkatatrue%
 %    \end{macrocode}
 % there is no harm in a single word/pictogram in the last line to turn off the corresponding penalty
@@ -923,7 +1023,7 @@
 % This ensures a uniform looking grid of pictograms
 %    \begin{macrocode}
   \ifnum\kata@columns=0\else%
-    \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\c@kata@step,\kata@columns),\kata@columns)}%
+    \pgfmathtruncatemacro{\kata@missing}{mod(\kata@columns - mod(\value{kata@step},\kata@columns),\kata@columns)}%
     \ifnum\kata@missing>0
       \foreach \i in {1,...,\kata@missing} {%
         \kataStepPhantom%
@@ -940,21 +1040,118 @@
 %    \end{macrocode}
 % \end{environment}
 %
-% \begin{macro}{\kata@beltmargin}
+%
+% \subsection{The kata environment}
+% \begin{macro}{\kataSection}
 %    \begin{macrocode}
-\newcommand{\kata@beltmargin}[2]{%
+\newcommand\kataSection[1]{\section{#1}}
+%    \end{macrocode}
+% \end{macro}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/kata/styled,
+  /kata/kata/styled/.search also={/kata/kata},
+  % not relevant for step -> adds not to memoize context
+  section/.is if = kata@show@section,
+  section/.default = true,
+  section = false,
+  no section/.style={/kata/kata/styled/section=false},
+  %
+  title/.store in = \kata@title,
+  title = {},
+  title/.value required,
+  %
+  %
+  margin/.is if = kata@show@margin,
+  margin/.default = true,
+  margin = false,
+  no margin/.style={/kata/kata/styled/margin=false},
+  %
+  belt/.is if = kata@show@belt,
+  belt/.default = true,
+  belt = false,
+  no belt/.style={/kata/kata/styled/belt=false},
+  %
+  belt color/.store in = \kata@belt,
+  belt color = {},
+  belt color/.value required,
+  %
+  note/.store in = \kata@note,
+  note = {},
+  note/.value required,
+}
+%    \end{macrocode}
+%
+% \begin{environment}{kata}
+% this environment is basically a container for a sequence of steps. TODO
+% Arguments:
+% \begin{enumerate}
+%   \item optional: keys from \verb|/kata/kata|
+% \end{enumerate}
+%    \begin{macrocode}
+\NewDocumentEnvironment{kata}{O{}}{%
+  \pgfkeys{/kata/kata/styled,#1}%
+  \ifkata@show@section%
+    \kataSection{\kata@title}%
+  \fi%
+  \ifkata@show@margin%
+    \ifkata@show@belt%
+      \ifx\kata@belt\@empty%
+        \kata@beltmargin{\kata@note}{\kata@note}%
+      \else%
+        \kata@beltmargin{\kata@note}{\kata@belt}%
+      \fi%
+    \else%
+      \kata@beltmargin{\kata@note}{}%
+    \fi%
+  \fi%
+  \begin{kataRaw}%
+  \ignorespaces%
+}{%
+  \end{kataRaw}%
+}
+%    \end{macrocode}
+% \end{environment}
+%
+%
+% \begin{macro}{\kata@beltmargin@raw}
+% Takes two arguments:
+% \begin{enumerate}
+%   \item the note
+%   \item the belt color
+% \end{enumerate}
+% If an argument is empty, the corresponding element will not be shown.
+%    \begin{macrocode}
+\newcommand{\kata@beltmargin@raw}[2]{%
   \marginline{%
     \centering\footnotesize%
-    \IfBlankF{#1}{%
+    \kata@ifstr{#1}{}{}{%
       $\downarrow$ #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
-  \IfBlankF{#1}{\IfBlankF{#2}{\\}}%
-  \IfBlankF{#2}{%
+  \kata@ifstr{#1}{}{}{\kata@ifstr{#2}{}{}{\\}}%
+  \kata@ifstr{#2}{}{}{%
       \ColorBelt*[scale=0.1]{#2}%
   }%
+  }%
+}
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\kata@beltmargin}
+% Analog to \verb|\kata@beltmargin@raw| but wraps for display policy reasons:
+%
+% If everything is empty this avoids drawing a marginline at all.
+%    \begin{macrocode}
+\newcommand{\kata@beltmargin}[2]{%
+  \kata@ifstr{#1}{}{%
+    \kata@ifstr{#2}{}{}{%
+      \kata@beltmargin@raw{#1}{#2}%
+    }%
+  }{%
+    \kata@beltmargin@raw{#1}{#2}%
   }%
 }
 %    \end{macrocode}
@@ -965,8 +1162,9 @@
 \pgfkeys{
   /kata/step,
   % not relevant for inner step -> adds not to memoize context
-  first step/.is if = kata@step@first,
-  first step/.default = true,
+  before first/.store in = \kata@step@first@before,
+  before first = {},
+  before first/.value required,
   %
   % mostly "forwards" -> adds not to memoize context
   /kata/forward/delegate common,
@@ -1014,13 +1212,13 @@
 % this environment always should wrap \verb|kata@step|.
 % It handles the aspects of positioning the pictogram.
 % Arguments:
-% 1 (optional): whether this is the first step of the kata / pgfkeys
+% 1 (optional): pgfkeys
 %    \begin{macrocode}
 \NewDocumentEnvironment{kataStep}{O{}+b}{%
   \kata@requirekata{\string\kataStep}%
   \pgfkeys{/kata/step,#1}%
-  \ifkata@step@first%
-    \vfil\noindent%
+  \ifnum\value{kata@step}=0
+    \kata@step@first@before\noindent%
   \else%
     \kata@step@interspace{\kata@columns}{\value{kata@step}}%
   \fi%
@@ -1324,6 +1522,11 @@
   border preset/.code={
     \pgfkeysalso{/kata/preset/border,#1}%
   },
+  %
+  % only forwards -> adds not to memoize context
+  step preset/.code={
+    \pgfkeysalso{/kata/preset/step,#1}%
+  },
 }
 %    \end{macrocode}
 %
@@ -1438,6 +1641,19 @@
       fill=#1!5,
       draw=#1,
     },
+  },
+}
+%    \end{macrocode}
+% \paragraph{Step presets}
+%    \begin{macrocode}
+\pgfkeys{
+  /kata/preset/step,
+  % only appends -> adds not to memoize context
+  align page bottom/.style={
+    /kata/step/before first={\vfill},
+  },
+  align reset/.style={
+    /kata/step/before first={},
   },
 }
 %    \end{macrocode}

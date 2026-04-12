@@ -25,6 +25,10 @@
 \input regression-test.tex\relax
 
 \usepackage[definealiases]{kata}
+\kataSetup{
+  styled kata={section,belt,no margin},
+  columns=2,
+}
 
 \makeatletter
 % overwrite marginline to inspect the margin content
@@ -49,7 +53,7 @@
 \START
 \KataTestCase{kata-aliased-basic}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}{section title}{blue}
+  \begin{kata}[title={section title},note={blue}]
     \begin{step}
       \stance{stance A}{0}
       \waza{technique A}{-90}
@@ -63,5 +67,4 @@
   \box\katabox
   \TIMO
 }
-\END
 \end{document}

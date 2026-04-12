@@ -11,11 +11,11 @@ Don't change this file in any respect.
 \mmzUsedCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A.memo}[nl]
 \mmzUsedExtern {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8-1.pdf}[nl]
 \mmzUsedCCMemo {memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}[nl]
+\endinput[nl]
 -------- memoize.mmz (end) -----------
 ============================================================
 TEST 1: kata-base
 ============================================================
-beltmargin = blue | blue
 [tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
 [tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \kataWaza {technique A}{-90} \kataDir {center}{90} \end {kata@step}
 [tracing memoize]   Code md5sum: AD49BE559C145CD2E79C7530E6123CB1
@@ -25,6 +25,15 @@ beltmargin = blue | blue
 [tracing memoize]   Context: "padding=(1in,1in,1in,1in),stepCnt->0,kata version->0.1.0,,kataStepCnt code={\protected macro:#1->\arabic {#1}},kata@color@stance={macro:->blue},kata@color@waza={macro:->pink},kata@color@dir={macro:->red},kata@color@head={macro:->black},kata@color@border={macro:->black},kata@color@stepcounter={macro:->black},pgfk@/kata/style/head/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/head/.meaning to context, circle, draw=\kata@color@head , inner xsep=0.333em, }\pgfkeysalso {dashed}},pgfk@/kata/style/stance/.@cmd={\long macro:#1#2\pgfeov ->\pgfkeysalso { /kata/style/stance/.meaning to context, draw=\kata@color@stance , -{Stealth[scale=1.2]}, transform canvas={xshift=#1,yshift=#2}, }},pgfk@/kata/style/stance label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label/.meaning to context, /kata/style/stance label base, below, }},pgfk@/kata/style/stance label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/stance label base/.meaning to context, \kata@color@stance , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/waza/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza/.meaning to context, draw=\kata@color@waza , -{Stealth[scale=1.2]}, }},pgfk@/kata/style/waza label/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label/.meaning to context, /kata/style/waza label base, above, }},pgfk@/kata/style/waza label base/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/waza label base/.meaning to context, \kata@color@waza , midway, sloped, font=\sffamily \scriptsize , text width=1.8cm, }},pgfk@/kata/style/dir/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/dir/.meaning to context, draw=\kata@color@dir , -{Straight Barb}, }},pgfk@/kata/style/border/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/border/.meaning to context, rectangle, draw=\kata@color@border , fit=(output), inner sep=0pt, outer sep=0pt, inner xsep=0.2em, }},pgfk@/kata/style/step counter/.@cmd={\long macro:#1\pgfeov ->\pgfkeysalso { /kata/style/step counter/.meaning to context, draw=\kata@color@stepcounter , font=\sffamily \small , outer sep=0pt, at={(t1.north west)}, below right, rectangle, }}," --> 71E3408760193351BD5E0B035CFB1FF0
 [tracing memoize]   Attempting to utilize cc-memo memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.memo (indirect input)
 [tracing memoize]   Utilization successful
+Underfull \hbox (badness 10000) in paragraph at lines ...
+[] 
+\hbox(0.0+0.0)x345.0, glue set 129.08348, direction TLT
+.\hbox(0.0+0.0)x126.74686, direction TLT
+..\rule(0.0+0.0)x126.74686
+.\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
+.\penalty 10000
+.\glue(\parfillskip) 0.0
+.\glue(\rightskip) 0.0
 > \box...=
 \vbox(178.53203+0.0)x345.0, direction TLT
 .\penalty -300
@@ -72,27 +81,26 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 218.2532fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 84.84634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\hbox(122.7466+0.0)x126.74655, direction TLT
 ....\hbox(267.28658+0.0)x199.01654, shifted 72.26999, direction TLT
 .....\glue -72.26999
 .....\image(267.28658+0.0)x271.28653
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\baselineskip) 12.0
-.\hbox(0.0+0.0)x345.0, glue set 81.51628fil, direction TLT
-..\hbox(0.0+0.0)x126.74686, direction TLT
-...\rule(0.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\glue 0.0 plus 1.0fil
+..\hbox(0.0+0.0)x126.74686, direction TLT
+...\rule(0.0+0.0)x126.74686
+..\glue(\rightskip) 0.0
+.\penalty 150
+.\glue(\baselineskip) 12.0
+.\hbox(0.0+0.0)x345.0, glue set 129.08348, direction TLT
 ..\hbox(0.0+0.0)x126.74686, direction TLT
 ...\rule(0.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
@@ -107,7 +115,6 @@ l. ...}
 ============================================================
 TEST 2: kata-base2
 ============================================================
-beltmargin = blue | blue
 [tracing memoize] Entering \Memoize (enabled, normal mode) on line ...
 [tracing memoize]   Code: \begin {kata@step}\kataStance {stance A}{0} \end {kata@step}
 [tracing memoize]   Code md5sum: B54184C7AD750E521A129E6CD355AB74
@@ -166,13 +173,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 40.75818fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\hbox(122.7466+0.0)x126.74655, direction TLT
 ....\hbox(267.28658+0.0)x199.01654, shifted 72.26999, direction TLT
@@ -263,3 +269,5 @@ padding=(1in,1in,1in,1in),[nl]
 \mmzEndMemo[nl]
 -------- memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo (end) -----------
 ============================================================
+[1
+<./memoize.memo.dir/AD49BE559C145CD2E79C7530E6123CB1-71E3408760193351BD5E0B035CFB1FF0.pdf><./memoize.memo.dir/B54184C7AD750E521A129E6CD355AB74-26EA234D450BEFD4FC33A9CDE5CDE6F4.pdf><./memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.pdf>] (memoize.aux)

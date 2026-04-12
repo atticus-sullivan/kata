@@ -3,9 +3,8 @@ Don't change this file in any respect.
 ============================================================
 TEST 1: kata-aliased-basic
 ============================================================
-beltmargin = blue | blue
 > \box...=
-\vbox(187.82483+0.0)x345.0, direction TLT
+\vbox(163.82483+0.0)x345.0, direction TLT
 .\penalty -300
 .\glue 15.08499 plus 4.31 minus 0.86198
 .\glue(\parskip) 0.0 plus 1.0
@@ -46,13 +45,12 @@ beltmargin = blue | blue
 .\glue(\parskip) 0.0 plus 1.0
 .\glue(\parskip) 0.0
 .\glue(\lineskip) 6.0
-.\hbox(122.74686+0.0)x345.0, glue set 42.42317fil, direction TLT
+.\hbox(122.74686+0.0)x345.0, glue set 81.51634fil, direction TLT
 ..\localpar
 ...\localinterlinepenalty=0
 ...\localbrokenpenalty=0
 ...\localleftbox=null
 ...\localrightbox=null
-..\glue 0.0 plus 1.0fil
 ..\hbox(122.74686+0.0)x126.7468, direction TLT
 ...\glue 63.37363
 ...\hbox(0.0+0.0)x0.0, shifted -61.37366, direction TLT
@@ -541,27 +539,6 @@ beltmargin = blue | blue
 ..\glue 0.0 plus 1.0fil
 ..\hbox(0.0+0.0)x126.74686, direction TLT
 ...\rule(0.0+0.0)x126.74686
-..\glue(\rightskip) 0.0
-.\penalty 150
-.\glue(\baselineskip) 12.0
-.\hbox(0.0+0.0)x345.0, glue set 84.84628fil, direction TLT
-..\hbox(0.0+0.0)x126.74686, direction TLT
-...\rule(0.0+0.0)x126.74686
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
-..\hbox(0.0+0.0)x126.74686, direction TLT
-...\rule(0.0+0.0)x126.74686
-..\glue(\rightskip) 0.0
-.\glue(\baselineskip) 12.0
-.\hbox(0.0+0.0)x345.0, glue set 81.51628fil, direction TLT
-..\hbox(0.0+0.0)x126.74686, direction TLT
-...\rule(0.0+0.0)x126.74686
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
-..\glue 0.0 plus 1.0fil
-..\hbox(0.0+0.0)x126.74686, direction TLT
-...\rule(0.0+0.0)x126.74686
 ..\glue(\spaceskip) 3.33 plus 1.665 minus 1.11
 ..\penalty 10000
 ..\glue(\parfillskip) 0.0
@@ -573,3 +550,5 @@ l. ...}
 ============================================================
 manually added constraints
 ============================================================
+[1
+] (aliases.aux)
