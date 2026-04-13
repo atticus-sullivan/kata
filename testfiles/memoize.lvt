@@ -33,6 +33,10 @@
 \mmzset{include context in ccmemo,trace}
 
 \usepackage{kata}
+\kataSetup{
+  styled kata={section,belt,no margin},
+  columns=2,
+}
 
 \makeatletter
 % overwrite marginline to inspect the margin content
@@ -49,7 +53,7 @@
 %
 \TEST{kata-base}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=3,color={waza=pink}]{Extended Example}{blue}
+  \begin{kata}[columns=3,color={waza=pink},title={Extended Example},note={blue}]
     \begin{kataStep}[head style={dashed}]
       \kataStance{stance A}{0}
       \kataWaza{technique A}{-90}
@@ -65,7 +69,7 @@
 %
 \TEST{kata-base2}{%
   \setbox\katabox=\vbox{%
-  \begin{kata}[columns=2,color={waza=blue}]{Extended Example 2}{blue}
+  \begin{kata}[columns=2,color={waza=blue},title={Extended Example 2},note={blue}]
     \begin{kataStep}
       \kataStance{stance A}{0}
     \end{kataStep}
@@ -104,5 +108,4 @@
   \SHOWFILE{memoize.memo.dir/0A2450D890F084315497BA7BB4448C8A-E778DCCCB8AAB0BBD3F6CFEEFD2421F8.memo}
 }
 %
-\END
 \end{document}
