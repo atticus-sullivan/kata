@@ -327,7 +327,7 @@
 % The output looks slightly different in the example's output here.
 % Usually, the section is a proper section and the marginline is really show in the margin.
 %
-% {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
+% {\installMocks ^^A Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={A simple example without customizations (but includes flip)}}
 \kataSetup{styled kata={section,margin,belt},columns=2}
@@ -353,11 +353,6 @@
 \end{dispExample*}
 %</doc>
 % }
-%
-% \begin{docCommand}[]{kataStepCnt}{\marg{counter}}
-% Formats the counter holding the number of the current step.
-% Adjust this with e.g. \verb|\RenewDocumentCommand| or \verb|renewcommand| to change how the counter is displayed.
-% \end{docCommand}
 %
 % \subsection{Options / Customization} \label{sec:options}
 % The idea is you can set any option with any command (offering generic \meta{options}) which makes sense at this place.
@@ -563,6 +558,11 @@
 %   You may use this for example to place a \verb|\vfill| before the first step, resulting in the steps being placed closer to the pagebreak which might make (digitally) reading easier.
 % \end{docKey}
 %
+% \begin{docCommand}[]{kataStepCnt}{\marg{counter}}
+% Formats the counter holding the number of the current step.
+% Adjust this with e.g. \verb|\RenewDocumentCommand| or \verb|\renewcommand[1]{\arabic{#1}}| to change how the counter is displayed (your macro must handle exactly one argument (the counter)).
+% \end{docCommand}
+%
 % \subsubsection{Typical content commands} \label{sec:opt-typ-content}
 % Similarly like for global options there is a set of options which apply to all \emph{typical} content commands.
 % \emph{Typical} here refers to content commands which draw something and also have a label.
@@ -678,7 +678,6 @@
 % Note: Styles (e.g. \refKey{/kata/waza/style}) are evaluated in a \verb|/tikz| context eventually.
 % So if you want to declare a custom reusable style here is an example how you could declare a preset/style which only sets a background color (frame stays black) with less transparency:
 %
-% {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Idea how to manually define a reusable style}}
 \tikzset{
@@ -696,7 +695,6 @@
 \end{kata}
 \end{dispExample*}
 %</doc>
-% }
 % 
 %
 % \subsection{Extended Example} \label{sec:extended-example}
@@ -704,7 +702,7 @@
 %   The output looks slightly different in the example's output here.
 %   Usually, the section is a proper section and the marginline is really show in the margin.
 %
-% {\installMocks % Mocks are only used here in the docs avoid problems showing this inside the example box
+% {\installMocks ^^A Mocks are only used here in the docs avoid problems showing this inside the example box
 %<*doc>
 \begin{dispExample*}{listing options={language=[LaTeX]TeX},breakable,title={Extended example with all kinds of possible customizations}}
 \kataSetup{styled kata={section,margin,belt},columns=0}
