@@ -80,7 +80,7 @@
 %
 % \changes{0.1.0}{2026-03-23}{Converted to DTX file}
 %
-% \DoNotIndex{\@empty,\@ifpackageloaded,\@ifundefined,\\,\AddToHook,\arabic,\arrow,\arrowreversed,\begin,\end,\centering,\ColorBelt,\def,\dimexpr,\downarrow,\draw,\else,\fi,\endkataStep,\endstep,\ExpandArgs,\footnotesize,\foreach,\hangafter,\hangindent,\hskip,\i,\IfNoValueTF,\ifnum,\ifx,\ignorespaces,\let,\lineskip,\marginpar,\mmzset,\newcommand,\newcount,\newcounter,\newdimen,\NewDocumentCommand,\NewDocumentEnvironment,\newenvironment,\newif,\node,\noindent,\PackageError,\PackageWarning,\par,\path,\parfillskip,\pgfkeys,\pgfkeysalso,\pgfmathsetcount,\pgfmathsetmacro,\pgfmathtruncatemacro,\pgftransformrotate,\ProcessPgfPackageOptions,\providecommand,\raggedleft,\raggedright,\refstepcounter,\relax,\RequirePackage,\rule,\scriptsize,\section,\setlength,\settowidth,\sffamily,\small,\stance,\step,\stepcounter,\string,\subsection,\the,\UseName,\usetikzlibrary,\value,\widowpenalty,\x,\y}
+% \DoNotIndex{\@empty,\@ifpackageloaded,\@ifundefined,\\,\AddToHook,\arabic,\arrow,\arrowreversed,\begin,\end,\centering,\ColorBelt,\def,\dimexpr,\textdownarrow,\draw,\else,\fi,\endkataStep,\endstep,\ExpandArgs,\footnotesize,\foreach,\hangafter,\hangindent,\hskip,\i,\IfNoValueTF,\ifnum,\ifx,\ignorespaces,\let,\lineskip,\marginpar,\mmzset,\newcommand,\newcount,\newcounter,\newdimen,\NewDocumentCommand,\NewDocumentEnvironment,\newenvironment,\newif,\node,\noindent,\PackageError,\PackageWarning,\par,\path,\parfillskip,\pgfkeys,\pgfkeysalso,\pgfmathsetcount,\pgfmathsetmacro,\pgfmathtruncatemacro,\pgftransformrotate,\ProcessPgfPackageOptions,\providecommand,\raggedleft,\raggedright,\refstepcounter,\relax,\RequirePackage,\rule,\scriptsize,\section,\setlength,\settowidth,\sffamily,\small,\stance,\step,\stepcounter,\string,\subsection,\the,\UseName,\usetikzlibrary,\value,\widowpenalty,\x,\y}
 %
 % \GetFileInfo{kata.sty}
 % \title{\textsf{kata} -- \fileinfo}
@@ -1130,14 +1130,14 @@
   \marginline{%
     \centering\footnotesize%
     \kata@ifstr{#1}{}{}{%
-      $\downarrow$ #1%
+      \textdownarrow{} #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
   \kata@ifstr{#1}{}{}{\kata@ifstr{#2}{}{}{\\}}%
   \kata@ifstr{#2}{}{}{%
-      \ColorBelt*[scale=0.1]{#2}%
+    \ColorBelt*[scale=0.1,alt={Judobelt with color #2}]{#2}%
   }%
   }%
 }
@@ -1173,6 +1173,12 @@
   % mostly "forwards" -> adds not to memoize context
   /kata/forward/delegate common,
   /kata/forward/append common,
+  %
+  % for tagging
+  alt/.style={/kata/style/step tagging/.append style={alt=#1}},
+  actualtext/.style={/kata/style/step tagging/.append style={actualtext=#1}},
+  artifact/.style={/kata/style/step tagging/.append style={artifact}},
+  tagging-setup/.style={/kata/style/step tagging/.append style={tagging-setup=#1}},
 }
 %    \end{macrocode}
 %
@@ -1239,6 +1245,7 @@
 %    \begin{macrocode}
 \newenvironment*{kata@step}{%
   \kata@requirekata{\string\step}%
+  \tikzset{/kata/style/step tagging}%
   \begin{tikzpicture}[font=\scriptsize]%
     \begin{scope}[local bounding box=output]%
       \kata@head\kata@nothing%
@@ -1521,6 +1528,9 @@
     below right,
     rectangle,
   },
+  %
+  % does not influence the tikzpicture content -> adds not to memoize context
+  step tagging/.style = {},
   %
   % only forwards -> adds not to memoize context
   border preset/.code={
