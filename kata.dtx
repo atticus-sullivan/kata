@@ -1245,7 +1245,8 @@
 %    \begin{macrocode}
 \newenvironment*{kata@step}{%
   \kata@requirekata{\string\step}%
-  \begin{tikzpicture}[font=\scriptsize,/kata/style/step tagging]%
+  \tikzset{/kata/style/step tagging}%
+  \begin{tikzpicture}[font=\scriptsize]%
     \begin{scope}[local bounding box=output]%
       \kata@head\kata@nothing%
       \kata@insteptrue%
