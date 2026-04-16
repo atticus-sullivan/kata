@@ -1175,10 +1175,10 @@
   /kata/forward/append common,
   %
   % for tagging
-  alt/.append style={/kata/style/step tagging={alt=#1}},
-  actualtext/.append style={/kata/style/step tagging={actualtext=#1}},
-  artifact/.append style={/kata/style/step tagging={artifact}},
-  tagging-setup/.append style={/kata/style/step tagging={tagging-setup=#1}},
+  alt/.style={/kata/style/step tagging/.append style={alt=#1}},
+  actualtext/.style={/kata/style/step tagging/.append style={actualtext=#1}},
+  artifact/.style={/kata/style/step tagging/.append style={artifact}},
+  tagging-setup/.style={/kata/style/step tagging/.append style={tagging-setup=#1}},
 }
 %    \end{macrocode}
 %
