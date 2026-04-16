@@ -1130,14 +1130,14 @@
   \marginline{%
     \centering\footnotesize%
     \kata@ifstr{#1}{}{}{%
-      $\downarrow$ #1%
+      \textdownarrow{} #1%
     }%
 %    \end{macrocode}
 % only linebreak if both are non-empty
 %    \begin{macrocode}
   \kata@ifstr{#1}{}{}{\kata@ifstr{#2}{}{}{\\}}%
   \kata@ifstr{#2}{}{}{%
-      \ColorBelt*[scale=0.1]{#2}%
+    \ColorBelt*[scale=0.1,alt={Judobelt with color #2}]{#2}%
   }%
   }%
 }
@@ -1173,6 +1173,12 @@
   % mostly "forwards" -> adds not to memoize context
   /kata/forward/delegate common,
   /kata/forward/append common,
+  %
+  % for tagging
+  alt/.forward to=/tikz/alt,
+  actualtext/.forward to=/tikz/actualtext,
+  artifact/.forward to=/tikz/artifact,
+  tagging-setup/.forward to=/tikz/tagging-setup,
 }
 %    \end{macrocode}
 %
@@ -1521,6 +1527,9 @@
     below right,
     rectangle,
   },
+  %
+  % does not influence the tikzpicture content -> adds not to memoize context
+  step tagging/.style = {},
   %
   % only forwards -> adds not to memoize context
   border preset/.code={
